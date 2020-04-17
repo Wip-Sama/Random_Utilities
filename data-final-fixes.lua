@@ -1,0 +1,273 @@
+--Inventory size OK
+if settings.startup["ru-inventory-size"] then
+   data.raw.character["character"].inventory_size = settings.startup["ru-inventory-size"].value
+end
+
+--Reach distance OK
+if settings.startup["ru-reach-distance"] then
+   data.raw.character["character"].build_distance = settings.startup["ru-reach-distance"].value
+   data.raw.character["character"].reach_distance = settings.startup["ru-reach-distance"].value
+end
+
+--Mining speed OK
+if settings.startup["ru-mining-speed"] then
+   data.raw.character["character"].mining_speed = data.raw.character["character"].mining_speed * settings.startup["ru-mining-speed"].value
+end
+
+--Mining reach OK
+if settings.startup["ru-mine-reach"] then
+   data.raw.character["character"].reach_resource_distance = settings.startup["ru-mine-reach"].value
+end
+
+--Stack size OK
+local itemStackSizeMultiplier = settings.startup["RU-Stack-Size"].value
+local max, min = math.max, math.min
+
+--Angel Warehouse Size OK
+if mods["angelsaddons-warehouses"] then
+	data.raw.container["angels-warehouse"].inventory_size = settings.startup["RU-angels-warehouse"].value
+	data.raw["logistic-container"]["angels-warehouse-passive-provider"].inventory_size = settings.startup["RU-angels-warehouse-passive-provider"].value
+	data.raw["logistic-container"]["angels-warehouse-active-provider"].inventory_size = settings.startup["RU-angels-warehouse-active-provider"].value
+	data.raw["logistic-container"]["angels-warehouse-storage"].inventory_size = settings.startup["RU-angels-warehouse-storage"].value
+	data.raw["logistic-container"]["angels-warehouse-requester"].inventory_size = settings.startup["RU-angels-warehouse-requester"].value
+	data.raw["logistic-container"]["angels-warehouse-buffer"].inventory_size = settings.startup["RU-angels-warehouse-buffer"].value
+end
+--Angel PressureTank Size OK
+if mods["angelsaddons-pressuretanks"] then
+	data.raw["storage-tank"]["angels-pressure-tank-1"]["fluid_box"].base_area = settings.startup["Ru-Angel-Pressuretank"].value
+end
+
+if mods["Krastorio2"] then
+  data.raw.container["kr-medium-container"].inventory_size = settings.startup["Ru-Krastorio2-medium-container"].value
+  data.raw["logistic-container"]["kr-medium-passive-provider-container"].inventory_size = settings.startup["RU-Krastorio2-medium-passive-provider-container"].value
+  data.raw["logistic-container"]["kr-medium-active-provider-container"].inventory_size = settings.startup["RU-Krastorio2-medium-active-provider-container"].value
+  data.raw["logistic-container"]["kr-medium-storage-container"].inventory_size = settings.startup["RU-Krastorio2-medium-storage-container"].value
+  data.raw["logistic-container"]["kr-medium-requester-container"].inventory_size = settings.startup["RU-Krastorio2-medium-requester-container"].value
+  data.raw["logistic-container"]["kr-medium-buffer-container"].inventory_size = settings.startup["RU-Krastorio2-medium-buffer-container"].value
+
+  data.raw.container["kr-big-container"].inventory_size = settings.startup["Ru-Krastorio2-big-container"].value
+  data.raw["logistic-container"]["kr-big-passive-provider-container"].inventory_size = settings.startup["Ru-Krastorio2-big-passive-provider-container"].value
+  data.raw["logistic-container"]["kr-big-active-provider-container"].inventory_size = settings.startup["Ru-Krastorio2-big-active-provider-container"].value
+  data.raw["logistic-container"]["kr-big-storage-container"].inventory_size = settings.startup["Ru-Krastorio2-big-storage-container"].value
+  data.raw["logistic-container"]["kr-big-requester-container"].inventory_size = settings.startup["Ru-Krastorio2-big-requester-container"].value
+  data.raw["logistic-container"]["kr-big-buffer-container"].inventory_size = settings.startup["Ru-Krastorio2-big-buffer-container"].value
+
+	data.raw["storage-tank"]["kr-fluid-storage-1"]["fluid_box"].base_area = settings.startup["Ru-kr-fluid-storage-1"].value
+	data.raw["storage-tank"]["kr-fluid-storage-2"]["fluid_box"].base_area = settings.startup["Ru-kr-fluid-storage-2"].value
+end
+
+
+
+local ignore = {
+	["blueprint"]           = true,
+	["blueprint-book"]      = true,
+	["deconstruction-item"] = true,
+	["selection-tool"]      = true,
+	["copy-paste-tool"]     = true,
+	["item-with-inventory"] = true,
+	["upgrade-item"]        = true,
+	["armor"]               = true,
+}
+
+for _, dat in pairs(data.raw) do
+	for _,item in pairs(dat) do
+		if item.stack_size and type(item.stack_size) == "number" then
+			if not ignore[item.type] and (item.stackable == nil or item.stackable) then
+				item.stack_size = max(1, min(4294967295, item.stack_size * itemStackSizeMultiplier))
+			end
+		end
+	end
+end
+--stack size Contruction Robot OK
+if settings.startup["RU-Stack-Size-CRobot"].value then
+	for _,v in pairs(data.raw["construction-robot"]) do
+		v.max_payload_size = max(1, min(4294967295, v.max_payload_size * itemStackSizeMultiplier))
+	end
+end
+--stack size Logistic Robot OK
+if settings.startup["RU-Stack-Size-LRobot"].value then
+	for _,v in pairs(data.raw["logistic-robot"]) do
+		v.max_payload_size = max(1, min(4294967295, v.max_payload_size * itemStackSizeMultiplier))
+	end
+end
+--No Crafting Time OK
+if settings.startup["RU-No-Crafting-Time"].value then
+local function get_recipe(name)
+  local items = data.raw["recipe"]
+    if recipes then
+      return recipes[name]
+    end
+  return nil
+end
+
+local function modify_energy(name, recipe)
+ if recipe.normal or recipe.expensive then
+      if recipe.normal then
+         data.raw["recipe"][recipe.name].normal.energy_required = 0.0011
+      end
+    if recipe.expensive then
+       data.raw["recipe"][recipe.name].expensive.energy_required = 0.0011
+    end
+ else
+    data.raw["recipe"][recipe.name].energy_required = 0.0011
+  end
+end
+
+local function get_zero(name, recipe)
+  local existing_item = get_recipe(name)
+  return modify_energy(name, recipe)
+end
+
+local function process_recipe(recipe)
+  for name,recipe in pairs(recipe) do
+      local recipe_item = get_zero(recipe_name, recipe)
+    end
+end
+
+  process_recipe(data.raw["recipe"])
+end
+
+--collision box tree OK
+if settings.startup["ru-trees"].value then
+   for _, tree in pairs(data.raw["tree"]) do
+      tree.collision_box = {{-0.03, -0.03}, {0.03, 0.03}}
+   end
+end
+
+--Powerful Lamp Setting OK
+if settings.startup["ru-powerful-lamp"] then
+   data.raw.character["character"].light = {
+      {minimum_darkness = 0.3, intensity = 0.9, size = settings.startup["ru-powerful-lamp"].value}
+   }
+end
+
+--Assembler Impu-output
+if settings.startup["RU-Assembler-liquid-Imput-Output"].value then
+--[[
+    Do all the changes in data-final-fixes.lua, in case other mods have modified the assemblers
+
+    1. Add "input throughput" pipes on N/S plane
+    2. Add "output throughput" pipes on E/W plane
+]]
+for j_index, j in pairs(data.raw['assembling-machine']) do
+    if j.fluid_boxes and not appmod.blacklist[j.name] then
+        log('Adding fluid boxes to ' .. j.name)
+        --log(serpent.block(data.raw['assembling-machine'][j.name].fluid_boxes))
+        for pipe_index, pipe in ipairs(j.fluid_boxes) do -- ipairs because array with a boolean on the end
+            local connections_to_add = {}
+            if pipe.production_type == 'input' then
+                -- input pipe
+                for connection_index, connection in ipairs(pipe.pipe_connections) do
+                    data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].pipe_connections[connection_index].type = 'input-output'
+                    data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].base_level = -1
+                    data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].height = 2
+                    data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].base_area = 20
+                    table.insert(
+                        connections_to_add,
+                        {
+                            position = {connection.position[1], connection.position[2] * -1},
+                            type = 'input-output'
+                        }
+                    )
+                end
+                for _, to_add in pairs(connections_to_add) do
+                    table.insert(data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].pipe_connections, to_add)
+                end
+            elseif pipe.production_type == 'output' then
+                -- output pipe
+                for connection_index, connection in ipairs(pipe.pipe_connections) do
+                    data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].pipe_connections[connection_index].type = 'input-output'
+                    data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].pipe_connections[connection_index].position = {connection.position[2], connection.position[1]}
+                    table.insert(
+                        connections_to_add,
+                        {
+                            position = {connection.position[1] * -1, connection.position[2]},
+                            type = 'input-output'
+                        }
+                    )
+                end
+                for _, to_add in pairs(connections_to_add) do
+                    table.insert(data.raw['assembling-machine'][j.name].fluid_boxes[pipe_index].pipe_connections, to_add)
+                end
+            else
+                -- input/output pipe
+                return
+            end
+        end
+    end
+end
+end
+
+--Wire Shortcuts
+local is_wire_surrogate = settings.startup["wire-shortcuts-is-retain-wire-crafting"].value
+
+if data.raw["recipe"]["red-wire"] and data.raw["recipe"]["green-wire"] then
+    data.raw["recipe"]["red-wire"].hidden = true
+    data.raw["recipe"]["red-wire"].enabled = false
+    data.raw["recipe"]["green-wire"].hidden = true
+    data.raw["recipe"]["green-wire"].enabled = false
+end
+
+if data.raw["item"]["red-wire"] and data.raw["item"]["green-wire"] then
+    data.raw["item"]["red-wire"].flags = { "hidden" }
+    data.raw["item"]["green-wire"].flags = { "hidden" }
+end
+
+if data.raw["technology"]["circuit-network"] then
+    local tech_effects = data.raw["technology"]["circuit-network"].effects
+    for i = (#tech_effects), 1, -1 do
+        if tech_effects[i].type == "unlock-recipe" then
+            if tech_effects[i].recipe == "red-wire" or tech_effects[i].recipe == "green-wire" then
+                if is_wire_surrogate then
+                    tech_effects[i].recipe = "fake-" .. tech_effects[i].recipe
+                else
+                    table.remove(tech_effects, i)
+                end
+            end
+        end
+    end
+end
+
+function remove_or_replace_wire(ingredients)
+    for i = (#ingredients), 1, -1 do
+        if ingredients[i] then
+            if ingredients[i][1] == "green-wire" or
+                    ingredients[i][1] == "red-wire" then
+                if is_wire_surrogate then
+                    ingredients[i][1] = "fake-" .. ingredients[i][1]
+                else
+                    table.remove(ingredients, i)
+                end
+            elseif ingredients[i].name and (ingredients[i].name == "green-wire" or ingredients[i].name == "red-wire") then
+                if is_wire_surrogate then
+                    ingredients[i].name = "fake-" .. ingredients[i].name
+                else
+                    table.remove(ingredients, i)
+                end
+            end
+        end
+    end
+end
+
+for _, recipe in pairs(data.raw["recipe"]) do
+    if recipe.ingredients then
+        remove_or_replace_wire(recipe.ingredients)
+    end
+    if recipe.expensive and recipe.expensive.ingredients then
+        remove_or_replace_wire(recipe.expensive.ingredients)
+    end
+    if recipe.normal and recipe.normal.ingredients then
+        remove_or_replace_wire(recipe.normal.ingredients)
+    end
+end
+
+if is_wire_surrogate then
+    data.raw["item"]["fake-red-wire"].flags = {}
+    data.raw["item"]["fake-green-wire"].flags = {}
+    data.raw["recipe"]["fake-red-wire"].hidden = false
+    data.raw["recipe"]["fake-green-wire"].hidden = false
+    if data.raw["recipe"]["red-wire"] and data.raw["recipe"]["red-wire"] then
+        data.raw["recipe"]["fake-red-wire"].ingredients = data.raw["recipe"]["red-wire"].ingredients
+        data.raw["recipe"]["fake-green-wire"].ingredients = data.raw["recipe"]["green-wire"].ingredients
+    end
+end

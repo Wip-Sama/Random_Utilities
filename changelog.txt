@@ -1,0 +1,106 @@
+---------------------------------------------------------------------------------------------------
+Version: 1.0.0
+Date: 17.03.2020
+  Added:
+    - RU-Basic-Substation (range 32, supply area 10x10[5], HP 125)
+  IF:
+    - if you want to compatibilize some mods / add features contact me on https://t.me/wipmod
+    - se vuoi che compatibilizzi determinate mod / aggiunga altre funzioni contattami a https://t.me/wipmod
+    - (gli aiuti sono ben graditi)
+---------------------------------------------------------------------------------------------------
+Version: 1.1.0
+Date: 23.03.2020
+  Modified:
+    - RU-Basic-Substation supply area 10x10[5] > supply area 12*12[6]
+    - Basic_Substation setting to Ru-Substation
+    Added:
+      - Inventory size setting
+      - stack size settings
+      - reach distance settings
+      - Mining reach settings
+      - Mining speed settings
+      - collision box tree settings
+      - Powerful Lamp Setting settings
+      - Quick start settings
+      - Quick Start Modular Armor settings
+      - Basic Lamp (light = 256 block)
+      - Lamp setting
+      - Lamp technology
+      - Lingua Italiana (contact me on https://t.me/wipmod to translate in other language)
+      - Compacitbility with "Power Armor MK3" (contact me on https://t.me/wipmod to make your mod compatible)
+---------------------------------------------------------------------------------------------------
+Version: 1.1.1
+Date: 23.03.2020
+  Modified:
+    - fixed stack multiplier
+    - fixed other settings
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 23.03.2020
+  Modified:
+    - changed stack multiplier script (if you want only this use Noxys StackSizeMultiplier, it's the original!)
+  Added:
+    - added 0 crafting time setting (if you want only this use NoCraftingTime, it's the original!)
+    - added 0 crafting time script (if you want only this use NoCraftingTime, it's the original!)
+    - {Setting} Disable crafting Time
+    - {Setting} Item Stack Size Logistic Robot
+    - {Setting} Item Stack Size Construction Robot
+
+---------------------------------------------------------------------------------------------------
+Version: 1.1.2
+Date: 23.03.2020
+  Added:
+    - {Setting} Disable crafting Time
+---------------------------------------------------------------------------------------------------
+Version: 1.1.3
+Date: 29.03.2020
+  Added:
+    - {Setting} Disable crafting Time
+---------------------------------------------------------------------------------------------------
+Version: 1.1.4
+Date: 30.03.2020
+  Added:
+    - RU-Medium-Substation (range 64, supply area 42x42[21], HP 200)
+---------------------------------------------------------------------------------------------------
+Version: 1.1.5
+Date: 03.04.2020
+  Added:
+    - added Assembler Pipe Passthrought (if you want only this use assembler-pipe-passthrough, it's the original!)
+    - added Wire Shortcuts (if you want only this use WireShortcuts, it's the original!)
+    - added Wire Vanilla Pole Reach/Supply area range (if you want only this use PoleRange, it's the original!)
+---------------------------------------------------------------------------------------------------
+Version: 1.1.6
+Date: 03.04.2020
+  Fixed:
+    - WireShortcut dependencies
+  Added:
+    - Compatibility with Krastorio 2
+---------------------------------------------------------------------------------------------------
+Version: 1.1.7
+Date: 08.04.2020
+  Fixed:
+    - Removed Banane (test) from armor starter kit
+    - old changelog
+    - name of the config for electric pole range
+    - pole setting name
+    - lamp setting name
+    - substation setting name
+  Added:
+    - Compatibility with Angel Pressure tank
+    - compatibility with Angel Warehouse
+    - config to change storage size angel warehouse
+    - config to change storage size Krastorio 2 container
+    - config to change angel pressure tank capacity
+    - config to change krastorio fluid storage capacity
+---------------------------------------------------------------------------------------------------
+Version: 1.1.8
+Date: 15.04.2020
+  Fixed:
+    - lamp setting
+    - mod structure
+  Added:
+    - basic beacon : supply area 12; consuption 24MW; module slot 4; effects "consumption", "speed", "pollution", "productivity"
+    - beacon config
+    - medium lamp : range 320; consuption 40kW
+  Balanced:
+    - basic lamp : range 256>192; consuption 5kW>20kW

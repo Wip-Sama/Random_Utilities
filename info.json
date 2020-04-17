@@ -1,0 +1,15 @@
+{
+  "name": "Random_Utilities",
+  "version": "1.1.8",
+  "factorio_version": "0.18",
+  "title": "Random utilities",
+  "author": "WipMod",
+  "contact": "https://t.me/wipmod",
+  "homepage": "mods.factorio.com/mods/WipMod/Random_Utilities",
+  "description": "Just Some Utilities",
+  "dependencies": [
+    "(?) angelsaddons-warehouses",
+    "(?) angelsaddons-pressuretanks",
+    "(?) Krastorio2"
+  ]
+}
