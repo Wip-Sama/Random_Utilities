@@ -104,3 +104,9 @@ Date: 15.04.2020
     - medium lamp : range 320; consuption 40kW
   Balanced:
     - basic lamp : range 256>192; consuption 5kW>20kW
+---------------------------------------------------------------------------------------------------
+Version: 1.1.9
+Date: 15.04.2020
+    Updated:
+      - stack multiplier code
+      - pipe passthrought code
