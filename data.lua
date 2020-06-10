@@ -56,11 +56,17 @@ end
 
 --Assembler Imput-Output--
 
-  --to add an item to the blacklist, add the name of the assembling machine to the table using:
-  --appmod.blacklist['entity-name'] = true
-  --please insert this during your data-updates stage
-if not appmod then appmod = {} end
-if not appmod.blacklist then appmod.blacklist = {} end
+-- to add an item to the blacklist, add the name of the assembling machine to the table using:
+-- appmod.blacklist['entity-name'] = true
+-- please insert this during your data-updates stage
+if not appmod then
+  appmod = {}
+end
+if not appmod.blacklist then
+  appmod.blacklist = {}
+end
+
+--electric pole range 
 
 data.raw["electric-pole"]["small-electric-pole"].maximum_wire_distance = settings.startup["small-electric-pole-max-wire-distance"].value
 data.raw["electric-pole"]["small-electric-pole"].supply_area_distance = settings.startup["small-electric-pole-supply-area-distance"].value / 2  -- (5x5) make this divide by 2

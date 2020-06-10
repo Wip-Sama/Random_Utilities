@@ -319,13 +319,13 @@ data:extend(
   },
   --stack size OK
   {
-    type = "int-setting",
+    type = "double-setting",
     name = "RU-Stack-Size",
     order = "bb",
     setting_type = "startup",
     default_value = 100,
     minimum_value = 1,
-    maximum_value = 1000,
+    maximum_value = 2147483647,
     localised_name = "{Setting} Items Stack Size",
     localised_description = "{Info} by default the reach is 1, Increase stack size",
   },
@@ -435,7 +435,7 @@ data:extend(
     localised_name = "{Setting} Enhance Cable Visibility",
     localised_description = "{Info} By default teh value is true",
   },
-  --RU Better Cable Visibility OK
+  --RU-Assembler-liquid-Imput-Output OK
   {
     type = "bool-setting",
     name = "RU-Assembler-liquid-Imput-Output",

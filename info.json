@@ -10,6 +10,7 @@
   "dependencies": [
     "(?) angelsaddons-warehouses",
     "(?) angelsaddons-pressuretanks",
-    "(?) Krastorio2"
+    "(?) Krastorio2",
+    "!omnimatter_fluid >= 3.0.0"
   ]
 }
