@@ -208,6 +208,7 @@ if settings.startup["RU-Assembler-liquid-Imput-Output"].value then
       end
     end
   end
+end
 
 --Wire Shortcuts
 local is_wire_surrogate = settings.startup["wire-shortcuts-is-retain-wire-crafting"].value
