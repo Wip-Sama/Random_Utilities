@@ -116,8 +116,24 @@ Date: 11.06.2020
       - stack multiplier code
       - pipe passthrought code
 ---------------------------------------------------------------------------------------------------
-Version: 1.2.0
+Version: 1.2.1
 Date: 17.06.2020
   Fixed:
     - beacon for 0.18.30
     - changelog date
+---------------------------------------------------------------------------------------------------
+Version: 1.2.2
+Date: 17.06.2020
+  Fixed:
+    - missing name (english)
+    - changelog
+    - Medium lamp give basic lamp when broken
+  Added:
+    - Medium Beacon
+    - Big Beacon
+    - Big lamp
+    - Medium beacon technology
+    - Big beacon technology
+    - Big Lamp technology
+  Changed:
+    - changed technology RU-advanced-effect-transmission to RU-advanced-effect-transmission-a

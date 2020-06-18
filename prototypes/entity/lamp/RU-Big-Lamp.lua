@@ -8,12 +8,12 @@ data:extend(
 {
   {
     type = "lamp",
-    name = "RU-Medium-Lamp",
+    name = "RU-Big-Lamp",
     icon = "__base__/graphics/icons/small-lamp.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Medium-Lamp"},
-    max_health = 100,
+    minable = {mining_time = 0.1, result = "RU-Big-Lamp"},
+    max_health = 150,
     corpse = "lamp-remnants",
     dying_explosion = "lamp-explosion",
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
@@ -40,12 +40,12 @@ data:extend(
       type = "electric",
       usage_priority = "lamp"
     },
-    energy_usage_per_tick = "40KW",
+    energy_usage_per_tick = "80KW",
     darkness_for_all_lamps_on = 0.5,
     darkness_for_all_lamps_off = 0.3,
     light = {intensity = 0.9, size = 320, color = {r=1.0, g=1.0, b=1.0}},
     light_when_colored = {intensity = 1, size = 320, color = {r=1.0, g=1.0, b=1.0}},
-    glow_size = 320,
+    glow_size = 540,
     glow_color_intensity = 0.135,
     picture_off =
     {

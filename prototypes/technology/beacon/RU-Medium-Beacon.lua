@@ -2,20 +2,20 @@
 data:extend({
 {
   type = "technology",
-  name = "RU-advanced-effect-transmission-a",
+  name = "RU-advanced-effect-transmission-b",
   icon_size = 128,
   icon = "__base__/graphics/technology/effect-transmission.png",
   effects =
   {
     {
       type = "unlock-recipe",
-      recipe = "RU-Basic-Beacon"
+      recipe = "RU-Medium-Beacon"
     }
   },
-  prerequisites = {"effect-transmission"},
+  prerequisites = {"RU-advanced-effect-transmission-a"},
   unit =
   {
-    count = 300,
+    count = 600,
     ingredients =
     {
       {"automation-science-pack", 1},
@@ -23,7 +23,7 @@ data:extend({
       {"chemical-science-pack", 1},
       {"production-science-pack", 1}
     },
-    time = 30
+    time = 32
   },
   order = "i-i"
 },

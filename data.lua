@@ -19,7 +19,6 @@ if settings.startup["RU-CheatyRecipe"].value == true then
   require "prototypes.recipe.CheatyRecipe"
 end
 
-
 if settings.startup["RU-Lamp"].value == true then
   --Basic Lamp
   require "prototypes.item.lamp.RU-Basic-Lamp"
@@ -31,6 +30,11 @@ if settings.startup["RU-Lamp"].value == true then
   require "prototypes.entity.lamp.RU-Medium-Lamp"
   require "prototypes.recipe.lamp.RU-Medium-Lamp"
   require "prototypes.technology.lamp.RU-Medium-Lamp"
+  --Big lamp
+  require "prototypes.item.lamp.RU-Big-Lamp"
+  require "prototypes.entity.lamp.RU-Big-Lamp"
+  require "prototypes.recipe.lamp.RU-Big-Lamp"
+  require "prototypes.technology.lamp.RU-Big-Lamp"
 end
 
 if settings.startup["RU-Enable-Wire-Shortcuts"].value then
@@ -50,6 +54,16 @@ if settings.startup["RU-Beacon"].value then
   require "prototypes.entity.beacon.RU-Basic-Beacon"
   require "prototypes.recipe.beacon.RU-Basic-Beacon"
   require "prototypes.technology.beacon.RU-Basic-Beacon"
+  --basic beacon
+  require "prototypes.item.beacon.RU-Medium-Beacon"
+  require "prototypes.entity.beacon.RU-Medium-Beacon"
+  require "prototypes.recipe.beacon.RU-Medium-Beacon"
+  require "prototypes.technology.beacon.RU-Medium-Beacon"
+  --basic beacon
+  require "prototypes.item.beacon.RU-Big-Beacon"
+  require "prototypes.entity.beacon.RU-Big-Beacon"
+  require "prototypes.recipe.beacon.RU-Big-Beacon"
+  require "prototypes.technology.beacon.RU-Big-Beacon"
 end
 
 
@@ -66,7 +80,7 @@ if not appmod.blacklist then
   appmod.blacklist = {}
 end
 
---electric pole range 
+--electric pole range
 
 data.raw["electric-pole"]["small-electric-pole"].maximum_wire_distance = settings.startup["small-electric-pole-max-wire-distance"].value
 data.raw["electric-pole"]["small-electric-pole"].supply_area_distance = settings.startup["small-electric-pole-supply-area-distance"].value / 2  -- (5x5) make this divide by 2
