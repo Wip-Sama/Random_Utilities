@@ -130,6 +130,11 @@ end
   process_recipe(data.raw["recipe"])
 end
 
+--change bot speed
+data.raw["construction-robot"]["construction-robot"].speed = settings.startup["RU-botspeed-base-bot-speed"].value
+data.raw["logistic-robot"]["logistic-robot"].speed = settings.startup["RU-botspeed-base-bot-speed"].value
+
+
 --collision box tree OK
 if settings.startup["ru-trees"].value then
    for _, tree in pairs(data.raw["tree"]) do

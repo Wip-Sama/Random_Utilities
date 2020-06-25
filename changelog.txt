@@ -10,7 +10,7 @@ Date: 17.03.2020
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
 Date: 23.03.2020
-  Modified:
+  Changed:
     - RU-Basic-Substation supply area 10x10[5] > supply area 12*12[6]
     - Basic_Substation setting to Ru-Substation
     Added:
@@ -31,13 +31,13 @@ Date: 23.03.2020
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
 Date: 23.03.2020
-  Modified:
+  Changed:
     - fixed stack multiplier
     - fixed other settings
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 23.03.2020
-  Modified:
+  Changed:
     - changed stack multiplier script (if you want only this use Noxys StackSizeMultiplier, it's the original!)
   Added:
     - added 0 crafting time setting (if you want only this use NoCraftingTime, it's the original!)
@@ -45,7 +45,6 @@ Date: 23.03.2020
     - {Setting} Disable crafting Time
     - {Setting} Item Stack Size Logistic Robot
     - {Setting} Item Stack Size Construction Robot
-
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
 Date: 23.03.2020
@@ -123,17 +122,37 @@ Date: 17.06.2020
     - changelog date
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
-Date: 17.06.2020
+Date: 18.06.2020
   Fixed:
     - missing name (english)
     - changelog
     - Medium lamp give basic lamp when broken
+    - fixed some settings name
   Added:
-    - Medium Beacon
-    - Big Beacon
-    - Big lamp
+    - Medium Beacon (supply area 24; consuption 48MW; module slot 4; effects "consumption", "speed", "pollution", "productivity")
+    - Big Beacon (supply area 48; consuption 96MW; module slot 5; effects "consumption", "speed", "pollution", "productivity")
+    - Big lamp (light = 540 block)
     - Medium beacon technology
     - Big beacon technology
     - Big Lamp technology
   Changed:
     - changed technology RU-advanced-effect-transmission to RU-advanced-effect-transmission-a
+---------------------------------------------------------------------------------------------------
+Version: 1.2.3
+Date: 21.06.2020
+  Balanced:
+    - Basic beacon dimension (3x3 to 4x4)
+    - Medium beacon dimension (3x3 to 5x5)
+    - Big beacon dimension (3x3 to 6x6)
+  Added:
+    - Big Substation (range 64, supply area 84x84[42], HP 450)
+    - Bot speed settings (if you want only this use BotSpeed, it's the original!)
+  Changed:
+    - bugfix
+  Updated:
+    - wire shortcut graphic
+---------------------------------------------------------------------------------------------------
+Version: 1.2.5
+Date: 25.06.2020
+  Fixed:
+    - when breaking a beacon won't give back the correct beacon

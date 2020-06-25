@@ -9,6 +9,11 @@ if settings.startup["RU-Substation"].value == true then
   require "prototypes.entity.substation.RU-Medium-Substation"
   require "prototypes.recipe.substation.RU-Medium-Substation"
   require "prototypes.technology.substation.RU-Medium-Substation"
+  --Big Substation
+  require "prototypes.item.substation.RU-Big-Substation"
+  require "prototypes.entity.substation.RU-Big-Substation"
+  require "prototypes.recipe.substation.RU-Big-Substation"
+  require "prototypes.technology.substation.RU-Big-Substation"
 end
 
 if settings.startup["RU-AlternativeRecipe"].value == true then

@@ -303,6 +303,7 @@ data:extend(
     order = "abb",
     setting_type = "startup",
     default_value = true,
+    localised_name = "Enable beacons",
     localised_description = "{Item} Enable Beacons",
   },
   --Inventory size OK
@@ -312,10 +313,10 @@ data:extend(
     order = "ba",
     setting_type = "startup",
     default_value = 60,
-    minimum_value = 1,
+    minimum_value = 20,
     maximum_value = 2000,
     localised_name = "{Setting} Inventory Size",
-    localised_description = "{Info} by default the infentory is 60, Build and open Items",
+    localised_description = "{Info} by default the inventory is 60, change inventory size",
   },
   --stack size OK
   {
@@ -323,11 +324,11 @@ data:extend(
     name = "RU-Stack-Size",
     order = "bb",
     setting_type = "startup",
-    default_value = 100,
+    default_value = 10,
     minimum_value = 1,
     maximum_value = 2147483647,
     localised_name = "{Setting} Items Stack Size",
-    localised_description = "{Info} by default the reach is 1, Increase stack size",
+    localised_description = "{Info} by default the value is 1, increase stack size (vanilla value * setting)",
   },
   --stack size Contruction Robot OK
   {
@@ -357,7 +358,7 @@ data:extend(
     setting_type = "startup",
     default_value = false,
     localised_name = "{Setting} Disable crafting Time",
-    localised_description = "{Item} by default the reach is false, work with machine recipe too",
+    localised_description = "{Item} by default the value is false, work with machine recipe too",
   },
   --AlternativeRecipe OK
   {
@@ -367,7 +368,7 @@ data:extend(
     setting_type = "startup",
     default_value = true,
     localised_name = "{Setting} Alternative Recipes",
-    localised_description = "{Item} by default the reach is true, enable alternative recipes",
+    localised_description = "{Item} by default the value is true, enable alternative recipes",
   },
   --AlternativeRecipe OK
   {
@@ -377,7 +378,7 @@ data:extend(
     setting_type = "startup",
     default_value = true,
     localised_name = "{Setting} Cheaty Recipes",
-    localised_description = "{Item} by default the reach is true, enable Cheaty recipes",
+    localised_description = "{Item} by default the value is true, enable Cheaty recipes",
   },
   --reach distance OK
   {
@@ -433,7 +434,7 @@ data:extend(
     setting_type = "startup",
     default_value = true,
     localised_name = "{Setting} Enhance Cable Visibility",
-    localised_description = "{Info} By default teh value is true",
+    localised_description = "{Info} By default the value is true",
   },
   --RU-Assembler-liquid-Imput-Output OK
   {
@@ -443,7 +444,7 @@ data:extend(
     setting_type = "startup",
     default_value = true,
     localised_name = "{Setting} allow liquid to pass throught general",
-    localised_description = "{Info} By default teh value is true",
+    localised_description = "{Info} By default the value is true",
   },
   --RU-Assembling-Machine-Imput-Output OK
   {
@@ -453,7 +454,7 @@ data:extend(
       setting_type = 'startup',
       default_value = true,
       localised_name = "{Setting} allow liquid to pass throught the assembler",
-      localised_description = "{Info} By default teh value is true",
+      localised_description = "{Info} By default the value is true",
   },
   --RU-Chemical-Plant-Imput-Output OK
   {
@@ -463,7 +464,7 @@ data:extend(
       setting_type = 'startup',
       default_value = true,
       localised_name = "{Setting} allow liquid to pass throught the chemical plant",
-      localised_description = "{Info} By default teh value is true",
+      localised_description = "{Info} By default the value is true",
   },
   --RU-Oil-Refineries-Imput-Output OK
   {
@@ -473,7 +474,7 @@ data:extend(
       setting_type = 'startup',
       default_value = true,
       localised_name = "{Setting} allow liquid to pass throught the oil refinery",
-      localised_description = "{Info} By default teh value is true",
+      localised_description = "{Info} By default the value is true",
   },
   --Enable Shortcuts OK
   {
@@ -483,7 +484,7 @@ data:extend(
     setting_type = "startup",
     default_value = true,
     localised_name = "{Setting} Enable Wire Shortcuts",
-    localised_description = "{Info} By default teh value is true",
+    localised_description = "{Info} By default the value is true",
   },
   --Enable Wire Shortcuts OK
   {
@@ -493,7 +494,7 @@ data:extend(
     setting_type = "startup",
     default_value = false,
     localised_name = "{Setting} Keep Enabled Wire Crafting",
-    localised_description = "{Info} By default teh value is false, it's better to leave this value false",
+    localised_description = "{Info} By default the value is false, it's better to leave this value false",
   },
   {
    type = "double-setting",
@@ -583,7 +584,7 @@ data:extend(
     setting_type = "startup",
     default_value = "Nothing",
     allowed_values = {"Nothing", "Small amount", "Medium amount", "Big amount", "Huge amount"},
-    localised_name = "{Quick-Start} Selet the amount of item to start the game",
+    localised_name = "{Quick-Start} Select the amount of item to start the game",
     localised_description = "{Info} by default the value is nothing, set how much item you recive at the start",
   },
 --Quick Start Modular Armor OK
@@ -618,6 +619,18 @@ data:extend(
     per_user = false,
     localised_name = "{Quick-Start} Unlock Robot Technology",
     localised_description = "{Info} by default the value is false",
+  },
+--bot speed / robot speed OK
+  {
+    type = "double-setting",
+    name = "RU-botspeed-base-bot-speed",
+    order = "cf",
+    setting_type = "startup",
+    default_value = 0.1,
+    minimum_value = 0.06,
+    maximum_value = 1,
+    localised_name = "{Setting} Change bot speed",
+    localised_description = "{Info} by default the value is 0.1 (vanilla : 0.05 logistic, 0.06 construction)",
   },
 }
 )

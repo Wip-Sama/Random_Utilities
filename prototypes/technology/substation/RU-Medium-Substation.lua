@@ -18,14 +18,14 @@ data:extend({
                   --{"electric-energy-distribution-2"},
   unit =
   {
-    count = 150,
+    count = 250,
     ingredients =
     {
       {"automation-science-pack", 1},
       {"logistic-science-pack", 1},
       {"chemical-science-pack", 1},
     },
-    time = 30
+    time = 32
   },
   order = "c-e-c"
 },

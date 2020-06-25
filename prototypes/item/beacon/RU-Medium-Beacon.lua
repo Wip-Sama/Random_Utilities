@@ -7,7 +7,7 @@ data:extend({
     -- flags = {"goes-to-quickbar"},
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "module",
-    order = "a[beacon]",
+    order = "c[beacon]",
     place_result = "RU-Medium-Beacon",
     stack_size = 10
   },

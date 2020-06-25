@@ -4,26 +4,29 @@
 data:extend({
 {
   type = "technology",
-  name = "RU-Basic-Substation",
+  name = "RU-Big-Substation",
   icon_size = 128,
   icon = "__base__/graphics/technology/electric-energy-distribution.png",
   effects =
   {
     {
       type = "unlock-recipe",
-      recipe = "RU-Basic-Substation"
+      recipe = "RU-Big-Substation"
     }
   },
-  prerequisites = {"electric-energy-distribution-1"},
+  prerequisites = {"RU-Medium-Substation"},
+                  --{"electric-energy-distribution-2"},
   unit =
   {
-    count = 150,
+    count = 300,
     ingredients =
     {
       {"automation-science-pack", 1},
       {"logistic-science-pack", 1},
+      {"chemical-science-pack", 1},
+      {"utility-science-pack", 1}
     },
-    time = 31
+    time = 33
   },
   order = "c-e-c"
 },

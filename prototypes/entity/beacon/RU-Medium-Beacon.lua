@@ -9,17 +9,17 @@ data:extend({
     icon = "__base__/graphics/icons/beacon.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.2, result = "beacon"},
+    minable = {mining_time = 0.2, result = "RU-Medium-Beacon"},
     max_health = 250,
     corpse = "beacon-remnants",
     dying_explosion = "beacon-explosion",
-    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-2.2, -2.2}, {2.2, 2.2}},
+    selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-1.5, -2.2}, {1.5, 1.3}},
     allowed_effects = {"consumption", "speed", "pollution", "productivity"},
 
-    graphics_set = require("prototypes.entity.beacon.beacon-animations"),
+    graphics_set = require("prototypes.entity.beacon.medium-beacon-animations"),
 
     radius_visualisation_picture =
     {

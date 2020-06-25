@@ -32,7 +32,7 @@
                 filename = "__base__/graphics/entity/beacon/hr-beacon-bottom.png",
                 width = 212,
                 height = 192,
-                scale = 0.5,
+                scale = 1,
                 shift = util.by_pixel(0.5, 1),
               }
             },
@@ -47,7 +47,7 @@
                 filename = "__base__/graphics/entity/beacon/hr-beacon-shadow.png",
                 width = 244,
                 height = 176,
-                scale = 0.5,
+                scale = 1,
                 draw_as_shadow = true,
                 shift = util.by_pixel(12.5, 0.5),
               }
@@ -71,7 +71,7 @@
             filename = "__base__/graphics/entity/beacon/hr-beacon-top.png",
             width = 96,
             height = 140,
-            scale = 0.5,
+            scale = 1,
             repeat_count = 45,
             animation_speed = 0.5,
             shift = util.by_pixel(3, -19),
@@ -102,7 +102,7 @@
             height = 186,
             frame_count = 45,
             animation_speed = 0.5,
-            scale = 0.5,
+            scale = 1,
             shift = util.by_pixel(0.5, -18),
             blend_mode = "additive",
           }
@@ -139,7 +139,7 @@
                   width = 50,
                   height = 66,
                   variation_count = 4,
-                  scale = 0.5,
+                  scale = 1,
                   shift = util.by_pixel(-16, 14.5),
                 }
               }
@@ -162,7 +162,7 @@
                   width = 36,
                   height = 32,
                   variation_count = 3,
-                  scale = 0.5,
+                  scale = 1,
                   shift = util.by_pixel(-17, 15),
                 }
               }
@@ -185,7 +185,7 @@
                   width = 26,
                   height = 12,
                   variation_count = 3,
-                  scale = 0.5,
+                  scale = 1,
                   shift = util.by_pixel(-18.5, 13),
                 }
               }
@@ -210,7 +210,7 @@
                   height = 42,
                   variation_count = 3,
                   shift = util.by_pixel(-18, 13),
-                  scale = 0.5
+                  scale = 1
                 }
               }
             }
@@ -235,7 +235,7 @@
                   width = 46,
                   height = 44,
                   variation_count = 4,
-                  scale = 0.5,
+                  scale = 1,
                   shift = util.by_pixel(19, -12),
                 }
               }
@@ -258,7 +258,7 @@
                   width = 36,
                   height = 26,
                   variation_count = 3,
-                  scale = 0.5,
+                  scale = 1,
                   shift = util.by_pixel(20.5, -12),
                 }
               }
@@ -281,7 +281,7 @@
                   width = 24,
                   height = 14,
                   variation_count = 3,
-                  scale = 0.5,
+                  scale = 1,
                   shift = util.by_pixel(22, -15.5),
                 }
               }
@@ -305,7 +305,7 @@
                   height = 46,
                   variation_count = 3,
                   shift = util.by_pixel(22, -16),
-                  scale = 0.5
+                  scale = 1
                 }
               }
             }

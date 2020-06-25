@@ -9,17 +9,17 @@ script.on_event(
     --Items
     if settings.startup["ru-quick-start"].value == "Small amount" then
       atStart["items"] = {
-        {"transport-belt", 200},
-        {"inserter", 50},
-        {"splitter", 20},
-        {"underground-belt", 20},
-        {"lab", 1},
+        {"transport-belt", 250},
+        {"inserter", 55},
+        {"splitter", 22},
+        {"underground-belt", 22},
+        {"lab", 2},
         {"steam-engine", 20},
         {"boiler", 10},
-        {"offshore-pump", 1},
-        {"burner-mining-drill", 5},
-        {"stone-furnace", 5},
-        {"coal", 50}
+        {"offshore-pump", 2},
+        {"burner-mining-drill", 6},
+        {"stone-furnace", 6},
+        {"coal", 100}
       }
     elseif settings.startup["ru-quick-start"].value == "Medium amount" then
       atStart["items"] = {
@@ -29,15 +29,15 @@ script.on_event(
         {"underground-belt", 50},
         {"small-electric-pole", 50},
         {"electric-mining-drill", 20},
-        {"lab", 1},
+        {"lab", 2},
         {"steam-engine", 20},
         {"boiler", 10},
-        {"offshore-pump", 1},
+        {"offshore-pump", 2},
         {"stone-furnace", 10},
         {"coal", 100},
         {"copper-plate", 100},
         {"iron-plate", 100},
-        {"steel-plate", 50}
+        {"steel-plate", 75}
       }
     elseif settings.startup["ru-quick-start"].value == "Big amount" then
       atStart["items"] = {
