@@ -7,11 +7,11 @@ data:extend({
 {
   type = "electric-pole",
   name = "RU-Behemut-Substation",
-  icon = "__base__/graphics/icons/substation.png",
+  icons = {{icon = "__base__/graphics/icons/substation.png", tint = {r=80, g=80, b=80}}},
   icon_size = 64, icon_mipmaps = 4,
   flags = {"placeable-neutral", "player-creation"},
   minable = {mining_time = 0.2, result = "RU-Behemut-Substation"},
-  max_health = 250,
+  max_health = 500,
   corpse = "substation-remnants",
   dying_explosion = "substation-explosion",
   track_coverage_during_build_by_moving = true,
@@ -92,7 +92,7 @@ data:extend({
   selection_box = {{-1, -1}, {1, 1}},
   damaged_trigger_effect = hit_effects.entity({{-0.5, -2.5}, {0.5, 0.5}}),
   drawing_box = {{-1, -3}, {1, 1}},
-  maximum_wire_distance = 128,
+  maximum_wire_distance = 64,
   supply_area_distance = 64,
   pictures =
   {
@@ -106,6 +106,7 @@ data:extend({
         height = 136,
         direction_count = 4,
         shift = util.by_pixel(0, 1-32),
+        tint = {r=80, g=80, b=80},
         hr_version =
         {
           filename = "__base__/graphics/entity/substation/hr-substation.png",
@@ -114,6 +115,7 @@ data:extend({
           height = 270,
           direction_count = 4,
           shift = util.by_pixel(0, 1-32),
+          tint = {r=80, g=80, b=80},
           scale = 0.5
         }
       },

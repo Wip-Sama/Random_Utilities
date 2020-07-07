@@ -6,7 +6,7 @@ data:extend({
   {
     type = "beacon",
     name = "RU-Big-Beacon",
-    icon = "__base__/graphics/icons/beacon.png",
+    icons = {{icon = "__base__/graphics/icons/beacon.png", tint = {r=132, g=180, b=181}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
     minable = {mining_time = 0.2, result = "RU-Big-Beacon"},
@@ -37,7 +37,7 @@ data:extend({
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
-    energy_usage = "96MW",
+    energy_usage = "625MW",
     distribution_effectivity = 0.8,
     module_specification =
     {

@@ -14,5 +14,16 @@ data:extend({
     },
     result = "landfill",
     result_count = 1
-  }
+  },
+  {
+    type = "recipe",
+    name = "offshore-pump",
+    enabled = "true",
+    ingredients =
+    {
+      {"iron-plate", 5},
+      {"copper-plate", 2},
+    },
+    result = "offshore-pump"
+  },
 })

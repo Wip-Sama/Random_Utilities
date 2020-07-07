@@ -7,7 +7,7 @@ data:extend({
 {
   type = "electric-pole",
   name = "RU-Medium-Substation",
-  icon = "__base__/graphics/icons/substation.png",
+  icons = {{icon = "__base__/graphics/icons/substation.png", tint = {r=202, g=154, b=152}}},
   icon_size = 64, icon_mipmaps = 4,
   flags = {"placeable-neutral", "player-creation"},
   minable = {mining_time = 0.2, result = "RU-Medium-Substation"},
@@ -106,6 +106,7 @@ data:extend({
         height = 136,
         direction_count = 4,
         shift = util.by_pixel(0, 1-32),
+        tint = {r=202, g=154, b=152},
         hr_version =
         {
           filename = "__base__/graphics/entity/substation/hr-substation.png",
@@ -114,6 +115,7 @@ data:extend({
           height = 270,
           direction_count = 4,
           shift = util.by_pixel(0, 1-32),
+          tint = {r=202, g=154, b=152},
           scale = 0.5
         }
       },

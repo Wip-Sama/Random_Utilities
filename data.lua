@@ -14,6 +14,62 @@ if settings.startup["RU-Substation"].value == true then
   require "prototypes.entity.substation.RU-Big-Substation"
   require "prototypes.recipe.substation.RU-Big-Substation"
   require "prototypes.technology.substation.RU-Big-Substation"
+  --Behemut Substation
+  require "prototypes.item.substation.RU-Behemut-Substation"
+  require "prototypes.entity.substation.RU-Behemut-Substation"
+  require "prototypes.recipe.substation.RU-Behemut-Substation"
+  require "prototypes.technology.substation.RU-Behemut-Substation"
+end
+
+if settings.startup["RU-Solar-Panel"].value == true then
+  --Basic Solar-Panel
+  require "prototypes.item.Solar-Panel.RU-Basic-Solar-Panel"
+  require "prototypes.entity.Solar-Panel.RU-Basic-Solar-Panel"
+  require "prototypes.recipe.Solar-Panel.RU-Basic-Solar-Panel"
+  require "prototypes.technology.Solar-Panel.RU-Basic-Solar-Panel"
+  --Medium Solar-Panel
+  require "prototypes.item.Solar-Panel.RU-Medium-Solar-Panel"
+  require "prototypes.entity.Solar-Panel.RU-Medium-Solar-Panel"
+  require "prototypes.recipe.Solar-Panel.RU-Medium-Solar-Panel"
+  require "prototypes.technology.Solar-Panel.RU-Medium-Solar-Panel"
+  --Big Solar-Panel
+  require "prototypes.item.Solar-Panel.RU-Big-Solar-Panel"
+  require "prototypes.entity.Solar-Panel.RU-Big-Solar-Panel"
+  require "prototypes.recipe.Solar-Panel.RU-Big-Solar-Panel"
+  require "prototypes.technology.Solar-Panel.RU-Big-Solar-Panel"
+  --Behemut Solar-Panel
+  require "prototypes.item.Solar-Panel.RU-Behemut-Solar-Panel"
+  require "prototypes.entity.Solar-Panel.RU-Behemut-Solar-Panel"
+  require "prototypes.recipe.Solar-Panel.RU-Behemut-Solar-Panel"
+  require "prototypes.technology.Solar-Panel.RU-Behemut-Solar-Panel"
+end
+
+if settings.startup["RU-Accumulator"].value == true then
+  --animations
+  require"prototypes.entity.accumulator.RU-basic-accumulator-animations"
+  require"prototypes.entity.accumulator.RU-medium-accumulator-animations"
+  require"prototypes.entity.accumulator.RU-big-accumulator-animations"
+  require"prototypes.entity.accumulator.RU-behemut-accumulator-animations"
+  --Basic Accumulator
+  require "prototypes.item.accumulator.RU-Basic-Accumulator"
+  require "prototypes.entity.accumulator.RU-Basic-Accumulator"
+  require "prototypes.recipe.accumulator.RU-Basic-Accumulator"
+  require "prototypes.technology.accumulator.RU-Basic-Accumulator"
+  --Medium Accumulator
+  require "prototypes.item.accumulator.RU-Medium-Accumulator"
+  require "prototypes.entity.accumulator.RU-Medium-Accumulator"
+  require "prototypes.recipe.accumulator.RU-Medium-Accumulator"
+  require "prototypes.technology.accumulator.RU-Medium-Accumulator"
+  --Big Accumulator
+  require "prototypes.item.accumulator.RU-Big-Accumulator"
+  require "prototypes.entity.accumulator.RU-Big-Accumulator"
+  require "prototypes.recipe.accumulator.RU-Big-Accumulator"
+  require "prototypes.technology.accumulator.RU-Big-Accumulator"
+  --Behemut Accumulator
+  require "prototypes.item.accumulator.RU-Behemut-Accumulator"
+  require "prototypes.entity.accumulator.RU-Behemut-Accumulator"
+  require "prototypes.recipe.accumulator.RU-Behemut-Accumulator"
+  require "prototypes.technology.accumulator.RU-Behemut-Accumulator"
 end
 
 if settings.startup["RU-AlternativeRecipe"].value == true then

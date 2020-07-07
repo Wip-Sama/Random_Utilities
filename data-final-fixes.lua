@@ -213,6 +213,9 @@ if settings.startup["RU-Assembler-liquid-Imput-Output"].value then
       end
     end
   end
+ elseif mods['omnimatter_fluid'] then
+   do
+ end
 end
 
 --Wire Shortcuts

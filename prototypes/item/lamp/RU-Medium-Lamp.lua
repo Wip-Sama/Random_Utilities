@@ -5,11 +5,11 @@ data:extend({
   {
     type = "item",
     name = "RU-Medium-Lamp",
-    icon = "__base__/graphics/icons/small-lamp.png",
+    icons = {{icon = "__base__/graphics/icons/small-lamp.png", tint = {r=202, g=154, b=152}}},
     -- flags = {"goes-to-quickbar"},
     icon_size = 64, icon_mipmaps = 4,
     subgroup = "circuit-network",
-    order = "a[light]-a[basic_lamp]",
+    order = "a[light]-a[basic_lamp3]",
     place_result = "RU-Medium-Lamp",
     stack_size = 50
   },

@@ -101,6 +101,10 @@ if mods['trainConstructionSite'] then
   require('integrations/trainConstructionSite')
 end
 
+if mods['whistlestopfactories'] then
+  require('integrations/whistlestopfactories')
+end
+
 if mods['transport_drones'] then
   require('integrations/transport_drones')
 end
@@ -120,4 +124,8 @@ end
 
 if mods['MicroFurnaceWipMod'] then
   require('integrations/MicroFurnaceWipMod')
+end
+
+if mods['omnimatter_wood'] then
+  require('integrations/omniwood')
 end

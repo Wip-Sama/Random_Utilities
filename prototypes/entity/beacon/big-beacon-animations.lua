@@ -27,6 +27,7 @@
               width = 106,
               height = 96,
               shift = util.by_pixel(0, 1),
+              tint = {r=132, g=180, b=181},
               hr_version =
               {
                 filename = "__base__/graphics/entity/beacon/hr-beacon-bottom.png",
@@ -34,6 +35,7 @@
                 height = 192,
                 scale = 1,
                 shift = util.by_pixel(0.5, 1),
+                tint = {r=132, g=180, b=181},
               }
             },
             {
@@ -66,6 +68,7 @@
           repeat_count = 45,
           animation_speed = 0.5,
           shift = util.by_pixel(3, -19),
+          tint = {r=132, g=180, b=181},
           hr_version =
           {
             filename = "__base__/graphics/entity/beacon/hr-beacon-top.png",
@@ -75,6 +78,7 @@
             repeat_count = 45,
             animation_speed = 0.5,
             shift = util.by_pixel(3, -19),
+            tint = {r=132, g=180, b=181},
           }
         }
       },

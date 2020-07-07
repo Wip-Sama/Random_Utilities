@@ -12,7 +12,7 @@ end
 --    table.insert(selectable_armors, "banane")
 --end
 
-if mods["angelsaddons-warehouses"] then
+--if mods["angelsaddons-warehouses"] then
   --Angel Warehouse Size
   --Angel Warehouse
   data:extend({
@@ -24,7 +24,7 @@ if mods["angelsaddons-warehouses"] then
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
-    localised_name = "{Setting} Angel Warehouse storage",
+    localised_name = "{Angel} Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel warehouse storage",
   },
   --Angel Passive Provider Warehouse
@@ -36,7 +36,7 @@ if mods["angelsaddons-warehouses"] then
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
-    localised_name = "{Setting} Angel Warehouse storage",
+    localised_name = "{Angel} passive provider Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel Passive Provider warehouse storage",
   },
   --Angel Active provider Warehouse
@@ -48,7 +48,7 @@ if mods["angelsaddons-warehouses"] then
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
-    localised_name = "{Setting} Angel Warehouse storage",
+    localised_name = "{Angel} active provider Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel Active provider warehouse storage",
   },
   --Angel storage Warehouse
@@ -60,7 +60,7 @@ if mods["angelsaddons-warehouses"] then
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
-    localised_name = "{Setting} Angel Warehouse storage",
+    localised_name = "{Angel} storage Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel storage warehouse storage",
   },
   --Angel requester Warehouse
@@ -72,7 +72,7 @@ if mods["angelsaddons-warehouses"] then
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
-    localised_name = "{Setting} Angel Warehouse storage",
+    localised_name = "{Angel} requester Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel requester warehouse storage",
   },
   --Angel buffer Warehouse
@@ -84,13 +84,13 @@ if mods["angelsaddons-warehouses"] then
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
-    localised_name = "{Setting} Angel Warehouse storage",
+    localised_name = "{Angel} buffer Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel buffer warehouse storage",
   },
 })
-end
+--end
 
-if mods["angelsaddons-pressuretanks"] then
+--if mods["angelsaddons-pressuretanks"] then
   --Angel PressureTank Size OK?
   data:extend({
     {
@@ -101,13 +101,13 @@ if mods["angelsaddons-pressuretanks"] then
     default_value = 100000,
     minimum_value = 1,
     maximum_value = 100000000,
-    localised_name = "{Setting} Angel Pressure tank storage",
+    localised_name = "{Anngel} Pressure tank storage",
     localised_description = "{Item}  by default the value is 100000, change angel pressure tank storage",
   },
 })
-end
+--end
 
-if mods["Krastorio2"] then
+--if mods["Krastorio2"] then
   --Angel PressureTank Size OK?
   --Krastorio2 medium container
   data:extend({
@@ -119,7 +119,7 @@ if mods["Krastorio2"] then
     default_value = 400,
     minimum_value = 1,
     maximum_value = 10000,
-    localised_name = "{Setting} Krastorio2 Medium container",
+    localised_name = "{Krastorio2} Medium container",
     localised_description = "{Item} by default the value is 400, change Krastorio2 Medium container storage",
   },
   {
@@ -130,7 +130,7 @@ if mods["Krastorio2"] then
     default_value = 400,
     minimum_value = 1,
     maximum_value = 10000,
-    localised_name = "{Setting} Krastorio2 Medium passive provider container ",
+    localised_name = "{Krastorio2} Medium passive provider container ",
     localised_description = "{Item} by default the value is 400, change Krastorio2 Medium container storage",
   },
   {
@@ -141,7 +141,7 @@ if mods["Krastorio2"] then
     default_value = 400,
     minimum_value = 1,
     maximum_value = 10000,
-    localised_name = "{Setting} Krastorio2 Medium active provider container ",
+    localised_name = "{Krastorio2} Medium active provider container ",
     localised_description = "{Item} by default the value is 400, change Krastorio2 Medium container storage",
   },
   {
@@ -152,7 +152,7 @@ if mods["Krastorio2"] then
     default_value = 400,
     minimum_value = 1,
     maximum_value = 10000,
-    localised_name = "{Setting} Krastorio2 Medium storage container ",
+    localised_name = "{Krastorio2} Medium storage container ",
     localised_description = "{Item} by default the value is 400, change Krastorio2 Medium container storage",
   },
   {
@@ -163,7 +163,7 @@ if mods["Krastorio2"] then
     default_value = 400,
     minimum_value = 1,
     maximum_value = 10000,
-    localised_name = "{Setting} Krastorio2 Medium requester container ",
+    localised_name = "{Krastorio2} Medium requester container ",
     localised_description = "{Item} by default the value is 400, change Krastorio2 Medium container storage",
   },
   {
@@ -174,7 +174,7 @@ if mods["Krastorio2"] then
     default_value = 400,
     minimum_value = 1,
     maximum_value = 10000,
-    localised_name = "{Setting} Krastorio2 Medium buffer container ",
+    localised_name = "{Krastorio2} Medium buffer container ",
     localised_description = "{Item} by default the value is 400, change Krastorio2 Medium container storage",
   },
   --Krastorio2 big container OK
@@ -274,7 +274,7 @@ if mods["Krastorio2"] then
     localised_description = "{Item}  by default the value is 100000 (*100), change Krastorio2 fluid storage storage",
   },
 })
-end
+--end
 
 data:extend(
 {
@@ -285,6 +285,7 @@ data:extend(
     order = "aa",
     setting_type = "startup",
     default_value = true,
+    localised_name = "Substation",
     localised_description = "{Item} Enable Substations",
   },
   --lamp OK
@@ -294,6 +295,7 @@ data:extend(
     order = "aba",
     setting_type = "startup",
     default_value = true,
+    localised_name = "Lamp",
     localised_description = "{Item} Enable Lamps",
   },
   --beacon
@@ -303,8 +305,28 @@ data:extend(
     order = "abb",
     setting_type = "startup",
     default_value = true,
-    localised_name = "Enable beacons",
+    localised_name = "Beacons",
     localised_description = "{Item} Enable Beacons",
+  },
+  --Solar panel
+  {
+    type = "bool-setting",
+    name = "RU-Solar-Panel",
+    order = "abc",
+    setting_type = "startup",
+    default_value = true,
+    localised_name = "Solar Panel",
+    localised_description = "{Item} Enable Solar Panels",
+  },
+  --Accumulator
+  {
+    type = "bool-setting",
+    name = "RU-Accumulator",
+    order = "abd",
+    setting_type = "startup",
+    default_value = true,
+    localised_name = "Accumulator",
+    localised_description = "{Item} Enable Accumulators",
   },
   --Inventory size OK
   {
