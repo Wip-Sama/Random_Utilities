@@ -6,6 +6,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Big-Solar-Panel",
+    hidden = "false" ,
     enabled = "false",
     ingredients =
     {

@@ -4,15 +4,16 @@
 data:extend({
 {
   type = "recipe",
-  name = "RU-Behemut-Substation",
-  enabled = false,
+  name = "RU-Behemoth-Substation",
+  hidden = "false" ,
+  enabled = "false",
   ingredients =
   {
     {"big-electric-pole", 4},
     {"medium-electric-pole", 10},
     {"RU-Big-Substation", 2}
   },
-  result = "RU-Behemut-Substation",
+  result = "RU-Behemoth-Substation",
 },
 })
 

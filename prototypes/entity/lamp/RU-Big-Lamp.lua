@@ -15,6 +15,8 @@ data:extend(
     minable = {mining_time = 0.1, result = "RU-Big-Lamp"},
     max_health = 150,
     corpse = "lamp-remnants",
+    fast_replaceable_group = "lamp",
+    --next_upgrade = "RU-Behemoth-Lamp",
     dying_explosion = "lamp-explosion",
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},

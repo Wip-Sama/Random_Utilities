@@ -1,8 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.2.8
+Date: 09.07.2020
+  Fixed:
+    - multiplayer connection issue
+    - big lamp technology
+  Added:
+    - Substations compatibility with upgrade planner
+    - Solar panels compatibility with upgrade planner
+    - Lamps compatibility with upgrade planner
+    - Accumulators compatibility with upgrade planner
+---------------------------------------------------------------------------------------------------
 Version: 1.2.7
 Date: 06.07.2020
   Fixed:
-    - Big, Behemut substation name (en)
+    - Big, Behemoth substation name (en)
   Changed:
     - Substations colors
     - Solar panels colors
@@ -17,15 +28,15 @@ Date: 05.07.2020
   Balanced:
     - beacon energy (basic 24MW > 25MW) (Medium 48MW > 125MW) (Big 96MW > 625MW)
   -Added:
-    - Behemut Substation (range 64, supply area 128x128[64], HP 500)
+    - Behemoth Substation (range 64, supply area 128x128[64], HP 500)
     - Basic Solar Panel (production 480kW, HP 300)
     - Medium Solar Panel (production 3840kW, HP 400)
     - Big Solar Panel (production 30.72MW, HP 500)
-    - Behemut Solar Panel (production 245.76MW, HP 600)
+    - Behemoth Solar Panel (production 245.76MW, HP 600)
     - Basic Accumulator (capacity 40MJ, input/output 2.4MW, HP 300)
     - Medium Accumulator (capacity 320MJ, input/output 19.2MW, HP 450)
     - Big Accumulator (capacity 2.65GJ, input/output 153.6MW, HP 600)
-    - Behemut Accumulator (capacity 20.48GJ, input/output 1.2288GW, HP 750)
+    - Behemoth Accumulator (capacity 20.48GJ, input/output 1.2288GW, HP 750)
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
 Date: 25.06.2020

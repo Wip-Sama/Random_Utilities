@@ -4,6 +4,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Big-Beacon",
+    hidden = "false" ,
     enabled = "false",
     ingredients =
     {

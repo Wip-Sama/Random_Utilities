@@ -16,6 +16,8 @@ data:extend(
     minable = {mining_time = 0.1, result = "RU-Basic-Accumulator"},
     max_health = 300,
     corpse = "accumulator-remnants",
+    fast_replaceable_group = "accumulator",
+    next_upgrade = "RU-Medium-Accumulator",
     dying_explosion = "accumulator-explosion",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},

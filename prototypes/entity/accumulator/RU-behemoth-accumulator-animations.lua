@@ -1,4 +1,4 @@
-function behemut_accumulator_picture(tint, repeat_count)
+function behemoth_accumulator_picture(tint, repeat_count)
   return
   {
     layers =
@@ -49,12 +49,12 @@ function behemut_accumulator_picture(tint, repeat_count)
   }
 end
 
-function behemut_accumulator_charge()
+function behemoth_accumulator_charge()
   return
   {
     layers =
     {
-      behemut_accumulator_picture({r=80, g=80, b=80}, 24),
+      behemoth_accumulator_picture({r=80, g=80, b=80}, 24),
       {
         filename = "__base__/graphics/entity/accumulator/accumulator-charge.png",
         priority = "high",
@@ -81,7 +81,7 @@ function behemut_accumulator_charge()
   }
 end
 
-function behemut_accumulator_reflection()
+function behemoth_accumulator_reflection()
   return
   {
     pictures =
@@ -100,12 +100,12 @@ function behemut_accumulator_reflection()
   }
 end
 
-function behemut_accumulator_discharge()
+function behemoth_accumulator_discharge()
   return
   {
     layers =
     {
-      behemut_accumulator_picture({r=80, g=80, b=80}, 24),
+      behemoth_accumulator_picture({r=80, g=80, b=80}, 24),
       {
         filename = "__base__/graphics/entity/accumulator/accumulator-discharge.png",
         priority = "high",

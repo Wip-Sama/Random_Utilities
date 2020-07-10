@@ -7,13 +7,14 @@ data:extend(
   {
     type = "technology",
     name = "RU-Advanced-Solar-Energy-d",
+    hidden = "false" ,
     icon_size = 128,
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Behemut-Solar-Panel"
+        recipe = "RU-Behemoth-Solar-Panel"
       }
     },
     prerequisites = {"RU-Advanced-Solar-Energy-c"},

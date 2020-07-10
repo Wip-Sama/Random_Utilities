@@ -1,3 +1,225 @@
+--solar panel upgradable
+data.raw["solar-panel"]["solar-panel"].next_upgrade = "RU-Basic-Solar-Panel"
+data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
+--accumulator upgradable
+data.raw["accumulator"]["accumulator"].next_upgrade = "RU-Basic-Accumulator"
+data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
+--substation upgradable
+data.raw["electric-pole"]["substation"].next_upgrade = "RU-Basic-Substation"
+data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole"
+--lamp upgradable
+data.raw["lamp"]["small-lamp"].next_upgrade = "RU-Basic-Lamp"
+data.raw["lamp"]["small-lamp"].fast_replaceable_group = "lamp"
+--boiler upgradable
+--steam engine upgradable
+--nuclear reactor upgradable
+--turbine upgradable
+--train upgradable
+--centifughe upgradable
+
+--disable items / recipes
+if settings.startup["RU-AlternativeRecipe"].value == "true" then
+  data.raw["recipe"]["offshore-pump"].hidden = false
+  data.raw["recipe"]["wood-to-landfill"].hidden = false
+  table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "wood-to-landfill"})
+end
+
+if settings.startup["RU-CheatyRecipe"].value == true then
+  data.raw["recipe"]["easy-landfill"].hidden = false
+  table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "easy-landfill"})
+end
+
+--Substation
+if settings.startup["RU-Substation"].value == "nothing" then
+  data.raw["recipe"]["RU-Basic-Substation"].hidden = true
+  data.raw["recipe"]["RU-Medium-Substation"].hidden = true
+  data.raw["recipe"]["RU-Big-Substation"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Substation"].hidden = true
+  data.raw["technology"]["RU-Basic-Substation"].hidden = true
+  data.raw["technology"]["RU-Medium-Substation"].hidden = true
+  data.raw["technology"]["RU-Big-Substation"].hidden = true
+  data.raw["technology"]["RU-Behemoth-Substation"].hidden = true
+end
+if settings.startup["RU-Substation"].value == "basic" then
+  data.raw["recipe"]["RU-Medium-Substation"].hidden = true
+  data.raw["recipe"]["RU-Big-Substation"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Substation"].hidden = true
+  data.raw["technology"]["RU-Medium-Substation"].hidden = true
+  data.raw["technology"]["RU-Big-Substation"].hidden = true
+  data.raw["technology"]["RU-Behemoth-Substation"].hidden = true
+end
+if settings.startup["RU-Substation"].value == "medium" then
+  data.raw["recipe"]["RU-Big-Substation"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Substation"].hidden = true
+  data.raw["technology"]["RU-Big-Substation"].hidden = true
+  data.raw["technology"]["RU-Behemoth-Substation"].hidden = true
+end
+if settings.startup["RU-Substation"].value == "big" then
+  data.raw["recipe"]["RU-Behemoth-Substation"].hidden = true
+  data.raw["technology"]["RU-Behemoth-Substation"].hidden = true
+end
+if settings.startup["RU-Substation"].value == "behemoth" then
+end
+
+--Accumulator
+
+--local is_Basic_accumulator_hidden = {"false"}
+--local is_Medium_accumulator_hidden = {"false"}
+--local is_Big_accumulator_hidden = {"false"}
+--local is_Behemoth_accumulator_hidden = {"false"}
+
+if settings.startup["RU-Accumulator"].value == "nothing" then
+--  table.remove(is_Basic_accumulator_hidden, "false")
+--  table.remove(is_Medium_accumulator_hidden, "false")
+--  table.remove(is_Big_accumulator_hidden, "false")
+--  table.remove(is_Behemoth_accumulator_hidden, "false")
+--  table.insert(is_Basic_accumulator_hidden, "true")
+--  table.insert(is_Medium_accumulator_hidden, "true")
+--  table.insert(is_Big_accumulator_hidden, "true")
+--  table.insert(is_Behemoth_accumulator_hidden, "true")
+  data.raw["recipe"]["RU-Basic-Accumulator"].hidden = true
+  data.raw["recipe"]["RU-Medium-Accumulator"].hidden = true
+  data.raw["recipe"]["RU-Big-Accumulator"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-a"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-b"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-c"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = true
+end
+if settings.startup["RU-Accumulator"].value == "basic" then
+--  table.insert(is_Medium_accumulator_hidden, "true")
+--  table.insert(is_Big_accumulator_hidden, "true")
+--  table.insert(is_Behemoth_accumulator_hidden, "true")
+  data.raw["recipe"]["RU-Medium-Accumulator"].hidden = true
+  data.raw["recipe"]["RU-Big-Accumulator"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-b"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-c"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = true
+end
+if settings.startup["RU-Accumulator"].value == "medium" then
+--  table.insert(is_Big_accumulator_hidden, "true")
+--  table.insert(is_Behemoth_accumulator_hidden, "true")
+  data.raw["recipe"]["RU-Big-Accumulator"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-c"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = true
+end
+if settings.startup["RU-Accumulator"].value == "big" then
+--    table.insert(is_Behemoth_accumulator_hidden, "true")
+  data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = true
+  data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = true
+end
+if settings.startup["RU-Accumulator"].value == "behemoth" then
+end
+
+--solar Panel
+if settings.startup["RU-Solar-Panel"].value == "nothing" then
+  data.raw["recipe"]["RU-Basic-Solar-Panel"].hidden = true
+  data.raw["recipe"]["RU-Medium-Solar-Panel"].hidden = true
+  data.raw["recipe"]["RU-Big-Solar-Panel"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Solar-Panel"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-a"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-b"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-c"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-d"].hidden = true
+end
+if settings.startup["RU-Solar-Panel"].value == "basic" then
+  data.raw["recipe"]["RU-Medium-Solar-Panel"].hidden = true
+  data.raw["recipe"]["RU-Big-Solar-Panel"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Solar-Panel"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-b"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-c"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-d"].hidden = true
+end
+if settings.startup["RU-Solar-Panel"].value == "medium" then
+  data.raw["recipe"]["RU-Big-Solar-Panel"].hidden = true
+  data.raw["recipe"]["RU-Behemoth-Solar-Panel"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-c"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-d"].hidden = true
+end
+if settings.startup["RU-Solar-Panel"].value == "big" then
+  data.raw["recipe"]["RU-Behemoth-Solar-Panel"].hidden = true
+  data.raw["technology"]["RU-Advanced-Solar-Energy-d"].hidden = true
+end
+if settings.startup["RU-Substation"].value == "behemoth" then
+end
+
+--Beacon
+if settings.startup["RU-Beacon"].value == "nothing" then
+  data.raw["recipe"]["RU-Basic-Beacon"].hidden = true
+  data.raw["recipe"]["RU-Medium-Beacon"].hidden = true
+  data.raw["recipe"]["RU-Big-Beacon"].hidden = true
+--  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
+  data.raw["technology"]["RU-advanced-effect-transmission-a"].hidden = true
+  data.raw["technology"]["RU-advanced-effect-transmission-b"].hidden = true
+  data.raw["technology"]["RU-advanced-effect-transmission-c"].hidden = true
+--  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
+end
+if settings.startup["RU-Beacon"].value == "basic" then
+  data.raw["recipe"]["RU-Medium-Beacon"].hidden = true
+  data.raw["recipe"]["RU-Big-Beacon"].hidden = true
+--  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
+  data.raw["technology"]["RU-advanced-effect-transmission-b"].hidden = true
+  data.raw["technology"]["RU-advanced-effect-transmission-c"].hidden = true
+--  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
+end
+if settings.startup["RU-Beacon"].value == "medium" then
+  data.raw["recipe"]["RU-Big-Beacon"].hidden = true
+--  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
+  data.raw["technology"]["RU-advanced-effect-transmission-c"].hidden = true
+--  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
+end
+if settings.startup["RU-Beacon"].value == "big" then
+--  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
+--  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
+end
+--if settings.startup["RU-Substation"].value == "behemoth" then
+--end
+
+--Lamp
+if settings.startup["RU-Lamp"].value == "nothing" then
+  data.raw["recipe"]["RU-Basic-Lamp"].hidden = true
+  data.raw["recipe"]["RU-Medium-Lamp"].hidden = true
+  data.raw["recipe"]["RU-Big-Lamp"].hidden = true
+--  data.raw["recipe"]["RU-Behemoth-Lamp"].hidden = true
+  data.raw["technology"]["RU-Basic-Lamp"].hidden = true
+  data.raw["technology"]["RU-Medium-Lamp"].hidden = true
+  data.raw["technology"]["RU-Big-Lamp"].hidden = true
+--  data.raw["technology"]["RU-Behemoth-Lamp"].hidden = true
+end
+if settings.startup["RU-Lamp"].value == "basic" then
+  data.raw["recipe"]["RU-Medium-Lamp"].hidden = true
+  data.raw["recipe"]["RU-Big-Lamp"].hidden = true
+--  data.raw["recipe"]["RU-Behemoth-Lamp"].hidden = true
+  data.raw["technology"]["RU-Medium-Lamp"].hidden = true
+  data.raw["technology"]["RU-Big-Lamp"].hidden = true
+--  data.raw["technology"]["RU-Behemoth-Lamp"].hidden = true
+end
+if settings.startup["RU-Lamp"].value == "medium" then
+  data.raw["recipe"]["RU-Big-Lamp"].hidden = true
+--  data.raw["recipe"]["RU-Behemoth-Lamp"].hidden = true
+  data.raw["technology"]["RU-Big-Lamp"].hidden = true
+--  data.raw["technology"]["RU-Behemoth-Lamp"].hidden = true
+end
+if settings.startup["RU-Lamp"].value == "big" then
+--  data.raw["recipe"]["RU-Behemoth-Lamp"].hidden = true
+--  data.raw["technology"]["RU-Behemoth-Lamp"].hidden = true
+end
+--if settings.startup["RU-Lamp"].value == "behemoth" then
+--end
+
+--electric pole range
+data.raw["electric-pole"]["small-electric-pole"].maximum_wire_distance = settings.startup["small-electric-pole-max-wire-distance"].value
+data.raw["electric-pole"]["small-electric-pole"].supply_area_distance = settings.startup["small-electric-pole-supply-area-distance"].value / 2  -- (5x5) make this divide by 2
+data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = settings.startup["medium-electric-pole-max-wire-distance"].value
+data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = settings.startup["medium-electric-pole-supply-area-distance"].value / 2  -- (7x7) make this divide by 2
+data.raw["electric-pole"]["big-electric-pole"].maximum_wire_distance = settings.startup["big-electric-pole-max-wire-distance"].value
+data.raw["electric-pole"]["big-electric-pole"].supply_area_distance = settings.startup["big-electric-pole-supply-area-distance"].value / 2  -- (4x4) make this divide by 2
+data.raw["electric-pole"]["substation"].maximum_wire_distance = settings.startup["substation-max-wire-distance"].value
+data.raw["electric-pole"]["substation"].supply_area_distance = settings.startup["substation-supply-area-distance"].value / 2 -- (18x18) make this divide by 2
+
+
 --Inventory size OK
 if settings.startup["ru-inventory-size"] then
    data.raw.character["character"].inventory_size = settings.startup["ru-inventory-size"].value

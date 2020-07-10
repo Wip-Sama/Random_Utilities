@@ -5,7 +5,9 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Behemut-Accumulator",
+    name = "RU-Behemoth-Accumulator",
+    hidden = "false" ,
+--    hidden = is_Behemoth_accumulator_hidden ,
     enabled = "false",
     ingredients =
     {
@@ -15,7 +17,7 @@ data:extend(
       {"low-density-structure", 100},
       {"processing-unit", 5}
     },
-    result = "RU-Behemut-Accumulator",
+    result = "RU-Behemoth-Accumulator",
   },
 }
 )

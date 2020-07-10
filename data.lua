@@ -1,4 +1,4 @@
-if settings.startup["RU-Substation"].value == true then
+--if settings.startup["RU-Substation"].value == true then
   --Basic Substation
   require "prototypes.item.substation.RU-Basic-Substation"
   require "prototypes.entity.substation.RU-Basic-Substation"
@@ -14,14 +14,14 @@ if settings.startup["RU-Substation"].value == true then
   require "prototypes.entity.substation.RU-Big-Substation"
   require "prototypes.recipe.substation.RU-Big-Substation"
   require "prototypes.technology.substation.RU-Big-Substation"
-  --Behemut Substation
-  require "prototypes.item.substation.RU-Behemut-Substation"
-  require "prototypes.entity.substation.RU-Behemut-Substation"
-  require "prototypes.recipe.substation.RU-Behemut-Substation"
-  require "prototypes.technology.substation.RU-Behemut-Substation"
-end
+  --Behemoth Substation
+  require "prototypes.item.substation.RU-Behemoth-Substation"
+  require "prototypes.entity.substation.RU-Behemoth-Substation"
+  require "prototypes.recipe.substation.RU-Behemoth-Substation"
+  require "prototypes.technology.substation.RU-Behemoth-Substation"
+--end
 
-if settings.startup["RU-Solar-Panel"].value == true then
+--if settings.startup["RU-Solar-Panel"].value == true then
   --Basic Solar-Panel
   require "prototypes.item.Solar-Panel.RU-Basic-Solar-Panel"
   require "prototypes.entity.Solar-Panel.RU-Basic-Solar-Panel"
@@ -37,19 +37,19 @@ if settings.startup["RU-Solar-Panel"].value == true then
   require "prototypes.entity.Solar-Panel.RU-Big-Solar-Panel"
   require "prototypes.recipe.Solar-Panel.RU-Big-Solar-Panel"
   require "prototypes.technology.Solar-Panel.RU-Big-Solar-Panel"
-  --Behemut Solar-Panel
-  require "prototypes.item.Solar-Panel.RU-Behemut-Solar-Panel"
-  require "prototypes.entity.Solar-Panel.RU-Behemut-Solar-Panel"
-  require "prototypes.recipe.Solar-Panel.RU-Behemut-Solar-Panel"
-  require "prototypes.technology.Solar-Panel.RU-Behemut-Solar-Panel"
-end
+  --Behemoth Solar-Panel
+  require "prototypes.item.Solar-Panel.RU-Behemoth-Solar-Panel"
+  require "prototypes.entity.Solar-Panel.RU-Behemoth-Solar-Panel"
+  require "prototypes.recipe.Solar-Panel.RU-Behemoth-Solar-Panel"
+  require "prototypes.technology.Solar-Panel.RU-Behemoth-Solar-Panel"
+--end
 
-if settings.startup["RU-Accumulator"].value == true then
+--if settings.startup["RU-Accumulator"].value == true then
   --animations
   require"prototypes.entity.accumulator.RU-basic-accumulator-animations"
   require"prototypes.entity.accumulator.RU-medium-accumulator-animations"
   require"prototypes.entity.accumulator.RU-big-accumulator-animations"
-  require"prototypes.entity.accumulator.RU-behemut-accumulator-animations"
+  require"prototypes.entity.accumulator.RU-behemoth-accumulator-animations"
   --Basic Accumulator
   require "prototypes.item.accumulator.RU-Basic-Accumulator"
   require "prototypes.entity.accumulator.RU-Basic-Accumulator"
@@ -65,22 +65,14 @@ if settings.startup["RU-Accumulator"].value == true then
   require "prototypes.entity.accumulator.RU-Big-Accumulator"
   require "prototypes.recipe.accumulator.RU-Big-Accumulator"
   require "prototypes.technology.accumulator.RU-Big-Accumulator"
-  --Behemut Accumulator
-  require "prototypes.item.accumulator.RU-Behemut-Accumulator"
-  require "prototypes.entity.accumulator.RU-Behemut-Accumulator"
-  require "prototypes.recipe.accumulator.RU-Behemut-Accumulator"
-  require "prototypes.technology.accumulator.RU-Behemut-Accumulator"
-end
+  --Behemoth Accumulator
+  require "prototypes.item.accumulator.RU-Behemoth-Accumulator"
+  require "prototypes.entity.accumulator.RU-Behemoth-Accumulator"
+  require "prototypes.recipe.accumulator.RU-Behemoth-Accumulator"
+  require "prototypes.technology.accumulator.RU-Behemoth-Accumulator"
+--end
 
-if settings.startup["RU-AlternativeRecipe"].value == true then
-  require "prototypes.recipe.AlternativeRecipe"
-end
-
-if settings.startup["RU-CheatyRecipe"].value == true then
-  require "prototypes.recipe.CheatyRecipe"
-end
-
-if settings.startup["RU-Lamp"].value == true then
+--if settings.startup["RU-Lamp"].value == true then
   --Basic Lamp
   require "prototypes.item.lamp.RU-Basic-Lamp"
   require "prototypes.entity.lamp.RU-Basic-Lamp"
@@ -96,20 +88,9 @@ if settings.startup["RU-Lamp"].value == true then
   require "prototypes.entity.lamp.RU-Big-Lamp"
   require "prototypes.recipe.lamp.RU-Big-Lamp"
   require "prototypes.technology.lamp.RU-Big-Lamp"
-end
+--end
 
-if settings.startup["RU-Enable-Wire-Shortcuts"].value then
-  --Wire Shortcuts
-  require "prototypes.wireshotrcuts.input"
-  require "prototypes.wireshotrcuts.shortcut"
-  --Wire Shortcuts Crafting
-  if settings.startup["wire-shortcuts-is-retain-wire-crafting"].value then
-    require "prototypes.wireshotrcuts.fake-item"
-    require "prototypes.wireshotrcuts.fake-recipe"
-  end
-end
-
-if settings.startup["RU-Beacon"].value then
+--if settings.startup["RU-Beacon"].value then
   --basic beacon
   require "prototypes.item.beacon.RU-Basic-Beacon"
   require "prototypes.entity.beacon.RU-Basic-Beacon"
@@ -125,8 +106,26 @@ if settings.startup["RU-Beacon"].value then
   require "prototypes.entity.beacon.RU-Big-Beacon"
   require "prototypes.recipe.beacon.RU-Big-Beacon"
   require "prototypes.technology.beacon.RU-Big-Beacon"
-end
+--end
 
+--if settings.startup["RU-AlternativeRecipe"].value == true then
+  require "prototypes.recipe.AlternativeRecipe"
+--end
+
+--if settings.startup["RU-CheatyRecipe"].value == true then
+  require "prototypes.recipe.CheatyRecipe"
+--end
+
+if settings.startup["RU-Enable-Wire-Shortcuts"].value then
+  --Wire Shortcuts
+  require "prototypes.wireshotrcuts.input"
+  require "prototypes.wireshotrcuts.shortcut"
+  --Wire Shortcuts Crafting
+  if settings.startup["wire-shortcuts-is-retain-wire-crafting"].value then
+    require "prototypes.wireshotrcuts.fake-item"
+    require "prototypes.wireshotrcuts.fake-recipe"
+  end
+end
 
 
 --Assembler Imput-Output--
@@ -140,14 +139,3 @@ end
 if not appmod.blacklist then
   appmod.blacklist = {}
 end
-
---electric pole range
-
-data.raw["electric-pole"]["small-electric-pole"].maximum_wire_distance = settings.startup["small-electric-pole-max-wire-distance"].value
-data.raw["electric-pole"]["small-electric-pole"].supply_area_distance = settings.startup["small-electric-pole-supply-area-distance"].value / 2  -- (5x5) make this divide by 2
-data.raw["electric-pole"]["medium-electric-pole"].maximum_wire_distance = settings.startup["medium-electric-pole-max-wire-distance"].value
-data.raw["electric-pole"]["medium-electric-pole"].supply_area_distance = settings.startup["medium-electric-pole-supply-area-distance"].value / 2  -- (7x7) make this divide by 2
-data.raw["electric-pole"]["big-electric-pole"].maximum_wire_distance = settings.startup["big-electric-pole-max-wire-distance"].value
-data.raw["electric-pole"]["big-electric-pole"].supply_area_distance = settings.startup["big-electric-pole-supply-area-distance"].value / 2  -- (4x4) make this divide by 2
-data.raw["electric-pole"]["substation"].maximum_wire_distance = settings.startup["substation-max-wire-distance"].value
-data.raw["electric-pole"]["substation"].supply_area_distance = settings.startup["substation-supply-area-distance"].value / 2 -- (18x18) make this divide by 2

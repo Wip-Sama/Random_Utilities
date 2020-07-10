@@ -280,51 +280,91 @@ data:extend(
 {
   --substation OK
   {
-    type = "bool-setting",
+    type = "string-setting",
     name = "RU-Substation",
     order = "aa",
     setting_type = "startup",
-    default_value = true,
+    default_value = "behemoth",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
     localised_name = "Substation",
     localised_description = "{Item} Enable Substations",
   },
   --lamp OK
   {
-    type = "bool-setting",
+    type = "string-setting",
     name = "RU-Lamp",
     order = "aba",
     setting_type = "startup",
-    default_value = true,
+    default_value = "big",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+--      "behemoth"
+    },
     localised_name = "Lamp",
     localised_description = "{Item} Enable Lamps",
   },
   --beacon
   {
-    type = "bool-setting",
+    type = "string-setting",
     name = "RU-Beacon",
     order = "abb",
     setting_type = "startup",
-    default_value = true,
+    default_value = "big",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+--      "behemoth"
+    },
     localised_name = "Beacons",
     localised_description = "{Item} Enable Beacons",
   },
   --Solar panel
   {
-    type = "bool-setting",
+    type = "string-setting",
     name = "RU-Solar-Panel",
     order = "abc",
     setting_type = "startup",
-    default_value = true,
+    default_value = "behemoth",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
     localised_name = "Solar Panel",
     localised_description = "{Item} Enable Solar Panels",
   },
   --Accumulator
   {
-    type = "bool-setting",
+    type = "string-setting",
     name = "RU-Accumulator",
     order = "abd",
     setting_type = "startup",
-    default_value = true,
+    default_value = "behemoth",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
     localised_name = "Accumulator",
     localised_description = "{Item} Enable Accumulators",
   },

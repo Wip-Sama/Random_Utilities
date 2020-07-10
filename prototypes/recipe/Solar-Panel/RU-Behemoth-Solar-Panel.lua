@@ -5,7 +5,8 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Behemut-Solar-Panel",
+    name = "RU-Behemoth-Solar-Panel",
+    hidden = "false" ,
     enabled = "false",
     ingredients =
     {
@@ -15,7 +16,7 @@ data:extend(
       {"low-density-structure", 100},
       {"processing-unit", 5}
     },
-    result = "RU-Behemut-Solar-Panel",
+    result = "RU-Behemoth-Solar-Panel",
   },
 }
 )

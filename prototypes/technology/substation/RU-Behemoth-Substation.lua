@@ -4,14 +4,15 @@
 data:extend({
 {
   type = "technology",
-  name = "RU-Behemut-Substation",
+  name = "RU-Behemoth-Substation",
+  hidden = "false" ,
   icon_size = 128,
   icon = "__base__/graphics/technology/electric-energy-distribution.png",
   effects =
   {
     {
       type = "unlock-recipe",
-      recipe = "RU-Behemut-Substation"
+      recipe = "RU-Behemoth-Substation"
     }
   },
   prerequisites = {"RU-Big-Substation"},

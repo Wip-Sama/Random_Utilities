@@ -7,13 +7,15 @@ data:extend(
   {
     type = "technology",
     name = "RU-Advanced-Electric-Energy-Accumulators-d",
+    hidden = "false" ,
+--    hidden = is_Behemoth_accumulator_hidden ,
     icon_size = 128,
     icon = "__base__/graphics/technology/electric-energy-acumulators.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Behemut-Accumulator"
+        recipe = "RU-Behemoth-Accumulator"
       }
     },
     prerequisites = {"RU-Advanced-Electric-Energy-Accumulators-c"},

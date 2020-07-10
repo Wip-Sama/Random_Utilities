@@ -6,6 +6,8 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Basic-Accumulator",
+    hidden = "false" ,
+--    hidden = is_Basic_accumulator_hidden ,
     enabled = "false",
     ingredients =
     {

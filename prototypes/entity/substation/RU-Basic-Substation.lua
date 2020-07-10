@@ -13,6 +13,8 @@ data:extend({
   minable = {mining_time = 0.1, result = "RU-Basic-Substation"},
   max_health = 125,
   corpse = "substation-remnants",
+  fast_replaceable_group = "electric-pole",
+  next_upgrade = "RU-Medium-Substation",
   dying_explosion = "substation-explosion",
   track_coverage_during_build_by_moving = true,
   radius_visualisation_picture =

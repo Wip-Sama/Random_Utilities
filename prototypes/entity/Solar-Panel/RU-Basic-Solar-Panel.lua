@@ -16,6 +16,8 @@ data:extend(
     minable = {mining_time = 0.1, result = "RU-Basic-Solar-Panel"},
     max_health = 300,
     corpse = "solar-panel-remnants",
+    fast_replaceable_group = "solar-panel",
+    next_upgrade = "RU-Medium-Solar-Panel",
     dying_explosion = "solar-panel-explosion",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},

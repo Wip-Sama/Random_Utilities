@@ -5,7 +5,8 @@ data:extend({
 {
   type = "recipe",
   name = "RU-Big-Substation",
-  enabled = false,
+  hidden = "false" ,
+  enabled = "false",
   ingredients =
   {
     {"big-electric-pole", 4},

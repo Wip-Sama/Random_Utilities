@@ -1,12 +1,13 @@
-table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "wood-to-landfill"})
+
 
 data:extend({
 
   {
     type = "recipe",
     name = "wood-to-landfill",
+    hidden = "true",
     energy_required = 0.5,
-    enabled = false,
+    enabled = "false",
     category = "crafting",
     ingredients =
     {
@@ -18,6 +19,7 @@ data:extend({
   {
     type = "recipe",
     name = "offshore-pump",
+    hidden = "true",
     enabled = "true",
     ingredients =
     {

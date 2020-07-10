@@ -6,13 +6,14 @@ local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
 data:extend({
 {
   type = "electric-pole",
-  name = "RU-Behemut-Substation",
+  name = "RU-Behemoth-Substation",
   icons = {{icon = "__base__/graphics/icons/substation.png", tint = {r=80, g=80, b=80}}},
   icon_size = 64, icon_mipmaps = 4,
   flags = {"placeable-neutral", "player-creation"},
-  minable = {mining_time = 0.2, result = "RU-Behemut-Substation"},
+  minable = {mining_time = 0.2, result = "RU-Behemoth-Substation"},
   max_health = 500,
   corpse = "substation-remnants",
+  fast_replaceable_group = "electric-pole",
   dying_explosion = "substation-explosion",
   track_coverage_during_build_by_moving = true,
   radius_visualisation_picture =

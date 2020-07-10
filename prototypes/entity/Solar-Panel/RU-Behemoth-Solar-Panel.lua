@@ -9,13 +9,14 @@ data:extend(
 {
   {
     type = "solar-panel",
-    name = "RU-Behemut-Solar-Panel",
+    name = "RU-Behemoth-Solar-Panel",
     icons = {{icon = "__base__/graphics/icons/solar-panel.png", tint = {r=80, g=80, b=80}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Behemut-Solar-Panel"},
+    minable = {mining_time = 0.1, result = "RU-Behemoth-Solar-Panel"},
     max_health = 600,
     corpse = "solar-panel-remnants",
+    fast_replaceable_group = "solar-panel",
     dying_explosion = "solar-panel-explosion",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
