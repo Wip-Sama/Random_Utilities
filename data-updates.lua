@@ -122,6 +122,11 @@ if mods['Krastorio2'] then
   require('integrations/Krastorio2')
 end
 
+if mods['space-exploration'] then
+  require('integrations/spexploration')
+end
+
+
 if mods['MicroFurnaceWipMod'] then
   require('integrations/MicroFurnaceWipMod')
 end

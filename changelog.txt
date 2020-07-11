@@ -1,32 +1,44 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.2.8
-Date: 09.07.2020
-  Fixed:
+Version: 1.2.9
+Date: 11. 07. 2020
+  Bugfixes:
     - multiplayer connection issue
+    - space exploration conflict
+
+---------------------------------------------------------------------------------------------------
+Version: 1.2.8
+Date: 09. 07. 2020
+  Bugfixes:
     - big lamp technology
+
   Added:
     - Substations compatibility with upgrade planner
     - Solar panels compatibility with upgrade planner
     - Lamps compatibility with upgrade planner
     - Accumulators compatibility with upgrade planner
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.7
-Date: 06.07.2020
-  Fixed:
+Date: 06. 07. 2020
+  Bugfixes:
     - Big, Behemoth substation name (en)
-  Changed:
+
+  Changes:
     - Substations colors
     - Solar panels colors
     - Beacons colors
     - Accumulators colors
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.6
-Date: 05.07.2020
-  Fixed:
+Date: 05. 07. 2020
+  Bugfixes:
     - Big substation name
     - issue with config in multiplayer mode
-  Balanced:
+
+  Changes:
     - beacon energy (basic 24MW > 25MW) (Medium 48MW > 125MW) (Big 96MW > 625MW)
+
   -Added:
     - Behemoth Substation (range 64, supply area 128x128[64], HP 500)
     - Basic Solar Panel (production 480kW, HP 300)
@@ -37,33 +49,37 @@ Date: 05.07.2020
     - Medium Accumulator (capacity 320MJ, input/output 19.2MW, HP 450)
     - Big Accumulator (capacity 2.65GJ, input/output 153.6MW, HP 600)
     - Behemoth Accumulator (capacity 20.48GJ, input/output 1.2288GW, HP 750)
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.5
-Date: 25.06.2020
-  Fixed:
+Date: 25. 06. 2020
+  Bugfixes:
     - when breaking a beacon won't give back the correct beacon
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.3
-Date: 21.06.2020
-  Balanced:
+Date: 21. 06. 2020
+  Changes:
     - Basic beacon dimension (3x3 to 4x4)
     - Medium beacon dimension (3x3 to 5x5)
     - Big beacon dimension (3x3 to 6x6)
+
   Added:
     - Big Substation (range 64, supply area 84x84[42], HP 450)
     - Bot speed settings (if you want only this use BotSpeed, it's the original!)
-  Changed:
-    - bugfix
+
   Updated:
     - wire shortcut graphic
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.2
-Date: 18.06.2020
-  Fixed:
+Date: 18. 06. 2020
+  Bugfixes:
     - missing name (english)
     - changelog
     - Medium lamp give basic lamp when broken
-    - fixed some settings name
+    - Bugfixes some settings name
+
   Added:
     - Medium Beacon (supply area 24; consuption 48MW; module slot 4; effects "consumption", "speed", "pollution", "productivity")
     - Big Beacon (supply area 48; consuption 96MW; module slot 5; effects "consumption", "speed", "pollution", "productivity")
@@ -71,47 +87,56 @@ Date: 18.06.2020
     - Medium beacon technology
     - Big beacon technology
     - Big Lamp technology
-  Changed:
-    - changed technology RU-advanced-effect-transmission to RU-advanced-effect-transmission-a
+
+  Changes:
+    - Changes technology RU-advanced-effect-transmission to RU-advanced-effect-transmission-a
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
-Date: 17.06.2020
-  Fixed:
+Date: 17. 06. 2020
+  Bugfixes:
     - beacon for 0.18.30
     - changelog date
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
-Date: 11.06.2020
+Date: 11. 06. 2020
     Updated:
       - stack multiplier code
       - pipe passthrought code
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.9
-Date: 13.05.2020
-  Fixed:
+Date: 13. 05. 2020
+  Bugfixes:
     - wire shortcuts
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.8
-Date: 15.04.2020
-  Fixed:
+Date: 15. 04. 2020
+  Bugfixes:
     - lamp setting
     - mod structure
+
   Added:
     - basic beacon : supply area 12; consuption 24MW; module slot 4; effects "consumption", "speed", "pollution", "productivity"
     - beacon config
     - medium lamp : range 320; consuption 40kW
-  Balanced:
+
+  Changes:
     - basic lamp : range 256>192; consuption 5kW>20kW
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.7
-Date: 08.04.2020
-  Fixed:
+Date: 08. 04. 2020
+  Bugfixes:
     - Removed Banane (test) from armor starter kit
     - old changelog
     - name of the config for electric pole range
     - pole setting name
     - lamp setting name
     - substation setting name
+
   Added:
     - Compatibility with Angel Pressure tank
     - compatibility with Angel Warehouse
@@ -119,53 +144,63 @@ Date: 08.04.2020
     - config to change storage size Krastorio 2 container
     - config to change angel pressure tank capacity
     - config to change krastorio fluid storage capacity
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.6
-Date: 03.04.2020
-  Fixed:
+Date: 03. 04. 2020
+  Bugfixes:
     - WireShortcut dependencies
+
   Added:
     - Compatibility with Krastorio 2
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.5
-Date: 03.04.2020
+Date: 03. 04. 2020
   Added:
     - added Assembler Pipe Passthrought (if you want only this use assembler-pipe-passthrough, it's the original!)
     - added Wire Shortcuts (if you want only this use WireShortcuts, it's the original!)
     - added Wire Vanilla Pole Reach/Supply area range (if you want only this use PoleRange, it's the original!)
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.4
-Date: 30.03.2020
+Date: 30. 03. 2020
   Added:
     - RU-Medium-Substation (range 64, supply area 42x42[21], HP 200)
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
 Date: 29.03.2020
   Added:
     - {Setting} Disable crafting Time
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.2
-Date: 23.03.2020
-  Changed:
-    - changed stack multiplier script (if you want only this use Noxys StackSizeMultiplier, it's the original!)
+Date: 23. 03. 2020
+  Changes:
+    - Changes stack multiplier script (if you want only this use Noxys StackSizeMultiplier, it's the original!)
+
   Added:
     - added 0 crafting time setting (if you want only this use NoCraftingTime, it's the original!)
     - added 0 crafting time script (if you want only this use NoCraftingTime, it's the original!)
     - {Setting} Disable crafting Time
     - {Setting} Item Stack Size Logistic Robot
     - {Setting} Item Stack Size Construction Robot
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.1
-Date: 23.03.2020
-  Changed:
-    - fixed stack multiplier
-    - fixed other settings
+Date: 23. 03. 2020
+  Changes:
+    - Bugfixes stack multiplier
+    - Bugfixes other settings
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.0
-Date: 23.03.2020
-  Changed:
+Date: 23. 03. 2020
+  Changes:
     - RU-Basic-Substation supply area 10x10[5] > supply area 12*12[6]
     - Basic_Substation setting to Ru-Substation
+
     Added:
       - Inventory size setting
       - stack size settings
@@ -181,13 +216,9 @@ Date: 23.03.2020
       - Lamp technology
       - Lingua Italiana (contact me on https://t.me/wipmod to translate in other language)
       - Compacitbility with "Power Armor MK3" (contact me on https://t.me/wipmod to make your mod compatible)
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
-Date: 17.03.2020
+Date: 17. 03. 2020
   Added:
     - RU-Basic-Substation (range 32, supply area 10x10[5], HP 125)
-  IF:
-    - if you want to compatibilize some mods / add features contact me on https://t.me/wipmod
-    - se vuoi che compatibilizzi determinate mod / aggiunga altre funzioni contattami a https://t.me/wipmod
-    - (gli aiuti sono ben graditi)
----------------------------------------------------------------------------------------------------

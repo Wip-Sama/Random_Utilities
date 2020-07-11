@@ -116,6 +116,7 @@
   require "prototypes.recipe.CheatyRecipe"
 --end
 
+--Wire Shortcuts
 if settings.startup["RU-Enable-Wire-Shortcuts"].value then
   --Wire Shortcuts
   require "prototypes.wireshotrcuts.input"
