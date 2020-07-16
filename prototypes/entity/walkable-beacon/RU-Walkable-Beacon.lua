@@ -5,21 +5,22 @@ local sounds = require("__base__/prototypes/entity/demo-sounds")
 data:extend({
   {
     type = "beacon",
-    name = "RU-Big-Beacon",
-    icons = {{icon = "__base__/graphics/icons/beacon.png", tint = {r=132, g=180, b=181}}},
+    name = "RU-Walkable-Beacon",
+    icon = "__base__/graphics/icons/beacon.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.2, result = "RU-Big-Beacon"},
-    max_health = 300,
+    minable = {mining_time = 0.2, result = "beacon"},
+    max_health = 200,
     corpse = "beacon-remnants",
     dying_explosion = "beacon-explosion",
-    collision_box = {{-2.7, -2.7}, {2.7, 2.7}},
-    selection_box = {{-3, -3}, {3, 3}},
+    collision_box = {{-1.2, -1.2}, {1.2, 1.2}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
     damaged_trigger_effect = hit_effects.entity(),
-    drawing_box = {{-3, -4.4}, {3, 2.6}},
-    allowed_effects = {"consumption", "speed", "pollution", "productivity"},
+    drawing_box = {{-1.5, -2.2}, {1.5, 1.3}},
+    collision_mask = {"item-layer", "object-layer", "floor-layer", "water-tile"},
+    allowed_effects = {"consumption", "speed", "pollution"},
 
-    graphics_set = require("prototypes.entity.beacon.big-beacon-animations"),
+    graphics_set = require("prototypes.entity.walkable-beacon.walkable-beacon-animations"),
 
     radius_visualisation_picture =
     {
@@ -28,7 +29,7 @@ data:extend({
       width = 10,
       height = 10
     },
-    supply_area_distance = 48,
+    supply_area_distance = 3,
     energy_source =
     {
       type = "electric",
@@ -37,11 +38,11 @@ data:extend({
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
-    energy_usage = "625MW",
-    distribution_effectivity = 0.8,
+    energy_usage = "480kW",
+    distribution_effectivity = 0.5,
     module_specification =
     {
-      module_slots = 5,
+      module_slots = 2,
       module_info_icon_shift = {0, 0},
       module_info_multi_row_initial_height_modifier = -0.3,
       module_info_max_icons_per_row = 2,

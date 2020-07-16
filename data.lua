@@ -96,16 +96,36 @@
   require "prototypes.entity.beacon.RU-Basic-Beacon"
   require "prototypes.recipe.beacon.RU-Basic-Beacon"
   require "prototypes.technology.beacon.RU-Basic-Beacon"
-  --basic beacon
+  --medium beacon
   require "prototypes.item.beacon.RU-Medium-Beacon"
   require "prototypes.entity.beacon.RU-Medium-Beacon"
   require "prototypes.recipe.beacon.RU-Medium-Beacon"
   require "prototypes.technology.beacon.RU-Medium-Beacon"
-  --basic beacon
+  --big beacon
   require "prototypes.item.beacon.RU-Big-Beacon"
   require "prototypes.entity.beacon.RU-Big-Beacon"
   require "prototypes.recipe.beacon.RU-Big-Beacon"
   require "prototypes.technology.beacon.RU-Big-Beacon"
+--end
+
+--if settings.startup["RU-Walkable-Beacon"].value then
+  require "prototypes.technology.walkable-beacon.RU-Walkable-Beacon"
+  --walkable beacon
+  require "prototypes.item.walkable-beacon.RU-Walkable-Beacon"
+  require "prototypes.entity.walkable-beacon.RU-Walkable-Beacon"
+  require "prototypes.recipe.walkable-beacon.RU-Walkable-Beacon"
+  --basic walkable beacon
+  require "prototypes.item.walkable-beacon.RU-Walkable-Basic-Beacon"
+  require "prototypes.entity.walkable-beacon.RU-Walkable-Basic-Beacon"
+  require "prototypes.recipe.walkable-beacon.RU-Walkable-Basic-Beacon"
+  --Medium walkable beacon
+  require "prototypes.item.walkable-beacon.RU-Walkable-Medium-Beacon"
+  require "prototypes.entity.walkable-beacon.RU-Walkable-Medium-Beacon"
+  require "prototypes.recipe.walkable-beacon.RU-Walkable-Medium-Beacon"
+  --Big walkable beacon
+  require "prototypes.item.walkable-beacon.RU-Walkable-Big-Beacon"
+  require "prototypes.entity.walkable-beacon.RU-Walkable-Big-Beacon"
+  require "prototypes.recipe.walkable-beacon.RU-Walkable-Big-Beacon"
 --end
 
 --if settings.startup["RU-AlternativeRecipe"].value == true then

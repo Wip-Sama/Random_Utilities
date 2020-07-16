@@ -5,11 +5,11 @@ local sounds = require("__base__/prototypes/entity/demo-sounds")
 data:extend({
   {
     type = "beacon",
-    name = "RU-Big-Beacon",
+    name = "RU-Walkable-Big-Beacon",
     icons = {{icon = "__base__/graphics/icons/beacon.png", tint = {r=132, g=180, b=181}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.2, result = "RU-Big-Beacon"},
+    minable = {mining_time = 0.2, result = "RU-Walkable-Big-Beacon"},
     max_health = 300,
     corpse = "beacon-remnants",
     dying_explosion = "beacon-explosion",
@@ -17,9 +17,10 @@ data:extend({
     selection_box = {{-3, -3}, {3, 3}},
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-3, -4.4}, {3, 2.6}},
+    collision_mask = {"item-layer", "object-layer", "floor-layer", "water-tile"},
     allowed_effects = {"consumption", "speed", "pollution", "productivity"},
 
-    graphics_set = require("prototypes.entity.beacon.big-beacon-animations"),
+    graphics_set = require("prototypes.entity.walkable-beacon.big-Walkable-beacon-animations"),
 
     radius_visualisation_picture =
     {

@@ -1,3 +1,12 @@
 appmod.blacklist['se-lifesupport-facility'] = true
 appmod.blacklist['se-recycling-facility'] = true
 appmod.blacklist['se-pulveriser'] = true
+appmod.blacklist['se-space-manufactory-grounded'] = true
+appmod.blacklist['se-space-decontamination-facility-grounded'] = true
+appmod.blacklist['se-space-spectrometry-facility-grounded'] = true
+appmod.blacklist['se-space-laser-laboratory-grounded'] = true
+appmod.blacklist['se-space-radiation-laboratory-grounded'] = true
+appmod.blacklist['se-space-biochemical-laboratory-grounded'] = true
+appmod.blacklist['se-space-thermodynamics-laboratory-grounded'] = true
+appmod.blacklist['se-space-mechanical-laboratory-grounded'] = true
+appmod.blacklist['se-space-particle-accelerator-grounded'] = true

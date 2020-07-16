@@ -1,4 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.1
+Date: 16. 07. 2020
+  Added:
+    - walkable beacon upgrade
+    - walkable beacon settings
+    - Power Armor Modifier 
+
+  Changes:
+    - Basic; Medium; Big beacons graphic
+
+---------------------------------------------------------------------------------------------------
+Version: 1.3.0
+Date: 11. 07. 2020
+  Bugfixes:
+    - changelog fixed
+    - little conflict fix
+
+  Changes:
+    - setting RU-Assembler-liquid-Imput-Output (default "true" > "false")
+
+---------------------------------------------------------------------------------------------------
 Version: 1.2.9
 Date: 11. 07. 2020
   Bugfixes:

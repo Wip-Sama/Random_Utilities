@@ -504,9 +504,9 @@ data:extend(
     name = "RU-Assembler-liquid-Imput-Output",
     order = "bk",
     setting_type = "startup",
-    default_value = true,
+    default_value = false,
     localised_name = "{Setting} allow liquid to pass throught general",
-    localised_description = "{Info} By default the value is true",
+    localised_description = "{Info} By default the value is false",
   },
   --RU-Assembling-Machine-Imput-Output OK
   {

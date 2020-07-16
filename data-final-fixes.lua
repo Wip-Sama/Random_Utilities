@@ -17,16 +17,30 @@ data.raw["lamp"]["small-lamp"].fast_replaceable_group = "lamp"
 --train upgradable
 --centifughe upgradable
 
+
+
+--WALKABLE BEACONS
+
+--if mods["base"] then
+--  table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-Walkable-Big-Beacon"})
+--end
+if mods["bobmodules"] then
+  table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-bob-Walkable-Big-Beacon-2-Recycle"})
+  table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-bob-Walkable-Big-Beacon-3-Recycle"})
+  table.insert(data.raw["technology"]["RU-walkable-beacon-downgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-bob-Walkable-Big-Beacon-2-Recycle"})
+  table.insert(data.raw["technology"]["RU-walkable-beacon-downgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-bob-Walkable-Big-Beacon-3-Recycle"})
+end
+
 --disable items / recipes
 if settings.startup["RU-AlternativeRecipe"].value == "true" then
   data.raw["recipe"]["offshore-pump"].hidden = false
   data.raw["recipe"]["wood-to-landfill"].hidden = false
-  table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "wood-to-landfill"})
+  --table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "wood-to-landfill"})
 end
 
 if settings.startup["RU-CheatyRecipe"].value == true then
   data.raw["recipe"]["easy-landfill"].hidden = false
-  table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "easy-landfill"})
+  --table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "easy-landfill"})
 end
 
 --Substation
