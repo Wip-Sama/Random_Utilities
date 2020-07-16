@@ -332,6 +332,24 @@ data:extend(
     localised_name = "Beacons",
     localised_description = "{Item} Enable Beacons",
   },
+  --beacon
+  {
+    type = "string-setting",
+    name = "RU-Walkable-Beacon",
+    order = "abbc",
+    setting_type = "startup",
+    default_value = "big",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+--      "behemoth"
+    },
+    localised_name = "Beacons",
+    localised_description = "{Item} Enable Walkable Beacons, Warning if this value is higher than Beacons, Beacons will be automatically moved to this tier.",
+  },
   --Solar panel
   {
     type = "string-setting",

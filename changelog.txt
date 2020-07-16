@@ -4,7 +4,6 @@ Date: 16. 07. 2020
   Added:
     - walkable beacon upgrade
     - walkable beacon settings
-    - Power Armor Modifier 
 
   Changes:
     - Basic; Medium; Big beacons graphic

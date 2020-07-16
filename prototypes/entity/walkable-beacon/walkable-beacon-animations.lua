@@ -217,6 +217,7 @@ return
               line_length = 4,
               width = 24,
               height = 22,
+              scale = 0.5,
               variation_count = 4,
               shift = util.by_pixel(25, -21),
               hr_version =
@@ -240,6 +241,7 @@ return
               line_length = 3,
               width = 18,
               height = 14,
+              scale = 0.5,
               variation_count = 3,
               shift = util.by_pixel(26.5625, -21),
               hr_version =
@@ -263,6 +265,7 @@ return
               line_length = 3,
               width = 12,
               height = 8,
+              scale = 0.5,
               variation_count = 3,
               shift = util.by_pixel(27.5, -23),
               hr_version =
@@ -287,6 +290,7 @@ return
               line_length = 3,
               width = 34,
               height = 24,
+              scale = 0.5,
               variation_count = 3,
               shift = util.by_pixel(27.5, -23),
               hr_version = {
