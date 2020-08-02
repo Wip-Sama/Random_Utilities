@@ -1,5 +1,5 @@
 ---------------------------------------------------------------------------------------------------
-Version: 1.3.3
+Version: 1.3.4
 Date: 02. 08. 2020
   Changes:
     - structure of alternative recipes
@@ -8,7 +8,7 @@ Date: 02. 08. 2020
   Bugfixes:
     - offshore pump recipe disappear
     - space-exploration/Krastorio2/Random_Utilities armor problem
-    
+
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.2
 Date: 23. 07. 2020

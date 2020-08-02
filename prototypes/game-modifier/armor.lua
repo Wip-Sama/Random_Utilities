@@ -25,7 +25,7 @@ data:extend(
     type = "equipment-grid",
     name = "RU-04-equipment-grid",
     width = 16,
-   height = 16,
+    height = 16,
     equipment_categories = {"armor"}
   },
 }
