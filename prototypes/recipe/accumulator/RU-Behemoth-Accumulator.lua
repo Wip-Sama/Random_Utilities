@@ -12,10 +12,8 @@ data:extend(
     ingredients =
     {
       {"RU-Big-Accumulator", 8},
-      {"electronic-circuit", 40},
-      {"advanced-circuit", 15},
-      {"low-density-structure", 100},
-      {"processing-unit", 5}
+      {"low-density-structure", 8},
+      {"processing-unit", 3},
     },
     result = "RU-Behemoth-Accumulator",
   },

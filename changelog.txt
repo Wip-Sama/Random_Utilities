@@ -1,4 +1,29 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.3
+Date: 02. 08. 2020
+  Changes:
+    - structure of alternative recipes
+    - structure of cheaty recipes
+
+  Bugfixes:
+    - offshore pump recipe disappear
+    - space-exploration/Krastorio2/Random_Utilities armor problem
+    
+---------------------------------------------------------------------------------------------------
+Version: 1.3.2
+Date: 23. 07. 2020
+  Added:
+    - if space exploration is present change module slot in RU beacon
+
+  Bugfixes:
+    - factorio extended plus compatibility
+
+  Changes:
+    - solar panel recipes
+    - accumulator recipes
+    - blueprint ".next_upgrade"
+
+---------------------------------------------------------------------------------------------------
 Version: 1.3.1
 Date: 16. 07. 2020
   Added:

@@ -5,17 +5,13 @@ data:extend({
   {
     type = "technology",
     name = "landfill-2",
+    hidden = "true",
     icon_size = 128,
     icon = "__base__/graphics/technology/landfill.png",
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = {
-          "easy-landfill",
-          "wood-to-landfill",
-        }
-      }
+      {type = "unlock-recipe",recipe = {"easy-landfill",}},
+      {type = "unlock-recipe",recipe = { "wood-to-landfill",}},
     },
     prerequisites = {"landfill"},
     unit =

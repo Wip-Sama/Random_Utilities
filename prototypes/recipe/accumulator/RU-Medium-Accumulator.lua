@@ -12,10 +12,8 @@ data:extend(
     ingredients =
     {
       {"RU-Basic-Accumulator", 8},
-      {"electronic-circuit", 10},
-      {"advanced-circuit", 3},
-      {"low-density-structure", 20},
-      {"processing-unit", 2},
+      {"low-density-structure", 8},
+      {"processing-unit", 3},
     },
     result = "RU-Medium-Accumulator",
   },

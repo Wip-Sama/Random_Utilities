@@ -18,7 +18,7 @@ data:extend({
   },
   {
     type = "recipe",
-    name = "offshore-pump",
+    name = "ru-offshore-pump",
     hidden = "true",
     enabled = "true",
     ingredients =

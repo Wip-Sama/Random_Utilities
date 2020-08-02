@@ -11,8 +11,8 @@ data:extend(
     ingredients =
     {
       {"solar-panel", 8},
-      {"electronic-circuit", 5},
-      {"advanced-circuit", 1}
+      {"low-density-structure", 8},
+      {"processing-unit", 3},
     },
     result = "RU-Basic-Solar-Panel",
   },

@@ -247,7 +247,7 @@ end
     minimum_value = 1,
     maximum_value = 65535,
     localised_name = "{Setting} Krastorio2 big buffer container storage",
-    localised_description = "{Item} by default the value is 1800, change Krastorio2 bih container storage",
+    localised_description = "{Item} by default the value is 1800, change Krastorio2 big container storage",
   },
   --Krastorio2 big fluid storage OK
   {
@@ -272,6 +272,17 @@ end
     maximum_value = 100000000,
     localised_name = "{Setting} Krastorio2 huge fluid storage",
     localised_description = "{Item}  by default the value is 100000 (*100), change Krastorio2 fluid storage storage",
+  },
+  --space exploration integration
+  {
+    type = "bool-setting",
+    name = "Ru-space-exploration-integrations",
+    hidden = "true",
+    order = "bcv",
+    setting_type = "startup",
+    default_value = "true",
+    localised_name = "{Setting} Space exploration integrations",
+    localised_description = "{Setting} by default the value is true, change some value for space-exploraion, turning this off can cause trouble in old world with this setting enabled",
   },
 })
 --end
@@ -348,8 +359,18 @@ data:extend(
 --      "behemoth"
     },
     localised_name = "Beacons",
-    localised_description = "{Item} Enable Walkable Beacons, Warning if this value is higher than Beacons, Beacons will be automatically moved to this tier.",
+    localised_description = "{Item} Enable Walkable Beacons",
   },
+-- beacon Productivity
+--  {
+--    type = "bool-setting",
+--    name = "RU-Beacon-Productivity",
+--    order = "abbd",
+--    setting_type = "startup",
+--    default_value = "true",
+--    localised_name = "Beacons productivity",
+--    localised_description = "{Setting} Allow RU beacon to insert productivity module.",
+--  },
   --Solar panel
   {
     type = "string-setting",
@@ -441,7 +462,7 @@ data:extend(
     localised_description = "{Item} by default the value is false, work with machine recipe too",
   },
   --AlternativeRecipe OK
-  {
+{
     type = "bool-setting",
     name = "RU-AlternativeRecipe",
     order = "beb",

@@ -1,14 +1,10 @@
 --solar panel upgradable
-data.raw["solar-panel"]["solar-panel"].next_upgrade = "RU-Basic-Solar-Panel"
 data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
 --accumulator upgradable
-data.raw["accumulator"]["accumulator"].next_upgrade = "RU-Basic-Accumulator"
 data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
 --substation upgradable
-data.raw["electric-pole"]["substation"].next_upgrade = "RU-Basic-Substation"
 data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole"
 --lamp upgradable
-data.raw["lamp"]["small-lamp"].next_upgrade = "RU-Basic-Lamp"
 data.raw["lamp"]["small-lamp"].fast_replaceable_group = "lamp"
 --boiler upgradable
 --steam engine upgradable
@@ -31,16 +27,46 @@ data.raw["lamp"]["small-lamp"].fast_replaceable_group = "lamp"
 --  table.insert(data.raw["technology"]["RU-walkable-beacon-downgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-bob-Walkable-Big-Beacon-3-Recycle"})
 --end
 
+--if settings.startup["RU-Beacon-Productivity"].value == false then
+--  table.remove(data.raw["beacon"]["RU-Basic-Beacon"].allowed_effects,{"productivity"})
+--  table.remove(data.raw["beacon"]["RU-Medium-Beacon"].allowed_effects,{"productivity"})
+--  table.remove(data.raw["beacon"]["RU-Big-Beacon"].allowed_effects,{"productivity"})
+--  table.remove(data.raw["beacon"]["RU-Walkable-Basic-Beacon"].allowed_effects,{"productivity"})
+--  table.remove(data.raw["beacon"]["RU-Walkable-Medium-Beacon"].allowed_effects,{"productivity"})
+--  table.remove(data.raw["beacon"]["RU-Walkable-Big-Beacon"].allowed_effects,{"productivity"})
+--end
+
+
+--space exploration beacon balance
+if mods["space-exploration"] then
+  data.raw["beacon"]["RU-Basic-Beacon"]["module_specification"] = {module_slots = 10, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Basic-Beacon"].energy_usage = "75MW"
+  data.raw["beacon"]["RU-Medium-Beacon"]["module_specification"] = {module_slots = 20, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Medium-Beacon"].energy_usage = "375MW"
+  data.raw["beacon"]["RU-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Big-Beacon"].energy_usage = "1875MW"
+  data.raw["beacon"]["RU-Walkable-Basic-Beacon"]["module_specification"] = {module_slots = 10, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Walkable-Basic-Beacon"].energy_usage = "75MW"
+  data.raw["beacon"]["RU-Walkable-Medium-Beacon"]["module_specification"] = {module_slots = 20, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Walkable-Medium-Beacon"].energy_usage = "375MW"
+  data.raw["beacon"]["RU-Walkable-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Walkable-Big-Beacon"].energy_usage = "1875MW"
+end
+
 --disable items / recipes
 if settings.startup["RU-AlternativeRecipe"].value == "true" then
-  data.raw["recipe"]["offshore-pump"].hidden = false
-  data.raw["recipe"]["wood-to-landfill"].hidden = false
+  data.raw["recipe"]["offshore-pump"].hidden = "false"
+  data.raw["recipe"]["wood-to-landfill"].hidden = "false"
   --table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "wood-to-landfill"})
 end
 
-if settings.startup["RU-CheatyRecipe"].value == true then
-  data.raw["recipe"]["easy-landfill"].hidden = false
+if settings.startup["RU-CheatyRecipe"].value == "true" then
+  data.raw["recipe"]["easy-landfill"].hidden = "false"
   --table.insert(data.raw["technology"]["landfill"].effects, { type = "unlock-recipe", recipe = "easy-landfill"})
+end
+
+if settings.startup["RU-CheatyRecipe"].value == "true" or settings.startup["RU-AlternativeRecipe"].value == "true" then
+  data.raw["technology"]["landfill-2"].hidden = "false"
 end
 
 --Substation
@@ -165,37 +191,6 @@ if settings.startup["RU-Beacon"].value == "medium" then
 --  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
 end
 if settings.startup["RU-Beacon"].value == "big" then
---  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
---  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
-end
---if settings.startup["RU-Substation"].value == "behemoth" then
---end
-
-if settings.startup["RU-Walkable-Beacon"].value == "nothing" then
-  data.raw["recipe"]["RU-Basic-Beacon"].hidden = true
-  data.raw["recipe"]["RU-Medium-Beacon"].hidden = true
-  data.raw["recipe"]["RU-Big-Beacon"].hidden = true
---  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
-  data.raw["technology"]["RU-advanced-effect-transmission-a"].hidden = true
-  data.raw["technology"]["RU-advanced-effect-transmission-b"].hidden = true
-  data.raw["technology"]["RU-advanced-effect-transmission-c"].hidden = true
---  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
-end
-if settings.startup["RU-Walkable-Beacon"].value == "basic" then
-  data.raw["recipe"]["RU-Medium-Beacon"].hidden = true
-  data.raw["recipe"]["RU-Big-Beacon"].hidden = true
---  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
-  data.raw["technology"]["RU-advanced-effect-transmission-b"].hidden = true
-  data.raw["technology"]["RU-advanced-effect-transmission-c"].hidden = true
---  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
-end
-if settings.startup["RU-Walkable-Beacon"].value == "medium" then
-  data.raw["recipe"]["RU-Big-Beacon"].hidden = true
---  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
-  data.raw["technology"]["RU-advanced-effect-transmission-c"].hidden = true
---  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
-end
-if settings.startup["RU-Walkable-Beacon"].value == "big" then
 --  data.raw["recipe"]["RU-Behemoth-Beacon"].hidden = true
 --  data.raw["technology"]["RU-advanced-effect-transmission-d"].hidden = true
 end
@@ -335,17 +330,26 @@ if mods["Krastorio2"] then
 	data.raw["storage-tank"]["kr-fluid-storage-2"]["fluid_box"].base_area = settings.startup["Ru-kr-fluid-storage-2"].value
 end
 
+require "prototypes.game-modifier.armor"
+
 --space exploration
---if mods["space-exploration"] then
---  data.raw["armor"]["se-thruster-suit-grid"] = { type = equipment_grid , width  = 20 }
---  data.raw["armor"]["se-thruster-suit-grid"] = { type = equipment_grid , height  = 20 }
---  data.raw["armor"]["se-thruster-suit-2-grid"] = { type = equipment_grid , width  = 20 }
---  data.raw["armor"]["se-thruster-suit-2-grid"] = { type = equipment_grid , height  = 20 }
---  data.raw["armor"]["se-thruster-suit-3-grid"] = { type = equipment_grid , width  = 20 }
---  data.raw["armor"]["se-thruster-suit-3-grid"] = { type = equipment_grid , height  = 20 }
---  data.raw["armor"]["se-thruster-suit-4-grid"] = { type = equipment_grid , width  = 20 }
---  data.raw["armor"]["se-thruster-suit-4-grid"] = { type = equipment_grid , height  = 20 }
---end
+if mods["space-exploration"] and settings.startup["Ru-space-exploration-integrations"].value == true then
+  data.raw.armor["se-thruster-suit"].equipment_grid   = "RU-01-equipment-grid"
+  data.raw.armor["se-thruster-suit-2"].equipment_grid   = "RU-02-equipment-grid"
+  data.raw.armor["se-thruster-suit-3"].equipment_grid   = "RU-03-equipment-grid"
+  data.raw.armor["se-thruster-suit-4"].equipment_grid   = "RU-04-equipment-grid"
+  if mods["Krastorio2"] then
+    --table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-bob-Walkable-Big-Beacon-2-Recycle"})
+    table.insert(data.raw["equipment-grid"]["RU-01-equipment-grid"].equipment_categories,  "universal-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-01-equipment-grid"].equipment_categories,  "robot-interaction-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-02-equipment-grid"].equipment_categories,  "universal-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-02-equipment-grid"].equipment_categories,  "robot-interaction-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-03-equipment-grid"].equipment_categories,  "universal-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-03-equipment-grid"].equipment_categories,  "robot-interaction-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-04-equipment-grid"].equipment_categories,  "universal-equipment")
+    table.insert(data.raw["equipment-grid"]["RU-04-equipment-grid"].equipment_categories,  "robot-interaction-equipment")
+  end
+end
 
 --noxy staksize itemStackSizeMultiplier
 
