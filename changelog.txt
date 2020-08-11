@@ -1,4 +1,8 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.3.5
+Date: ????
+  Changes:
+---------------------------------------------------------------------------------------------------
 Version: 1.3.4
 Date: 02. 08. 2020
   Changes:
@@ -146,9 +150,9 @@ Date: 17. 06. 2020
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.0
 Date: 11. 06. 2020
-    Updated:
-      - stack multiplier code
-      - pipe passthrought code
+  Updated:
+    - stack multiplier code
+    - pipe passthrought code
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.9
@@ -246,21 +250,21 @@ Date: 23. 03. 2020
     - RU-Basic-Substation supply area 10x10[5] > supply area 12*12[6]
     - Basic_Substation setting to Ru-Substation
 
-    Added:
-      - Inventory size setting
-      - stack size settings
-      - reach distance settings
-      - Mining reach settings
-      - Mining speed settings
-      - collision box tree settings
-      - Powerful Lamp Setting settings
-      - Quick start settings
-      - Quick Start Modular Armor settings
-      - Basic Lamp (light = 256 block)
-      - Lamp setting
-      - Lamp technology
-      - Lingua Italiana (contact me on https://t.me/wipmod to translate in other language)
-      - Compacitbility with "Power Armor MK3" (contact me on https://t.me/wipmod to make your mod compatible)
+  Added:
+    - Inventory size setting
+    - stack size settings
+    - reach distance settings
+    - Mining reach settings
+    - Mining speed settings
+    - collision box tree settings
+    - Powerful Lamp Setting settings
+    - Quick start settings
+    - Quick Start Modular Armor settings
+    - Basic Lamp (light = 256 block)
+    - Lamp setting
+    - Lamp technology
+    - Lingua Italiana (contact me on https://t.me/wipmod to translate in other language)
+    - Compacitbility with "Power Armor MK3" (contact me on https://t.me/wipmod to make your mod compatible)
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.0.0
