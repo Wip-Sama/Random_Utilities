@@ -3,7 +3,7 @@ data:extend({
 {
   type = "technology",
   name = "RU-advanced-effect-transmission-b",
-  hidden = "false" ,
+  hidden = "true" ,
   icon_size = 128,
   icon = "__base__/graphics/technology/effect-transmission.png",
   effects =

@@ -1,4 +1,4 @@
-require "prototypes.game-modifier.armor"
+require "prototypes.setting-mod-modifier.armor"
 
 --armor
 if mods["space-exploration"] and settings.startup["Ru-space-exploration-integrations"].value == true then

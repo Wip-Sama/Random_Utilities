@@ -358,7 +358,7 @@ data:extend(
       "big",
 --      "behemoth"
     },
-    localised_name = "Beacons",
+    localised_name = "Walkable Beacons",
     localised_description = "{Item} Enable Walkable Beacons",
   },
 -- beacon Productivity

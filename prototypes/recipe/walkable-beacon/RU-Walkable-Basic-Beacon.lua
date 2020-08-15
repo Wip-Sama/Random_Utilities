@@ -4,7 +4,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Walkable-Basic-Beacon",
-    hidden = "false" ,
+    hidden = "true" ,
     enabled = "false",
     ingredients =
     {
@@ -20,7 +20,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Walkable-Basic-Beacon-Recycle",
-    hidden = "false" ,
+    hidden = "true" ,
     enabled = "false",
     ingredients =
     {

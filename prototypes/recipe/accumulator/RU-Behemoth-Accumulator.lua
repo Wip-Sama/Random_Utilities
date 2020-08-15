@@ -6,7 +6,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Behemoth-Accumulator",
-    hidden = "false" ,
+    hidden = "true" ,
 --    hidden = is_Behemoth_accumulator_hidden ,
     enabled = "false",
     ingredients =

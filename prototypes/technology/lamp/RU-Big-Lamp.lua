@@ -5,17 +5,17 @@ data:extend({
   {
     type = "technology",
     name = "RU-Big-Lamp",
-    hidden = "false" ,
+    hidden = "true" ,
     icon_size = 128,
     icon = "__base__/graphics/technology/optics.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Medium-Lamp"
+        recipe = "RU-Big-Lamp"
       }
     },
-    prerequisites = {"RU-Basic-Lamp"},
+    prerequisites = {"RU-Medium-Lamp"},
     unit =
     {
       count = 100,

@@ -6,7 +6,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Big-Accumulator",
-    hidden = "false" ,
+    hidden = "true" ,
 --    hidden = is_Big_accumulator_hidden ,
     enabled = "false",
     ingredients =

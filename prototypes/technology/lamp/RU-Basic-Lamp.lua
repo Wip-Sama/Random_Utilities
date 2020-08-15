@@ -5,7 +5,7 @@ data:extend({
   {
     type = "technology",
     name = "RU-Basic-Lamp",
-    hidden = "false" ,
+    hidden = "true" ,
     icon_size = 128,
     icon = "__base__/graphics/technology/optics.png",
     effects =

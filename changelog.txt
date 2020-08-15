@@ -3,8 +3,11 @@ Version: 1.3.5
 Date: ????
   Changes:
     - moved scripts from data-final-fixes to settimg-mod-modifier ecc...
+    - recipes moved from hidden = "false" to hidden = "true"
   Bugfixes:
     - alternative offshore pump recipe
+    - walkable beacons recipe still appear when the value is lower than behemoth
+    - big lamp recipe cannot be unlocked
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.4

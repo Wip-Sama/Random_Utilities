@@ -7,7 +7,7 @@ data:extend(
   {
     type = "technology",
     name = "RU-Advanced-Solar-Energy-c",
-    hidden = "false" ,
+    hidden = "true" ,
     icon_size = 128,
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =

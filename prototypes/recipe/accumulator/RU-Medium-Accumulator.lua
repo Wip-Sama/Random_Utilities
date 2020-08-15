@@ -6,7 +6,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Medium-Accumulator",
-    hidden = "false" ,
+    hidden = "true" ,
 --    hidden = is_Medium_accumulator_hidden ,
     enabled = false,
     ingredients =
