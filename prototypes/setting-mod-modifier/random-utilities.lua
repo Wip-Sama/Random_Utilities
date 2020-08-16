@@ -1,30 +1,15 @@
---space exploration beacon balance
-if mods["space-exploration"] then
-    --basic
-    data.raw["beacon"]["RU-Basic-Beacon"]["module_specification"] = {module_slots = 10, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
-    data.raw["beacon"]["RU-Basic-Beacon"].energy_usage = "75MW"
-    data.raw["beacon"]["RU-Walkable-Basic-Beacon"]["module_specification"] = {module_slots = 10, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
-    data.raw["beacon"]["RU-Walkable-Basic-Beacon"].energy_usage = "75MW"
-    --medium
-    data.raw["beacon"]["RU-Medium-Beacon"]["module_specification"] = {module_slots = 20, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
-    data.raw["beacon"]["RU-Medium-Beacon"].energy_usage = "375MW"
-    data.raw["beacon"]["RU-Walkable-Medium-Beacon"]["module_specification"] = {module_slots = 20, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
-    data.raw["beacon"]["RU-Walkable-Medium-Beacon"].energy_usage = "375MW"
-    --big
-    data.raw["beacon"]["RU-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
-    data.raw["beacon"]["RU-Big-Beacon"].energy_usage = "1875MW"
-    data.raw["beacon"]["RU-Walkable-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
-    data.raw["beacon"]["RU-Walkable-Big-Beacon"].energy_usage = "1875MW"
-end
+--[[function setting_accumulator ()
+  setting_accumulator = settings.startup["RU-Accumulator"].value
+end--]]
 
 --Substation
-if settings.startup["RU-Substation"].value == "basic" or "medium" or "big" or "behemoth" then
+if settings.startup["RU-Substation"].value == "basic" or settings.startup["RU-Substation"].value == "medium" or settings.startup["RU-Substation"].value == "big" or settings.startup["RU-Substation"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Substation"].hidden = false
   data.raw["technology"]["RU-Basic-Substation"].hidden = false
-  if settings.startup["RU-Substation"].value == "medium" or "big" or "behemoth" then
+  if settings.startup["RU-Substation"].value == "medium" or settings.startup["RU-Substation"].value == "big" or settings.startup["RU-Substation"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Substation"].hidden = false
     data.raw["technology"]["RU-Medium-Substation"].hidden = false
-    if settings.startup["RU-Substation"].value == "big" or "behemoth" then
+    if settings.startup["RU-Substation"].value == "big" or settings.startup["RU-Substation"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Substation"].hidden = false
       data.raw["technology"]["RU-Big-Substation"].hidden = false
       if settings.startup["RU-Substation"].value == "behemoth" then
@@ -36,16 +21,16 @@ if settings.startup["RU-Substation"].value == "basic" or "medium" or "big" or "b
 end
 
 --Accumulator
-if settings.startup["RU-Accumulator"].value == "basic" or "medium" or "big" or "behemoth" then
+if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-Accumulator"].value == "medium" or settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Accumulator"].hidden = false
   data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-a"].hidden = false
-  if settings.startup["RU-Accumulator"].value == "medium" or "big" or "behemoth" then
+  if settings.startup["RU-Accumulator"].value == settings.startup["RU-Accumulator"].value == "medium" or settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Accumulator"].hidden = false
     data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-b"].hidden = false
-    if settings.startup["RU-Accumulator"].value == "big" or "behemoth" then
+    if settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Accumulator"].hidden = false
       data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-c"].hidden = false
-      if settings.startup["RU-Accumulator"].value == "behemoth" then
+      if settings.startup["RU-Accumulator"].value == "nothing" then
         data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = false
         data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = false
       end
@@ -54,13 +39,13 @@ if settings.startup["RU-Accumulator"].value == "basic" or "medium" or "big" or "
 end
 
 --solar Panel
-if settings.startup["RU-Solar-Panel"].value == "basic" or "medium" or "big" or "behemoth" then
+if settings.startup["RU-Solar-Panel"].value == "basic" or settings.startup["RU-Solar-Panel"].value == "medium" or settings.startup["RU-Solar-Panel"].value == "big" or settings.startup["RU-Solar-Panel"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Solar-Panel"].hidden = false
   data.raw["technology"]["RU-Advanced-Solar-Energy-a"].hidden = false
-  if settings.startup["RU-Solar-Panel"].value == "medium" or "big" or "behemoth" then
+  if settings.startup["RU-Solar-Panel"].value == "medium" or settings.startup["RU-Solar-Panel"].value == "big" or settings.startup["RU-Solar-Panel"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Solar-Panel"].hidden = false
     data.raw["technology"]["RU-Advanced-Solar-Energy-b"].hidden = false
-    if settings.startup["RU-Solar-Panel"].value == "big" or "behemoth" then
+    if settings.startup["RU-Solar-Panel"].value == "big" or settings.startup["RU-Solar-Panel"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Solar-Panel"].hidden = false
       data.raw["technology"]["RU-Advanced-Solar-Energy-c"].hidden = false
       if settings.startup["RU-Solar-Panel"].value == "behemoth" then
@@ -72,10 +57,10 @@ if settings.startup["RU-Solar-Panel"].value == "basic" or "medium" or "big" or "
 end
 
 --Beacon
-if settings.startup["RU-Beacon"].value == "basic" or "medium" or "big" then
+if settings.startup["RU-Beacon"].value == "basic" or settings.startup["RU-Beacon"].value == "medium" or settings.startup["RU-Beacon"].value == "big" then
   data.raw["recipe"]["RU-Basic-Beacon"].hidden = false
   data.raw["technology"]["RU-advanced-effect-transmission-a"].hidden = false
-  if settings.startup["RU-Beacon"].value == "medium" or "big" then
+  if settings.startup["RU-Beacon"].value == "medium" or settings.startup["RU-Beacon"].value == "big" then
     data.raw["recipe"]["RU-Medium-Beacon"].hidden = false
     data.raw["technology"]["RU-advanced-effect-transmission-b"].hidden = false
     if settings.startup["RU-Beacon"].value == "big" then
@@ -86,15 +71,15 @@ if settings.startup["RU-Beacon"].value == "basic" or "medium" or "big" then
 end
 
 --Walkable Beacon
-if settings.startup["RU-Walkable-Beacon"].value == "vanilla" or "basic" or "medium" or "big" then
+if settings.startup["RU-Walkable-Beacon"].value == "vanilla" or settings.startup["RU-Walkable-Beacon"].value == "basic" or settings.startup["RU-Walkable-Beacon"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
   data.raw["recipe"]["RU-Walkable-Beacon"].hidden = false
   data.raw["technology"]["RU-walkable-beacon-upgrade"].hidden = false
   data.raw["technology"]["RU-walkable-beacon-downgrade"].hidden = false
-  if settings.startup["RU-Walkable-Beacon"].value == "basic" or "medium" or "big" then
+  if settings.startup["RU-Walkable-Beacon"].value == "basic" or settings.startup["RU-Walkable-Beacon"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
     data.raw["recipe"]["RU-Walkable-Basic-Beacon"].hidden = false
     table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"].effects, {type = "unlock-recipe", recipe = "RU-Walkable-Basic-Beacon",})
     table.insert(data.raw["technology"]["RU-walkable-beacon-downgrade"].effects, {type = "unlock-recipe", recipe = "RU-Walkable-Basic-Beacon-Recycle",})
-    if settings.startup["RU-Walkable-Beacon"].value == "medium" or "big" then
+    if settings.startup["RU-Walkable-Beacon"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
       data.raw["recipe"]["RU-Walkable-Medium-Beacon"].hidden = false
       table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"].effects, {type = "unlock-recipe", recipe = "RU-Walkable-Medium-Beacon",})
       table.insert(data.raw["technology"]["RU-walkable-beacon-downgrade"].effects, {type = "unlock-recipe", recipe = "RU-Walkable-Medium-Beacon-Recycle",})
@@ -108,10 +93,10 @@ if settings.startup["RU-Walkable-Beacon"].value == "vanilla" or "basic" or "medi
 end
 
 --Lamp
-if settings.startup["RU-Lamp"].value == "basic" or "medium" or "big" then
+if settings.startup["RU-Lamp"].value == "basic" or settings.startup["RU-Walkable-Beacon"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
   data.raw["recipe"]["RU-Basic-Lamp"].hidden = false
   data.raw["technology"]["RU-Basic-Lamp"].hidden = false
-  if settings.startup["RU-Lamp"].value == "medium" or "big" then
+  if settings.startup["RU-Lamp"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
     data.raw["recipe"]["RU-Medium-Lamp"].hidden = false
     data.raw["technology"]["RU-Medium-Lamp"].hidden = false
     if settings.startup["RU-Lamp"].value == "big" then
@@ -136,6 +121,25 @@ end
 
 if settings.startup["RU-CheatyRecipe"].value == "true" or settings.startup["RU-AlternativeRecipe"].value == "true" then
   data.raw["technology"]["landfill-2"].hidden = "false"
+end
+
+--space exploration beacon balance
+if mods["space-exploration"] then
+  --basic
+  data.raw["beacon"]["RU-Basic-Beacon"]["module_specification"] = {module_slots = 10, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Basic-Beacon"].energy_usage = "75MW"
+  data.raw["beacon"]["RU-Walkable-Basic-Beacon"]["module_specification"] = {module_slots = 10, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Walkable-Basic-Beacon"].energy_usage = "75MW"
+  --medium
+  data.raw["beacon"]["RU-Medium-Beacon"]["module_specification"] = {module_slots = 20, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Medium-Beacon"].energy_usage = "375MW"
+  data.raw["beacon"]["RU-Walkable-Medium-Beacon"]["module_specification"] = {module_slots = 20, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Walkable-Medium-Beacon"].energy_usage = "375MW"
+  --big
+  data.raw["beacon"]["RU-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Big-Beacon"].energy_usage = "1875MW"
+  data.raw["beacon"]["RU-Walkable-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
+  data.raw["beacon"]["RU-Walkable-Big-Beacon"].energy_usage = "1875MW"
 end
 
 --WALKABLE BEACONS
