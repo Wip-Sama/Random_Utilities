@@ -5,7 +5,7 @@ data:extend({
 {
   type = "recipe",
   name = "RU-Basic-Substation",
-  hidden = "true" ,
+  hidden = "true",
   enabled = "false",
   ingredients =
   {

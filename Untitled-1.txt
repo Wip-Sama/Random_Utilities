@@ -1,0 +1,19 @@
+item:
+    boiler               a1
+    steam engine         a2
+    centrifuge           a3
+    nuclear reactor      a4
+    heat boiler          a5
+    steam turbine        a6
+#    solar panel          a7
+#    accumulator          a8
+#    substation           a9
+#    lamp                 a10
+    assembler            a11
+#    beacon               a12
+#    walkable beacon      a13
+#    belt                 a14
+    inserter             a15
+    locomotive           a16
+    wagon                a17
+    fluid wagon          a18

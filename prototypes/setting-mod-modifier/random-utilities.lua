@@ -24,7 +24,7 @@ end
 if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-Accumulator"].value == "medium" or settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Accumulator"].hidden = false
   data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-a"].hidden = false
-  if settings.startup["RU-Accumulator"].value == settings.startup["RU-Accumulator"].value == "medium" or settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
+  if settings.startup["RU-Accumulator"].value == "medium" or settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Accumulator"].hidden = false
     data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-b"].hidden = false
     if settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
@@ -33,6 +33,24 @@ if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-A
       if settings.startup["RU-Accumulator"].value == "nothing" then
         data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = false
         data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = false
+      end
+    end
+  end
+end
+
+--Belt
+if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+  data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
+  data.raw["technology"]["RU-Logistics-4"].hidden = false
+  if settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+    data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
+    data.raw["technology"]["RU-Logistics-5"].hidden = false
+    if settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+      data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
+      data.raw["technology"]["RU-Logistics-6"].hidden = false
+      if settings.startup["RU-Belt"].value == "nothing" then
+        data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
+        data.raw["technology"]["RU-Logistics-7"].hidden = false
       end
     end
   end

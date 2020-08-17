@@ -6,7 +6,7 @@ data:extend(
   {
     type = "recipe",
     name = "RU-Basic-Lamp",
-    hidden = "true" ,
+    hidden = "true",
     enabled = "false",
     ingredients =
     {

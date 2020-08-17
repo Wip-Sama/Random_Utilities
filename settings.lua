@@ -87,12 +87,6 @@ end
     localised_name = "{Angel} buffer Warehouse storage",
     localised_description = "{Item}  by default the value is 1800, change angel buffer warehouse storage",
   },
-})
---end
-
---if mods["angelsaddons-pressuretanks"] then
-  --Angel PressureTank Size OK?
-  data:extend({
     {
     type = "int-setting",
     name = "Ru-Angel-Pressuretank",
@@ -104,13 +98,6 @@ end
     localised_name = "{Anngel} Pressure tank storage",
     localised_description = "{Item}  by default the value is 100000, change angel pressure tank storage",
   },
-})
---end
-
---if mods["Krastorio2"] then
-  --Angel PressureTank Size OK?
-  --Krastorio2 medium container
-  data:extend({
   {
     type = "int-setting",
     name = "Ru-Krastorio2-medium-container",
@@ -284,11 +271,6 @@ end
     localised_name = "{Setting} Space exploration integrations",
     localised_description = "{Setting} by default the value is true, change some value for space-exploraion, turning this off can cause trouble in old world with this setting enabled",
   },
-})
---end
-
-data:extend(
-{
   --substation OK
   {
     type = "string-setting",
@@ -306,6 +288,24 @@ data:extend(
     },
     localised_name = "Substation",
     localised_description = "{Item} Enable Substations",
+  },
+  --belt
+  {
+    type = "string-setting",
+    name = "RU-Belt",
+    order = "aaa",
+    setting_type = "startup",
+    default_value = "behemoth",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
+    localised_name = "Belts",
+    localised_description = "{Item} Enable Belts",
   },
   --lamp OK
   {
@@ -733,5 +733,4 @@ data:extend(
     localised_name = "{Setting} Change bot speed",
     localised_description = "{Info} by default the value is 0.1 (vanilla : 0.05 logistic, 0.06 construction)",
   },
-}
-)
+})

@@ -3,7 +3,7 @@ data:extend({
   {
     type = "technology",
     name = "RU-walkable-beacon-upgrade",
-    hidden = "true" ,
+    hidden = "true",
     icon_size = 128,
     icon = "__base__/graphics/technology/effect-transmission.png",
     effects = {
@@ -30,7 +30,7 @@ data:extend({
   {
     type = "technology",
     name = "RU-walkable-beacon-downgrade",
-    hidden = "true" ,
+    hidden = "true",
     icon_size = 128,
     icon = "__base__/graphics/technology/effect-transmission.png",
     effects = {

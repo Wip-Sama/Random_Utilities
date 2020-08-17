@@ -7,7 +7,7 @@ data:extend(
   {
     type = "technology",
     name = "RU-Advanced-Electric-Energy-Accumulators-c",
-    hidden = "true" ,
+    hidden = "true",
 --    hidden = is_Big_accumulator_hidden ,
     icon_size = 128,
     icon = "__base__/graphics/technology/electric-energy-acumulators.png",

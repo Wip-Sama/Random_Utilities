@@ -5,7 +5,7 @@ data:extend({
   {
     type = "technology",
     name = "RU-Medium-Lamp",
-    hidden = "true" ,
+    hidden = "true",
     icon_size = 128,
     icon = "__base__/graphics/technology/optics.png",
     effects =
