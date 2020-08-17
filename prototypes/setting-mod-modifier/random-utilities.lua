@@ -30,7 +30,7 @@ if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-A
     if settings.startup["RU-Accumulator"].value == "big" or settings.startup["RU-Accumulator"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Accumulator"].hidden = false
       data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-c"].hidden = false
-      if settings.startup["RU-Accumulator"].value == "nothing" then
+      if settings.startup["RU-Accumulator"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Accumulator"].hidden = false
         data.raw["technology"]["RU-Advanced-Electric-Energy-Accumulators-d"].hidden = false
       end
@@ -48,7 +48,7 @@ if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].v
     if settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
       data.raw["technology"]["RU-Logistics-6"].hidden = false
-      if settings.startup["RU-Belt"].value == "nothing" then
+      if settings.startup["RU-Belt"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
         data.raw["technology"]["RU-Logistics-7"].hidden = false
       end
