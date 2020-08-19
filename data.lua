@@ -130,6 +130,26 @@ require "prototypes.item.belt-e-co.belt.RU-Behemoth-Transport-Belt"
 require "prototypes.entity.belt-e-co.belt.RU-Behemoth-Transport-Belt"
 require "prototypes.recipe.belt-e-co.belt.RU-Behemoth-Transport-Belt"
 require "prototypes.technology.belt-e-co.belt.RU-Behemoth-Transport-Belt"
+--Basic Inserter x1
+require "prototypes.item.inserter.inserter.x1.RU-Basic-Inserter"
+require "prototypes.entity.inserter.inserter.x1.RU-Basic-Inserter"
+require "prototypes.recipe.inserter.inserter.x1.RU-Basic-Inserter"
+require "prototypes.technology.inserter.inserter.x1.RU-Basic-Inserter"
+--Medium Inserter x1
+require "prototypes.item.inserter.inserter.x1.RU-Medium-Inserter"
+require "prototypes.entity.inserter.inserter.x1.RU-Medium-Inserter"
+require "prototypes.recipe.inserter.inserter.x1.RU-Medium-Inserter"
+require "prototypes.technology.inserter.inserter.x1.RU-Medium-Inserter"
+--Big Inserter x1
+require "prototypes.item.inserter.inserter.x1.RU-Big-Inserter"
+require "prototypes.entity.inserter.inserter.x1.RU-Big-Inserter"
+require "prototypes.recipe.inserter.inserter.x1.RU-Big-Inserter"
+require "prototypes.technology.inserter.inserter.x1.RU-Big-Inserter"
+--Behemoth Inserter x1
+require "prototypes.item.inserter.inserter.x1.RU-Behemoth-Inserter"
+require "prototypes.entity.inserter.inserter.x1.RU-Behemoth-Inserter"
+require "prototypes.recipe.inserter.inserter.x1.RU-Behemoth-Inserter"
+require "prototypes.technology.inserter.inserter.x1.RU-Behemoth-Inserter"
 --alternative recipe
 require "prototypes.recipe.AlternativeRecipe"
 --cheaty recipe
@@ -141,7 +161,8 @@ require "prototypes.setting-mod-modifier.krastorio2"
 require "prototypes.setting-mod-modifier.random-utilities"
 require "prototypes.setting-mod-modifier.space-exploration"
 require "prototypes.setting-mod-modifier.base"
-
+--lib
+require "lib.colors"
 
 --Wire Shortcuts
 if settings.startup["RU-Enable-Wire-Shortcuts"].value then

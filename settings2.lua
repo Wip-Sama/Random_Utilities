@@ -105,7 +105,23 @@ data:extend({
   --belt
   {
     type = "string-setting",
-    name = "RU-Belt",
+    name = "RU-Logistic",
+    order = "",
+    setting_type = "startup",
+    default_value = "behemoth",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
+  },
+  --Inserter
+  {
+    type = "string-setting",
+    name = "RU-Inserter",
     order = "",
     setting_type = "startup",
     default_value = "behemoth",

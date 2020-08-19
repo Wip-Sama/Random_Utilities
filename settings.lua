@@ -307,6 +307,24 @@ end
     localised_name = "Belts",
     localised_description = "{Item} Enable Belts",
   },
+  --Inserter
+  {
+    type = "string-setting",
+    name = "RU-Inserter",
+    order = "aab",
+    setting_type = "startup",
+    default_value = "behemoth",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
+    localised_name = "Inserters",
+    localised_description = "{Item} Enable Inserters",
+  },
   --lamp OK
   {
     type = "string-setting",

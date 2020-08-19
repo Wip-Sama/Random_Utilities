@@ -12,8 +12,8 @@ item:
     assembler            a11
 #    beacon               a12
 #    walkable beacon      a13
-#    belt                 a14
-    inserter             a15
+#    Logistics            a14
+#    inserter             a15
     locomotive           a16
     wagon                a17
     fluid wagon          a18

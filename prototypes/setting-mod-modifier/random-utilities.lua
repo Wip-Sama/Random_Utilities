@@ -56,6 +56,24 @@ if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].v
   end
 end
 
+--Inserter 
+if settings.startup["RU-Inserter"].value == "basic" or settings.startup["RU-Inserter"].value == "medium" or settings.startup["RU-Inserter"].value == "big" or settings.startup["RU-Inserter"].value == "behemoth" then
+  data.raw["recipe"]["RU-Basic-Inserter"].hidden = false
+  data.raw["technology"]["RU-Basic-Inserter"].hidden = false
+  if settings.startup["RU-Inserter"].value == "medium" or settings.startup["RU-Inserter"].value == "big" or settings.startup["RU-Inserter"].value == "behemoth" then
+    data.raw["recipe"]["RU-Medium-Inserter"].hidden = false
+    data.raw["technology"]["RU-Medium-Inserter"].hidden = false
+    if settings.startup["RU-Inserter"].value == "big" or settings.startup["RU-Inserter"].value == "behemoth" then
+      data.raw["recipe"]["RU-Big-Inserter"].hidden = false
+      data.raw["technology"]["RU-Big-Inserter"].hidden = false
+      if settings.startup["RU-Inserter"].value == "behemoth" then
+        data.raw["recipe"]["RU-Behemoth-Inserter"].hidden = false
+        data.raw["technology"]["RU-Behemoth-Inserter"].hidden = false
+      end
+    end
+  end
+end
+
 --solar Panel
 if settings.startup["RU-Solar-Panel"].value == "basic" or settings.startup["RU-Solar-Panel"].value == "medium" or settings.startup["RU-Solar-Panel"].value == "big" or settings.startup["RU-Solar-Panel"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Solar-Panel"].hidden = false
