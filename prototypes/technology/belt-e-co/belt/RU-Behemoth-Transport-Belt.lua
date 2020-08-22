@@ -14,11 +14,14 @@ data:extend({
         prerequisites = {"RU-Logistics-6"},
         unit =
         {
-          count = 200,
+          count = 1750,
           ingredients =
           {
             {"automation-science-pack", 1},
-            {"logistic-science-pack", 1}
+            {"logistic-science-pack", 1},
+            {"chemical-science-pack", 1},
+            {"production-science-pack", 1},
+            {"utility-science-pack", 1}
           },
           time = 34
         },

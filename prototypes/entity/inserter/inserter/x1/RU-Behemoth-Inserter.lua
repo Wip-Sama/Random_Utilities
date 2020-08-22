@@ -25,16 +25,16 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     pickup_position = {0, -1},
     insert_position = {0, 1.2},
-    energy_per_movement = "30KJ",
-    energy_per_rotation = "30KJ",
+    energy_per_movement = "300KJ",
+    energy_per_rotation = "300KJ",
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      drain = "3kW"
+      drain = "100kW"
     },
-    extension_speed = 0.5,
-    rotation_speed = 0.4,
+    extension_speed = 100,
+    rotation_speed = 100,
     fast_replaceable_group = "inserter",
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,

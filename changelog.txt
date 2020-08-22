@@ -1,19 +1,20 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: xx. 07. 2020
+Date: xx. 08. 2020
   Added:
-    - Basic Transport Belt
-    - Medium Transport Belt
-    - Big Transport Belt
-    - Behemoth Transport Belt
+    - Basic / Medium / Big / Behemoth Transport Belt
+    - Basic / Medium / Big / Behemoth Inserter
+    - Basic / Medium / Big / Behemoth Stack Inserter
 
   Changes:
     - moved scripts from data-final-fixes to settimg-mod-modifier ecc...
-    - recipes moved from hidden = "false" to hidden = "true"
+    - recipes anche technolgyes moved from hidden = "false" to hidden = "true"
+    - when logistic setting is >= nothing then express transport belt speed = 60 (vanilla 45)
 
   Bugfixes:
     - alternative offshore pump recipe
     - walkable beacons recipe still appear when the value is lower than behemoth
+    - walkable vanilla beacon give back vanilal beacon when broken
     - big lamp recipe cannot be unlocked
 
 ---------------------------------------------------------------------------------------------------

@@ -9,7 +9,7 @@ data:extend({
     icon = "__base__/graphics/icons/beacon.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.2, result = "beacon"},
+    minable = {mining_time = 0.2, result = "RU-Walkable-Beacon"},
     max_health = 200,
     corpse = "beacon-remnants",
     dying_explosion = "beacon-explosion",

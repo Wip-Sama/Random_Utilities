@@ -6,8 +6,11 @@ data:extend({
         enabled = "false",
         ingredients =
         {
-          {"iron-plate", 1},
+          {"iron-gear-wheel", 15},
+          {"RU-Medium-Transport-Belt", 2},
+          {"processing-unit", 1}
         },
-        result = "RU-Big-Transport-Belt"
+        result = "RU-Big-Transport-Belt",
+        result_count = 2,
       },
 })

@@ -40,6 +40,7 @@ end
 
 --Belt
 if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+  data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
   data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
   data.raw["technology"]["RU-Logistics-4"].hidden = false
   if settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
@@ -56,19 +57,27 @@ if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].v
   end
 end
 
---Inserter 
+--Inserter / Stack Inserter
 if settings.startup["RU-Inserter"].value == "basic" or settings.startup["RU-Inserter"].value == "medium" or settings.startup["RU-Inserter"].value == "big" or settings.startup["RU-Inserter"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Inserter"].hidden = false
   data.raw["technology"]["RU-Basic-Inserter"].hidden = false
+  data.raw["recipe"]["RU-Basic-Stack-Inserter"].hidden = false
+  data.raw["technology"]["RU-Basic-Stack-Inserter"].hidden = false
   if settings.startup["RU-Inserter"].value == "medium" or settings.startup["RU-Inserter"].value == "big" or settings.startup["RU-Inserter"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Inserter"].hidden = false
     data.raw["technology"]["RU-Medium-Inserter"].hidden = false
+    data.raw["recipe"]["RU-Medium-Stack-Inserter"].hidden = false
+    data.raw["technology"]["RU-Medium-Stack-Inserter"].hidden = false
     if settings.startup["RU-Inserter"].value == "big" or settings.startup["RU-Inserter"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Inserter"].hidden = false
       data.raw["technology"]["RU-Big-Inserter"].hidden = false
+      data.raw["recipe"]["RU-Big-Stack-Inserter"].hidden = false
+      data.raw["technology"]["RU-Big-Stack-Inserter"].hidden = false
       if settings.startup["RU-Inserter"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Inserter"].hidden = false
         data.raw["technology"]["RU-Behemoth-Inserter"].hidden = false
+        data.raw["recipe"]["RU-Behemoth-Stack-Inserter"].hidden = false
+        data.raw["technology"]["RU-Behemoth-Stack-Inserter"].hidden = false
       end
     end
   end

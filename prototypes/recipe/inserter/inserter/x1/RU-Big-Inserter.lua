@@ -7,7 +7,9 @@ data:extend(
     enabled = "false",
     ingredients =
     {
-      {"iron-plate", 1},
+      {"iron-gear-wheel", 15},
+      {"advanced-circuit", 2},
+      {"RU-Medium-Inserter", 2}
     },
     result = "RU-Big-Inserter"
   },

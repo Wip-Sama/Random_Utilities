@@ -1,21 +1,19 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Big-Inserter",
+    name = "RU-Big-Stack-Inserter",
     hidden = "true",
+    icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=132, g=180, b=181}}},
     icon_size = 64,
-    icons = {{icon = "__base__/graphics/icons/fast-inserter.png", {tint = {r=132, g=180, b=181}}}},
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "RU-Big-Inserter"
-      }
+      {type = "unlock-recipe", recipe = "RU-Big-Stack-Inserter"},
+      {type = "stack-inserter-capacity-bonus", modifier = 3}
     },
-    prerequisites = {"RU-Medium-Inserter"},
+    prerequisites = {"RU-Medium-Stack-Inserter"},
     unit =
     {
-      count = 1250,
+      count = 1500,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -26,6 +24,7 @@ data:extend({
       },
       time = 33
     },
-    order = "a-h-a"
+    upgrade = true,
+    order = "c-o-a"
   },
 })

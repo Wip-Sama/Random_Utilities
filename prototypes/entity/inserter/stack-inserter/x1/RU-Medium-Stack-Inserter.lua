@@ -4,14 +4,14 @@ local sounds = require("__base__/prototypes/entity/demo-sounds")
 data:extend({
   {
     type = "inserter",
-    name = "RU-Basic-Stack-Inserter",
-    icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=178, g=173, b=100}}},
+    name = "RU-Medium-Stack-Inserter",
+    icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=202, g=154, b=152}}},
     filter_count = 5,
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = { mining_time = 0.1, result = "RU-Basic-Stack-Inserter" },
+    minable = { mining_time = 0.1, result = "RU-Medium-Stack-Inserter" },
     max_health = 160,
-    corpses = {{corpse = "stack-inserter-remnants", tint = {r=178, g=173, b=100}}},
+    corpses = {{corpse = "stack-inserter-remnants", tint = {r=202, g=154, b=152}}},
     dying_explosion = "stack-inserter-explosion",
     stack = true,
     resistances =
@@ -24,18 +24,18 @@ data:extend({
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.4, -0.35}, {0.4, 0.45}},
     damaged_trigger_effect = hit_effects.entity(),
-    energy_per_movement = "20KJ",
-    energy_per_rotation = "20KJ",
+    energy_per_movement = "25KJ",
+    energy_per_rotation = "25KJ",
     energy_source =
     {
       type = "electric",
       usage_priority = "secondary-input",
-      drain = "1.5kW"
+      drain = "1.7kW"
     },
-    extension_speed = 0.15,
-    rotation_speed = 0.1,
+    extension_speed = 0.2,
+    rotation_speed = 0.15,
     fast_replaceable_group = "inserter",
-    next_upgrade = "RU-Medium-Stack-Inserter",
+    next_upgrade = "RU-Big-Stack-Inserter",
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
@@ -43,14 +43,14 @@ data:extend({
     hand_base_picture =
     {
       filename = "__base__/graphics/entity/stack-inserter/stack-inserter-hand-base.png",
-      tint = {r=178, g=173, b=100},
+      tint = {r=202, g=154, b=152},
       priority = "extra-high",
       width = 8,
       height = 34,
       hr_version =
       {
         filename = "__base__/graphics/entity/stack-inserter/hr-stack-inserter-hand-base.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 32,
         height = 136,
@@ -60,14 +60,14 @@ data:extend({
     hand_closed_picture =
     {
       filename = "__base__/graphics/entity/stack-inserter/stack-inserter-hand-closed.png",
-      tint = {r=178, g=173, b=100},
+      tint = {r=202, g=154, b=152},
       priority = "extra-high",
       width = 24,
       height = 41,
       hr_version =
       {
         filename = "__base__/graphics/entity/stack-inserter/hr-stack-inserter-hand-closed.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 100,
         height = 164,
@@ -77,14 +77,14 @@ data:extend({
     hand_open_picture =
     {
       filename = "__base__/graphics/entity/stack-inserter/stack-inserter-hand-open.png",
-      tint = {r=178, g=173, b=100},
+      tint = {r=202, g=154, b=152},
       priority = "extra-high",
       width = 32,
       height = 41,
       hr_version =
       {
         filename = "__base__/graphics/entity/stack-inserter/hr-stack-inserter-hand-open.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 130,
         height = 164,
@@ -143,7 +143,7 @@ data:extend({
       sheet =
       {
         filename = "__base__/graphics/entity/stack-inserter/stack-inserter-platform.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 46,
         height = 46,
@@ -151,7 +151,7 @@ data:extend({
         hr_version =
         {
           filename = "__base__/graphics/entity/stack-inserter/hr-stack-inserter-platform.png",
-          tint = {r=178, g=173, b=100},
+          tint = {r=202, g=154, b=152},
           priority = "extra-high",
           width = 105,
           height = 79,

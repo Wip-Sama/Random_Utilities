@@ -150,6 +150,26 @@ require "prototypes.item.inserter.inserter.x1.RU-Behemoth-Inserter"
 require "prototypes.entity.inserter.inserter.x1.RU-Behemoth-Inserter"
 require "prototypes.recipe.inserter.inserter.x1.RU-Behemoth-Inserter"
 require "prototypes.technology.inserter.inserter.x1.RU-Behemoth-Inserter"
+--Basic Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
+--Medium Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
+--Big Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
+--Behemoth Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
 --alternative recipe
 require "prototypes.recipe.AlternativeRecipe"
 --cheaty recipe

@@ -1,21 +1,19 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Behemoth-Inserter",
+    name = "RU-Behemoth-Stack-Inserter",
     hidden = "true",
+    icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=80, g=80, b=80}}},
     icon_size = 64,
-    icons = {{icon = "__base__/graphics/icons/fast-inserter.png", {tint = {r=80, g=80, b=80}}}},
     effects =
     {
-      {
-        type = "unlock-recipe",
-        recipe = "RU-Behemoth-Inserter"
-      }
+      {type = "unlock-recipe", recipe = "RU-Behemoth-Stack-Inserter"},
+      {type = "stack-inserter-capacity-bonus", modifier = 10}
     },
-    prerequisites = {"RU-Big-Inserter"},
+    prerequisites = {"RU-Big-Stack-Inserter"},
     unit =
     {
-      count = 1750,
+      count = 2000,
       ingredients =
       {
         {"automation-science-pack", 1},
@@ -26,6 +24,7 @@ data:extend({
       },
       time = 34
     },
-    order = "a-h-a"
+    upgrade = true,
+    order = "c-o-a"
   },
 })
