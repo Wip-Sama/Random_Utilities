@@ -38,19 +38,29 @@ if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-A
   end
 end
 
---Belt
+--Belt / splitter / underground belt
 if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
   data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
+  data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
+  data.raw["splitter"]["express-splitter"].speed = 0.125
   data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
+  data.raw["recipe"]["RU-Basic-Underground-Belt"].hidden = false
+  data.raw["recipe"]["RU-Basic-Splitter"].hidden = false
   data.raw["technology"]["RU-Logistics-4"].hidden = false
   if settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
+    data.raw["recipe"]["RU-Medium-Underground-Belt"].hidden = false
+    data.raw["recipe"]["RU-Medium-Splitter"].hidden = false
     data.raw["technology"]["RU-Logistics-5"].hidden = false
     if settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
+      data.raw["recipe"]["RU-Big-Underground-Belt"].hidden = false
+      data.raw["recipe"]["RU-Big-Splitter"].hidden = false
       data.raw["technology"]["RU-Logistics-6"].hidden = false
       if settings.startup["RU-Belt"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
+        data.raw["recipe"]["RU-Behemoth-Underground-Belt"].hidden = false
+        data.raw["recipe"]["RU-Behemoth-Splitter"].hidden = false
         data.raw["technology"]["RU-Logistics-7"].hidden = false
       end
     end
@@ -137,6 +147,23 @@ if settings.startup["RU-Walkable-Beacon"].value == "vanilla" or settings.startup
   end
 end
 
+--beacon  productivity
+if settings.startup["RU-Beacon-Productivity"].value == false then
+  --beacon 
+  table.remove(data.raw["beacon"]["RU-Basic-Beacon"].allowed_effects,{"productivity"})
+  table.remove(data.raw["beacon"]["RU-Medium-Beacon"].allowed_effects,{"productivity"})
+  table.remove(data.raw["beacon"]["RU-Big-Beacon"].allowed_effects,{"productivity"})
+  --walkable beacon 
+  table.remove(data.raw["beacon"]["RU-Walkable-Basic-Beacon"].allowed_effects,{"productivity"})
+  table.remove(data.raw["beacon"]["RU-Walkable-Medium-Beacon"].allowed_effects,{"productivity"})
+  table.remove(data.raw["beacon"]["RU-Walkable-Big-Beacon"].allowed_effects,{"productivity"})
+end
+
+--WALKABLE BEACONS
+--if mods["base"] then
+--  table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-Walkable-Big-Beacon"})
+--end
+
 --Lamp
 if settings.startup["RU-Lamp"].value == "basic" or settings.startup["RU-Walkable-Beacon"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
   data.raw["recipe"]["RU-Basic-Lamp"].hidden = false
@@ -150,7 +177,6 @@ if settings.startup["RU-Lamp"].value == "basic" or settings.startup["RU-Walkable
     end
   end
 end
-
 
   --disable items / recipes
 if settings.startup["RU-AlternativeRecipe"].value == "true" then
@@ -186,21 +212,3 @@ if mods["space-exploration"] then
   data.raw["beacon"]["RU-Walkable-Big-Beacon"]["module_specification"] = {module_slots = 30, module_info_icon_shift = {0, 0}, module_info_multi_row_initial_height_modifier = -0.3, module_info_max_icons_per_row = 2,}
   data.raw["beacon"]["RU-Walkable-Big-Beacon"].energy_usage = "1875MW"
 end
-
---WALKABLE BEACONS
---if mods["base"] then
---  table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-Walkable-Big-Beacon"})
---end
-
---[[
---beacon  productivity
-if settings.startup["RU-Beacon-Productivity"].value == false then
-  --beacon 
-  table.remove(data.raw["beacon"]["RU-Basic-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Medium-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Big-Beacon"].allowed_effects,{"productivity"})
-  --walkable beacon 
-  table.remove(data.raw["beacon"]["RU-Walkable-Basic-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Walkable-Medium-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Walkable-Big-Beacon"].allowed_effects,{"productivity"})
-end--]]

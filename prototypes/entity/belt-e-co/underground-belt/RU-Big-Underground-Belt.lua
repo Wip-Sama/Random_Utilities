@@ -1,23 +1,27 @@
+require("prototypes.entity.belt-e-co.belt.graphic.RU-Big-Transport-Belt")
+local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
+local sounds = require("__base__/prototypes/entity/demo-sounds")
+
 data:extend({
   {
     type = "underground-belt",
-    name = "underground-belt",
-    icon = "__base__/graphics/icons/underground-belt.png",
+    name = "RU-Big-Underground-Belt",
+    icons = {{icon = "__base__/graphics/icons/express-underground-belt.png", tint = {r=132, g=180, b=181}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "underground-belt"},
-    max_health = 150,
-    corpse = "underground-belt-remnants",
-    dying_explosion = "underground-belt-explosion",
-    max_distance = 5,
+    minable = {mining_time = 0.1, result = "RU-Big-Underground-Belt"},
+    max_health = 500,
+    corpse = "express-underground-belt-remnants",
+    dying_explosion = "express-underground-belt-explosion",
+    max_distance = 16,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound =
     {
       sound =
       {
-        filename = "__base__/sound/underground-belt.ogg",
-        volume = 0.2
+        filename = "__base__/sound/express-underground-belt.ogg",
+        volume = 0.35
       },
       max_sounds_per_type = 2,
       audible_distance_modifier = 0.5,
@@ -57,27 +61,29 @@ data:extend({
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     damaged_trigger_effect = hit_effects.entity(),
     animation_speed_coefficient = 32,
-    belt_animation_set = basic_belt_animation_set,
+    belt_animation_set = ru_big_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "fast-underground-belt",
-    speed = 0.03125,
+    next_upgrade = "RU-Behemoth-Underground-Belt",
+    speed = 150 / 480,
     structure =
     {
       direction_in =
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/underground-belt/underground-belt-structure.png",
+          filename = "__base__/graphics/entity/express-underground-belt/express-underground-belt-structure.png",
+          tint = {r=132, g=180, b=181},
           priority = "extra-high",
           width = 96,
           height = 96,
           y = 96,
           hr_version =
           {
-            filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
+            filename = "__base__/graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png",
+            tint = {r=132, g=180, b=181},
             priority = "extra-high",
             width = 192,
-            height =192,
+            height = 192,
             y = 192,
             scale = 0.5
           }
@@ -87,34 +93,36 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/underground-belt/underground-belt-structure.png",
+          filename = "__base__/graphics/entity/express-underground-belt/express-underground-belt-structure.png",
+          tint = {r=132, g=180, b=181},
           priority = "extra-high",
           width = 96,
           height = 96,
           hr_version =
           {
-            filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
+            filename = "__base__/graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png",
+            tint = {r=132, g=180, b=181},
             priority = "extra-high",
             width = 192,
-            height = 192,
+            height =192,
             scale = 0.5
           }
-
         }
-
       },
       direction_in_side_loading =
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/underground-belt/underground-belt-structure.png",
+          filename = "__base__/graphics/entity/express-underground-belt/express-underground-belt-structure.png",
+          tint = {r=132, g=180, b=181},
           priority = "extra-high",
           width = 96,
           height = 96,
           y = 96*3,
           hr_version =
           {
-            filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
+            filename = "__base__/graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png",
+            tint = {r=132, g=180, b=181},
             priority = "extra-high",
             width = 192,
             height = 192,
@@ -127,60 +135,62 @@ data:extend({
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/underground-belt/underground-belt-structure.png",
+          filename = "__base__/graphics/entity/express-underground-belt/express-underground-belt-structure.png",
+          tint = {r=132, g=180, b=181},
           priority = "extra-high",
           width = 96,
           height = 96,
           y = 96*2,
           hr_version =
           {
-            filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
+            filename = "__base__/graphics/entity/express-underground-belt/hr-express-underground-belt-structure.png",
+            tint = {r=132, g=180, b=181},
             priority = "extra-high",
             width = 192,
             height = 192,
-            y= 192*2,
+            y = 192*2,
             scale = 0.5
-          },
-
+          }
         }
-
       },
       back_patch =
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/underground-belt/underground-belt-structure-back-patch.png",
+          filename = "__base__/graphics/entity/express-underground-belt/express-underground-belt-structure-back-patch.png",
+          tint = {r=132, g=180, b=181},
           priority = "extra-high",
           width = 96,
           height = 96,
           hr_version =
           {
-            filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-back-patch.png",
+            filename = "__base__/graphics/entity/express-underground-belt/hr-express-underground-belt-structure-back-patch.png",
+            tint = {r=132, g=180, b=181},
             priority = "extra-high",
             width = 192,
             height = 192,
             scale = 0.5
           }
-
         }
       },
       front_patch =
       {
         sheet =
         {
-          filename = "__base__/graphics/entity/underground-belt/underground-belt-structure-front-patch.png",
+          filename = "__base__/graphics/entity/express-underground-belt/express-underground-belt-structure-front-patch.png",
+          tint = {r=132, g=180, b=181},
           priority = "extra-high",
           width = 96,
           height = 96,
           hr_version =
           {
-            filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-front-patch.png",
+            filename = "__base__/graphics/entity/express-underground-belt/hr-express-underground-belt-structure-front-patch.png",
+            tint = {r=132, g=180, b=181},
             priority = "extra-high",
             width = 192,
             height = 192,
             scale = 0.5
           }
-
         }
       }
     }

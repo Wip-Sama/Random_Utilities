@@ -1,5 +1,5 @@
 --require("__base__/prototypes/entity/transport-belt-pictures")
-require("prototypes.entity.belt-e-co.belt.graphic.RU-Behemoth-Belt")
+require("prototypes.entity.belt-e-co.belt.graphic.RU-Behemoth-Transport-Belt")
 local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
 local sounds = require("__base__/prototypes/entity/demo-sounds")
 

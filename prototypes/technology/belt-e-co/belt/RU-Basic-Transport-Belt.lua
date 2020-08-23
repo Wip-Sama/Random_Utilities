@@ -8,13 +8,13 @@ data:extend({
         effects =
         {
           { type = "unlock-recipe", recipe = "RU-Basic-Transport-Belt" },
-          --[[{ type = "unlock-recipe", recipe = "RU-Basic-Transport-Belt" },
-          { type = "unlock-recipe", recipe = "RU-Basic-Transport-Belt" },--]]
+          { type = "unlock-recipe", recipe = "RU-Basic-Splitter" },
+          { type = "unlock-recipe", recipe = "RU-Basic-Underground-Belt" },
         },
         prerequisites = {"logistics-3"},
         unit =
         {
-          count = 500,
+          count = 750,
           ingredients =
           {
             {"automation-science-pack", 1},

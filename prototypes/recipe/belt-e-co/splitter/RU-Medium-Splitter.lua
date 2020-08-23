@@ -1,16 +1,16 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Big-Transport-Belt",
+        name = "RU-Medium-Splitter",
         hidden = "true",
         enabled = "false",
+        energy_required = 2,
         ingredients =
         {
+          {"RU-Basic-Splitter", 1},
           {"iron-gear-wheel", 20},
-          {"RU-Medium-Transport-Belt", 2},
-          {"processing-unit", 2}
+          {"advanced-circuit", 10}
         },
-        result = "RU-Big-Transport-Belt",
-        result_count = 2,
+        result = "RU-Medium-Splitter"
       },
 })

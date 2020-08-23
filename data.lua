@@ -130,6 +130,38 @@ require "prototypes.item.belt-e-co.belt.RU-Behemoth-Transport-Belt"
 require "prototypes.entity.belt-e-co.belt.RU-Behemoth-Transport-Belt"
 require "prototypes.recipe.belt-e-co.belt.RU-Behemoth-Transport-Belt"
 require "prototypes.technology.belt-e-co.belt.RU-Behemoth-Transport-Belt"
+--Underground Basic Belt
+require "prototypes.item.belt-e-co.underground-belt.RU-Basic-Underground-Belt"
+require "prototypes.entity.belt-e-co.underground-belt.RU-Basic-Underground-Belt"
+require "prototypes.recipe.belt-e-co.underground-belt.RU-Basic-Underground-Belt"
+--Underground Medium Belt
+require "prototypes.item.belt-e-co.underground-belt.RU-Medium-Underground-Belt"
+require "prototypes.entity.belt-e-co.underground-belt.RU-Medium-Underground-Belt"
+require "prototypes.recipe.belt-e-co.underground-belt.RU-Medium-Underground-Belt"
+--Underground Big Belt
+require "prototypes.item.belt-e-co.underground-belt.RU-Big-Underground-Belt"
+require "prototypes.entity.belt-e-co.underground-belt.RU-Big-Underground-Belt"
+require "prototypes.recipe.belt-e-co.underground-belt.RU-Big-Underground-Belt"
+--Underground Behemoth Belt
+require "prototypes.item.belt-e-co.underground-belt.RU-Behemoth-Underground-Belt"
+require "prototypes.entity.belt-e-co.underground-belt.RU-Behemoth-Underground-Belt"
+require "prototypes.recipe.belt-e-co.underground-belt.RU-Behemoth-Underground-Belt"
+--Splitter Basic Belt
+require "prototypes.item.belt-e-co.splitter.RU-Basic-Splitter"
+require "prototypes.entity.belt-e-co.splitter.RU-Basic-Splitter"
+require "prototypes.recipe.belt-e-co.splitter.RU-Basic-Splitter"
+--Splitter Medium Belt
+require "prototypes.item.belt-e-co.splitter.RU-Medium-Splitter"
+require "prototypes.entity.belt-e-co.splitter.RU-Medium-Splitter"
+require "prototypes.recipe.belt-e-co.splitter.RU-Medium-Splitter"
+--Splitter Big Belt
+require "prototypes.item.belt-e-co.splitter.RU-Big-Splitter"
+require "prototypes.entity.belt-e-co.splitter.RU-Big-Splitter"
+require "prototypes.recipe.belt-e-co.splitter.RU-Big-Splitter"
+--Splitter Behemoth Belt
+require "prototypes.item.belt-e-co.splitter.RU-Behemoth-Splitter"
+require "prototypes.entity.belt-e-co.splitter.RU-Behemoth-Splitter"
+require "prototypes.recipe.belt-e-co.splitter.RU-Behemoth-Splitter"
 --Basic Inserter x1
 require "prototypes.item.inserter.inserter.x1.RU-Basic-Inserter"
 require "prototypes.entity.inserter.inserter.x1.RU-Basic-Inserter"

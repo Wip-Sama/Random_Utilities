@@ -6,9 +6,9 @@ data:extend({
         enabled = "false",
         ingredients =
         {
-          {"iron-gear-wheel", 15},
+          {"iron-gear-wheel", 20},
           {"express-transport-belt", 2},
-          {"electronic-circuit", 1}
+          {"electronic-circuit", 2}
         },
         result = "RU-Basic-Transport-Belt",
         result_count = 2,

@@ -1,18 +1,18 @@
-require("prototypes.entity.belt-e-co.belt.graphic.RU-Basic-Transport-Belt")
+require("prototypes.entity.belt-e-co.belt.graphic.RU-Big-Transport-Belt")
 local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
 local sounds = require("__base__/prototypes/entity/demo-sounds")
 
 data:extend({
   {
     type = "splitter",
-    name = "RU-Basic-Splitter",
-    icons = {{icon = "__base__/graphics/icons/splitter.png", tint = {r=178, g=173, b=100}}},
+    name = "RU-Big-Splitter",
+    icons = {{icon = "__base__/graphics/icons/express-splitter.png", tint = {r=132, g=180, b=181}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Basic-Splitter"},
-    max_health = 300,
-    corpse = "splitter-remnants",
-    dying_explosion = "splitter-explosion",
+    minable = {mining_time = 0.1, result = "RU-Big-Splitter"},
+    max_health = 500,
+    corpse = "express-splitter-remnants",
+    dying_explosion = "express-splitter-explosion",
     resistances =
     {
       {
@@ -27,9 +27,9 @@ data:extend({
     structure_animation_speed_coefficient = 0.7,
     structure_animation_movement_cooldown = 10,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "RU-Medium-Splitter",
-    speed = 0.1875,
-    belt_animation_set = ru_basic_transport_belt_animation_set,
+    next_upgrade = "RU-Behemoth-Splitter",
+    speed = 150 / 480,
+    belt_animation_set = ru_big_transport_belt_animation_set,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound = sounds.splitter,
@@ -37,8 +37,8 @@ data:extend({
     {
       north =
       {
-        filename = "__base__/graphics/entity/splitter/splitter-north.png",
-        tint = {r=178, g=173, b=100},
+        filename = "__base__/graphics/entity/express-splitter/express-splitter-north.png",
+        tint = {r=132, g=180, b=181},
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -47,8 +47,8 @@ data:extend({
         shift = util.by_pixel(6, 0),
         hr_version =
         {
-          filename = "__base__/graphics/entity/splitter/hr-splitter-north.png",
-          tint = {r=178, g=173, b=100},
+          filename = "__base__/graphics/entity/express-splitter/hr-express-splitter-north.png",
+          tint = {r=132, g=180, b=181},
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -60,8 +60,8 @@ data:extend({
       },
       east =
       {
-        filename = "__base__/graphics/entity/splitter/splitter-east.png",
-        tint = {r=178, g=173, b=100},
+        filename = "__base__/graphics/entity/express-splitter/express-splitter-east.png",
+        tint = {r=132, g=180, b=181},
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -70,8 +70,8 @@ data:extend({
         shift = util.by_pixel(4, 12),
         hr_version =
         {
-          filename = "__base__/graphics/entity/splitter/hr-splitter-east.png",
-          tint = {r=178, g=173, b=100},
+          filename = "__base__/graphics/entity/express-splitter/hr-express-splitter-east.png",
+          tint = {r=132, g=180, b=181},
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -83,8 +83,8 @@ data:extend({
       },
       south =
       {
-        filename = "__base__/graphics/entity/splitter/splitter-south.png",
-        tint = {r=178, g=173, b=100},
+        filename = "__base__/graphics/entity/express-splitter/express-splitter-south.png",
+        tint = {r=132, g=180, b=181},
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -93,8 +93,8 @@ data:extend({
         shift = util.by_pixel(4, 0),
         hr_version =
         {
-          filename = "__base__/graphics/entity/splitter/hr-splitter-south.png",
-          tint = {r=178, g=173, b=100},
+          filename = "__base__/graphics/entity/express-splitter/hr-express-splitter-south.png",
+          tint = {r=132, g=180, b=181},
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -106,8 +106,8 @@ data:extend({
       },
       west =
       {
-        filename = "__base__/graphics/entity/splitter/splitter-west.png",
-        tint = {r=178, g=173, b=100},
+        filename = "__base__/graphics/entity/express-splitter/express-splitter-west.png",
+        tint = {r=132, g=180, b=181},
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -116,8 +116,8 @@ data:extend({
         shift = util.by_pixel(6, 12),
         hr_version =
         {
-          filename = "__base__/graphics/entity/splitter/hr-splitter-west.png",
-          tint = {r=178, g=173, b=100},
+          filename = "__base__/graphics/entity/express-splitter/hr-express-splitter-west.png",
+          tint = {r=132, g=180, b=181},
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -133,8 +133,8 @@ data:extend({
       north = util.empty_sprite(),
       east =
       {
-        filename = "__base__/graphics/entity/splitter/splitter-east-top_patch.png",
-        tint = {r=178, g=173, b=100},
+        filename = "__base__/graphics/entity/express-splitter/express-splitter-east-top_patch.png",
+        tint = {r=132, g=180, b=181},
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -143,8 +143,8 @@ data:extend({
         shift = util.by_pixel(4, -20),
         hr_version =
         {
-          filename = "__base__/graphics/entity/splitter/hr-splitter-east-top_patch.png",
-          tint = {r=178, g=173, b=100},
+          filename = "__base__/graphics/entity/express-splitter/hr-express-splitter-east-top_patch.png",
+          tint = {r=132, g=180, b=181},
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
@@ -157,8 +157,8 @@ data:extend({
       south = util.empty_sprite(),
       west =
       {
-        filename = "__base__/graphics/entity/splitter/splitter-west-top_patch.png",
-        tint = {r=178, g=173, b=100},
+        filename = "__base__/graphics/entity/express-splitter/express-splitter-west-top_patch.png",
+        tint = {r=132, g=180, b=181},
         frame_count = 32,
         line_length = 8,
         priority = "extra-high",
@@ -167,8 +167,8 @@ data:extend({
         shift = util.by_pixel(6, -18),
         hr_version =
         {
-          filename = "__base__/graphics/entity/splitter/hr-splitter-west-top_patch.png",
-          tint = {r=178, g=173, b=100},
+          filename = "__base__/graphics/entity/express-splitter/hr-express-splitter-west-top_patch.png",
+          tint = {r=132, g=180, b=181},
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",

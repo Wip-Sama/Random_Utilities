@@ -6,7 +6,7 @@ data:extend({
         enabled = "false",
         ingredients =
         {
-          {"iron-gear-wheel", 15},
+          {"iron-gear-wheel", 20},
           {"RU-Big-Transport-Belt", 2},
           {"speed-module-3", 1}
         },

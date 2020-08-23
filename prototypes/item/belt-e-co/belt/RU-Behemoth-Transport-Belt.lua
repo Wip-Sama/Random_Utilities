@@ -7,6 +7,6 @@ data:extend({
         subgroup = "belt",
         order = "g[transport-belt]-g[transport-belt]",
         place_result = "RU-Behemoth-Transport-Belt",
-        stack_size = 100
+        stack_size = 200
     },
 })

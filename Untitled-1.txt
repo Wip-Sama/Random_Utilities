@@ -17,3 +17,5 @@ item:
     locomotive           a16
     wagon                a17
     fluid wagon          a18
+
+    beacon productivity

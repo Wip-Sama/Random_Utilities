@@ -751,4 +751,13 @@ end
     localised_name = "{Setting} Change bot speed",
     localised_description = "{Info} by default the value is 0.1 (vanilla : 0.05 logistic, 0.06 construction)",
   },
+  {
+    type = "bool-setting",
+    name = "RU-Beacon-Productivity",
+    order = "cg",
+    setting_type = "startup",
+    default_value = true,
+    localised_name = "{Setting} enable global beacon productivity",
+    localised_description = "RU-Vanilla",
+  },
 })
