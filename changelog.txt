@@ -7,17 +7,21 @@ Date: xx. 08. 2020
     - Basic / Medium / Big / Behemoth Underground Belt
     - Basic / Medium / Big / Behemoth Inserter
     - Basic / Medium / Big / Behemoth Stack Inserter
+    - Basic / Medium / Big / Behemoth Boiler
+    - Basic / Medium / Big / Behemoth Steam Engine
     - Beacon Productivity Setting
 
   Changes:
     - moved scripts from data-final-fixes to settimg-mod-modifier ecc...
-    - recipes anche technolgyes moved from hidden = "false" to hidden = "true"
+    - recipes and technolgies moved from hidden = "false" to hidden = "true"
     - when logistic setting is >= nothing then express transport belt speed = 60 (vanilla 45)
+    - Rebalanced Behemoth Solar Panel ()
+    - Rebalanced Behemoth Accumulator ()
 
   Bugfixes:
     - alternative offshore pump recipe
-    - walkable beacons recipe still appear when the value is lower than behemoth
-    - walkable vanilla beacon give back vanilal beacon when broken
+    - walkable beacons recipe still appear when the value is lower than behemoth (downgrade)
+    - walkable vanilla beacon give back vanilla beacon when broken
     - big lamp recipe cannot be unlocked
 
 ---------------------------------------------------------------------------------------------------

@@ -23,13 +23,13 @@ for _, dat in pairs(data.raw) do
 	end
 end
 
-
 --stack size Contruction Robot OK
 if settings.startup["RU-Stack-Size-CRobot"].value then
 	for _,v in pairs(data.raw["construction-robot"]) do
 		v.max_payload_size = max(1, min(2147483647, v.max_payload_size * itemStackSizeMultiplier))
 	end
 end
+
 --stack size Logistic Robot OK
 if settings.startup["RU-Stack-Size-LRobot"].value then
 	for _,v in pairs(data.raw["logistic-robot"]) do

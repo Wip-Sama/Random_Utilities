@@ -202,6 +202,50 @@ require "prototypes.item.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
 require "prototypes.entity.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
 require "prototypes.recipe.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
 require "prototypes.technology.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
+--Basic Boiler
+require "prototypes.item.boiler.RU-Basic-Boiler"
+require "prototypes.entity.boiler.RU-Basic-Boiler"
+require "prototypes.recipe.boiler.RU-Basic-Boiler"
+require "prototypes.technology.boiler.RU-Basic-Boiler"
+--[[
+--Medium Boiler
+require "prototypes.item.boiler.RU-Medium-Boiler"
+require "prototypes.entity.boiler.RU-Medium-Boiler"
+require "prototypes.recipe.boiler.RU-Medium-Boiler"
+require "prototypes.technology.boiler.RU-Medium-Boiler"
+--Big Boiler
+require "prototypes.item.boiler.RU-Big-Boiler"
+require "prototypes.entity.boiler.RU-Big-Boiler"
+require "prototypes.recipe.boiler.RU-Big-Boiler"
+require "prototypes.technology.boiler.RU-Big-Boiler"
+--Behemoth Boiler
+require "prototypes.item.boiler.RU-Behemoth-Boiler"
+require "prototypes.entity.boiler.RU-Behemoth-Boiler"
+require "prototypes.recipe.boiler.RU-Behemoth-Boiler"
+require "prototypes.technology.boiler.RU-Behemoth-Boiler"
+--]]
+--Basic Steam Engine
+require "prototypes.item.steam-engine.RU-Basic-Steam-Engine"
+require "prototypes.entity.steam-engine.RU-Basic-Steam-Engine"
+require "prototypes.recipe.steam-engine.RU-Basic-Steam-Engine"
+require "prototypes.technology.steam-engine.RU-Basic-Steam-Engine"
+--[[
+--Medium Steam Engine
+require "prototypes.item.steam-engine.RU-Medium-Steam-Engine"
+require "prototypes.entity.steam-engine.RU-Medium-Steam-Engine"
+require "prototypes.recipe.steam-engine.RU-Medium-Steam-Engine"
+require "prototypes.technology.steam-engine.RU-Medium-Steam-Engine"
+--Big Steam Engine
+require "prototypes.item.steam-engine.RU-Big-Steam-Engine"
+require "prototypes.entity.steam-engine.RU-Big-Steam-Engine"
+require "prototypes.recipe.steam-engine.RU-Big-Steam-Engine"
+require "prototypes.technology.steam-engine.RU-Big-Steam-Engine"
+--Behemoth Steam Engine
+require "prototypes.item.steam-engine.RU-Behemoth-Steam-Engine"
+require "prototypes.entity.steam-engine.RU-Behemoth-Steam-Engine"
+require "prototypes.recipe.steam-engine.RU-Behemoth-Steam-Engine"
+require "prototypes.technology.steam-engine.RU-Behemoth-Steam-Engine"
+--]]
 --alternative recipe
 require "prototypes.recipe.AlternativeRecipe"
 --cheaty recipe

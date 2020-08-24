@@ -1,3 +1,7 @@
+require("prototypes.entity.belt-e-co.belt.graphic.RU-Basic-Transport-Belt")
+local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
+local sounds = require("__base__/prototypes/entity/demo-sounds")
+
 data:extend({  
   {
     type = "loader-1x1",
@@ -10,7 +14,7 @@ data:extend({
     collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     animation_speed_coefficient = 32,
-    belt_animation_set = basic_belt_animation_set,
+    belt_animation_set = ru_basic_transport_belt_animation_set,
     container_distance = 1,
     speed = 0.03125,
     structure_render_layer = "lower-object",
