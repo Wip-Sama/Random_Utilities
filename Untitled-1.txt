@@ -1,6 +1,6 @@
 item:
-    boiler               a1
-    steam engine         a2
+#    boiler               a1
+#    steam engine         a2
     centrifuge           a3
     nuclear reactor      a4
     heat boiler          a5
@@ -18,4 +18,53 @@ item:
     wagon                a17
     fluid wagon          a18
 
-    beacon productivity
+#    beacon productivity
+
+#    inventory size
+#    stack size
+#    enable stack size on Contruction Robot
+#    enable stack size on logistic Robot
+#    reach distance
+#    mine distance
+#    minining speed
+#    bot speed
+#    no crafting time
+#    Better Cable Visibility
+#    wire shortcut
+#    wire crafting
+#    reduce tree collision
+#DISABLED    AlternativeRecipe 
+#DISABLED    CheatyRecipe 
+#    Assembler liquid Imput Output
+#    Assembling Machine Imput Output
+#    Chemical Plant Imput Output
+#    Oil Refineries Imput Output
+
+
+#    small electric pole wire reach
+#    small electric pole supply area
+#    medium electric pole wire reach
+#    medium electric pole supply area
+#    big electric pole wire reach
+#    big electric pole supply area
+#    vanilla substation wire reach
+#    vanilla substation supply area
+
+#    Quick Start
+#    Quick Start Modular Armor
+#    Quick Start Train technology
+#    Quick Start Robot technology
+
+#    space exploration integration
+
+#    angel warehouse
+#    angel logistic warehouse
+#    krastorio2 medium container
+#    krastorio2 medium logistic container
+#    krastorio2 big container
+#    krastorio2 big logistic container
+
+#    angel pressuretank
+#    krastorio2 big fluid storage
+#    krastorio2 huge fluid storage
+

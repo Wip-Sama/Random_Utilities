@@ -2,8 +2,8 @@ data:extend({
     {
         type = "recipe",
         name = "RU-Basic-Boiler",
-        hidden = "false",
-        enabled = "true",
+        hidden = "true",
+        enabled = "false",
         ingredients = 
         {
             {"boiler", 2}, 

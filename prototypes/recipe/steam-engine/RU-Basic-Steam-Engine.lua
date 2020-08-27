@@ -2,8 +2,8 @@ data:extend({
     {
         type = "recipe",
         name = "RU-Basic-Steam-Engine",
-        hidden = "false",
-        enabled = "true",
+        hidden = "true",
+        enabled = "false",
         ingredients = 
         {
             {"steam-engine", 2}, 

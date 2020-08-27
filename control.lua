@@ -1,11 +1,12 @@
 --Quick Start
-script.on_event(
-  defines.events.on_player_created,
-  function(event)
-    local atStart = {}
+script.on_event(defines.events.on_player_created, setStartItems)
+script.on_event(defines.events.on_cutscene_cancelled, setStartItems)
+
+function setStartItems(event)    
+  local atStart = {}
+    atStart["equip"] = {}
     atStart["items"] = {}
     atStart["tech"] = {}
-    atStart["equip"] = {}
     --Items
     if settings.startup["ru-quick-start"].value == "Small amount" then
       atStart["items"] = {
@@ -94,10 +95,12 @@ script.on_event(
         {"steel-plate", 100}
       }
     end
-    local player = game.players[event.player_index]
+
+    local player = game.get_player(event.player_index)
     for _, item in pairs(atStart["items"]) do
-      player.insert {name = item[1], count = item[2]}
+      player.insert({name = item[1], count = item[2]})
     end
+
     atStart["items"] = {}
     --Tecnologies
     if settings.startup["ru-train-technology"].value then
@@ -114,11 +117,13 @@ script.on_event(
         {"fluid-wagon"}
       }
     end
+
     if atStart["tech"] ~= nil then
       for _, tech in pairs(atStart["tech"]) do
         player.force.technologies[tech[1]].researched = true
       end
     end
+
     atStart["tech"] = {}
     if settings.startup["ru-robot-technology"].value then
       atStart["tech"] = {
@@ -135,6 +140,7 @@ script.on_event(
         {"construction-robotics"},
         {"logistic-system"}
       }
+
     end
     if atStart["tech"] ~= nil then
       for _, tech in pairs(atStart["tech"]) do
@@ -196,16 +202,19 @@ script.on_event(
         {"construction-robot", 220},
       }
     end
-    local player = game.players[event.player_index]
+
+    local player = game.get_player(event.player_index)
     for _, item in pairs(atStart["items"]) do
-      player.insert {name = item[1], count = item[2]}
+      player.insert({name = item[1], count = item[2]})
     end
-    local player = game.players[event.player_index]
+
+    local player = game.get_player(event.player_index)
     for _, equip in pairs(atStart["equip"]) do
-      player.insert {name = equip[1], count = equip[2]}
+      player.insert({name = equip[1], count = equip[2]})
     end
+
   end
-)
+
 
 --Wire Shortcuts
 function handle_shortcut(event)

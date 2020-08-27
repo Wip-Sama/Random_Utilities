@@ -1,16 +1,16 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Big-Boiler",
+        name = "RU-Behemoth-Steam-Engine",
         hidden = "true",
         enabled = "false",
         ingredients = 
         {
-            {"RU-Medium-Boiler", 2}, 
+            {"steam-engine", 2}, 
             {"steel-plate", 5},
-            {"low-density-structure", 4},
+            {"low-density-structure", 8},
             {"pipe", 2},
         },
-        result = "RU-Big-Boiler"
+        result = "RU-Behemoth-Steam-Engine"
     },
 })

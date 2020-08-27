@@ -10,6 +10,8 @@ Date: xx. 08. 2020
     - Basic / Medium / Big / Behemoth Boiler
     - Basic / Medium / Big / Behemoth Steam Engine
     - Beacon Productivity Setting
+    - Some angel warehouse settings
+    - Some krastorio2 container settings
 
   Changes:
     - moved scripts from data-final-fixes to settimg-mod-modifier ecc...
@@ -17,12 +19,17 @@ Date: xx. 08. 2020
     - when logistic setting is >= nothing then express transport belt speed = 60 (vanilla 45)
     - Rebalanced Behemoth Solar Panel ()
     - Rebalanced Behemoth Accumulator ()
+    - basic setting moved from Behemoth to Big
+    - removed some angel warehouse settings
+    - removed some krastorio2 container settings
+    - temporany disabled "cheaty recipe" and "alternative recipe"
 
   Bugfixes:
     - alternative offshore pump recipe
     - walkable beacons recipe still appear when the value is lower than behemoth (downgrade)
     - walkable vanilla beacon give back vanilla beacon when broken
     - big lamp recipe cannot be unlocked
+    - quick start on single player
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.3.4

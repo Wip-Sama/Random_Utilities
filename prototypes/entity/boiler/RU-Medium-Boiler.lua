@@ -5,11 +5,11 @@ local sounds = require("__base__/prototypes/entity/demo-sounds")
 data:extend({
     {
         type = "boiler",
-        name = "RU-Basic-Boiler",
-        icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=178, g=173, b=100}}},
+        name = "RU-Medium-Boiler",
+        icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=202, g=154, b=152}}},
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.2, result = "RU-Basic-Boiler"},
+        minable = {mining_time = 0.2, result = "RU-Medium-Boiler"},
         max_health = 200,
         corpse = "boiler-remnants",
         dying_explosion = "boiler-explosion",
@@ -66,7 +66,7 @@ data:extend({
         {
           type = "burner",
           fuel_category = "chemical",
-          effectivity = 1.15,
+          effectivity = 1.30,
           fuel_inventory_size = 1,
           emissions_per_minute = 30,
           smoke =
@@ -106,7 +106,7 @@ data:extend({
             {
               {
                 filename = "__base__/graphics/entity/boiler/boiler-N-idle.png",
-                tint = {r=178, g=173, b=100},
+                tint = {r=202, g=154, b=152},
             priority = "extra-high",
                 width = 131,
                 height = 108,
@@ -114,7 +114,7 @@ data:extend({
                 hr_version =
                 {
                   filename = "__base__/graphics/entity/boiler/hr-boiler-N-idle.png",
-                  tint = {r=178, g=173, b=100},
+                  tint = {r=202, g=154, b=152},
             priority = "extra-high",
                   width = 269,
                   height = 221,
@@ -148,7 +148,7 @@ data:extend({
             {
               {
                 filename = "__base__/graphics/entity/boiler/boiler-E-idle.png",
-                tint = {r=178, g=173, b=100},
+                tint = {r=202, g=154, b=152},
             priority = "extra-high",
                 width = 105,
                 height = 147,
@@ -156,7 +156,7 @@ data:extend({
                 hr_version =
                 {
                   filename = "__base__/graphics/entity/boiler/hr-boiler-E-idle.png",
-                  tint = {r=178, g=173, b=100},
+                  tint = {r=202, g=154, b=152},
             priority = "extra-high",
                   width = 216,
                   height = 301,
@@ -190,7 +190,7 @@ data:extend({
             {
               {
                 filename = "__base__/graphics/entity/boiler/boiler-S-idle.png",
-                tint = {r=178, g=173, b=100},
+                tint = {r=202, g=154, b=152},
             priority = "extra-high",
                 width = 128,
                 height = 95,
@@ -198,7 +198,7 @@ data:extend({
                 hr_version =
                 {
                   filename = "__base__/graphics/entity/boiler/hr-boiler-S-idle.png",
-                  tint = {r=178, g=173, b=100},
+                  tint = {r=202, g=154, b=152},
             priority = "extra-high",
                   width = 260,
                   height = 192,
@@ -232,7 +232,7 @@ data:extend({
             {
               {
                 filename = "__base__/graphics/entity/boiler/boiler-W-idle.png",
-                tint = {r=178, g=173, b=100},
+                tint = {r=202, g=154, b=152},
             priority = "extra-high",
                 width = 96,
                 height = 132,
@@ -240,7 +240,7 @@ data:extend({
                 hr_version =
                 {
                   filename = "__base__/graphics/entity/boiler/hr-boiler-W-idle.png",
-                  tint = {r=178, g=173, b=100},
+                  tint = {r=202, g=154, b=152},
             priority = "extra-high",
                   width = 196,
                   height = 273,
@@ -275,7 +275,7 @@ data:extend({
           east =
           {
             filename = "__base__/graphics/entity/boiler/boiler-E-patch.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             width = 3,
             height = 17,
@@ -297,7 +297,7 @@ data:extend({
           north =
           {
             filename = "__base__/graphics/entity/boiler/boiler-N-fire.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 64,
             line_length = 8,
@@ -308,7 +308,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-N-fire.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 64,
               line_length = 8,
@@ -322,7 +322,7 @@ data:extend({
           east =
           {
             filename = "__base__/graphics/entity/boiler/boiler-E-fire.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 64,
             line_length = 8,
@@ -333,7 +333,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-E-fire.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 64,
               line_length = 8,
@@ -347,7 +347,7 @@ data:extend({
           south =
           {
             filename = "__base__/graphics/entity/boiler/boiler-S-fire.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 64,
             line_length = 8,
@@ -358,7 +358,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-S-fire.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 64,
               line_length = 8,
@@ -372,7 +372,7 @@ data:extend({
           west =
           {
             filename = "__base__/graphics/entity/boiler/boiler-W-fire.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 64,
             line_length = 8,
@@ -383,7 +383,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-W-fire.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 64,
               line_length = 8,
@@ -403,7 +403,7 @@ data:extend({
           north =
           {
             filename = "__base__/graphics/entity/boiler/boiler-N-light.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 1,
             width = 100,
@@ -413,7 +413,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-N-light.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 1,
               width = 200,
@@ -426,7 +426,7 @@ data:extend({
           east =
           {
             filename = "__base__/graphics/entity/boiler/boiler-E-light.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 1,
             width = 70,
@@ -436,7 +436,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-E-light.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 1,
               width = 139,
@@ -449,7 +449,7 @@ data:extend({
           south =
           {
             filename = "__base__/graphics/entity/boiler/boiler-S-light.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 1,
             width = 100,
@@ -459,7 +459,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-S-light.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 1,
               width = 200,
@@ -472,7 +472,7 @@ data:extend({
           west =
           {
             filename = "__base__/graphics/entity/boiler/boiler-W-light.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frame_count = 1,
             width = 68,
@@ -482,7 +482,7 @@ data:extend({
             hr_version =
             {
               filename = "__base__/graphics/entity/boiler/hr-boiler-W-light.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
             priority = "extra-high",
               frame_count = 1,
               width = 136,

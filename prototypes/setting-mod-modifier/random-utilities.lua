@@ -2,6 +2,42 @@
   setting_accumulator = settings.startup["RU-Accumulator"].value
 end--]]
 
+--Boiler
+if settings.startup["RU-Boiler"].value == "basic" or settings.startup["RU-Boiler"].value == "medium" or settings.startup["RU-Boiler"].value == "big" or settings.startup["RU-Boiler"].value == "behemoth" then
+  data.raw["recipe"]["RU-Basic-Boiler"].hidden = false
+  data.raw["technology"]["RU-Basic-Boiler"].hidden = false
+  if settings.startup["RU-Boiler"].value == "medium" or settings.startup["RU-Boiler"].value == "big" or settings.startup["RU-Boiler"].value == "behemoth" then
+    data.raw["recipe"]["RU-Medium-Boiler"].hidden = false
+    data.raw["technology"]["RU-Medium-Boiler"].hidden = false
+    if settings.startup["RU-Boiler"].value == "big" or settings.startup["RU-Boiler"].value == "behemoth" then
+      data.raw["recipe"]["RU-Big-Boiler"].hidden = false
+      data.raw["technology"]["RU-Big-Boiler"].hidden = false
+      if settings.startup["RU-Boiler"].value == "behemoth" then
+        data.raw["recipe"]["RU-Behemoth-Boiler"].hidden = false
+        data.raw["technology"]["RU-Behemoth-Boiler"].hidden = false
+      end
+    end
+  end
+end
+
+--Steam Engine
+if settings.startup["RU-Steam-Engine"].value == "basic" or settings.startup["RU-Steam-Engine"].value == "medium" or settings.startup["RU-Steam-Engine"].value == "big" or settings.startup["RU-Steam-Engine"].value == "behemoth" then
+  data.raw["recipe"]["RU-Basic-Steam-Engine"].hidden = false
+  data.raw["technology"]["RU-Basic-Steam-Engine"].hidden = false
+  if settings.startup["RU-Steam-Engine"].value == "medium" or settings.startup["RU-Steam-Engine"].value == "big" or settings.startup["RU-Steam-Engine"].value == "behemoth" then
+    data.raw["recipe"]["RU-Medium-Steam-Engine"].hidden = false
+    data.raw["technology"]["RU-Medium-Steam-Engine"].hidden = false
+    if settings.startup["RU-Steam-Engine"].value == "big" or settings.startup["RU-Steam-Engine"].value == "behemoth" then
+      data.raw["recipe"]["RU-Big-Steam-Engine"].hidden = false
+      data.raw["technology"]["RU-Big-Steam-Engine"].hidden = false
+      if settings.startup["RU-Steam-Engine"].value == "behemoth" then
+        data.raw["recipe"]["RU-Behemoth-Steam-Engine"].hidden = false
+        data.raw["technology"]["RU-Behemoth-Steam-Engine"].hidden = false
+      end
+    end
+  end
+end
+
 --Substation
 if settings.startup["RU-Substation"].value == "basic" or settings.startup["RU-Substation"].value == "medium" or settings.startup["RU-Substation"].value == "big" or settings.startup["RU-Substation"].value == "behemoth" then
   data.raw["recipe"]["RU-Basic-Substation"].hidden = false

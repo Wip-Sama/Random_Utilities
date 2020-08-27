@@ -6,7 +6,7 @@ data:extend({
         enabled = "false",
         ingredients = 
         {
-            {"boiler", 2}, 
+            {"RU-Basic-Boiler", 2}, 
             {"steel-plate", 5},
             {"pipe", 2},
         },
