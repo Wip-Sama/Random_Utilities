@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: xx. 08. 2020
+Date: 2020-08-28
   Added:
     - Basic / Medium / Big / Behemoth Transport Belt
     - Basic / Medium / Big / Behemoth Splitter
@@ -12,13 +12,13 @@ Date: xx. 08. 2020
     - Beacon Productivity Setting
     - Some angel warehouse settings
     - Some krastorio2 container settings
+    - hp control
+    - hp recovery control
 
   Changes:
     - moved scripts from data-final-fixes to settimg-mod-modifier ecc...
     - recipes and technolgies moved from hidden = "false" to hidden = "true"
     - when logistic setting is >= nothing then express transport belt speed = 60 (vanilla 45)
-    - Rebalanced Behemoth Solar Panel ()
-    - Rebalanced Behemoth Accumulator ()
     - basic setting moved from Behemoth to Big
     - removed some angel warehouse settings
     - removed some krastorio2 container settings

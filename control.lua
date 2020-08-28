@@ -53,14 +53,14 @@ function setStartItems(event)
         {"cargo-wagon", 10},
         {"fluid-wagon", 10},
         {"electric-mining-drill", 150},
-        {"lab", 1},
+        {"lab", 2},
         {"steam-engine", 40},
         {"boiler", 20},
         {"offshore-pump", 2},
         {"steel-furnace", 100},
         {"coal", 100},
         {"copper-plate", 100},
-        {"iron-plate", 92},
+        {"iron-plate", 100},
         {"steel-plate", 100}
       }
     elseif settings.startup["ru-quick-start"].value == "Huge amount" then
@@ -84,14 +84,14 @@ function setStartItems(event)
         {"logistic-chest-requester", 50},
         {"construction-robot", 150},
         {"logistic-robot", 150},
-        {"lab", 1},
+        {"lab", 2},
         {"steam-engine", 40},
         {"boiler", 20},
         {"offshore-pump", 2},
         {"steel-furnace", 100},
         {"coal", 100},
         {"copper-plate", 100},
-        {"iron-plate", 92},
+        {"iron-plate", 100},
         {"steel-plate", 100}
       }
     end

@@ -27,6 +27,8 @@ item:
 #    reach distance
 #    mine distance
 #    minining speed
+#    HP
+#    HP recovery
 #    bot speed
 #    no crafting time
 #    Better Cable Visibility

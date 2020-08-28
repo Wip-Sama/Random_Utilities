@@ -12,7 +12,7 @@ data:extend({
         recipe = "RU-Medium-Steam-Engine"
       }
     },
-    prerequisites = {"RU-Medium-Steam-Engine"},
+    prerequisites = {"RU-Basic-Steam-Engine"},
     unit =
     {
       count = 700,
@@ -20,7 +20,7 @@ data:extend({
       {
         {"automation-science-pack", 1},
         {"logistic-science-pack", 1},
-        {"chemical-scienza-pack", 1},
+        {"chemical-science-pack", 1},
       },
       time = 31
     },

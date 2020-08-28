@@ -75,7 +75,7 @@ if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-A
 end
 
 --Belt / splitter / underground belt
-if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+if settings.startup["RU-Logistic"].value == "basic" or settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
   data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
   data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
   data.raw["splitter"]["express-splitter"].speed = 0.125
@@ -83,17 +83,17 @@ if settings.startup["RU-Belt"].value == "basic" or settings.startup["RU-Belt"].v
   data.raw["recipe"]["RU-Basic-Underground-Belt"].hidden = false
   data.raw["recipe"]["RU-Basic-Splitter"].hidden = false
   data.raw["technology"]["RU-Logistics-4"].hidden = false
-  if settings.startup["RU-Belt"].value == "medium" or settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+  if settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
     data.raw["recipe"]["RU-Medium-Underground-Belt"].hidden = false
     data.raw["recipe"]["RU-Medium-Splitter"].hidden = false
     data.raw["technology"]["RU-Logistics-5"].hidden = false
-    if settings.startup["RU-Belt"].value == "big" or settings.startup["RU-Belt"].value == "behemoth" then
+    if settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
       data.raw["recipe"]["RU-Big-Underground-Belt"].hidden = false
       data.raw["recipe"]["RU-Big-Splitter"].hidden = false
       data.raw["technology"]["RU-Logistics-6"].hidden = false
-      if settings.startup["RU-Belt"].value == "behemoth" then
+      if settings.startup["RU-Logistic"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
         data.raw["recipe"]["RU-Behemoth-Underground-Belt"].hidden = false
         data.raw["recipe"]["RU-Behemoth-Splitter"].hidden = false
