@@ -1,20 +1,63 @@
---[[if mods["angelsaddons-warehouses"] then 
-  data.raw["int-setting"]["RU-angels-warehouse"].hidden = false
-  data.raw["int-setting"]["RU-angels-logistic-warehouse"].hidden = false
+--[[for name, spidertron in pairs() do
+  if data.raw["equipment-grid"].equipment_categories ~= "car" then
+    for _, spidertron in pairs(data.raw.equipment_categories) do
+      table.insert(spidertron.equipment_categories, "car")
+    end
+  end
 end
 
-if mods["angelsaddons-pressuretanks"] then
-  data.raw["int-setting"]["Ru-Angel-Pressuretank"].hidden = false
+if data.raw["spider-vehicle"].name == "spidertron" then
+  for name, spidertron in pairs(data.raw["spider-vehicle"]["equipment_grid"]) do
+    if data.raw["equipment-grid"].equipment_categories:find "car" then
+      for _, spidertron in pairs(data.raw.equipment_categories) do
+        table.insert(spidertron.equipment_categories, "car")
+      end
+    end
+  end
 end
 
-if mods["Krastorio2"] then
-  data.raw["int-setting"]["Ru-Krastorio2-medium-container"].hidden = false
-  data.raw["int-setting"]["Ru-Krastorio2-medium-logistic-container"].hidden = false
-  data.raw["int-setting"]["Ru-Krastorio2-big-container"].hidden = false
-  data.raw["int-setting"]["Ru-Krastorio2-big-logistic-container"].hidden = false
-  data.raw["int-setting"]["Ru-kr-fluid-storage-1"].hidden = false
-  data.raw["int-setting"]["Ru-kr-fluid-storage-2"].hidden = false
+if string.match(data.raw["equipment-grid"].name, "spidertron") then
+  for _, spidertron in pairs(string.match(data.raw["equipment-grid"].name, "spidertron")) do
+    if not string.match(data.raw["equipment-grid"].equipment_categories, "car") then
+      table.insert(spidertron.equipment_categories, "car")
+    end
+  end
+end
+
+--da testare
+if data.raw["spider-vehicle"]["equipment_grid"].equipment_categories ~= "tank" then
+  for _, spidertron in pairs(data.raw["spider-vehicle"]["equipment_grid"]) do
+    table.insert(spidertron.equipment_categories, "tank")
+  end
 end--]]
+
+--enable beacons productivity (global)
+if settings.startup["RU-Beacon-Productivity"].value == true then
+  if data.raw.beacon.allowed_effects ~= "productivity" then
+    for _, beacon in pairs(data.raw.beacon) do
+      table.insert(beacon.allowed_effects, "productivity")
+    end
+  end
+end
+
+--disable beacons productivity (global)
+if settings.startup["RU-Beacon-Productivity"].value == false then
+  if data.raw.beacon.allowed_effects == "productivity" then
+    for _, beacon in pairs(data.raw.beacon) do
+      table.remove(beacon.allowed_effects, "productivity")
+    end
+  end
+end
+
+--botspeed
+if settings.startup["RU-botspeed"].value then
+    for _, crobot in pairs(data.raw["construction-robot"]) do
+      crobot.speed = crobot.speed + settings.startup["RU-botspeed"].value
+    end
+    for _, lrobot in pairs(data.raw["logistic-robot"]) do
+      lrobot.speed = lrobot.speed + settings.startup["RU-botspeed"].value
+    end
+end
 
 --noxy staksize itemStackSizeMultiplier
 --Stack size OK
@@ -101,17 +144,12 @@ end
   process_recipe(data.raw["recipe"])
 end
 
---change bot speed
-data.raw["construction-robot"]["construction-robot"].speed = settings.startup["RU-botspeed-base-bot-speed"].value
-data.raw["logistic-robot"]["logistic-robot"].speed = settings.startup["RU-botspeed-base-bot-speed"].value
-
-
---collision box tree OK
-if settings.startup["ru-trees"].value then
+--collision box tree DISABLED
+--[[if settings.startup["RU-trees"].value then
    for _, tree in pairs(data.raw["tree"]) do
       tree.collision_box = {{-0.03, -0.03}, {0.03, 0.03}}
    end
-end
+end--]]
 
 --Powerful Lamp Setting OK
 if settings.startup["ru-powerful-lamp"] then
@@ -121,7 +159,7 @@ if settings.startup["ru-powerful-lamp"] then
 end
 
 --Assembler Impu-output
-if settings.startup["RU-Assembler-liquid-Imput-Output"].value then
+if settings.startup["RU-Machine-liquid-Imput-Output"].value and not mods['omnimatter_fluid'] then
   --[[
       Do all the changes in data-final-fixes.lua, in case other mods have modified the assemblers
       1. Add "input throughput" pipes on N/S plane
@@ -184,9 +222,9 @@ if settings.startup["RU-Assembler-liquid-Imput-Output"].value then
       end
     end
   end
- elseif mods['omnimatter_fluid'] then
-   do
- end
+ --elseif mods['omnimatter_fluid'] then
+   --do
+ --end
 end
 
 --Wire Shortcuts

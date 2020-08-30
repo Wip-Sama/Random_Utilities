@@ -183,23 +183,6 @@ if settings.startup["RU-Walkable-Beacon"].value == "vanilla" or settings.startup
   end
 end
 
---beacon  productivity
-if settings.startup["RU-Beacon-Productivity"].value == false then
-  --beacon 
-  table.remove(data.raw["beacon"]["RU-Basic-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Medium-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Big-Beacon"].allowed_effects,{"productivity"})
-  --walkable beacon 
-  table.remove(data.raw["beacon"]["RU-Walkable-Basic-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Walkable-Medium-Beacon"].allowed_effects,{"productivity"})
-  table.remove(data.raw["beacon"]["RU-Walkable-Big-Beacon"].allowed_effects,{"productivity"})
-end
-
---WALKABLE BEACONS
---if mods["base"] then
---  table.insert(data.raw["technology"]["RU-walkable-beacon-upgrade"]["effects"],{type = "unlock-recipe",  recipe = "RU-Walkable-Big-Beacon"})
---end
-
 --Lamp
 if settings.startup["RU-Lamp"].value == "basic" or settings.startup["RU-Walkable-Beacon"].value == "medium" or settings.startup["RU-Walkable-Beacon"].value == "big" then
   data.raw["recipe"]["RU-Basic-Lamp"].hidden = false
@@ -213,6 +196,28 @@ if settings.startup["RU-Lamp"].value == "basic" or settings.startup["RU-Walkable
     end
   end
 end
+
+--Lamp
+--[[if settings.startup["RU-Lamp"].value then
+  local lampname = settings.startup["RU-Lamp"].value
+  for _,lamp in pairs(data.raw["recipe"]) do
+    if lampname == "basic" and lampname == "medium" and lampname == "big" then
+      lamp.lampname.hidden = false
+    elseif lampname == "basic" and lampname == "medium" then
+      lamp.lampname.hidden = false
+    elseif lampname == "basic" then
+      lamp.lampname.hidden = false
+    end
+  for _,lamp in pairs(data.raw["technology"]) do
+    if lampname == "basic" and lampname == "medium" and lampname == "big" then
+      lamp.lampname.hidden = false
+    elseif lampname == "basic" and lampname == "medium" then
+      lamp.lampname.hidden = false
+    elseif lampname == "basic" then
+      lamp.lampname.hidden = false
+    end
+  end
+end--]]
 
   --disable items / recipes
 if settings.startup["RU-AlternativeRecipe"].value == "true" then

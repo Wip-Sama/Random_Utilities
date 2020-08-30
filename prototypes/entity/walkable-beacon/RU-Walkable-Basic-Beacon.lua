@@ -18,7 +18,7 @@ data:extend({
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-2, -2.9}, {2, 1.8}},
     collision_mask = {"item-layer", "object-layer", "floor-layer", "water-tile"},
-    allowed_effects = {"consumption", "speed", "pollution", "productivity"},
+    allowed_effects = {"consumption", "speed", "pollution"},
 
     graphics_set = require("prototypes.entity.walkable-beacon.basic-Walkable-beacon-animations"),
 

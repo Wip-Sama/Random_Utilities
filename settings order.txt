@@ -34,7 +34,6 @@ item:
 #    Better Cable Visibility
 #    wire shortcut
 #    wire crafting
-#    reduce tree collision
 #DISABLED    AlternativeRecipe 
 #DISABLED    CheatyRecipe 
 #    Assembler liquid Imput Output

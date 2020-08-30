@@ -17,7 +17,7 @@ data:extend({
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
     damaged_trigger_effect = hit_effects.entity(),
     drawing_box = {{-2.5, -3.6}, {2.5, 2.16}},
-    allowed_effects = {"consumption", "speed", "pollution", "productivity"},
+    allowed_effects = {"consumption", "speed", "pollution"},
 
     graphics_set = require("prototypes.entity.beacon.medium-beacon-animations"),
 

@@ -7,7 +7,7 @@ if mods["Power Armor MK3"] then
 end
 
 data:extend({
-  --Boiler
+  --Boiler OK
   {
     type = "string-setting",
     name = "RU-Boiler",
@@ -23,7 +23,7 @@ data:extend({
       "behemoth"
     },
   },
-  --Steam Engine
+  --Steam Engine OK
   {
     type = "string-setting",
     name = "RU-Steam-Engine",
@@ -39,7 +39,7 @@ data:extend({
       "behemoth"
     },
   },
-  --Solar panel
+  --Solar panel OK
   {
     type = "string-setting",
     name = "RU-Solar-Panel",
@@ -55,7 +55,7 @@ data:extend({
       "behemoth"
     },
   },
-  --Accumulator
+  --Accumulator OK
   {
     type = "string-setting",
     name = "RU-Accumulator",
@@ -71,7 +71,7 @@ data:extend({
       "behemoth"
     },
   },
-  --substation
+  --substation OK
   {
     type = "string-setting",
     name = "RU-Substation",
@@ -87,7 +87,7 @@ data:extend({
       "behemoth"
     },
   },
-  --lamp
+  --lamp OK
   {
     type = "string-setting",
     name = "RU-Lamp",
@@ -103,7 +103,7 @@ data:extend({
 --      "behemoth"
     },
   },
-  --beacon
+  --beacon OK
   {
     type = "string-setting",
     name = "RU-Beacon",
@@ -119,7 +119,7 @@ data:extend({
 --      "behemoth"
     },
   },
-  --walkable beacon
+  --walkable beacon OK
   {
     type = "string-setting",
     name = "RU-Walkable-Beacon",
@@ -135,7 +135,7 @@ data:extend({
 --      "behemoth"
     },
   },    
-  --logistic = belt/splitter/underground
+  --logistic = belt/splitter/underground OK
   {
     type = "string-setting",
     name = "RU-Logistic",
@@ -151,7 +151,7 @@ data:extend({
       "behemoth"
     },
   },
-  --Inserter
+  --Inserter OK
   {
   type = "string-setting",
   name = "RU-Inserter",
@@ -168,7 +168,7 @@ data:extend({
     },
   },
 
-  --beacon Productivity
+  --beacon Productivity OK
   {
     type = "bool-setting",
     name = "RU-Beacon-Productivity",
@@ -177,7 +177,7 @@ data:extend({
     default_value = "true",
   },
 
-  --Inventory size
+  --Inventory size OK
   {
     type = "int-setting",
     name = "ru-inventory-size",
@@ -187,232 +187,7 @@ data:extend({
     minimum_value = 20,
     maximum_value = 2000,
   },
-  --reach distance
-  {
-    type = "int-setting",
-    name = "ru-reach-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 6,
-    minimum_value = 1,
-    maximum_value = 1000,
-  },
-  --Mining reach
-  {
-    type = "int-setting",
-    name = "ru-mine-reach",
-    order = "",
-    setting_type = "startup",
-    default_value = 6,
-    minimum_value = 1,
-    maximum_value = 1000,
-  },
-  --Mining speed
-  {
-    type = "double-setting",
-    name = "ru-mining-speed",
-    order = "",
-    setting_type = "startup",
-    default_value = 1,
-    minimum_value = 0.01,
-    maximum_value = 1000,
-  },
-  --hp
-  {
-    type = "int-setting",
-    name = "RU-hp",
-    order = "",
-    setting_type = "startup",
-    default_value = 250,
-    minimum_value = 1,
-    maximum_value = 250000,
-  },
-  --hp recovery
-  {
-    type = "double-setting",
-    name = "RU-hp-recovery",
-    order = "",
-    setting_type = "startup",
-    default_value = 0.15,
-    minimum_value = 0.1,
-    maximum_value = 1500,
-  },
-  --bot speed
-  {
-    type = "double-setting",
-    name = "RU-botspeed-base-bot-speed",
-    order = "",
-    setting_type = "startup",
-    default_value = 0.1,
-    minimum_value = 0.06,
-    maximum_value = 1,
-  },
-  --No Crafting Time
-  {
-    type = "bool-setting",
-    name = "RU-No-Crafting-Time",
-    order = "",
-    setting_type = "startup",
-    default_value = "false",
-  },
-  --RU Better Cable Visibility
-  {
-    type = "bool-setting",
-    name = "RU-Better-Cable-Visibility",
-    order = "bj",
-    setting_type = "startup",
-    default_value = "true",
-  },
-  --Enable wire Shortcuts
-  {
-    type = "bool-setting",
-    name = "RU-Enable-Wire-Shortcuts",
-    order = "bla",
-    setting_type = "startup",
-    default_value = "true",
-  },
-  --mantain Wire crafting
-  {
-    type = "bool-setting",
-    name = "wire-shortcuts-is-retain-wire-crafting",
-    order = "blb",
-    setting_type = "startup",
-    default_value = false,
-  },
-  --collision box tree
-  {
-    type = "bool-setting",
-    name = "ru-trees",
-    order = "",
-    setting_type = "startup",
-    default_value = "true",
-  },
-  --AlternativeRecipe DISABLED
-  {
-    type = "bool-setting",
-    name = "RU-AlternativeRecipe",
-    hidden = "true",
-    order = "",
-    setting_type = "startup",
-    default_value = "false",
-  },
-  --CheatyRecipe DISABLED
-  {
-    type = "bool-setting",
-    name = "RU-CheatyRecipe",
-    hidden = "true",
-    order = "",
-    setting_type = "startup",
-    default_value = "false",
-  },
-  --RU-Assembler-liquid-Imput-Output
-  {
-    type = "bool-setting",
-    name = "RU-Assembler-liquid-Imput-Output",
-    order = "",
-    setting_type = "startup",
-    default_value = "false",
-  },
-  --RU-Assembling-Machine-Imput-Output
-  {
-      type = "bool-setting",
-      name = "RU-Assembling-Machine-Imput-Output",
-      order = "",
-      setting_type = "startup",
-      default_value = "true",
-  },
-  --RU-Chemical-Plant-Imput-Output
-  {
-      type = "bool-setting",
-      name = "RU-Chemical-Plant-Imput-Output",
-      order = "",
-      setting_type = "startup",
-      default_value = "true",
-  },
-  --RU-Oil-Refineries-Imput-Output
-  {
-      type = "bool-setting",
-      name = "RU-Oil-Refineries-Imput-Output",
-      order = "",
-      setting_type = "startup",
-      default_value = "true",
-  },
-
-
-  --small electric pole wire reach
-  {
-    type = "double-setting",
-    name = "small-electric-pole-max-wire-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 7.5,
-    minimum_value = 2.5,
-  },
-  --small electric pole supply area
-  {
-    type = "double-setting",
-    name = "small-electric-pole-supply-area-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 5,
-    minimum_value = 3,
-  },
-  --medium electric pole wire reach
-  {
-    type = "double-setting",
-    name = "medium-electric-pole-max-wire-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 9,
-    minimum_value = 2.5,
-  },
-  --medium electric pole supply area
-  {
-    type = "double-setting",
-    name = "medium-electric-pole-supply-area-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 7,
-    minimum_value = 3,
-  },
-  --big electric pole wire reach
-  {
-    type = "double-setting",
-    name = "big-electric-pole-max-wire-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 30,
-    minimum_value = 3,
-  },
-  --big electric pole supply area
-  {
-    type = "double-setting",
-    name = "big-electric-pole-supply-area-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 4,
-    minimum_value = 4,
-  },
-  --vanilla substation wire reach
-  {
-    type = "double-setting",
-    name = "substation-max-wire-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 18,
-    minimum_value = 3,
-  },
-  --vanilla substation supply area
-  {
-    type = "double-setting",
-    name = "substation-supply-area-distance",
-    order = "",
-    setting_type = "startup",
-    default_value = 18,
-    minimum_value = 4,
-  },
-
-  --stack size multiplier
+  --stack size multiplier OK
   {
     type = "double-setting",
     name = "RU-Stack-Size",
@@ -422,7 +197,7 @@ data:extend({
     minimum_value = 1,
     maximum_value = 2147483647,
   },
-  --enable stack size Contruction Robot
+  --enable stack size Contruction Robot OK
   {
     type = "bool-setting",
     name = "RU-Stack-Size-CRobot",
@@ -430,7 +205,7 @@ data:extend({
     setting_type = "startup",
     default_value = "true",
   },
-  --enable stack size Logistic Robot
+  --enable stack size Logistic Robot OK
   {
     type = "bool-setting",
     name = "RU-Stack-Size-LRobot",
@@ -438,7 +213,231 @@ data:extend({
     setting_type = "startup",
     default_value = "true",
   },
-  --Quick Start
+  --reach distance OK
+  {
+    type = "int-setting",
+    name = "ru-reach-distance",
+    order = "",
+    setting_type = "startup",
+    default_value = 6,
+    minimum_value = 1,
+    maximum_value = 1000,
+  },
+  --Mining reach OK
+  {
+    type = "int-setting",
+    name = "ru-mine-reach",
+    order = "",
+    setting_type = "startup",
+    default_value = 6,
+    minimum_value = 1,
+    maximum_value = 1000,
+  },
+  --Mining speed OK
+  {
+    type = "double-setting",
+    name = "ru-mining-speed",
+    order = "",
+    setting_type = "startup",
+    default_value = 1,
+    minimum_value = 0.01,
+    maximum_value = 1000,
+  },
+  --hp OK
+  {
+    type = "int-setting",
+    name = "RU-hp",
+    order = "",
+    setting_type = "startup",
+    default_value = 250,
+    minimum_value = 1,
+    maximum_value = 250000,
+  },
+  --hp recovery OK
+  {
+    type = "double-setting",
+    name = "RU-hp-recovery",
+    order = "",
+    setting_type = "startup",
+    default_value = 0.15,
+    minimum_value = 0.1,
+    maximum_value = 1500,
+  },
+  --bot speed OK?
+  {
+    type = "double-setting",
+    name = "RU-botspeed",
+    order = "",
+    setting_type = "startup",
+    default_value = 0,
+    minimum_value = 0,
+    maximum_value = 1,
+  },
+  --No Crafting Time OK
+  {
+    type = "bool-setting",
+    name = "RU-No-Crafting-Time",
+    order = "",
+    setting_type = "startup",
+    default_value = "false",
+  },
+  --RU Better Cable Visibility OK
+  {
+    type = "bool-setting",
+    name = "RU-Better-Cable-Visibility",
+    order = "",
+    setting_type = "startup",
+    default_value = "true",
+  },
+  --Enable wire Shortcuts OK
+  {
+    type = "bool-setting",
+    name = "RU-Enable-Wire-Shortcuts",
+    order = "",
+    setting_type = "startup",
+    default_value = "true",
+  },
+  --mantain Wire crafting OK
+  {
+    type = "bool-setting",
+    name = "wire-shortcuts-is-retain-wire-crafting",
+    order = "",
+    setting_type = "startup",
+    default_value = false,
+  },
+  --AlternativeRecipe DISABLED NO
+  {
+    type = "bool-setting",
+    name = "RU-AlternativeRecipe",
+    hidden = "true",
+    order = "",
+    setting_type = "startup",
+    default_value = "false",
+  },
+  --CheatyRecipe DISABLED NO
+  {
+    type = "bool-setting",
+    name = "RU-CheatyRecipe",
+    hidden = "true",
+    order = "",
+    setting_type = "startup",
+    default_value = "false",
+  },
+  --RU-Machine-liquid-Imput-Output OK
+  {
+    type = "bool-setting",
+    name = "RU-Machine-liquid-Imput-Output",
+    order = "",
+    setting_type = "startup",
+    default_value = "false",
+  },
+  --RU-Assembling-Machine-Imput-Output OK
+  {
+      type = "bool-setting",
+      name = "RU-Assembling-Machine-Imput-Output",
+      order = "",
+      setting_type = "startup",
+      default_value = "true",
+  },
+  --RU-Chemical-Plant-Imput-Output OK
+  {
+      type = "bool-setting",
+      name = "RU-Chemical-Plant-Imput-Output",
+      order = "",
+      setting_type = "startup",
+      default_value = "true",
+  },
+  --RU-Oil-Refineries-Imput-Output OK
+  {
+      type = "bool-setting",
+      name = "RU-Oil-Refineries-Imput-Output",
+      order = "",
+      setting_type = "startup",
+      default_value = "true",
+  },
+
+  --small electric pole wire reach OK
+  {
+    type = "double-setting",
+    name = "small-electric-pole-max-wire-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 64,
+    default_value = 7.5,
+    minimum_value = 2.5,
+  },
+  --small electric pole supply area OK
+  {
+    type = "double-setting",
+    name = "small-electric-pole-supply-area-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 128,
+    default_value = 5,
+    minimum_value = 3,
+  },
+  --medium electric pole wire reach OK
+  {
+    type = "double-setting",
+    name = "medium-electric-pole-max-wire-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 64,
+    default_value = 9,
+    minimum_value = 2.5,
+  },
+  --medium electric pole supply area OK
+  {
+    type = "double-setting",
+    name = "medium-electric-pole-supply-area-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 128,
+    default_value = 7,
+    minimum_value = 3,
+  },
+  --big electric pole wire reach OK
+  {
+    type = "double-setting",
+    name = "big-electric-pole-max-wire-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 64,
+    default_value = 30,
+    minimum_value = 3,
+  },
+  --big electric pole supply area OK
+  {
+    type = "double-setting",
+    name = "big-electric-pole-supply-area-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 128,
+    default_value = 4,
+    minimum_value = 4,
+  },
+  --vanilla substation wire reach OK
+  {
+    type = "double-setting",
+    name = "substation-max-wire-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 64,
+    default_value = 18,
+    minimum_value = 3,
+  },
+  --vanilla substation supply area OK
+  {
+    type = "double-setting",
+    name = "substation-supply-area-distance",
+    order = "",
+    setting_type = "startup",
+    maximum_value = 128,
+    default_value = 18,
+    minimum_value = 4,
+  },
+
+  --Quick Start OK
   {
     type = "string-setting",
     name = "ru-quick-start",
@@ -447,7 +446,7 @@ data:extend({
     default_value = "Nothing",
     allowed_values = {"Nothing", "Small amount", "Medium amount", "big amount", "Huge amount"},
   },
-  --Quick Start Modular Armor
+  --Quick Start Armor OK
   {
     type = "string-setting",
     name = "ru-armor-quick-start",
@@ -456,7 +455,7 @@ data:extend({
     default_value = "Nothing",
     allowed_values = selectable_armors,
   },
-  --Quick Start Train technology
+  --Quick Start Train technology OK
   {
     type = "bool-setting",
     name = "ru-train-technology",
@@ -464,7 +463,7 @@ data:extend({
     setting_type = "startup",
     default_value = "false",
   },
-  --Quick Start Robot technology
+  --Quick Start Robot technology OK
   {
     type = "bool-setting",
     name = "ru-robot-technology",
@@ -473,7 +472,7 @@ data:extend({
     default_value = "false",
   },
 
-  --space exploration integration
+  --space exploration integration OK
   {
     type = "bool-setting",
     name = "Ru-space-exploration-integrations",
@@ -482,30 +481,39 @@ data:extend({
     setting_type = "startup",
     default_value = "true",
   },
+  --angel integration OK
+  {
+    type = "bool-setting",
+    name = "RU-angel-integrations",
+    hidden = "true",
+    order = "",
+    setting_type = "startup",
+    default_value = "true",
+  },
 
-  --angel warehouse 
+  --angel warehouse OK
   {
     type = "int-setting",
     name = "RU-angels-warehouse",
     hidden = "true",
-    order = "a",
+    order = "",
     setting_type = "startup",
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
   },
-  --angel logistic warehouse 
+  --angel logistic warehouse OK
   {
     type = "int-setting",
     name = "RU-angels-logistic-warehouse",
     hidden = "true",
-    order = "ab",
+    order = "",
     setting_type = "startup",
     default_value = 1800,
     minimum_value = 1,
     maximum_value = 65535,
   },
-  --krastorio2 medium container
+  --krastorio2 medium container OK
   {
     type = "int-setting",
     name = "Ru-Krastorio2-medium-container",
@@ -516,7 +524,7 @@ data:extend({
     minimum_value = 1,
     maximum_value = 10000,
   },
-  --krastorio2 medium logistic container
+  --krastorio2 medium logistic container OK
   {
     type = "int-setting",
     name = "Ru-Krastorio2-medium-logistic-container",
@@ -527,7 +535,7 @@ data:extend({
     minimum_value = 1,
     maximum_value = 10000,
   },
-  --krastorio2 big container
+  --krastorio2 big container OK
   {
     type = "int-setting",
     name = "Ru-Krastorio2-big-container",
@@ -538,7 +546,7 @@ data:extend({
     minimum_value = 1,
     maximum_value = 65535,
   },
-  --krastorio2 big logistic container
+  --krastorio2 big logistic container OK
   {
     type = "int-setting",
     name = "Ru-Krastorio2-big-logistic-container",
@@ -550,7 +558,7 @@ data:extend({
     maximum_value = 65535,
   },
 
-  --angel pressuretank
+  --angel pressuretank OK
   {
     type = "int-setting",
     name = "Ru-Angel-Pressuretank",
@@ -561,7 +569,7 @@ data:extend({
     minimum_value = 1,
     maximum_value = 100000000,
   },
-  --Krastorio2 big fluid storage
+  --Krastorio2 big fluid storage OK
   {
     type = "int-setting",
     name = "Ru-kr-fluid-storage-1",
@@ -572,7 +580,7 @@ data:extend({
     minimum_value = 1,
     maximum_value = 100000000,
   },
-  --Krastorio2 huge fluid storage
+  --Krastorio2 huge fluid storage OK
   {
     type = "int-setting",
     name = "Ru-kr-fluid-storage-2",
