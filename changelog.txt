@@ -1,6 +1,6 @@
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: 2020-08-28
+Date: 2020-09-22
   Added:
     - Basic / Medium / Big / Behemoth Transport Belt
     - Basic / Medium / Big / Behemoth Splitter
@@ -27,6 +27,7 @@ Date: 2020-08-28
     - partial settings rescript
     - limited vanilla pole ranger to provent crush for value too high
     - removed tree collision box reduced
+    - reworked italian traslation (only settings)
 
   Bugfixes:
     - alternative offshore pump recipe

@@ -1,71 +1,71 @@
 item:
-#    boiler               a1
-#    steam engine         a2
-    centrifuge           a3
-    nuclear reactor      a4
-    heat boiler          a5
-    steam turbine        a6
-#    solar panel          a7
-#    accumulator          a8
-#    substation           a9
-#    lamp                 a10
-    assembler            a11
-#    beacon               a12
-#    walkable beacon      a13
-#    Logistics            a14
-#    inserter             a15
-    locomotive           a16
-    wagon                a17
-    fluid wagon          a18
+#    boiler                                        a1
+#    steam engine                                  a2
+    centrifuge                                     a3
+    nuclear reactor                                a4
+    heat boiler                                    a5
+    steam turbine                                  a6
+#    solar panel                                   a7
+#    accumulator                                   a8
+#    substation                                    a9
+#    lamp                                          a10
+    assembler                                      a11
+#    beacon                                        a12
+#    walkable beacon                               a13
+#    Logistics                                     a14
+#    inserter                                      a15
+    locomotive                                     a16
+    wagon                                          a17
+    fluid wagon                                    a18
 
-#    beacon productivity
+#    beacon productivity                           b1
 
-#    inventory size
-#    stack size
-#    enable stack size on Contruction Robot
-#    enable stack size on logistic Robot
-#    reach distance
-#    mine distance
-#    minining speed
-#    HP
-#    HP recovery
-#    bot speed
-#    no crafting time
-#    Better Cable Visibility
-#    wire shortcut
-#    wire crafting
-#DISABLED    AlternativeRecipe 
-#DISABLED    CheatyRecipe 
-#    Assembler liquid Imput Output
-#    Assembling Machine Imput Output
-#    Chemical Plant Imput Output
-#    Oil Refineries Imput Output
+#    inventory size                                c1
+#    stack size                                    c2
+#    enable stack size on Contruction Robot        c3
+#    enable stack size on logistic Robot           c4
+#    reach distance                                c5
+#    mine distance                                 c6
+#    minining speed                                c7
+#    HP                                            c8
+#    HP recovery                                   c9
+#    bot speed                                     c10
+#    no crafting time                              c11
+#    Better Cable Visibility                       c12
+#    wire shortcut                                 c13
+#    wire crafting                                 c14
+#DISABLED    AlternativeRecipe                     c15
+#DISABLED    CheatyRecipe                          c16
+#    Assembler liquid Imput Output                 c17
+#    Assembling Machine Imput Output               c18
+#    Chemical Plant Imput Output                   c19
+#    Oil Refineries Imput Output                   c20
 
+#    small electric pole wire reach                 d1
+#    small electric pole supply area                d2
+#    medium electric pole wire reach                d3
+#    medium electric pole supply area               d4
+#    big electric pole wire reach                   d5
+#    big electric pole supply area                  d6
+#    vanilla substation wire reach                  d7
+#    vanilla substation supply area                 d8
 
-#    small electric pole wire reach
-#    small electric pole supply area
-#    medium electric pole wire reach
-#    medium electric pole supply area
-#    big electric pole wire reach
-#    big electric pole supply area
-#    vanilla substation wire reach
-#    vanilla substation supply area
+#    Quick Start                                    e1
+#    Quick Start Modular Armor                      e2
+#    Quick Start Train technology                   e3
+#    Quick Start Robot technology                   e4
 
-#    Quick Start
-#    Quick Start Modular Armor
-#    Quick Start Train technology
-#    Quick Start Robot technology
+#    space exploration integration                  f1
+#    RU-angel-integrations                          f2
 
-#    space exploration integration
+#    angel warehouse                                g1
+#    angel logistic warehouse                       g2
+#    krastorio2 medium container                    g3
+#    krastorio2 medium logistic container           g4
+#    krastorio2 big container                       g5
+#    krastorio2 big logistic container              g6
 
-#    angel warehouse
-#    angel logistic warehouse
-#    krastorio2 medium container
-#    krastorio2 medium logistic container
-#    krastorio2 big container
-#    krastorio2 big logistic container
-
-#    angel pressuretank
-#    krastorio2 big fluid storage
-#    krastorio2 huge fluid storage
+#    angel pressuretank                             h1
+#    krastorio2 big fluid storage                   h2
+#    krastorio2 huge fluid storage                  h3
 

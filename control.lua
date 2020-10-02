@@ -213,8 +213,7 @@ function setStartItems(event)
       player.insert({name = equip[1], count = equip[2]})
     end
 
-  end
-
+end
 
 --Wire Shortcuts
 function handle_shortcut(event)
