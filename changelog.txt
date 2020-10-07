@@ -1,6 +1,11 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.1
+Date: 07. 10. 2020
+  Bugfixes:
+    - Fixed inserter compatibility with bobinserter
+---------------------------------------------------------------------------------------------------
 Version: 2.0.0
-Date: 2020-09-22
+Date: 04. 10. 2020
   Added:
     - Basic / Medium / Big / Behemoth Transport Belt
     - Basic / Medium / Big / Behemoth Splitter
@@ -14,6 +19,8 @@ Date: 2020-09-22
     - Some krastorio2 container settings
     - hp control
     - hp recovery control
+    - Behemoth Quick Start 
+    - Spidetron Quick Start
 
   Changes:
     - moved scripts from data-final-fixes to settimg-mod-modifier ecc...
@@ -28,6 +35,9 @@ Date: 2020-09-22
     - limited vanilla pole ranger to provent crush for value too high
     - removed tree collision box reduced
     - reworked italian traslation (only settings)
+    - quickstart item amount
+    - quick start script
+    - new thumbmail
 
   Bugfixes:
     - alternative offshore pump recipe

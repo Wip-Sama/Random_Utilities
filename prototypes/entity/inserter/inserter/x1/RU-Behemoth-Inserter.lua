@@ -46,7 +46,7 @@ data:extend({
       tint = {r=80, g=80, b=80},
       priority = "extra-high",
       width = 8,
-      height = 34,
+      height = 33,
       hr_version =
       {
         filename = "__Random_Utilities__/graphics/entity/inserter/hr-behemoth-inserter-hand-base.png",

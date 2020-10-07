@@ -11,7 +11,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Boiler",
-    order = "a1",
+    order = "aa",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -27,7 +27,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Steam-Engine",
-    order = "a2",
+    order = "ab",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -43,7 +43,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Solar-Panel",
-    order = "a7",
+    order = "ag",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -59,7 +59,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Accumulator",
-    order = "a8",
+    order = "ah",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -75,7 +75,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Substation",
-    order = "a9",
+    order = "ai",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -91,7 +91,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Lamp",
-    order = "a10",
+    order = "aj",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -107,7 +107,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Beacon",
-    order = "a12",
+    order = "al",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -123,7 +123,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Walkable-Beacon",
-    order = "a13",
+    order = "am",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -139,7 +139,7 @@ data:extend({
   {
     type = "string-setting",
     name = "RU-Logistic",
-    order = "a14",
+    order = "an",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -155,7 +155,7 @@ data:extend({
   {
   type = "string-setting",
   name = "RU-Inserter",
-  order = "a15",
+  order = "ao",
   setting_type = "startup",
   default_value = "big",
   allowed_values =
@@ -172,7 +172,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-Beacon-Productivity",
-    order = "b1",
+    order = "ba",
     setting_type = "startup",
     default_value = "true",
   },
@@ -181,7 +181,7 @@ data:extend({
   {
     type = "int-setting",
     name = "ru-inventory-size",
-    order = "c1",
+    order = "ca",
     setting_type = "startup",
     default_value = 80,
     minimum_value = 20,
@@ -191,7 +191,7 @@ data:extend({
   {
     type = "double-setting",
     name = "RU-Stack-Size",
-    order = "c2",
+    order = "cb",
     setting_type = "startup",
     default_value = 10,
     minimum_value = 1,
@@ -201,7 +201,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-Stack-Size-CRobot",
-    order = "c3",
+    order = "cc",
     setting_type = "startup",
     default_value = "true",
   },
@@ -209,7 +209,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-Stack-Size-LRobot",
-    order = "c4",
+    order = "cd",
     setting_type = "startup",
     default_value = "true",
   },
@@ -217,7 +217,7 @@ data:extend({
   {
     type = "int-setting",
     name = "ru-reach-distance",
-    order = "c5",
+    order = "ce",
     setting_type = "startup",
     default_value = 6,
     minimum_value = 1,
@@ -227,7 +227,7 @@ data:extend({
   {
     type = "int-setting",
     name = "ru-mine-reach",
-    order = "c6",
+    order = "cf",
     setting_type = "startup",
     default_value = 6,
     minimum_value = 1,
@@ -237,7 +237,7 @@ data:extend({
   {
     type = "double-setting",
     name = "ru-mining-speed",
-    order = "c7",
+    order = "cg",
     setting_type = "startup",
     default_value = 1,
     minimum_value = 0.01,
@@ -247,7 +247,7 @@ data:extend({
   {
     type = "int-setting",
     name = "RU-hp",
-    order = "c8",
+    order = "ch",
     setting_type = "startup",
     default_value = 250,
     minimum_value = 1,
@@ -257,7 +257,7 @@ data:extend({
   {
     type = "double-setting",
     name = "RU-hp-recovery",
-    order = "c9",
+    order = "ci",
     setting_type = "startup",
     default_value = 0.15,
     minimum_value = 0.1,
@@ -267,7 +267,7 @@ data:extend({
   {
     type = "double-setting",
     name = "RU-botspeed",
-    order = "c10",
+    order = "cj",
     setting_type = "startup",
     default_value = 0,
     minimum_value = 0,
@@ -277,7 +277,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-No-Crafting-Time",
-    order = "c11",
+    order = "ck",
     setting_type = "startup",
     default_value = "false",
   },
@@ -285,7 +285,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-Better-Cable-Visibility",
-    order = "c12",
+    order = "cl",
     setting_type = "startup",
     default_value = "true",
   },
@@ -293,7 +293,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-Enable-Wire-Shortcuts",
-    order = "c13",
+    order = "cm",
     setting_type = "startup",
     default_value = "true",
   },
@@ -301,7 +301,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "wire-shortcuts-is-retain-wire-crafting",
-    order = "c14",
+    order = "cn",
     setting_type = "startup",
     default_value = false,
   },
@@ -310,7 +310,7 @@ data:extend({
     type = "bool-setting",
     name = "RU-AlternativeRecipe",
     hidden = "true",
-    order = "c15",
+    order = "co",
     setting_type = "startup",
     default_value = "false",
   },
@@ -319,7 +319,7 @@ data:extend({
     type = "bool-setting",
     name = "RU-CheatyRecipe",
     hidden = "true",
-    order = "c16",
+    order = "cp",
     setting_type = "startup",
     default_value = "false",
   },
@@ -327,7 +327,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "RU-Machine-liquid-Imput-Output",
-    order = "c17",
+    order = "cq",
     setting_type = "startup",
     default_value = "false",
   },
@@ -335,7 +335,7 @@ data:extend({
   {
       type = "bool-setting",
       name = "RU-Assembling-Machine-Imput-Output",
-      order = "c18",
+      order = "cr",
       setting_type = "startup",
       default_value = "true",
   },
@@ -343,7 +343,7 @@ data:extend({
   {
       type = "bool-setting",
       name = "RU-Chemical-Plant-Imput-Output",
-      order = "c19",
+      order = "cs",
       setting_type = "startup",
       default_value = "true",
   },
@@ -351,7 +351,7 @@ data:extend({
   {
       type = "bool-setting",
       name = "RU-Oil-Refineries-Imput-Output",
-      order = "c20",
+      order = "ct",
       setting_type = "startup",
       default_value = "true",
   },
@@ -360,7 +360,7 @@ data:extend({
   {
     type = "double-setting",
     name = "small-electric-pole-max-wire-distance",
-    order = "d1",
+    order = "da",
     setting_type = "startup",
     maximum_value = 64,
     default_value = 7.5,
@@ -370,7 +370,7 @@ data:extend({
   {
     type = "double-setting",
     name = "small-electric-pole-supply-area-distance",
-    order = "d2",
+    order = "db",
     setting_type = "startup",
     maximum_value = 128,
     default_value = 5,
@@ -380,7 +380,7 @@ data:extend({
   {
     type = "double-setting",
     name = "medium-electric-pole-max-wire-distance",
-    order = "d3",
+    order = "dc",
     setting_type = "startup",
     maximum_value = 64,
     default_value = 9,
@@ -390,7 +390,7 @@ data:extend({
   {
     type = "double-setting",
     name = "medium-electric-pole-supply-area-distance",
-    order = "d4",
+    order = "dd",
     setting_type = "startup",
     maximum_value = 128,
     default_value = 7,
@@ -400,7 +400,7 @@ data:extend({
   {
     type = "double-setting",
     name = "big-electric-pole-max-wire-distance",
-    order = "d5",
+    order = "de",
     setting_type = "startup",
     maximum_value = 64,
     default_value = 30,
@@ -410,7 +410,7 @@ data:extend({
   {
     type = "double-setting",
     name = "big-electric-pole-supply-area-distance",
-    order = "d6",
+    order = "df",
     setting_type = "startup",
     maximum_value = 128,
     default_value = 4,
@@ -420,7 +420,7 @@ data:extend({
   {
     type = "double-setting",
     name = "substation-max-wire-distance",
-    order = "d7",
+    order = "dg",
     setting_type = "startup",
     maximum_value = 64,
     default_value = 18,
@@ -430,7 +430,7 @@ data:extend({
   {
     type = "double-setting",
     name = "substation-supply-area-distance",
-    order = "d8",
+    order = "dh",
     setting_type = "startup",
     maximum_value = 128,
     default_value = 18,
@@ -441,25 +441,41 @@ data:extend({
   {
     type = "string-setting",
     name = "ru-quick-start",
-    order = "e1",
+    order = "ea",
     setting_type = "startup",
     default_value = "Nothing",
-    allowed_values = {"Nothing", "Small amount", "Medium amount", "big amount", "Huge amount"},
+    allowed_values = 
+    {
+      "Nothing", 
+      "Basic", 
+      "Medium", 
+      "Big", 
+      "Huge",
+      "Behemoth"
+    },
   },
   --Quick Start Armor OK
   {
     type = "string-setting",
     name = "ru-armor-quick-start",
-    order = "e2",
+    order = "eb",
     setting_type = "startup",
     default_value = "Nothing",
     allowed_values = selectable_armors,
+  },
+  --Quick Start spidertron OK
+  {
+    type = "bool-setting",
+    name = "ru-quick-start-spidetron",
+    order = "ec",
+    setting_type = "startup",
+    default_value = "false",
   },
   --Quick Start Train technology OK
   {
     type = "bool-setting",
     name = "ru-train-technology",
-    order = "e3",
+    order = "ed",
     setting_type = "startup",
     default_value = "false",
   },
@@ -467,7 +483,7 @@ data:extend({
   {
     type = "bool-setting",
     name = "ru-robot-technology",
-    order = "e4",
+    order = "ee",
     setting_type = "startup",
     default_value = "false",
   },
@@ -477,7 +493,7 @@ data:extend({
     type = "bool-setting",
     name = "Ru-space-exploration-integrations",
     hidden = "true",
-    order = "f1",
+    order = "fa",
     setting_type = "startup",
     default_value = "true",
   },
@@ -486,7 +502,7 @@ data:extend({
     type = "bool-setting",
     name = "RU-angel-integrations",
     hidden = "true",
-    order = "f2",
+    order = "fb",
     setting_type = "startup",
     default_value = "true",
   },
@@ -496,7 +512,7 @@ data:extend({
     type = "int-setting",
     name = "RU-angels-warehouse",
     hidden = "true",
-    order = "g1",
+    order = "ga",
     setting_type = "startup",
     default_value = 1800,
     minimum_value = 1,
@@ -507,7 +523,7 @@ data:extend({
     type = "int-setting",
     name = "RU-angels-logistic-warehouse",
     hidden = "true",
-    order = "g2",
+    order = "gb",
     setting_type = "startup",
     default_value = 1800,
     minimum_value = 1,
@@ -518,7 +534,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-Krastorio2-medium-container",
     hidden = "true",
-    order = "g3",
+    order = "gc",
     setting_type = "startup",
     default_value = 400,
     minimum_value = 1,
@@ -529,7 +545,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-Krastorio2-medium-logistic-container",
     hidden = "true",
-    order = "g4",
+    order = "gd",
     setting_type = "startup",
     default_value = 400,
     minimum_value = 1,
@@ -540,7 +556,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-Krastorio2-big-container",
     hidden = "true",
-    order = "g5",
+    order = "ge",
     setting_type = "startup",
     default_value = 1800,
     minimum_value = 1,
@@ -551,7 +567,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-Krastorio2-big-logistic-container",
     hidden = "true",
-    order = "g6",
+    order = "gf",
     setting_type = "startup",
     default_value = 1800,
     minimum_value = 1,
@@ -563,7 +579,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-Angel-Pressuretank",
     hidden = "true",
-    order = "h1",
+    order = "ha",
     setting_type = "startup",
     default_value = 100000,
     minimum_value = 1,
@@ -574,7 +590,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-kr-fluid-storage-1",
     hidden = "true",
-    order = "h2",
+    order = "hb",
     setting_type = "startup",
     default_value = 1000,
     minimum_value = 1,
@@ -585,7 +601,7 @@ data:extend({
     type = "int-setting",
     name = "Ru-kr-fluid-storage-2",
     hidden = "true",
-    order = "h3",
+    order = "hc",
     setting_type = "startup",
     default_value = 100000,
     minimum_value = 1,

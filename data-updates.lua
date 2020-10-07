@@ -69,6 +69,10 @@ if mods['expanded-rocket-payloads'] then
   require('integrations/expanded-rocket-payloads')
 end
 
+if mods['Geothermal'] then
+  require('integrations/Geothermal')
+end
+
 if mods['Load-Furn'] then
   require('integrations/Load-Furn')
 end
@@ -101,12 +105,12 @@ if mods['trainConstructionSite'] then
   require('integrations/trainConstructionSite')
 end
 
-if mods['whistlestopfactories'] then
-  require('integrations/whistlestopfactories')
-end
-
 if mods['transport_drones'] then
   require('integrations/transport_drones')
+end
+
+if mods['whistlestopfactories'] then
+  require('integrations/whistlestopfactories')
 end
 
 if mods['yi_engines'] then

@@ -45,7 +45,7 @@ data:extend({
       tint = {r=80, g=80, b=80},
       priority = "extra-high",
       width = 8,
-      height = 34,
+      height = 33,
       hr_version =
       {
         filename = "__base__/graphics/entity/stack-inserter/hr-stack-inserter-hand-base.png",

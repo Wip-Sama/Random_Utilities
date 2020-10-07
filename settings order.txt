@@ -1,71 +1,72 @@
 item:
-#    boiler                                        a1
-#    steam engine                                  a2
-    centrifuge                                     a3
-    nuclear reactor                                a4
-    heat boiler                                    a5
-    steam turbine                                  a6
-#    solar panel                                   a7
-#    accumulator                                   a8
-#    substation                                    a9
-#    lamp                                          a10
-    assembler                                      a11
-#    beacon                                        a12
-#    walkable beacon                               a13
-#    Logistics                                     a14
-#    inserter                                      a15
-    locomotive                                     a16
-    wagon                                          a17
-    fluid wagon                                    a18
+#    boiler                                        aa
+#    steam engine                                  ab
+    centrifuge                                     ac
+    nuclear reactor                                ad
+    heat boiler                                    ae
+    steam turbine                                  af
+#    solar panel                                   ag
+#    accumulator                                   ah
+#    substation                                    ai
+#    lamp                                          aj
+    assembler                                      ak
+#    beacon                                        al
+#    walkable beacon                               am
+#    Logistics                                     an
+#    inserter                                      ao
+    locomotive                                     ap
+    wagon                                          aq
+    fluid wagon                                    ar
 
-#    beacon productivity                           b1
+#    beacon productivity                           ba
 
-#    inventory size                                c1
-#    stack size                                    c2
-#    enable stack size on Contruction Robot        c3
-#    enable stack size on logistic Robot           c4
-#    reach distance                                c5
-#    mine distance                                 c6
-#    minining speed                                c7
-#    HP                                            c8
-#    HP recovery                                   c9
-#    bot speed                                     c10
-#    no crafting time                              c11
-#    Better Cable Visibility                       c12
-#    wire shortcut                                 c13
-#    wire crafting                                 c14
-#DISABLED    AlternativeRecipe                     c15
-#DISABLED    CheatyRecipe                          c16
-#    Assembler liquid Imput Output                 c17
-#    Assembling Machine Imput Output               c18
-#    Chemical Plant Imput Output                   c19
-#    Oil Refineries Imput Output                   c20
+#    inventory size                                ca
+#    stack size                                    cb
+#    enable stack size on Contruction Robot        cc
+#    enable stack size on logistic Robot           cd
+#    reach distance                                ce
+#    mine distance                                 cf
+#    minining speed                                cg
+#    HP                                            ch
+#    HP recovery                                   ci
+#    bot speed                                     cj
+#    no crafting time                              ck
+#    Better Cable Visibility                       cl
+#    wire shortcut                                 cm
+#    wire crafting                                 cn
+#DISABLED    AlternativeRecipe                     co
+#DISABLED    CheatyRecipe                          cp
+#    Assembler liquid Imput Output                 cq
+#    Assembling Machine Imput Output               cr
+#    Chemical Plant Imput Output                   cs
+#    Oil Refineries Imput Output                   ct
 
-#    small electric pole wire reach                 d1
-#    small electric pole supply area                d2
-#    medium electric pole wire reach                d3
-#    medium electric pole supply area               d4
-#    big electric pole wire reach                   d5
-#    big electric pole supply area                  d6
-#    vanilla substation wire reach                  d7
-#    vanilla substation supply area                 d8
+#    small electric pole wire reach                 da
+#    small electric pole supply area                db
+#    medium electric pole wire reach                dc
+#    medium electric pole supply area               dd
+#    big electric pole wire reach                   de
+#    big electric pole supply area                  df
+#    vanilla substation wire reach                  dg
+#    vanilla substation supply area                 dh
 
-#    Quick Start                                    e1
-#    Quick Start Modular Armor                      e2
-#    Quick Start Train technology                   e3
-#    Quick Start Robot technology                   e4
+#    Quick Start                                    ea
+#    Quick Start Modular Armor                      eb
+#    Quick Start Spidetron                          ac
+#    Quick Start Train technology                   ed
+#    Quick Start Robot technology                   ee
 
-#    space exploration integration                  f1
-#    RU-angel-integrations                          f2
+#    space exploration integration                  fa
+#    RU-angel-integrations                          fb
 
-#    angel warehouse                                g1
-#    angel logistic warehouse                       g2
-#    krastorio2 medium container                    g3
-#    krastorio2 medium logistic container           g4
-#    krastorio2 big container                       g5
-#    krastorio2 big logistic container              g6
+#    angel warehouse                                ga
+#    angel logistic warehouse                       gb
+#    krastorio2 medium container                    gc
+#    krastorio2 medium logistic container           gd
+#    krastorio2 big container                       ge
+#    krastorio2 big logistic container              gf
 
-#    angel pressuretank                             h1
-#    krastorio2 big fluid storage                   h2
-#    krastorio2 huge fluid storage                  h3
+#    angel pressuretank                             ha
+#    krastorio2 big fluid storage                   hb
+#    krastorio2 huge fluid storage                  hc
 
