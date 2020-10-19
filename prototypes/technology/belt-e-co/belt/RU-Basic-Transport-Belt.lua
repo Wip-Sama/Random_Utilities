@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "technology",
-        name = "RU-Logistics-4",
+        name = "RU-Logistics-a",
         hidden = "true",
         icon_size = 128,
         icons = {{icon = "__base__/graphics/technology/logistics-1.png", tint = {r=178, g=173, b=100}}},

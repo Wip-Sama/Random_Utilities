@@ -16,7 +16,7 @@ data:extend({
         vehicle_impact_sound = sounds.generic_impact,
         mode = "output-to-separate-pipe",
         fast_replaceable_group = "boiler",
-        --next_upgrade = "RU-Big-Boiler",
+        next_upgrade = "RU-Big-Boiler",
         resistances =
         {
           {

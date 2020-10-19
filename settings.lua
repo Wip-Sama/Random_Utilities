@@ -257,11 +257,21 @@ data:extend({
   {
     type = "double-setting",
     name = "RU-hp-recovery",
-    order = "ci",
+    order = "cia",
     setting_type = "startup",
     default_value = 0.15,
     minimum_value = 0.1,
     maximum_value = 1500,
+  },
+  --running speed
+  {
+    type = "double-setting",
+    name = "RU-running-speed",
+    order = "cib",
+    setting_type = "startup",
+    default_value = 0,
+    minimum_value = -100,
+    maximum_value = 100,
   },
   --bot speed OK
   {

@@ -38,6 +38,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_big_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
+    next_upgrade = "RU-Behemoth-Transport-Belt",
     speed = 150 / 480,
     --0.3125,
     connector_frame_sprites = transport_belt_connector_frame_sprites,

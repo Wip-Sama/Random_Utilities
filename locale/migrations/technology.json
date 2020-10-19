@@ -1,6 +1,10 @@
 {
   "technology":
   [
-    ["RU-Basic-Substation", "RU-Basic-Substation"]
+    ["RU-Basic-Substation", "RU-Basic-Substation"],
+    ["RU-Logistics-4", "RU-Logistics-a"],
+    ["RU-Logistics-5", "RU-Logistics-b"],
+    ["RU-Logistics-6", "RU-Logistics-c"],
+    ["RU-Logistics-7", "RU-Logistics-d"]
   ]
 }

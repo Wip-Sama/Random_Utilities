@@ -6,7 +6,7 @@ data:extend({
         enabled = "false",
         ingredients = 
         {
-            {"steam-engine", 2}, 
+            {"RU-Big-Steam-Engine", 2}, 
             {"steel-plate", 5},
             {"low-density-structure", 8},
             {"pipe", 2},

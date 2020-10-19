@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "technology",
-        name = "RU-Logistics-5",
+        name = "RU-Logistics-b",
         hidden = "true",
         icon_size = 128,
         icons = {{icon = "__base__/graphics/technology/logistics-2.png", tint = {r=202, g=154, b=152}}},
@@ -11,7 +11,7 @@ data:extend({
           { type = "unlock-recipe", recipe = "RU-Medium-Splitter" },
           { type = "unlock-recipe", recipe = "RU-Medium-Underground-Belt" },
         },
-        prerequisites = {"RU-Logistics-4"},
+        prerequisites = {"RU-Logistics-a"},
         unit =
         {
           count = 1000,

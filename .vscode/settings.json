@@ -1,0 +1,26 @@
+{
+    "Lua.diagnostics.globals": [
+        "util",
+        "default_circuit_wire_max_distance",
+        "circuit_connector_definitions",
+        "data",
+        "mods",
+        "settings",
+        "remove_or_replace_wire",
+        "log",
+        "recipe_name",
+        "recipes",
+        "on_init",
+        "remote",
+        "on_player_created",
+        "game",
+        "defines",
+        "script",
+        "transport_belt_circuit_wire_max_distance",
+        "transport_belt_connector_frame_sprites",
+        "pipecoverspictures",
+        "boiler_reflection",
+        "inserter_default_stack_control_input_signal",
+        "inserter_circuit_wire_max_distance"
+    ]
+}

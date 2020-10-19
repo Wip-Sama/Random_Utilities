@@ -38,6 +38,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_medium_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
+    next_upgrade = "RU-Big-Transport-Belt",
     speed = 120 / 480,
     --0.25,
     connector_frame_sprites = transport_belt_connector_frame_sprites,

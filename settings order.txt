@@ -28,7 +28,8 @@ item:
 #    mine distance                                 cf
 #    minining speed                                cg
 #    HP                                            ch
-#    HP recovery                                   ci
+#    HP recovery                                   cia
+#    Running speed                                 cib
 #    bot speed                                     cj
 #    no crafting time                              ck
 #    Better Cable Visibility                       cl

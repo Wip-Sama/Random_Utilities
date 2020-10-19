@@ -51,6 +51,8 @@ if settings.startup["RU-Substation"].value == "basic" or settings.startup["RU-Su
       if settings.startup["RU-Substation"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Substation"].hidden = false
         data.raw["technology"]["RU-Behemoth-Substation"].hidden = false
+        data.raw["recipe"]["RU-Junction-Pole"].hidden = false
+        table.insert(data.raw["technology"]["RU-Behemoth-Substation"].effects, {type = "unlock-recipe", recipe = "RU-Junction-Pole"})
       end
     end
   end
@@ -82,22 +84,22 @@ if settings.startup["RU-Logistic"].value == "basic" or settings.startup["RU-Logi
   data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
   data.raw["recipe"]["RU-Basic-Underground-Belt"].hidden = false
   data.raw["recipe"]["RU-Basic-Splitter"].hidden = false
-  data.raw["technology"]["RU-Logistics-4"].hidden = false
+  data.raw["technology"]["RU-Logistics-a"].hidden = false
   if settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
     data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
     data.raw["recipe"]["RU-Medium-Underground-Belt"].hidden = false
     data.raw["recipe"]["RU-Medium-Splitter"].hidden = false
-    data.raw["technology"]["RU-Logistics-5"].hidden = false
+    data.raw["technology"]["RU-Logistics-b"].hidden = false
     if settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
       data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
       data.raw["recipe"]["RU-Big-Underground-Belt"].hidden = false
       data.raw["recipe"]["RU-Big-Splitter"].hidden = false
-      data.raw["technology"]["RU-Logistics-6"].hidden = false
+      data.raw["technology"]["RU-Logistics-c"].hidden = false
       if settings.startup["RU-Logistic"].value == "behemoth" then
         data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
         data.raw["recipe"]["RU-Behemoth-Underground-Belt"].hidden = false
         data.raw["recipe"]["RU-Behemoth-Splitter"].hidden = false
-        data.raw["technology"]["RU-Logistics-7"].hidden = false
+        data.raw["technology"]["RU-Logistics-d"].hidden = false
       end
     end
   end

@@ -1,35 +1,29 @@
---[[for name, spidertron in pairs() do
-  if data.raw["equipment-grid"].equipment_categories ~= "car" then
-    for _, spidertron in pairs(data.raw.equipment_categories) do
-      table.insert(spidertron.equipment_categories, "car")
-    end
-  end
-end
+if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
+  --if settings.startup["banane"] then
+    local grid_lists = {
+      "spidertron-equipment-grid",
+      "spidertron-mk-1-equipment-grid",
+      "spidertron-mk0-equipment-grid",
+      "spidertron-mk2-equipment-grid",
+      "spidertron-mk3-equipment-grid",
+      "prototype-spidertron-equipment-grid",
+      "assault-spidertron-mk1-equipment-grid",
+      "assault-spidertron-mk2-equipment-grid",
+      "bulwark-spidertron-mk1-equipment-grid",
+      "bulwark-spidertron-mk2-equipment-grid",
+      "scout-spidertron-mk1-equipment-grid",
+      "scout-spidertron-mk2-equipment-grid",
+      "voyage-spidertron-mk1-equipment-grid",
+      "voyage-spidertron-mk2-equipment-grid",
+    }
 
-if data.raw["spider-vehicle"].name == "spidertron" then
-  for name, spidertron in pairs(data.raw["spider-vehicle"]["equipment_grid"]) do
-    if data.raw["equipment-grid"].equipment_categories:find "car" then
-      for _, spidertron in pairs(data.raw.equipment_categories) do
-        table.insert(spidertron.equipment_categories, "car")
+    for _, grid in pairs(grid_lists) do
+      if not (data.raw["equipment-grid"][grid].equipment_categories == "armor") then
+        table.insert(data.raw["equipment-grid"][grid].equipment_categories, "armor")
       end
     end
-  end
+  --end
 end
-
-if string.match(data.raw["equipment-grid"].name, "spidertron") then
-  for _, spidertron in pairs(string.match(data.raw["equipment-grid"].name, "spidertron")) do
-    if not string.match(data.raw["equipment-grid"].equipment_categories, "car") then
-      table.insert(spidertron.equipment_categories, "car")
-    end
-  end
-end
-
---da testare
-if data.raw["spider-vehicle"]["equipment_grid"].equipment_categories ~= "tank" then
-  for _, spidertron in pairs(data.raw["spider-vehicle"]["equipment_grid"]) do
-    table.insert(spidertron.equipment_categories, "tank")
-  end
-end--]]
 
 --enable beacons productivity (global)
 if settings.startup["RU-Beacon-Productivity"].value == true then
