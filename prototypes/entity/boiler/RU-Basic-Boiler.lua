@@ -35,7 +35,7 @@ data:extend({
         collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
         selection_box = {{-1.5, -1}, {1.5, 1}},
         damaged_trigger_effect = hit_effects.entity(),
-        target_temperature = 165,
+        target_temperature = 315,
         fluid_box =
         {
           base_area = 1,
@@ -68,7 +68,7 @@ data:extend({
         {
           type = "burner",
           fuel_category = "chemical",
-          effectivity = 1.15,
+          effectivity = 1.5,
           fuel_inventory_size = 1,
           emissions_per_minute = 30,
           smoke =

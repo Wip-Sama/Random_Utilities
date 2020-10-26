@@ -18,4 +18,9 @@ if mods["Krastorio2"] then
   data.raw["storage-tank"]["kr-fluid-storage-1"]["fluid_box"].base_area = settings.startup["Ru-kr-fluid-storage-1"].value
   --big tank
   data.raw["storage-tank"]["kr-fluid-storage-2"]["fluid_box"].base_area = settings.startup["Ru-kr-fluid-storage-2"].value
+  --boiler
+  table.insert(data.raw.boiler["RU-Basic-Boiler"].energy_source.fuel_categories, "vehicle-fuel")
+  table.insert(data.raw.boiler["RU-Medium-Boiler"].energy_source.fuel_categories, "vehicle-fuel")
+  table.insert(data.raw.boiler["RU-Big-Boiler"].energy_source.fuel_categories, "vehicle-fuel")
+  table.insert(data.raw.boiler["RU-Behemoth-Boiler"].energy_source.fuel_categories, "vehicle-fuel")
 end

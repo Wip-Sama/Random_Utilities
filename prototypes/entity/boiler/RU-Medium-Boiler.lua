@@ -35,7 +35,7 @@ data:extend({
         collision_box = {{-1.29, -0.79}, {1.29, 0.79}},
         selection_box = {{-1.5, -1}, {1.5, 1}},
         damaged_trigger_effect = hit_effects.entity(),
-        target_temperature = 165,
+        target_temperature = 465,
         fluid_box =
         {
           base_area = 1,
@@ -63,12 +63,12 @@ data:extend({
           production_type = "output",
           filter = "steam"
         },
-        energy_consumption = "3.6MW",
+        energy_consumption = "5.4MW",
         energy_source =
         {
           type = "burner",
           fuel_category = "chemical",
-          effectivity = 1.30,
+          effectivity = 2,
           fuel_inventory_size = 1,
           emissions_per_minute = 30,
           smoke =

@@ -168,11 +168,19 @@ data:extend({
     },
   },
 
-  --beacon Productivity OK
+  --beacon Productivity
   {
     type = "bool-setting",
     name = "RU-Beacon-Productivity",
     order = "ba",
+    setting_type = "startup",
+    default_value = "true",
+  },
+  --beacon Productivity
+  {
+    type = "bool-setting",
+    name = "RU-Disable-Productivity-Limitation",
+    order = "bb",
     setting_type = "startup",
     default_value = "true",
   },

@@ -12,13 +12,14 @@ item:
     assembler                                      ak
 #    beacon                                        al
 #    walkable beacon                               am
-#    Logistics                                     an
-#    inserter                                      ao
+#    Logistics                                     an (n: a-c)
+#    inserter                                      ao (o: a-c)
     locomotive                                     ap
     wagon                                          aq
     fluid wagon                                    ar
 
 #    beacon productivity                           ba
+#    Disable Productivity Limitation               bb
 
 #    inventory size                                ca
 #    stack size                                    cb

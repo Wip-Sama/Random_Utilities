@@ -1,6 +1,3 @@
---[[function setting_accumulator ()
-  setting_accumulator = settings.startup["RU-Accumulator"].value
-end--]]
 
 --Boiler
 if settings.startup["RU-Boiler"].value == "basic" or settings.startup["RU-Boiler"].value == "medium" or settings.startup["RU-Boiler"].value == "big" or settings.startup["RU-Boiler"].value == "behemoth" then

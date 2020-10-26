@@ -11,12 +11,12 @@ data:extend({
         flags = {"placeable-neutral","player-creation"},
         minable = {mining_time = 0.3, result = "RU-Behemoth-Steam-Engine"},
         max_health = 400,
+        effectivity = 5,
         corpse = "steam-engine-remnants",
         dying_explosion = "steam-engine-explosion",
         alert_icon_shift = util.by_pixel(3, -34),
-        effectivity = 2,
-        fluid_usage_per_tick = 40/60,
-        maximum_temperature = 165,
+        fluid_usage_per_tick = 30/60,
+        maximum_temperature = 765,
         resistances =
         {
           {
@@ -50,7 +50,7 @@ data:extend({
         energy_source =
         {
           type = "electric",
-          usage_priority = "secondary-output"
+          usage_priority = "secondary-output",
         },
         horizontal_animation =
         {

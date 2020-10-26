@@ -250,15 +250,8 @@ require "prototypes.technology.steam-engine.RU-Behemoth-Steam-Engine"
 require "prototypes.recipe.AlternativeRecipe"
 --cheaty recipe
 require "prototypes.recipe.CheatyRecipe"
---setting e mod modifier
-require "prototypes.setting-mod-modifier.angel"
-require "prototypes.setting-mod-modifier.armor"
-require "prototypes.setting-mod-modifier.krastorio2"
-require "prototypes.setting-mod-modifier.random-utilities"
-require "prototypes.setting-mod-modifier.space-exploration"
-require "prototypes.setting-mod-modifier.base"
 --lib
-require "lib.colors"
+require "lib.item-goups"
 
 --Wire Shortcuts
 if settings.startup["RU-Enable-Wire-Shortcuts"].value then

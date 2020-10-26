@@ -1,4 +1,28 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.6
+Date: 26/10/2020
+  Changes:
+    - moved every item to RU category
+    - changed boiler / steam engine ratio
+    - changed boiler / steam engine consuption
+    - changed boiler / steam engine effectivity
+  Notes:
+    - With space exploration postprocess installed effectivity on boiler and steam engine is disabled
+---------------------------------------------------------------------------------------------------
+Version: 2.0.5
+Date: 23/10/2020
+  Bugfixes:
+    - some issea with krastorio 2 / aai-industry
+---------------------------------------------------------------------------------------------------
+Version: 2.0.4
+Date: 22/10/2020
+  Added:
+    - added an option to remove productivity limitation from any module that has productivity in it
+    - AAI industry boiler compatibility (toggle in the next update or a bit later)
+    - custom tab to give a new order to the items (just testing all items will be moved in future)
+  Changes:
+    - rebalanced substation range
+---------------------------------------------------------------------------------------------------
 Version: 2.0.3
 Date: 19/10/2020
   Added:

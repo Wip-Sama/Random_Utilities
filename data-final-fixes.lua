@@ -1,3 +1,12 @@
+--setting e mod modifier
+require "prototypes.setting-mod-modifier.aai-industry"
+require "prototypes.setting-mod-modifier.angel"
+require "prototypes.setting-mod-modifier.armor"
+require "prototypes.setting-mod-modifier.krastorio2"
+require "prototypes.setting-mod-modifier.random-utilities"
+require "prototypes.setting-mod-modifier.space-exploration"
+require "prototypes.setting-mod-modifier.base"
+
 if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
   --if settings.startup["banane"] then
     local grid_lists = {
@@ -39,6 +48,26 @@ if settings.startup["RU-Beacon-Productivity"].value == false then
   if data.raw.beacon.allowed_effects == "productivity" then
     for _, beacon in pairs(data.raw.beacon) do
       table.remove(beacon.allowed_effects, "productivity")
+    end
+  end
+end
+
+local entity_list = {
+  "module"
+}
+for _, entity in pairs(entity_list) do
+  local function RemoveProductivity(name)
+    if data.raw[entity][name] and data.raw[entity][name].limitation then
+      if settings.startup["RU-Disable-Productivity-Limitation"].value == true then
+        if data.raw[entity][name].limitation ~= nil then
+        data.raw[entity][name].limitation = nil
+        end
+      end
+    end
+  end
+  for _, list in pairs(data.raw[entity]) do
+    for _, name in pairs(list) do
+      RemoveProductivity(name)
     end
   end
 end
