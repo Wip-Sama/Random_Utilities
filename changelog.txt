@@ -1,4 +1,12 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.7
+Date: 27/10/2020
+  Added:
+    - basic / medium / big / behemoth loader x1
+  Bugfixes:
+    - crash with krastorio 2 installer and boiler enabled
+    - crash with MicroFurnaceWipMod >= 1.0.7
+---------------------------------------------------------------------------------------------------
 Version: 2.0.6
 Date: 26/10/2020
   Changes:
@@ -79,7 +87,7 @@ Date: 04/10/2020
     - temporany disabled "cheaty recipe" and "alternative recipe"
     - changed botspeed script, now affect every bot even modded one
     - partial settings rescript
-    - limited vanilla pole ranger to provent crush for value too high
+    - limited vanilla pole ranger to provent crash for value too high
     - removed tree collision box reduced
     - reworked italian traslation (only settings)
     - quickstart item amount

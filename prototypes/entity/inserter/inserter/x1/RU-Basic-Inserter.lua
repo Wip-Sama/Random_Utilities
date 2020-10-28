@@ -2,7 +2,7 @@ local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
 local sounds = require("__base__/prototypes/entity/demo-sounds")
 
 data:extend({
-{
+  {
     type = "inserter",
     name = "RU-Basic-Inserter",
     icons = {{icon = "__base__/graphics/icons/inserter.png", tint = {r=178, g=173, b=100}}},

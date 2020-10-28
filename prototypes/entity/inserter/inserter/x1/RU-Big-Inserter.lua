@@ -5,13 +5,13 @@ data:extend({
   {
     type = "inserter",
     name = "RU-Big-Inserter",
-    icons = {{icon = "__base__/graphics/icons/fast-inserter.png", {tint = {r=132, g=180, b=181}}}},
+    icons = {{icon = "__base__/graphics/icons/fast-inserter.png", tint = {r=132, g=180, b=181}}},
     filter_count = 5,
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
     minable = { mining_time = 0.1, result = "RU-Big-Inserter" },
     max_health = 150,
-    corpses = {{corpse = "fast-inserter-remnants", {tint = {r=132, g=180, b=181}}}},
+    corpses = {{corpse = "fast-inserter-remnants", tint = {r=132, g=180, b=181}}},
     dying_explosion = "fast-inserter-explosion",
     resistances =
     {

@@ -67,7 +67,7 @@ data:extend({
         energy_source =
         {
           type = "burner",
-          fuel_category = "chemical",
+          fuel_categories = {"chemical",},
           effectivity = 1.5,
           fuel_inventory_size = 1,
           emissions_per_minute = 30,

@@ -121,7 +121,13 @@ data:extend({
         type = "item-subgroup",
         name = "RU-Loader",
         group = "RU",
-        order = "oc"
+        order = "oca"
+    },
+    {
+        type = "item-subgroup",
+        name = "RU-Loader-1x",
+        group = "RU",
+        order = "ocb"
     },
     {
         type = "item-subgroup",
@@ -146,5 +152,11 @@ data:extend({
         name = "RU-IF",
         group = "RU",
         order = "s"
+    },
+    {
+        type = "item-subgroup",
+        name = "RU-MicroFurnace",
+        group = "RU",
+        order = "t"
     },
 })
