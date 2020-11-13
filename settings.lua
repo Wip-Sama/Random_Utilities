@@ -167,6 +167,14 @@ data:extend({
       "behemoth"
     },
   },
+  --Infinite Repairer OK
+  {
+    type = "bool-setting",
+    name = "RU-Infinite-Repairer",
+    order = "as",
+    setting_type = "startup",
+    default_value = "true",
+  },
 
   --beacon Productivity
   {
@@ -373,6 +381,14 @@ data:extend({
       setting_type = "startup",
       default_value = "true",
   },
+  --RU-MiniEquipment OK
+  {
+    type = "bool-setting",
+    name = "RU-MiniEquipment",
+    order = "cu",
+    setting_type = "startup",
+    default_value = "true",
+},
 
   --small electric pole wire reach OK
   {

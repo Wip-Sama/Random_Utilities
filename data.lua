@@ -262,6 +262,10 @@ require "prototypes.item.steam-engine.RU-Behemoth-Steam-Engine"
 require "prototypes.entity.steam-engine.RU-Behemoth-Steam-Engine"
 require "prototypes.recipe.steam-engine.RU-Behemoth-Steam-Engine"
 require "prototypes.technology.steam-engine.RU-Behemoth-Steam-Engine"
+--Infinite Repairer
+require "prototypes.item.repair-pack.infinite-repairer"
+require "prototypes.recipe.repair-pack.infinite-repairer"
+require "prototypes.technology.repair-pack.infinite-repairer"
 --alternative recipe
 require "prototypes.recipe.AlternativeRecipe"
 --cheaty recipe

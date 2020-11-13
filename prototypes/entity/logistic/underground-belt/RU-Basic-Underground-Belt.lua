@@ -13,7 +13,7 @@ data:extend({
     max_health = 300,
     corpse = "underground-belt-remnants",
     dying_explosion = "underground-belt-explosion",
-    max_distance = 12,
+    max_distance = 16,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
     working_sound =

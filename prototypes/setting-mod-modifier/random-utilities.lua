@@ -200,27 +200,11 @@ if settings.startup["RU-Lamp"].value == "basic" or settings.startup["RU-Walkable
   end
 end
 
---Lamp
---[[if settings.startup["RU-Lamp"].value then
-  local lampname = settings.startup["RU-Lamp"].value
-  for _,lamp in pairs(data.raw["recipe"]) do
-    if lampname == "basic" and lampname == "medium" and lampname == "big" then
-      lamp.lampname.hidden = false
-    elseif lampname == "basic" and lampname == "medium" then
-      lamp.lampname.hidden = false
-    elseif lampname == "basic" then
-      lamp.lampname.hidden = false
-    end
-  for _,lamp in pairs(data.raw["technology"]) do
-    if lampname == "basic" and lampname == "medium" and lampname == "big" then
-      lamp.lampname.hidden = false
-    elseif lampname == "basic" and lampname == "medium" then
-      lamp.lampname.hidden = false
-    elseif lampname == "basic" then
-      lamp.lampname.hidden = false
-    end
-  end
-end--]]
+--Infinite Repairer
+if settings.startup["RU-Infinite-Repairer"].value == true then
+  data.raw["recipe"]["RU-Infinite-Repairer"].hidden = "false"
+  data.raw["technology"]["RU-Infinite-Repairer"].hidden = "false"
+end
 
   --disable items / recipes
 if settings.startup["RU-AlternativeRecipe"].value == "true" then

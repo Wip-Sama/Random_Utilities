@@ -82,6 +82,36 @@ if settings.startup["RU-botspeed"].value then
     end
 end
 
+-- mini equipment
+local equip_list = {
+  "energy-shield-equipment",
+  "solar-panel-equipment",
+  "generator-equipment",
+  "battery-equipment",
+  "roboport-equipment",
+  "night-vision-equipment",
+  "movement-bonus-equipment",
+  "active-defense-equipment",
+}
+for _, entity in pairs(equip_list) do
+  local function MiniEquipment(name)
+    if data.raw[entity][name] and data.raw[entity][name].shape then
+      if settings.startup["RU-MiniEquipment"].value == true then
+        if data.raw[entity][name].shape ~= nil then
+          if data.raw[entity][name].shape ~= {width = 1, height = 1, type = "full"} then
+            data.raw[entity][name].shape = {width = 1, height = 1, type = "full"}
+          end
+        end
+      end
+    end
+  end
+  for _, list in pairs(data.raw[entity]) do
+    for _, name in pairs(list) do
+      MiniEquipment(name)
+    end
+  end
+end
+
 --noxy staksize itemStackSizeMultiplier
 --Stack size OK
 local itemStackSizeMultiplier = settings.startup["RU-Stack-Size"].value

@@ -53,7 +53,7 @@ return
               height = 176,
               scale = 0.83,
               draw_as_shadow = true,
-              shift = util.by_pixel(12.5, 0.5),
+              shift = util.by_pixel(20, 0.5),
             }
           }
         }

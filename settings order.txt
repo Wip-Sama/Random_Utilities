@@ -17,6 +17,7 @@ item:
     locomotive                                     ap
     wagon                                          aq
     fluid wagon                                    ar
+    repair pack                                    as
 
 #    beacon productivity                           ba
 #    Disable Productivity Limitation               bb
@@ -42,6 +43,7 @@ item:
 #    Assembling Machine Imput Output               cr
 #    Chemical Plant Imput Output                   cs
 #    Oil Refineries Imput Output                   ct
+#    mini equipment                                cu
 
 #    small electric pole wire reach                 da
 #    small electric pole supply area                db

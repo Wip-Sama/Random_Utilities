@@ -1,4 +1,20 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.0.9
+Date: xx/xx/2020
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.0.8
+Date: 04/10/2020
+  Added:
+    - basic / medium / big / behemoth loader x1
+    - mini equipment setting
+    - infinite repair pack
+  Changes:
+    - basic / medium / big underground belt distance rebalance
+  Bugfixes:
+    - big / behemoth splitter west animation glitch
+    - basic / medium / big beacon shadow 
+---------------------------------------------------------------------------------------------------
 Version: 2.0.7
 Date: 27/10/2020
   Added:

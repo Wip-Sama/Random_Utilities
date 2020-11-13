@@ -149,14 +149,20 @@ data:extend({
     },
     {
         type = "item-subgroup",
-        name = "RU-IF",
+        name = "RU-Repair-Pack",
         group = "RU",
         order = "s"
     },
     {
         type = "item-subgroup",
+        name = "RU-IF",
+        group = "RU",
+        order = "za"
+    },
+    {
+        type = "item-subgroup",
         name = "RU-MicroFurnace",
         group = "RU",
-        order = "t"
+        order = "zb"
     },
 })

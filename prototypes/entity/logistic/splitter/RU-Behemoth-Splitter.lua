@@ -10,7 +10,7 @@ data:extend({
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
     minable = {mining_time = 0.1, result = "RU-Behemoth-Splitter"},
-    max_health = 600,
+    max_health = 400,
     corpse = "express-splitter-remnants",
     dying_explosion = "express-splitter-explosion",
     resistances =
@@ -24,14 +24,14 @@ data:extend({
     selection_box = {{-0.9, -0.5}, {0.9, 0.5}},
     damaged_trigger_effect = hit_effects.entity(),
     animation_speed_coefficient = 32,
-    structure_animation_speed_coefficient = 0.7,
+    structure_animation_speed_coefficient = 1.2,
     structure_animation_movement_cooldown = 10,
+    belt_animation_set = ru_behemoth_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
     speed = 2000 / 480,
-    belt_animation_set = ru_behemoth_transport_belt_animation_set,
+    working_sound = sounds.express_splitter,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
-    working_sound = sounds.splitter,
     structure =
     {
       north =
@@ -120,9 +120,9 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
-          width = 90,
+          width = 94,
           height = 86,
-          shift = util.by_pixel(6, 12),
+          shift = util.by_pixel(5, 12),
           scale = 0.5
         }
       }
@@ -171,9 +171,9 @@ data:extend({
           frame_count = 32,
           line_length = 8,
           priority = "extra-high",
-          width = 90,
+          width = 94,
           height = 96,
-          shift = util.by_pixel(6, -18),
+          shift = util.by_pixel(5, -18),
           scale = 0.5
         }
       }
