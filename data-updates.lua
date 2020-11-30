@@ -18,6 +18,94 @@ data.raw["utility-sprites"]["default"]["red_wire_hightlight"].filename          
 data.raw["utility-sprites"]["default"]["red_wire_hightlight"].hr_version.filename   = core_graphics .. "/hr-wire-highlight.png"
 end
 
+if mods["deadlock-beltboxes-loaders"] then
+deadlock.add_tier({
+  transport_belt      = "RU-Basic-Transport-Belt",
+  colour              = {r=197, g=174, b=69},
+  underground_belt    = "RU-Basic-Underground-Belt",
+  splitter            = "RU-Basic-Splitter",
+order               = "d",
+loader_ingredients  = {
+  {"iron-gear-wheel", 20},
+  {"RU-Basic-Transport-Belt", 2},
+  {"RU-Basic-Stack-Inserter", 1},
+  {"electronic-circuit", 4},
+},
+beltbox_ingredients = {
+  {"express-transport-belt-beltbox",1},
+  {"iron-plate",30},
+  {"iron-gear-wheel",30},
+  {"electronic-circuit",10},
+},
+technology          = "RU-Logistics-a",
+beltbox_technology  = "RU-Logistics-a",
+})
+deadlock.add_tier({
+  transport_belt      = "RU-Medium-Transport-Belt",
+  colour              = {r=215, g=59, b=65},
+  underground_belt    = "RU-Medium-Underground-Belt",
+  splitter            = "RU-Medium-Splitter",
+order               = "e",
+loader_ingredients  = {
+  {"iron-gear-wheel", 20},
+  {"RU-Medium-Transport-Belt", 2},
+  {"RU-Medium-Stack-Inserter", 1},
+  {"electronic-circuit", 4},
+},
+beltbox_ingredients = {
+  {"RU-Basic-Transport-Belt-beltbox",1},
+  {"iron-plate",30},
+  {"iron-gear-wheel",30},
+  {"electronic-circuit",10},
+},
+technology          = "RU-Logistics-b",
+beltbox_technology  = "RU-Logistics-b",
+})
+deadlock.add_tier({
+  transport_belt      = "RU-Big-Transport-Belt",
+  colour              = {r=83, g=177, b=192},
+  underground_belt    = "RU-Big-Underground-Belt",
+  splitter            = "RU-Big-Splitter",
+
+order               = "f",
+loader_ingredients  = {
+  {"iron-gear-wheel", 20},
+  {"RU-Big-Transport-Belt", 2},
+  {"RU-Big-Stack-Inserter", 1},
+  {"electronic-circuit", 4},
+},
+beltbox_ingredients = {
+  {"RU-Medium-Transport-Belt-beltbox",1},
+  {"iron-plate",30},
+  {"iron-gear-wheel",30},
+  {"electronic-circuit",10},
+},
+technology          = "RU-Logistics-c",
+beltbox_technology  = "RU-Logistics-c",
+})
+deadlock.add_tier({
+  transport_belt      = "RU-Behemoth-Transport-Belt",
+  colour              = {r=57, g=96, b=103},
+  underground_belt    = "RU-Behemoth-Underground-Belt",
+  splitter            = "RU-Behemoth-Splitter",
+order               = "g",
+loader_ingredients  = {
+  {"iron-gear-wheel", 20},
+  {"RU-Behemoth-Transport-Belt", 2},
+  {"RU-Behemoth-Stack-Inserter", 1},
+  {"electronic-circuit", 4},
+},
+beltbox_ingredients = {
+  {"RU-Big-Transport-Belt-beltbox",1},
+  {"iron-plate",30},
+  {"iron-gear-wheel",30},
+  {"electronic-circuit",10},
+},
+technology          = "RU-Logistics-d",
+beltbox_technology  = "RU-Logistics-d",
+})
+end
+
 --Assembler Imput-Output
 appmod.blacklist['escape-pod-assembler'] = true
 

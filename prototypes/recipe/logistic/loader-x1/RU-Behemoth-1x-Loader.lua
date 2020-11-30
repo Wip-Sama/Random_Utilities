@@ -10,6 +10,7 @@ data:extend({
           {"iron-gear-wheel", 20},
           {"RU-Behemoth-Transport-Belt", 2},
           {"RU-Behemoth-Stack-Inserter", 1},
+          {"RU-Big-miniloader", 1},
           {"processing-unit", 4}
         },
         result = "RU-Behemoth-1x-Loader",

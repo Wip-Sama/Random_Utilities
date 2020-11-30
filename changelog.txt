@@ -4,15 +4,16 @@ Date: xx/11/2020
   Added:
     - juicy mods storage size edit
     - juicy mods fluid storage size edit
-    - added 8 extra miniloader with miniloader mod (they will disappear if you remove the miniloader mod)
+    - added 8 extra miniloader with miniloader mod (they will disappear if you remove the miniloader mod) (more-miniloader original code)
+    - deadlock miniloader and compacter with deadlock beltboxes loaders mod (they will disappear if you remove the miniloader mod) (more-miniloader original code)
   Changes:
     - Big logistics speed 150 > 180
     - Behemoth logistic speed 2000 > 360 (2 big belt)
     - behemoth logistic will allow speed change in settings 360 / 640 / 1280
     - changed maxium mine/reach distance 1000 > 100000
+    - enabling logistics will no more change the vanilla express belt speed (60 > 45)
   Notes:
     - the belt speed was decreased due to factorio limitation
-    - to show the animation of behemoth logistics every item as +1 item transport
 ---------------------------------------------------------------------------------------------------
 Version: 2.0.8
 Date: 04/10/2020

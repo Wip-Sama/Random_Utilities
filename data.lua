@@ -274,11 +274,11 @@ require "prototypes.recipe.CheatyRecipe"
 require "lib.item-goups"
 
 if mods["miniloader"] then
-ru_more_miniloaders = require("miniloaders")
+  ru_more_miniloaders = require("lib.miniloaders")
 
-ru_more_miniloaders.create_miniloader{
+  ru_more_miniloaders.create_miniloader{
     name="RU-Basic",
-    color="b2ad64",
+    color="c5ae45",
     underground_belt="RU-Basic-Underground-Belt",
     ingredients={
       {"iron-gear-wheel", 20},
@@ -298,18 +298,20 @@ ru_more_miniloaders.create_miniloader{
   
   ru_more_miniloaders.create_miniloader{
     name="RU-Medium",
-    color="ca9a98",
+    color="d73b41",
     underground_belt="RU-Medium-Underground-Belt",
     ingredients={
       {"iron-gear-wheel", 20},
       {"RU-Medium-Transport-Belt", 2},
       {"RU-Medium-Stack-Inserter", 1},
+      {"RU-Basic-miniloader", 1},
       {"electronic-circuit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
       {"RU-Medium-Transport-Belt", 2},
       {"RU-Medium-Stack-Inserter", 2},
+      {"RU-Basic-filter-miniloader", 1},
       {"electronic-circuit", 8}
     },
     tech_prereq={"RU-Logistics-b", "express-miniloader"},
@@ -318,18 +320,20 @@ ru_more_miniloaders.create_miniloader{
   
   ru_more_miniloaders.create_miniloader{
     name="RU-Big",
-    color="84b4b5",
+    color="53b1c0",
     underground_belt="RU-Big-Underground-Belt",
     ingredients={
       {"iron-gear-wheel", 20},
       {"RU-Big-Transport-Belt", 2},
       {"RU-Big-Stack-Inserter", 1},
+      {"RU-Medium-miniloader", 1},
       {"advanced-circuit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
       {"RU-Big-Transport-Belt", 2},
       {"RU-Big-Stack-Inserter", 2},
+      {"RU-Medium-filter-miniloader", 1},
       {"advanced-circuit", 8}
     },
     tech_prereq={"RU-Logistics-c", "express-miniloader"},
@@ -338,23 +342,133 @@ ru_more_miniloaders.create_miniloader{
   
   ru_more_miniloaders.create_miniloader{
     name="RU-Behemoth",
-    color="505050",
+    color="396067",
     underground_belt="RU-Behemoth-Underground-Belt",
     ingredients={
       {"iron-gear-wheel", 20},
       {"RU-Behemoth-Transport-Belt", 2},
       {"RU-Behemoth-Stack-Inserter", 1},
+      {"RU-Big-miniloader", 1},
       {"processing-unit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
       {"RU-Behemoth-Transport-Belt", 2},
       {"RU-Behemoth-Stack-Inserter", 2},
+      {"RU-Big-filter-miniloader", 1},
       {"processing-unit", 8}
     },
     tech_prereq={"RU-Logistics-d", "express-miniloader"},
   }
 end
+--[[
+if mods["deadlock-beltboxes-loaders"] then
+  deadlock = require("__deadlock-beltboxes-loaders__/prototypes/public")
+  --deadlock = {}
+
+  deadlock.add_tier({
+    transport_belt      = "RU-Basic-Transport-Belt",
+    colour              = {r=197, g=174, b=69},
+    underground_belt    = "RU-Basic-Underground-Belt",
+    splitter            = "RU-Basic-Splitter",
+    technology          = "logistics-a",
+    order               = "c",
+
+    loader_ingredients  = {
+      {"iron-gear-wheel", 20},
+      {"RU-Basic-Transport-Belt", 2},
+      {"RU-Basic-Stack-Inserter", 1},
+      {"electronic-circuit", 4}
+    },
+    --[[
+    beltbox_category    = "crafting-with-fluid",
+    --]
+    beltbox_ingredients = {
+      {"express-transport-belt-beltbox",1},
+      {"iron-plate",30},
+      {"iron-gear-wheel",30},
+      {"electronic-circuit",10}
+    },
+    beltbox_technology  = "deadlock-stacking-4",
+  })
+
+  deadlock.add_tier({
+    transport_belt      = "RU-Medium-Transport-Belt",
+    colour              = {r=215, g=59, b=65},
+    underground_belt    = "RU-Medium-Underground-Belt",
+    splitter            = "RU-Medium-Splitter",
+    technology          = "logistics-b",
+    order               = "d",
+
+    loader_ingredients  = {
+      {"fast-transport-belt-loader",1},
+      {"expedited-transport-belt",1},
+      {"concrete",10},
+    },
+    --[[
+    beltbox_category    = "crafting-with-fluid",
+    --]
+    beltbox_ingredients = {
+      {"fast-transport-belt-beltbox",1},
+      {"iron-plate",30},
+      {"iron-gear-wheel",30},
+      {"advanced-circuit",10}
+    },
+    beltbox_technology  = "deadlock-stacking-5",
+  })
+
+  deadlock.add_tier({
+    transport_belt      = "RU-Big-Transport-Belt",
+    colour              = {r=83, g=177, b=192},
+    underground_belt    = "RU-Big-Underground-Belt",
+    splitter            = "RU-Big-Splitter",
+    technology          = "logistics-c",
+    order               = "e",
+
+    loader_ingredients  = {
+      {"fast-transport-belt-loader",1},
+      {"expedited-transport-belt",1},
+      {"concrete",10},
+    },
+    --[[
+    beltbox_category    = "crafting-with-fluid",
+    --]
+    beltbox_ingredients = {
+      {"fast-transport-belt-beltbox",1},
+      {"iron-plate",30},
+      {"iron-gear-wheel",30},
+      {"advanced-circuit",10}
+    },
+    beltbox_technology  = "deadlock-stacking-6",
+  })
+
+  deadlock.add_tier({
+    transport_belt      = "RU-Behemoth-Transport-Belt",
+    colour              = {r=57, g=96, b=103},
+    underground_belt    = "RU-Behemoth-Underground-Belt",
+    splitter            = "RU-Behemoth-Splitter",
+    technology          = "logistics-d",
+    order               = "f",
+
+    loader_ingredients  = {
+      {"fast-transport-belt-loader",1},
+      {"expedited-transport-belt",1},
+      {"concrete",10},
+    },
+    --[[
+    beltbox_category    = "crafting-with-fluid",
+    --]
+    beltbox_ingredients = {
+      {"fast-transport-belt-beltbox",1},
+      {"iron-plate",30},
+      {"iron-gear-wheel",30},
+      {"processing-unit",10}
+    },
+    beltbox_technology  = "deadlock-stacking-7",
+  })
+
+end
+--]]
 
 --Wire Shortcuts
 if settings.startup["RU-Enable-Wire-Shortcuts"].value then
