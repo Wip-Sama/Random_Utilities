@@ -521,3 +521,14 @@ end)
 script.on_event("WireShortcuts-switch-wire", function(event)
     switch_wire(event.player_index)
 end)
+
+--miniloader
+script.on_configuration_changed(function(data)
+    for _, force in pairs(game.forces) do
+        local recipes = force.recipes
+                               
+        if recipes["chute-miniloader"] then
+            recipes["chute-miniloader"].enabled = false
+        end
+    end
+end)

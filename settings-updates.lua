@@ -30,3 +30,12 @@ if mods["omnimatter_fluid"] then
   data.raw["bool-setting"]["RU-Chemical-Plant-Imput-Output"].hidden = true
   data.raw["bool-setting"]["RU-Oil-Refineries-Imput-Output"].hidden = true
 end
+
+if mods["Juicy_mods"] then
+  data.raw["int-setting"]["RU-juicy-mods-big-generic-chest"].hidden = false
+  data.raw["int-setting"]["RU-juicy-mods-big-logistic-chest"].hidden = false
+  data.raw["int-setting"]["RU-juicy-mods-generic-warehoude"].hidden = false
+  data.raw["int-setting"]["RU-juicy-mods-logistic-warehoude"].hidden = false
+  data.raw["int-setting"]["RU-juicy-mods-fs-50"].hidden = false
+  data.raw["int-setting"]["RU-juicy-mods-fs-200"].hidden = false
+end

@@ -6,6 +6,7 @@ require "prototypes.setting-mod-modifier.krastorio2"
 require "prototypes.setting-mod-modifier.random-utilities"
 require "prototypes.setting-mod-modifier.space-exploration"
 require "prototypes.setting-mod-modifier.base"
+require "prototypes.setting-mod-modifier.juicy-mods"
 
 if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
   --if settings.startup["banane"] then

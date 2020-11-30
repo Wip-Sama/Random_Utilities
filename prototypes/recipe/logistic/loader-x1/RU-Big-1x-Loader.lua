@@ -1,3 +1,4 @@
+--if not mods["miniloader"] then
 data:extend({
     {
         type = "recipe",
@@ -15,3 +16,4 @@ data:extend({
         result_count = 1,
       },
 })
+--end

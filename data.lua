@@ -273,6 +273,89 @@ require "prototypes.recipe.CheatyRecipe"
 --lib
 require "lib.item-goups"
 
+if mods["miniloader"] then
+ru_more_miniloaders = require("miniloaders")
+
+ru_more_miniloaders.create_miniloader{
+    name="RU-Basic",
+    color="b2ad64",
+    underground_belt="RU-Basic-Underground-Belt",
+    ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Basic-Transport-Belt", 2},
+      {"RU-Basic-Stack-Inserter", 1},
+      {"electronic-circuit", 4}
+    },
+    filter_ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Basic-Transport-Belt", 2},
+      {"RU-Basic-Stack-Inserter", 2},
+      {"electronic-circuit", 8}
+    },
+    tech_prereq={"RU-Logistics-a", "express-miniloader"},
+    next_upgrade="RU-Medium",
+  }
+  
+  ru_more_miniloaders.create_miniloader{
+    name="RU-Medium",
+    color="ca9a98",
+    underground_belt="RU-Medium-Underground-Belt",
+    ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Medium-Transport-Belt", 2},
+      {"RU-Medium-Stack-Inserter", 1},
+      {"electronic-circuit", 4}
+    },
+    filter_ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Medium-Transport-Belt", 2},
+      {"RU-Medium-Stack-Inserter", 2},
+      {"electronic-circuit", 8}
+    },
+    tech_prereq={"RU-Logistics-b", "express-miniloader"},
+    next_upgrade="RU-Big",
+  }
+  
+  ru_more_miniloaders.create_miniloader{
+    name="RU-Big",
+    color="84b4b5",
+    underground_belt="RU-Big-Underground-Belt",
+    ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Big-Transport-Belt", 2},
+      {"RU-Big-Stack-Inserter", 1},
+      {"advanced-circuit", 4}
+    },
+    filter_ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Big-Transport-Belt", 2},
+      {"RU-Big-Stack-Inserter", 2},
+      {"advanced-circuit", 8}
+    },
+    tech_prereq={"RU-Logistics-c", "express-miniloader"},
+    next_upgrade="RU-Behemoth",
+  }
+  
+  ru_more_miniloaders.create_miniloader{
+    name="RU-Behemoth",
+    color="505050",
+    underground_belt="RU-Behemoth-Underground-Belt",
+    ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Behemoth-Transport-Belt", 2},
+      {"RU-Behemoth-Stack-Inserter", 1},
+      {"processing-unit", 4}
+    },
+    filter_ingredients={
+      {"iron-gear-wheel", 20},
+      {"RU-Behemoth-Transport-Belt", 2},
+      {"RU-Behemoth-Stack-Inserter", 2},
+      {"processing-unit", 8}
+    },
+    tech_prereq={"RU-Logistics-d", "express-miniloader"},
+  }
+end
+
 --Wire Shortcuts
 if settings.startup["RU-Enable-Wire-Shortcuts"].value then
   --Wire Shortcuts

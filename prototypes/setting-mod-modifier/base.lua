@@ -31,13 +31,13 @@ if settings.startup["ru-inventory-size"] then
    data.raw.character["character"].inventory_size = settings.startup["ru-inventory-size"].value
 end
 
---Reach distance 
+--Reach distance
 if settings.startup["ru-reach-distance"] then
    data.raw.character["character"].build_distance = settings.startup["ru-reach-distance"].value
    data.raw.character["character"].reach_distance = settings.startup["ru-reach-distance"].value
 end
 
---Mining reach 
+--Mining reach
 if settings.startup["ru-mine-reach"] then
    data.raw.character["character"].reach_resource_distance = settings.startup["ru-mine-reach"].value
 end

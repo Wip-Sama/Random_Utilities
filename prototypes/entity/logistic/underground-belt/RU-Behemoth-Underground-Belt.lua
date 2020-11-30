@@ -64,7 +64,7 @@ data:extend({
     belt_animation_set = ru_behemoth_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
     next_upgrade = "RU-Behemoth-Underground-Belt",
-    speed = 2000 / 480,
+    speed = (settings.startup["ru-behemoth-logistics-tweaks"].value) / 480,
     structure =
     {
       direction_in =

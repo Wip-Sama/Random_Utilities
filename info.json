@@ -13,6 +13,7 @@
     "?angelsaddons-warehouses",
     "?angelsaddons-pressuretanks",
     "?Krastorio2",
-    "?space-exploration"
+    "?space-exploration",
+    "?miniloader >= 1.12.3"
   ]
 }

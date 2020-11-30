@@ -1,3 +1,4 @@
+--if not mods["miniloader"] then
 data:extend({
     {
         type = "item",
@@ -10,3 +11,4 @@ data:extend({
         stack_size = 200
     },
 })
+--end

@@ -2,6 +2,7 @@ require("prototypes.entity.logistic.belt.graphic.RU-Behemoth-Transport-Belt")
 local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
 local sounds = require("__base__/prototypes/entity/demo-sounds")
 
+--if not mods["miniloader"] then
 data:extend({  
   {
     type = "loader-1x1",
@@ -18,7 +19,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_behemoth_transport_belt_animation_set,
     container_distance = 1,
-    speed = 2000/480,
+    speed = (settings.startup["ru-behemoth-logistics-tweaks"].value) / 480,
     structure_render_layer = "lower-object",
     fast_replaceable_group = "loader-1x",
     structure =
@@ -176,3 +177,4 @@ data:extend({
     }
   },
 })
+--end

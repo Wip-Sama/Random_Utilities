@@ -74,33 +74,76 @@ if settings.startup["RU-Accumulator"].value == "basic" or settings.startup["RU-A
 end
 
 --Belt / splitter / underground belt / loader-1x
-if settings.startup["RU-Logistic"].value == "basic" or settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
-  data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
-  data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
-  data.raw["splitter"]["express-splitter"].speed = 0.125
-  data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
-  data.raw["recipe"]["RU-Basic-Underground-Belt"].hidden = false
-  data.raw["recipe"]["RU-Basic-Splitter"].hidden = false
-  data.raw["recipe"]["RU-Basic-1x-Loader"].hidden = false
-  data.raw["technology"]["RU-Logistics-a"].hidden = false
-  if settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
-    data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
-    data.raw["recipe"]["RU-Medium-Underground-Belt"].hidden = false
-    data.raw["recipe"]["RU-Medium-Splitter"].hidden = false
-    data.raw["recipe"]["RU-Medium-1x-Loader"].hidden = false
-    data.raw["technology"]["RU-Logistics-b"].hidden = false
-    if settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
-      data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
-      data.raw["recipe"]["RU-Big-Underground-Belt"].hidden = false
-      data.raw["recipe"]["RU-Big-Splitter"].hidden = false
-      data.raw["recipe"]["RU-Big-1x-Loader"].hidden = false
-      data.raw["technology"]["RU-Logistics-c"].hidden = false
-      if settings.startup["RU-Logistic"].value == "behemoth" then
-        data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
-        data.raw["recipe"]["RU-Behemoth-Underground-Belt"].hidden = false
-        data.raw["recipe"]["RU-Behemoth-Splitter"].hidden = false
-        data.raw["recipe"]["RU-Behemoth-1x-Loader"].hidden = false
-        data.raw["technology"]["RU-Logistics-d"].hidden = false
+if not mods["miniloader"] then
+  if settings.startup["RU-Logistic"].value == "basic" or settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
+    data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
+    data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
+    data.raw["splitter"]["express-splitter"].speed = 0.125
+    data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
+    data.raw["recipe"]["RU-Basic-Underground-Belt"].hidden = false
+    data.raw["recipe"]["RU-Basic-Splitter"].hidden = false
+    data.raw["recipe"]["RU-Basic-1x-Loader"].hidden = false
+    data.raw["technology"]["RU-Logistics-a"].hidden = false
+    if settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
+      data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
+      data.raw["recipe"]["RU-Medium-Underground-Belt"].hidden = false
+      data.raw["recipe"]["RU-Medium-Splitter"].hidden = false
+      data.raw["recipe"]["RU-Medium-1x-Loader"].hidden = false
+      data.raw["technology"]["RU-Logistics-b"].hidden = false
+      if settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
+        data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
+        data.raw["recipe"]["RU-Big-Underground-Belt"].hidden = false
+        data.raw["recipe"]["RU-Big-Splitter"].hidden = false
+        data.raw["recipe"]["RU-Big-1x-Loader"].hidden = false
+        data.raw["technology"]["RU-Logistics-c"].hidden = false
+        if settings.startup["RU-Logistic"].value == "behemoth" then
+          data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-Underground-Belt"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-Splitter"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-1x-Loader"].hidden = false
+          data.raw["technology"]["RU-Logistics-d"].hidden = false
+        end
+      end
+    end
+  end
+end
+if mods["miniloader"] then
+  if settings.startup["RU-Logistic"].value == "basic" or settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
+    data.raw["transport-belt"]["express-transport-belt"].speed = 0.125
+    data.raw["underground-belt"]["express-underground-belt"].speed = 0.125
+    data.raw["splitter"]["express-splitter"].speed = 0.125
+    data.raw["recipe"]["RU-Basic-Transport-Belt"].hidden = false
+    data.raw["recipe"]["RU-Basic-Underground-Belt"].hidden = false
+    data.raw["recipe"]["RU-Basic-Splitter"].hidden = false
+    data.raw["recipe"]["RU-Basic-filter-miniloader"].hidden = false
+    data.raw["recipe"]["RU-Basic-miniloader"].hidden = false
+    data.raw["recipe"]["RU-Basic-1x-Loader"].hidden = false
+    data.raw["technology"]["RU-Logistics-a"].hidden = false
+    if settings.startup["RU-Logistic"].value == "medium" or settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
+      data.raw["recipe"]["RU-Medium-Transport-Belt"].hidden = false
+      data.raw["recipe"]["RU-Medium-Underground-Belt"].hidden = false
+      data.raw["recipe"]["RU-Medium-Splitter"].hidden = false
+      data.raw["recipe"]["RU-Medium-filter-miniloader"].hidden = false
+      data.raw["recipe"]["RU-Medium-miniloader"].hidden = false
+      data.raw["recipe"]["RU-Medium-1x-Loader"].hidden = false
+      data.raw["technology"]["RU-Logistics-b"].hidden = false
+      if settings.startup["RU-Logistic"].value == "big" or settings.startup["RU-Logistic"].value == "behemoth" then
+        data.raw["recipe"]["RU-Big-Transport-Belt"].hidden = false
+        data.raw["recipe"]["RU-Big-Underground-Belt"].hidden = false
+        data.raw["recipe"]["RU-Big-Splitter"].hidden = false
+        data.raw["recipe"]["RU-Big-filter-miniloader"].hidden = false
+        data.raw["recipe"]["RU-Big-miniloader"].hidden = false
+        data.raw["recipe"]["RU-Big-1x-Loader"].hidden = false
+        data.raw["technology"]["RU-Logistics-c"].hidden = false
+        if settings.startup["RU-Logistic"].value == "behemoth" then
+          data.raw["recipe"]["RU-Behemoth-Transport-Belt"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-Underground-Belt"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-Splitter"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-filter-miniloader"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-miniloader"].hidden = false
+          data.raw["recipe"]["RU-Behemoth-1x-Loader"].hidden = false
+          data.raw["technology"]["RU-Logistics-d"].hidden = false
+        end
       end
     end
   end

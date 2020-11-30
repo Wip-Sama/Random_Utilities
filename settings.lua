@@ -192,6 +192,21 @@ data:extend({
     setting_type = "startup",
     default_value = "true",
   },
+  --behemoth logistics tweaks
+  {
+    type = "string-setting",
+    name = "ru-behemoth-logistics-tweaks",
+    order = "bc",
+    setting_type = "startup",
+    default_value = "360",
+    allowed_values =
+    {
+      "360",
+      "640",
+      "1280",
+    },
+  },
+
 
   --Inventory size OK
   {
@@ -237,7 +252,7 @@ data:extend({
     setting_type = "startup",
     default_value = 6,
     minimum_value = 1,
-    maximum_value = 1000,
+    maximum_value = 100000,
   },
   --Mining reach OK
   {
@@ -247,7 +262,7 @@ data:extend({
     setting_type = "startup",
     default_value = 6,
     minimum_value = 1,
-    maximum_value = 1000,
+    maximum_value = 100000,
   },
   --Mining speed OK
   {
@@ -607,6 +622,50 @@ data:extend({
     minimum_value = 1,
     maximum_value = 65535,
   },
+  --Juicy Mods big generic chest OK
+  {
+    type = "int-setting",
+    name = "RU-juicy-mods-big-generic-chest",
+    hidden = "true",
+    order = "gg",
+    setting_type = "startup",
+    default_value = 400,
+    minimum_value = 1,
+    maximum_value = 10000,
+  },
+  --Juicy Mods big logistic chest OK
+  {
+    type = "int-setting",
+    name = "RU-juicy-mods-big-logistic-chest",
+    hidden = "true",
+    order = "gh",
+    setting_type = "startup",
+    default_value = 400,
+    minimum_value = 1,
+    maximum_value = 10000,
+  },
+  --Juicy Mods generic warehoude OK
+  {
+    type = "int-setting",
+    name = "RU-juicy-mods-generic-warehoude",
+    hidden = "true",
+    order = "gi",
+    setting_type = "startup",
+    default_value = 2000,
+    minimum_value = 1,
+    maximum_value = 65535,
+  },
+  --Juicy Mods logistic warehoude OK
+  {
+    type = "int-setting",
+    name = "RU-juicy-mods-logistic-warehoude",
+    hidden = "true",
+    order = "gj",
+    setting_type = "startup",
+    default_value = 2000,
+    minimum_value = 1,
+    maximum_value = 65535,
+  },
 
   --angel pressuretank OK
   {
@@ -636,6 +695,28 @@ data:extend({
     name = "Ru-kr-fluid-storage-2",
     hidden = "true",
     order = "hc",
+    setting_type = "startup",
+    default_value = 100000,
+    minimum_value = 1,
+    maximum_value = 100000000,
+  },
+  --Juicy Mods fs 50 OK
+  {
+    type = "int-setting",
+    name = "RU-juicy-mods-fs-50",
+    hidden = "true",
+    order = "hd",
+    setting_type = "startup",
+    default_value = 1000,
+    minimum_value = 1,
+    maximum_value = 100000000,
+  },
+  --Juicy Mods fs 200 OK
+  {
+    type = "int-setting",
+    name = "RU-juicy-mods-fs-200",
+    hidden = "true",
+    order = "he",
     setting_type = "startup",
     default_value = 100000,
     minimum_value = 1,

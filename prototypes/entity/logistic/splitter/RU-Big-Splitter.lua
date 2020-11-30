@@ -29,7 +29,7 @@ data:extend({
     belt_animation_set = ru_big_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
     next_upgrade = "RU-Behemoth-Splitter",
-    speed = 150 / 480,
+    speed = 180 / 480,
     working_sound = sounds.express_splitter,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,

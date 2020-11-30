@@ -21,6 +21,14 @@
         "pipecoverspictures",
         "boiler_reflection",
         "inserter_default_stack_control_input_signal",
-        "inserter_circuit_wire_max_distance"
+        "inserter_circuit_wire_max_distance",
+        "settings",
+        "data",
+        "data",
+        "settings",
+        "settings"
+    ],
+    "Lua.diagnostics.disable": [
+        "undefined-global"
     ]
 }

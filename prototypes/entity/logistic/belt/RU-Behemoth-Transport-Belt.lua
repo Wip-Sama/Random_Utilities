@@ -38,7 +38,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_behemoth_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    speed = 2000 / 480,
+    speed = (settings.startup["ru-behemoth-logistics-tweaks"].value) / 480,
     --0.625,
     connector_frame_sprites = transport_belt_connector_frame_sprites,
     circuit_wire_connection_points = circuit_connector_definitions["belt"].points,

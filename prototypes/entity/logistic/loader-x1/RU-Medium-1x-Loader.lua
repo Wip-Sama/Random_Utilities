@@ -2,6 +2,7 @@ require("prototypes.entity.logistic.belt.graphic.RU-Medium-Transport-Belt")
 local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
 local sounds = require("__base__/prototypes/entity/demo-sounds")
 
+--if not mods["miniloader"] then
 data:extend({  
   {
     type = "loader-1x1",
@@ -177,3 +178,4 @@ data:extend({
     }
   },
 })
+--end

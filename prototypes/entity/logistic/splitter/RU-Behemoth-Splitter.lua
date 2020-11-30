@@ -28,7 +28,7 @@ data:extend({
     structure_animation_movement_cooldown = 10,
     belt_animation_set = ru_behemoth_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    speed = 2000 / 480,
+    speed = (settings.startup["ru-behemoth-logistics-tweaks"].value) / 480,
     working_sound = sounds.express_splitter,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,
