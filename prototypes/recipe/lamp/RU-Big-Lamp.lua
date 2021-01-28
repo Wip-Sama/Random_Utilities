@@ -1,20 +1,20 @@
---if settings.startup["RU-Lamp"].value == true then
+--if settings.startup["ru-lamp"].value == true then
 
 --Recipe
 data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Big-Lamp",
+    name = "ru-big-lamp",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
       {"electronic-circuit", 4},
-      {"RU-Medium-Lamp", 1},
+      {"ru-medium-lamp", 1},
       {"steel-plate", 4},
     },
-    result = "RU-Big-Lamp"
+    result = "ru-big-lamp"
   },
 })
 

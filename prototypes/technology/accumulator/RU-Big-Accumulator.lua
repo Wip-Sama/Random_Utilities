@@ -1,4 +1,4 @@
---if settings.startup["RU-Accumulator"].value == true then
+--if settings.startup["ru-accumulator"].value == true then
 
 --technologies
 
@@ -6,19 +6,19 @@ data:extend(
 {
   {
     type = "technology",
-    name = "RU-Advanced-Electric-Energy-Accumulators-c",
+    name = "ru-Advanced-Electric-Energy-accumulators-c",
     hidden = "true",
 --    hidden = is_Big_accumulator_hidden ,
-    icon_size = 128,
+    icon_size = 256,
     icon = "__base__/graphics/technology/electric-energy-acumulators.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Big-Accumulator"
+        recipe = "ru-big-accumulator"
       }
     },
-    prerequisites = {"RU-Advanced-Electric-Energy-Accumulators-b"},
+    prerequisites = {"ru-Advanced-Electric-Energy-accumulators-b"},
     unit =
     {
       count = 700,

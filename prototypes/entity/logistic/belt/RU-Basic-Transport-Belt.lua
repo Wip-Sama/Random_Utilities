@@ -1,16 +1,16 @@
---require("__base__/prototypes/entity/demo-transport-belt-pictures")
-require("prototypes.entity.logistic.belt.graphic.RU-Basic-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+--require("__base__/prototypes/entity/transport-belt-pictures")
+require("prototypes.entity.logistic.belt.graphic.ru-basic-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
     {
     type = "transport-belt",
-    name = "RU-Basic-Transport-Belt",
+    name = "ru-basic-transport-belt",
     icons = {{icon = "__base__/graphics/icons/transport-belt.png", tint = {r=178, g=173, b=100}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Basic-Transport-Belt"},
+    minable = {mining_time = 0.1, result = "ru-basic-transport-belt"},
     max_health = 300,
     corpses = {{corpse = "transport-belt-remnants", tint = {r=178, g=173, b=100}}},
     dying_explosion = "transport-belt-explosion",
@@ -38,7 +38,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_basic_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "RU-Medium-Transport-Belt",
+    next_upgrade = "ru-medium-transport-belt",
     speed = 0.1875,
     --90 / 480,
     connector_frame_sprites = transport_belt_connector_frame_sprites,

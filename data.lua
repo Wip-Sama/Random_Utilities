@@ -1,275 +1,319 @@
---Basic Substation
-require "prototypes.item.substation.RU-Basic-Substation"
-require "prototypes.entity.substation.RU-Basic-Substation"
-require "prototypes.recipe.substation.RU-Basic-Substation"
-require "prototypes.technology.substation.RU-Basic-Substation"
---Medium Substation
-require "prototypes.item.substation.RU-Medium-Substation"
-require "prototypes.entity.substation.RU-Medium-Substation"
-require "prototypes.recipe.substation.RU-Medium-Substation"
-require "prototypes.technology.substation.RU-Medium-Substation"
---Big Substation
-require "prototypes.item.substation.RU-Big-Substation"
-require "prototypes.entity.substation.RU-Big-Substation"
-require "prototypes.recipe.substation.RU-Big-Substation"
-require "prototypes.technology.substation.RU-Big-Substation"
---Behemoth Substation
-require "prototypes.item.substation.RU-Behemoth-Substation"
-require "prototypes.entity.substation.RU-Behemoth-Substation"
-require "prototypes.recipe.substation.RU-Behemoth-Substation"
-require "prototypes.technology.substation.RU-Behemoth-Substation"
+--basic Substation
+require "prototypes.item.substation.ru-basic-substation"
+require "prototypes.entity.substation.ru-basic-substation"
+require "prototypes.recipe.substation.ru-basic-substation"
+require "prototypes.technology.substation.ru-basic-substation"
+--medium Substation
+require "prototypes.item.substation.ru-medium-substation"
+require "prototypes.entity.substation.ru-medium-substation"
+require "prototypes.recipe.substation.ru-medium-substation"
+require "prototypes.technology.substation.ru-medium-substation"
+--big Substation
+require "prototypes.item.substation.ru-big-substation"
+require "prototypes.entity.substation.ru-big-substation"
+require "prototypes.recipe.substation.ru-big-substation"
+require "prototypes.technology.substation.ru-big-substation"
+--behemoth Substation
+require "prototypes.item.substation.ru-behemoth-substation"
+require "prototypes.entity.substation.ru-behemoth-substation"
+require "prototypes.recipe.substation.ru-behemoth-substation"
+require "prototypes.technology.substation.ru-behemoth-substation"
 --Junction Pole
-require "prototypes.item.substation.RU-Junction-Pole"
-require "prototypes.entity.substation.RU-Junction-Pole"
-require "prototypes.recipe.substation.RU-Junction-Pole"
- --Basic Solar-Panel
-require "prototypes.item.Solar-Panel.RU-Basic-Solar-Panel"
-require "prototypes.entity.Solar-Panel.RU-Basic-Solar-Panel"
-require "prototypes.recipe.Solar-Panel.RU-Basic-Solar-Panel"
-require "prototypes.technology.Solar-Panel.RU-Basic-Solar-Panel"
---Medium Solar-Panel
-require "prototypes.item.Solar-Panel.RU-Medium-Solar-Panel"
-require "prototypes.entity.Solar-Panel.RU-Medium-Solar-Panel"
-require "prototypes.recipe.Solar-Panel.RU-Medium-Solar-Panel"
-require "prototypes.technology.Solar-Panel.RU-Medium-Solar-Panel"
---Big Solar-Panel
-require "prototypes.item.Solar-Panel.RU-Big-Solar-Panel"
-require "prototypes.entity.Solar-Panel.RU-Big-Solar-Panel"
-require "prototypes.recipe.Solar-Panel.RU-Big-Solar-Panel"
-require "prototypes.technology.Solar-Panel.RU-Big-Solar-Panel"
---Behemoth Solar-Panel
-require "prototypes.item.Solar-Panel.RU-Behemoth-Solar-Panel"
-require "prototypes.entity.Solar-Panel.RU-Behemoth-Solar-Panel"
-require "prototypes.recipe.Solar-Panel.RU-Behemoth-Solar-Panel"
-require "prototypes.technology.Solar-Panel.RU-Behemoth-Solar-Panel"
+require "prototypes.item.substation.ru-junction-pole"
+require "prototypes.entity.substation.ru-junction-pole"
+require "prototypes.recipe.substation.ru-junction-pole"
+ --basic solar-panel
+require "prototypes.item.solar-panel.ru-basic-solar-panel"
+require "prototypes.entity.solar-panel.ru-basic-solar-panel"
+require "prototypes.recipe.solar-panel.ru-basic-solar-panel"
+require "prototypes.technology.solar-panel.ru-basic-solar-panel"
+--medium solar-panel
+require "prototypes.item.solar-panel.ru-medium-solar-panel"
+require "prototypes.entity.solar-panel.ru-medium-solar-panel"
+require "prototypes.recipe.solar-panel.ru-medium-solar-panel"
+require "prototypes.technology.solar-panel.ru-medium-solar-panel"
+--big solar-panel
+require "prototypes.item.solar-panel.ru-big-solar-panel"
+require "prototypes.entity.solar-panel.ru-big-solar-panel"
+require "prototypes.recipe.solar-panel.ru-big-solar-panel"
+require "prototypes.technology.solar-panel.ru-big-solar-panel"
+--behemoth solar-panel
+require "prototypes.item.solar-panel.ru-behemoth-solar-panel"
+require "prototypes.entity.solar-panel.ru-behemoth-solar-panel"
+require "prototypes.recipe.solar-panel.ru-behemoth-solar-panel"
+require "prototypes.technology.solar-panel.ru-behemoth-solar-panel"
 --animations
-require "prototypes.entity.accumulator.RU-basic-accumulator-animations"
-require "prototypes.entity.accumulator.RU-medium-accumulator-animations"
-require "prototypes.entity.accumulator.RU-big-accumulator-animations"
-require "prototypes.entity.accumulator.RU-behemoth-accumulator-animations"
---Basic Accumulator
-require "prototypes.item.accumulator.RU-Basic-Accumulator"
-require "prototypes.entity.accumulator.RU-Basic-Accumulator"
-require "prototypes.recipe.accumulator.RU-Basic-Accumulator"
-require "prototypes.technology.accumulator.RU-Basic-Accumulator"
---Medium Accumulator
-require "prototypes.item.accumulator.RU-Medium-Accumulator"
-require "prototypes.entity.accumulator.RU-Medium-Accumulator"
-require "prototypes.recipe.accumulator.RU-Medium-Accumulator"
-require "prototypes.technology.accumulator.RU-Medium-Accumulator"
---Big Accumulator
-require "prototypes.item.accumulator.RU-Big-Accumulator"
-require "prototypes.entity.accumulator.RU-Big-Accumulator"
-require "prototypes.recipe.accumulator.RU-Big-Accumulator"
-require "prototypes.technology.accumulator.RU-Big-Accumulator"
---Behemoth Accumulator
-require "prototypes.item.accumulator.RU-Behemoth-Accumulator"
-require "prototypes.entity.accumulator.RU-Behemoth-Accumulator"
-require "prototypes.recipe.accumulator.RU-Behemoth-Accumulator"
-require "prototypes.technology.accumulator.RU-Behemoth-Accumulator"
---Basic Lamp
-require "prototypes.item.lamp.RU-Basic-Lamp"
-require "prototypes.entity.lamp.RU-Basic-Lamp"
-require "prototypes.recipe.lamp.RU-Basic-Lamp"
-require "prototypes.technology.lamp.RU-Basic-Lamp"
---Medium lamp
-require "prototypes.item.lamp.RU-Medium-Lamp"
-require "prototypes.entity.lamp.RU-Medium-Lamp"
-require "prototypes.recipe.lamp.RU-Medium-Lamp"
-require "prototypes.technology.lamp.RU-Medium-Lamp"
---Big lamp
-require "prototypes.item.lamp.RU-Big-Lamp"
-require "prototypes.entity.lamp.RU-Big-Lamp"
-require "prototypes.recipe.lamp.RU-Big-Lamp"
-require "prototypes.technology.lamp.RU-Big-Lamp"
+require "prototypes.entity.accumulator.ru-basic-accumulator-animations"
+require "prototypes.entity.accumulator.ru-medium-accumulator-animations"
+require "prototypes.entity.accumulator.ru-big-accumulator-animations"
+require "prototypes.entity.accumulator.ru-behemoth-accumulator-animations"
+--basic Accumulator
+require "prototypes.item.accumulator.ru-basic-accumulator"
+require "prototypes.entity.accumulator.ru-basic-accumulator"
+require "prototypes.recipe.accumulator.ru-basic-accumulator"
+require "prototypes.technology.accumulator.ru-basic-accumulator"
+--medium Accumulator
+require "prototypes.item.accumulator.ru-medium-accumulator"
+require "prototypes.entity.accumulator.ru-medium-accumulator"
+require "prototypes.recipe.accumulator.ru-medium-accumulator"
+require "prototypes.technology.accumulator.ru-medium-accumulator"
+--big Accumulator
+require "prototypes.item.accumulator.ru-big-accumulator"
+require "prototypes.entity.accumulator.ru-big-accumulator"
+require "prototypes.recipe.accumulator.ru-big-accumulator"
+require "prototypes.technology.accumulator.ru-big-accumulator"
+--behemoth Accumulator
+require "prototypes.item.accumulator.ru-behemoth-accumulator"
+require "prototypes.entity.accumulator.ru-behemoth-accumulator"
+require "prototypes.recipe.accumulator.ru-behemoth-accumulator"
+require "prototypes.technology.accumulator.ru-behemoth-accumulator"
+--basic Lamp
+require "prototypes.item.lamp.ru-basic-lamp"
+require "prototypes.entity.lamp.ru-basic-lamp"
+require "prototypes.recipe.lamp.ru-basic-lamp"
+require "prototypes.technology.lamp.ru-basic-lamp"
+--medium lamp
+require "prototypes.item.lamp.ru-medium-lamp"
+require "prototypes.entity.lamp.ru-medium-lamp"
+require "prototypes.recipe.lamp.ru-medium-lamp"
+require "prototypes.technology.lamp.ru-medium-lamp"
+--big lamp
+require "prototypes.item.lamp.ru-big-lamp"
+require "prototypes.entity.lamp.ru-big-lamp"
+require "prototypes.recipe.lamp.ru-big-lamp"
+require "prototypes.technology.lamp.ru-big-lamp"
 --basic beacon
-require "prototypes.item.beacon.RU-Basic-Beacon"
-require "prototypes.entity.beacon.RU-Basic-Beacon"
-require "prototypes.recipe.beacon.RU-Basic-Beacon"
-require "prototypes.technology.beacon.RU-Basic-Beacon"
+require "prototypes.item.beacon.ru-basic-beacon"
+require "prototypes.entity.beacon.ru-basic-beacon"
+require "prototypes.recipe.beacon.ru-basic-beacon"
+require "prototypes.technology.beacon.ru-basic-beacon"
 --medium beacon
-require "prototypes.item.beacon.RU-Medium-Beacon"
-require "prototypes.entity.beacon.RU-Medium-Beacon"
-require "prototypes.recipe.beacon.RU-Medium-Beacon"
-require "prototypes.technology.beacon.RU-Medium-Beacon"
+require "prototypes.item.beacon.ru-medium-beacon"
+require "prototypes.entity.beacon.ru-medium-beacon"
+require "prototypes.recipe.beacon.ru-medium-beacon"
+require "prototypes.technology.beacon.ru-medium-beacon"
 --big beacon
-require "prototypes.item.beacon.RU-Big-Beacon"
-require "prototypes.entity.beacon.RU-Big-Beacon"
-require "prototypes.recipe.beacon.RU-Big-Beacon"
-require "prototypes.technology.beacon.RU-Big-Beacon"
-require "prototypes.technology.walkable-beacon.RU-Walkable-Beacon"
+require "prototypes.item.beacon.ru-big-beacon"
+require "prototypes.entity.beacon.ru-big-beacon"
+require "prototypes.recipe.beacon.ru-big-beacon"
+require "prototypes.technology.beacon.ru-big-beacon"
+require "prototypes.technology.walkable-beacon.ru-walkable-beacon"
 --walkable beacon
-require "prototypes.item.walkable-beacon.RU-Walkable-Beacon"
-require "prototypes.entity.walkable-beacon.RU-Walkable-Beacon"
-require "prototypes.recipe.walkable-beacon.RU-Walkable-Beacon"
+require "prototypes.item.walkable-beacon.ru-walkable-beacon"
+require "prototypes.entity.walkable-beacon.ru-walkable-beacon"
+require "prototypes.recipe.walkable-beacon.ru-walkable-beacon"
 --basic walkable beacon
-require "prototypes.item.walkable-beacon.RU-Walkable-Basic-Beacon"
-require "prototypes.entity.walkable-beacon.RU-Walkable-Basic-Beacon"
-require "prototypes.recipe.walkable-beacon.RU-Walkable-Basic-Beacon"
---Medium walkable beacon
-require "prototypes.item.walkable-beacon.RU-Walkable-Medium-Beacon"
-require "prototypes.entity.walkable-beacon.RU-Walkable-Medium-Beacon"
-require "prototypes.recipe.walkable-beacon.RU-Walkable-Medium-Beacon"
---Big walkable beacon
-require "prototypes.item.walkable-beacon.RU-Walkable-Big-Beacon"
-require "prototypes.entity.walkable-beacon.RU-Walkable-Big-Beacon"
-require "prototypes.recipe.walkable-beacon.RU-Walkable-Big-Beacon"
---Basic Belt
-require "prototypes.item.logistic.belt.RU-Basic-Transport-Belt"
-require "prototypes.entity.logistic.belt.RU-Basic-Transport-Belt"
-require "prototypes.recipe.logistic.belt.RU-Basic-Transport-Belt"
-require "prototypes.technology.logistic.belt.RU-Basic-Transport-Belt"
---Medium Belt
-require "prototypes.item.logistic.belt.RU-Medium-Transport-Belt"
-require "prototypes.entity.logistic.belt.RU-Medium-Transport-Belt"
-require "prototypes.recipe.logistic.belt.RU-Medium-Transport-Belt"
-require "prototypes.technology.logistic.belt.RU-Medium-Transport-Belt"
---Big Belt
-require "prototypes.item.logistic.belt.RU-Big-Transport-Belt"
-require "prototypes.entity.logistic.belt.RU-Big-Transport-Belt"
-require "prototypes.recipe.logistic.belt.RU-Big-Transport-Belt"
-require "prototypes.technology.logistic.belt.RU-Big-Transport-Belt"
---Behemoth Belt
-require "prototypes.item.logistic.belt.RU-Behemoth-Transport-Belt"
-require "prototypes.entity.logistic.belt.RU-Behemoth-Transport-Belt"
-require "prototypes.recipe.logistic.belt.RU-Behemoth-Transport-Belt"
-require "prototypes.technology.logistic.belt.RU-Behemoth-Transport-Belt"
+require "prototypes.item.walkable-beacon.ru-walkable-basic-beacon"
+require "prototypes.entity.walkable-beacon.ru-walkable-basic-beacon"
+require "prototypes.recipe.walkable-beacon.ru-walkable-basic-beacon"
+--medium walkable beacon
+require "prototypes.item.walkable-beacon.ru-walkable-medium-beacon"
+require "prototypes.entity.walkable-beacon.ru-walkable-medium-beacon"
+require "prototypes.recipe.walkable-beacon.ru-walkable-medium-beacon"
+--big walkable beacon
+require "prototypes.item.walkable-beacon.ru-walkable-big-beacon"
+require "prototypes.entity.walkable-beacon.ru-walkable-big-beacon"
+require "prototypes.recipe.walkable-beacon.ru-walkable-big-beacon"
+--basic Belt
+require "prototypes.item.logistic.belt.ru-basic-transport-belt"
+require "prototypes.entity.logistic.belt.ru-basic-transport-belt"
+require "prototypes.recipe.logistic.belt.ru-basic-transport-belt"
+require "prototypes.technology.logistic.ru-logistics-a"
+--medium Belt
+require "prototypes.item.logistic.belt.ru-medium-transport-belt"
+require "prototypes.entity.logistic.belt.ru-medium-transport-belt"
+require "prototypes.recipe.logistic.belt.ru-medium-transport-belt"
+require "prototypes.technology.logistic.ru-logistics-b"
+--big Belt
+require "prototypes.item.logistic.belt.ru-big-transport-belt"
+require "prototypes.entity.logistic.belt.ru-big-transport-belt"
+require "prototypes.recipe.logistic.belt.ru-big-transport-belt"
+require "prototypes.technology.logistic.ru-logistics-c"
+--behemoth Belt
+require "prototypes.item.logistic.belt.ru-behemoth-transport-belt"
+require "prototypes.entity.logistic.belt.ru-behemoth-transport-belt"
+require "prototypes.recipe.logistic.belt.ru-behemoth-transport-belt"
+require "prototypes.technology.logistic.ru-logistics-d"
 --Underground Basic Belt
-require "prototypes.item.logistic.underground-belt.RU-Basic-Underground-Belt"
-require "prototypes.entity.logistic.underground-belt.RU-Basic-Underground-Belt"
-require "prototypes.recipe.logistic.underground-belt.RU-Basic-Underground-Belt"
+require "prototypes.item.logistic.underground-belt.ru-basic-underground-belt"
+require "prototypes.entity.logistic.underground-belt.ru-basic-underground-belt"
+require "prototypes.recipe.logistic.underground-belt.ru-basic-underground-belt"
 --Underground Medium Belt
-require "prototypes.item.logistic.underground-belt.RU-Medium-Underground-Belt"
-require "prototypes.entity.logistic.underground-belt.RU-Medium-Underground-Belt"
-require "prototypes.recipe.logistic.underground-belt.RU-Medium-Underground-Belt"
+require "prototypes.item.logistic.underground-belt.ru-medium-underground-belt"
+require "prototypes.entity.logistic.underground-belt.ru-medium-underground-belt"
+require "prototypes.recipe.logistic.underground-belt.ru-medium-underground-belt"
 --Underground Big Belt
-require "prototypes.item.logistic.underground-belt.RU-Big-Underground-Belt"
-require "prototypes.entity.logistic.underground-belt.RU-Big-Underground-Belt"
-require "prototypes.recipe.logistic.underground-belt.RU-Big-Underground-Belt"
+require "prototypes.item.logistic.underground-belt.ru-big-underground-belt"
+require "prototypes.entity.logistic.underground-belt.ru-big-underground-belt"
+require "prototypes.recipe.logistic.underground-belt.ru-big-underground-belt"
 --Underground Behemoth Belt
-require "prototypes.item.logistic.underground-belt.RU-Behemoth-Underground-Belt"
-require "prototypes.entity.logistic.underground-belt.RU-Behemoth-Underground-Belt"
-require "prototypes.recipe.logistic.underground-belt.RU-Behemoth-Underground-Belt"
---Splitter Basic Belt
-require "prototypes.item.logistic.splitter.RU-Basic-Splitter"
-require "prototypes.entity.logistic.splitter.RU-Basic-Splitter"
-require "prototypes.recipe.logistic.splitter.RU-Basic-Splitter"
---Splitter Medium Belt
-require "prototypes.item.logistic.splitter.RU-Medium-Splitter"
-require "prototypes.entity.logistic.splitter.RU-Medium-Splitter"
-require "prototypes.recipe.logistic.splitter.RU-Medium-Splitter"
---Splitter Big Belt
-require "prototypes.item.logistic.splitter.RU-Big-Splitter"
-require "prototypes.entity.logistic.splitter.RU-Big-Splitter"
-require "prototypes.recipe.logistic.splitter.RU-Big-Splitter"
---Splitter Behemoth Belt
-require "prototypes.item.logistic.splitter.RU-Behemoth-Splitter"
-require "prototypes.entity.logistic.splitter.RU-Behemoth-Splitter"
-require "prototypes.recipe.logistic.splitter.RU-Behemoth-Splitter"
---1x-Loader Basic Belt
-require "prototypes.item.logistic.loader-x1.RU-Basic-1x-Loader"
-require "prototypes.entity.logistic.loader-x1.RU-Basic-1x-Loader"
-require "prototypes.recipe.logistic.loader-x1.RU-Basic-1x-Loader"
---1x-Loader Medium Belt
-require "prototypes.item.logistic.loader-x1.RU-Medium-1x-Loader"
-require "prototypes.entity.logistic.loader-x1.RU-Medium-1x-Loader"
-require "prototypes.recipe.logistic.loader-x1.RU-Medium-1x-Loader"
---1x-Loader Big Belt
-require "prototypes.item.logistic.loader-x1.RU-Big-1x-Loader"
-require "prototypes.entity.logistic.loader-x1.RU-Big-1x-Loader"
-require "prototypes.recipe.logistic.loader-x1.RU-Big-1x-Loader"
---1x-Loader Behemoth Belt
-require "prototypes.item.logistic.loader-x1.RU-Behemoth-1x-Loader"
-require "prototypes.entity.logistic.loader-x1.RU-Behemoth-1x-Loader"
-require "prototypes.recipe.logistic.loader-x1.RU-Behemoth-1x-Loader"
---Basic Inserter x1
-require "prototypes.item.inserter.inserter.x1.RU-Basic-Inserter"
-require "prototypes.entity.inserter.inserter.x1.RU-Basic-Inserter"
-require "prototypes.recipe.inserter.inserter.x1.RU-Basic-Inserter"
-require "prototypes.technology.inserter.inserter.x1.RU-Basic-Inserter"
---Medium Inserter x1
-require "prototypes.item.inserter.inserter.x1.RU-Medium-Inserter"
-require "prototypes.entity.inserter.inserter.x1.RU-Medium-Inserter"
-require "prototypes.recipe.inserter.inserter.x1.RU-Medium-Inserter"
-require "prototypes.technology.inserter.inserter.x1.RU-Medium-Inserter"
---Big Inserter x1
-require "prototypes.item.inserter.inserter.x1.RU-Big-Inserter"
-require "prototypes.entity.inserter.inserter.x1.RU-Big-Inserter"
-require "prototypes.recipe.inserter.inserter.x1.RU-Big-Inserter"
-require "prototypes.technology.inserter.inserter.x1.RU-Big-Inserter"
---Behemoth Inserter x1
-require "prototypes.item.inserter.inserter.x1.RU-Behemoth-Inserter"
-require "prototypes.entity.inserter.inserter.x1.RU-Behemoth-Inserter"
-require "prototypes.recipe.inserter.inserter.x1.RU-Behemoth-Inserter"
-require "prototypes.technology.inserter.inserter.x1.RU-Behemoth-Inserter"
---Basic Stack Inserter x1
-require "prototypes.item.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
-require "prototypes.entity.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
-require "prototypes.recipe.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
-require "prototypes.technology.inserter.stack-inserter.x1.RU-Basic-Stack-Inserter"
---Medium Stack Inserter x1
-require "prototypes.item.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
-require "prototypes.entity.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
-require "prototypes.recipe.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
-require "prototypes.technology.inserter.stack-inserter.x1.RU-Medium-Stack-Inserter"
---Big Stack Inserter x1
-require "prototypes.item.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
-require "prototypes.entity.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
-require "prototypes.recipe.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
-require "prototypes.technology.inserter.stack-inserter.x1.RU-Big-Stack-Inserter"
---Behemoth Stack Inserter x1
-require "prototypes.item.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
-require "prototypes.entity.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
-require "prototypes.recipe.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
-require "prototypes.technology.inserter.stack-inserter.x1.RU-Behemoth-Stack-Inserter"
---Basic Boiler
-require "prototypes.item.boiler.RU-Basic-Boiler"
-require "prototypes.entity.boiler.RU-Basic-Boiler"
-require "prototypes.recipe.boiler.RU-Basic-Boiler"
-require "prototypes.technology.boiler.RU-Basic-Boiler"
---Medium Boiler
-require "prototypes.item.boiler.RU-Medium-Boiler"
-require "prototypes.entity.boiler.RU-Medium-Boiler"
-require "prototypes.recipe.boiler.RU-Medium-Boiler"
-require "prototypes.technology.boiler.RU-Medium-Boiler"
---Big Boiler
-require "prototypes.item.boiler.RU-Big-Boiler"
-require "prototypes.entity.boiler.RU-Big-Boiler"
-require "prototypes.recipe.boiler.RU-Big-Boiler"
-require "prototypes.technology.boiler.RU-Big-Boiler"
---Behemoth Boiler
-require "prototypes.item.boiler.RU-Behemoth-Boiler"
-require "prototypes.entity.boiler.RU-Behemoth-Boiler"
-require "prototypes.recipe.boiler.RU-Behemoth-Boiler"
-require "prototypes.technology.boiler.RU-Behemoth-Boiler"
---Basic Steam Engine
-require "prototypes.item.steam-engine.RU-Basic-Steam-Engine"
-require "prototypes.entity.steam-engine.RU-Basic-Steam-Engine"
-require "prototypes.recipe.steam-engine.RU-Basic-Steam-Engine"
-require "prototypes.technology.steam-engine.RU-Basic-Steam-Engine"
---Medium Steam Engine
-require "prototypes.item.steam-engine.RU-Medium-Steam-Engine"
-require "prototypes.entity.steam-engine.RU-Medium-Steam-Engine"
-require "prototypes.recipe.steam-engine.RU-Medium-Steam-Engine"
-require "prototypes.technology.steam-engine.RU-Medium-Steam-Engine"
---Big Steam Engine
-require "prototypes.item.steam-engine.RU-Big-Steam-Engine"
-require "prototypes.entity.steam-engine.RU-Big-Steam-Engine"
-require "prototypes.recipe.steam-engine.RU-Big-Steam-Engine"
-require "prototypes.technology.steam-engine.RU-Big-Steam-Engine"
---Behemoth Steam Engine
-require "prototypes.item.steam-engine.RU-Behemoth-Steam-Engine"
-require "prototypes.entity.steam-engine.RU-Behemoth-Steam-Engine"
-require "prototypes.recipe.steam-engine.RU-Behemoth-Steam-Engine"
-require "prototypes.technology.steam-engine.RU-Behemoth-Steam-Engine"
+require "prototypes.item.logistic.underground-belt.ru-behemoth-underground-belt"
+require "prototypes.entity.logistic.underground-belt.ru-behemoth-underground-belt"
+require "prototypes.recipe.logistic.underground-belt.ru-behemoth-underground-belt"
+--splitter Basic Belt
+require "prototypes.item.logistic.splitter.ru-basic-splitter"
+require "prototypes.entity.logistic.splitter.ru-basic-splitter"
+require "prototypes.recipe.logistic.splitter.ru-basic-splitter"
+--splitter Medium Belt
+require "prototypes.item.logistic.splitter.ru-medium-splitter"
+require "prototypes.entity.logistic.splitter.ru-medium-splitter"
+require "prototypes.recipe.logistic.splitter.ru-medium-splitter"
+--splitter Big Belt
+require "prototypes.item.logistic.splitter.ru-big-splitter"
+require "prototypes.entity.logistic.splitter.ru-big-splitter"
+require "prototypes.recipe.logistic.splitter.ru-big-splitter"
+--splitter Behemoth Belt
+require "prototypes.item.logistic.splitter.ru-behemoth-splitter"
+require "prototypes.entity.logistic.splitter.ru-behemoth-splitter"
+require "prototypes.recipe.logistic.splitter.ru-behemoth-splitter"
+--loader Basic Belt
+require "prototypes.item.logistic.loader.ru-basic-loader"
+require "prototypes.entity.logistic.loader.ru-basic-loader"
+require "prototypes.recipe.logistic.loader.ru-basic-loader"
+--loader Medium Belt
+require "prototypes.item.logistic.loader.ru-medium-loader"
+require "prototypes.entity.logistic.loader.ru-medium-loader"
+require "prototypes.recipe.logistic.loader.ru-medium-loader"
+--loader Big Belt
+require "prototypes.item.logistic.loader.ru-big-loader"
+require "prototypes.entity.logistic.loader.ru-big-loader"
+require "prototypes.recipe.logistic.loader.ru-big-loader"
+--loader Behemoth Belt
+require "prototypes.item.logistic.loader.ru-behemoth-loader"
+require "prototypes.entity.logistic.loader.ru-behemoth-loader"
+require "prototypes.recipe.logistic.loader.ru-behemoth-loader"
+--basic Inserter x1
+require "prototypes.item.inserter.inserter.x1.ru-basic-inserter"
+require "prototypes.entity.inserter.inserter.x1.ru-basic-inserter"
+require "prototypes.recipe.inserter.inserter.x1.ru-basic-inserter"
+require "prototypes.technology.inserter.inserter.x1.ru-basic-inserter"
+--medium Inserter x1
+require "prototypes.item.inserter.inserter.x1.ru-medium-inserter"
+require "prototypes.entity.inserter.inserter.x1.ru-medium-inserter"
+require "prototypes.recipe.inserter.inserter.x1.ru-medium-inserter"
+require "prototypes.technology.inserter.inserter.x1.ru-medium-inserter"
+--big Inserter x1
+require "prototypes.item.inserter.inserter.x1.ru-big-inserter"
+require "prototypes.entity.inserter.inserter.x1.ru-big-inserter"
+require "prototypes.recipe.inserter.inserter.x1.ru-big-inserter"
+require "prototypes.technology.inserter.inserter.x1.ru-big-inserter"
+--behemoth Inserter x1
+require "prototypes.item.inserter.inserter.x1.ru-behemoth-inserter"
+require "prototypes.entity.inserter.inserter.x1.ru-behemoth-inserter"
+require "prototypes.recipe.inserter.inserter.x1.ru-behemoth-inserter"
+require "prototypes.technology.inserter.inserter.x1.ru-behemoth-inserter"
+--basic Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.ru-basic-stack-inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.ru-basic-stack-inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.ru-basic-stack-inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.ru-basic-stack-inserter"
+--medium Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.ru-medium-stack-inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.ru-medium-stack-inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.ru-medium-stack-inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.ru-medium-stack-inserter"
+--big Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.ru-big-stack-inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.ru-big-stack-inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.ru-big-stack-inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.ru-big-stack-inserter"
+--behemoth Stack Inserter x1
+require "prototypes.item.inserter.stack-inserter.x1.ru-behemoth-stack-inserter"
+require "prototypes.entity.inserter.stack-inserter.x1.ru-behemoth-stack-inserter"
+require "prototypes.recipe.inserter.stack-inserter.x1.ru-behemoth-stack-inserter"
+require "prototypes.technology.inserter.stack-inserter.x1.ru-behemoth-stack-inserter"
+--basic Boiler
+require "prototypes.item.boiler.ru-basic-boiler"
+require "prototypes.entity.boiler.ru-basic-boiler"
+require "prototypes.recipe.boiler.ru-basic-boiler"
+require "prototypes.technology.boiler.ru-basic-boiler"
+--medium Boiler
+require "prototypes.item.boiler.ru-medium-boiler"
+require "prototypes.entity.boiler.ru-medium-boiler"
+require "prototypes.recipe.boiler.ru-medium-boiler"
+require "prototypes.technology.boiler.ru-medium-boiler"
+--big Boiler
+require "prototypes.item.boiler.ru-big-boiler"
+require "prototypes.entity.boiler.ru-big-boiler"
+require "prototypes.recipe.boiler.ru-big-boiler"
+require "prototypes.technology.boiler.ru-big-boiler"
+--behemoth Boiler
+require "prototypes.item.boiler.ru-behemoth-boiler"
+require "prototypes.entity.boiler.ru-behemoth-boiler"
+require "prototypes.recipe.boiler.ru-behemoth-boiler"
+require "prototypes.technology.boiler.ru-behemoth-boiler"
+--basic Steam Engine
+require "prototypes.item.steam-engine.ru-basic-steam-engine"
+require "prototypes.entity.steam-engine.ru-basic-steam-engine"
+require "prototypes.recipe.steam-engine.ru-basic-steam-engine"
+require "prototypes.technology.steam-engine.ru-basic-steam-engine"
+--medium Steam Engine
+require "prototypes.item.steam-engine.ru-medium-steam-engine"
+require "prototypes.entity.steam-engine.ru-medium-steam-engine"
+require "prototypes.recipe.steam-engine.ru-medium-steam-engine"
+require "prototypes.technology.steam-engine.ru-medium-steam-engine"
+--big Steam Engine
+require "prototypes.item.steam-engine.ru-big-steam-engine"
+require "prototypes.entity.steam-engine.ru-big-steam-engine"
+require "prototypes.recipe.steam-engine.ru-big-steam-engine"
+require "prototypes.technology.steam-engine.ru-big-steam-engine"
+--behemoth Steam Engine
+require "prototypes.item.steam-engine.ru-behemoth-steam-engine"
+require "prototypes.entity.steam-engine.ru-behemoth-steam-engine"
+require "prototypes.recipe.steam-engine.ru-behemoth-steam-engine"
+require "prototypes.technology.steam-engine.ru-behemoth-steam-engine"
+--basic fluid handling
+require "prototypes.entity.fluid-handling.pipe-to-ground.ru-basic-pipe-to-ground"
+require "prototypes.entity.fluid-handling.pipe.ru-basic-pipe"
+require "prototypes.entity.fluid-handling.pump.ru-basic-pump"
+require "prototypes.item.fluid-handling.pipe-to-ground.ru-basic-pipe-to-ground"
+require "prototypes.item.fluid-handling.pipe.ru-basic-pipe"
+require "prototypes.item.fluid-handling.pump.ru-basic-pump"
+require "prototypes.recipe.fluid-handling.pipe-to-ground.ru-basic-pipe-to-ground"
+require "prototypes.recipe.fluid-handling.pipe.ru-basic-pipe"
+require "prototypes.recipe.fluid-handling.pump.ru-basic-pump"
+require "prototypes.technology.fluid-handling.ru-basic-fluid-handling"
+--medium fluid handling
+require "prototypes.entity.fluid-handling.pipe-to-ground.ru-medium-pipe-to-ground"
+require "prototypes.entity.fluid-handling.pipe.ru-medium-pipe"
+require "prototypes.entity.fluid-handling.pump.ru-medium-pump"
+require "prototypes.item.fluid-handling.pipe-to-ground.ru-medium-pipe-to-ground"
+require "prototypes.item.fluid-handling.pipe.ru-medium-pipe"
+require "prototypes.item.fluid-handling.pump.ru-medium-pump"
+require "prototypes.recipe.fluid-handling.pipe-to-ground.ru-medium-pipe-to-ground"
+require "prototypes.recipe.fluid-handling.pipe.ru-medium-pipe"
+require "prototypes.recipe.fluid-handling.pump.ru-medium-pump"
+require "prototypes.technology.fluid-handling.ru-medium-fluid-handling"
+--big fluid handling
+require "prototypes.entity.fluid-handling.pipe-to-ground.ru-big-pipe-to-ground"
+require "prototypes.entity.fluid-handling.pipe.ru-big-pipe"
+require "prototypes.entity.fluid-handling.pump.ru-big-pump"
+require "prototypes.item.fluid-handling.pipe-to-ground.ru-big-pipe-to-ground"
+require "prototypes.item.fluid-handling.pipe.ru-big-pipe"
+require "prototypes.item.fluid-handling.pump.ru-big-pump"
+require "prototypes.recipe.fluid-handling.pipe-to-ground.ru-big-pipe-to-ground"
+require "prototypes.recipe.fluid-handling.pipe.ru-big-pipe"
+require "prototypes.recipe.fluid-handling.pump.ru-big-pump"
+require "prototypes.technology.fluid-handling.ru-big-fluid-handling"
+--behemoth fluid handling
+require "prototypes.entity.fluid-handling.pipe-to-ground.ru-behemoth-pipe-to-ground"
+require "prototypes.entity.fluid-handling.pipe.ru-behemoth-pipe"
+require "prototypes.entity.fluid-handling.pump.ru-behemoth-pump"
+require "prototypes.item.fluid-handling.pipe-to-ground.ru-behemoth-pipe-to-ground"
+require "prototypes.item.fluid-handling.pipe.ru-behemoth-pipe"
+require "prototypes.item.fluid-handling.pump.ru-behemoth-pump"
+require "prototypes.recipe.fluid-handling.pipe-to-ground.ru-behemoth-pipe-to-ground"
+require "prototypes.recipe.fluid-handling.pipe.ru-behemoth-pipe"
+require "prototypes.recipe.fluid-handling.pump.ru-behemoth-pump"
+require "prototypes.technology.fluid-handling.ru-behemoth-fluid-handling"
 --Infinite Repairer
 require "prototypes.item.repair-pack.infinite-repairer"
 require "prototypes.recipe.repair-pack.infinite-repairer"
 require "prototypes.technology.repair-pack.infinite-repairer"
 --alternative recipe
-require "prototypes.recipe.AlternativeRecipe"
+require "prototypes.recipe.alternativerecipe"
 --cheaty recipe
-require "prototypes.recipe.CheatyRecipe"
+require "prototypes.recipe.cheatyrecipe"
 --lib
 require "lib.item-goups"
 
@@ -277,206 +321,99 @@ if mods["miniloader"] then
   ru_more_miniloaders = require("lib.miniloaders")
 
   ru_more_miniloaders.create_miniloader{
-    name="RU-Basic",
+    name="ru-basic",
     color="c5ae45",
-    underground_belt="RU-Basic-Underground-Belt",
+    underground_belt="ru-basic-underground-belt",
     ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Basic-Transport-Belt", 2},
-      {"RU-Basic-Stack-Inserter", 1},
+      {"ru-basic-transport-belt", 2},
+      {"ru-basic-stack-inserter", 1},
       {"electronic-circuit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Basic-Transport-Belt", 2},
-      {"RU-Basic-Stack-Inserter", 2},
+      {"ru-basic-transport-belt", 2},
+      {"ru-basic-stack-inserter", 2},
       {"electronic-circuit", 8}
     },
-    tech_prereq={"RU-Logistics-a", "express-miniloader"},
-    next_upgrade="RU-Medium",
+    tech_prereq={"ru-logistics-a", "express-miniloader"},
+    next_upgrade="ru-medium",
   }
   
   ru_more_miniloaders.create_miniloader{
-    name="RU-Medium",
+    name="ru-medium",
     color="d73b41",
-    underground_belt="RU-Medium-Underground-Belt",
+    underground_belt="ru-medium-underground-belt",
     ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Medium-Transport-Belt", 2},
-      {"RU-Medium-Stack-Inserter", 1},
-      {"RU-Basic-miniloader", 1},
+      {"ru-medium-transport-belt", 2},
+      {"ru-medium-stack-inserter", 1},
+      {"ru-basic-miniloader", 1},
       {"electronic-circuit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Medium-Transport-Belt", 2},
-      {"RU-Medium-Stack-Inserter", 2},
-      {"RU-Basic-filter-miniloader", 1},
+      {"ru-medium-transport-belt", 2},
+      {"ru-medium-stack-inserter", 2},
+      {"ru-basic-filter-miniloader", 1},
       {"electronic-circuit", 8}
     },
-    tech_prereq={"RU-Logistics-b", "express-miniloader"},
-    next_upgrade="RU-Big",
+    tech_prereq={"ru-logistics-b", "express-miniloader"},
+    next_upgrade="ru-big",
   }
   
   ru_more_miniloaders.create_miniloader{
-    name="RU-Big",
+    name="ru-big",
     color="53b1c0",
-    underground_belt="RU-Big-Underground-Belt",
+    underground_belt="ru-big-underground-belt",
     ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Big-Transport-Belt", 2},
-      {"RU-Big-Stack-Inserter", 1},
-      {"RU-Medium-miniloader", 1},
+      {"ru-big-transport-belt", 2},
+      {"ru-big-stack-inserter", 1},
+      {"ru-medium-miniloader", 1},
       {"advanced-circuit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Big-Transport-Belt", 2},
-      {"RU-Big-Stack-Inserter", 2},
-      {"RU-Medium-filter-miniloader", 1},
+      {"ru-big-transport-belt", 2},
+      {"ru-big-stack-inserter", 2},
+      {"ru-medium-filter-miniloader", 1},
       {"advanced-circuit", 8}
     },
-    tech_prereq={"RU-Logistics-c", "express-miniloader"},
-    next_upgrade="RU-Behemoth",
+    tech_prereq={"ru-logistics-c", "express-miniloader"},
+    next_upgrade="ru-behemoth",
   }
   
   ru_more_miniloaders.create_miniloader{
-    name="RU-Behemoth",
+    name="ru-behemoth",
     color="396067",
-    underground_belt="RU-Behemoth-Underground-Belt",
+    underground_belt="ru-behemoth-underground-belt",
     ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Behemoth-Transport-Belt", 2},
-      {"RU-Behemoth-Stack-Inserter", 1},
-      {"RU-Big-miniloader", 1},
+      {"ru-behemoth-transport-belt", 2},
+      {"ru-behemoth-stack-inserter", 1},
+      {"ru-big-miniloader", 1},
       {"processing-unit", 4}
     },
     filter_ingredients={
       {"iron-gear-wheel", 20},
-      {"RU-Behemoth-Transport-Belt", 2},
-      {"RU-Behemoth-Stack-Inserter", 2},
-      {"RU-Big-filter-miniloader", 1},
+      {"ru-behemoth-transport-belt", 2},
+      {"ru-behemoth-stack-inserter", 2},
+      {"ru-big-filter-miniloader", 1},
       {"processing-unit", 8}
     },
-    tech_prereq={"RU-Logistics-d", "express-miniloader"},
+    tech_prereq={"ru-logistics-d", "express-miniloader"},
   }
 end
---[[
-if mods["deadlock-beltboxes-loaders"] then
-  deadlock = require("__deadlock-beltboxes-loaders__/prototypes/public")
-  --deadlock = {}
-
-  deadlock.add_tier({
-    transport_belt      = "RU-Basic-Transport-Belt",
-    colour              = {r=197, g=174, b=69},
-    underground_belt    = "RU-Basic-Underground-Belt",
-    splitter            = "RU-Basic-Splitter",
-    technology          = "logistics-a",
-    order               = "c",
-
-    loader_ingredients  = {
-      {"iron-gear-wheel", 20},
-      {"RU-Basic-Transport-Belt", 2},
-      {"RU-Basic-Stack-Inserter", 1},
-      {"electronic-circuit", 4}
-    },
-    --[[
-    beltbox_category    = "crafting-with-fluid",
-    --]
-    beltbox_ingredients = {
-      {"express-transport-belt-beltbox",1},
-      {"iron-plate",30},
-      {"iron-gear-wheel",30},
-      {"electronic-circuit",10}
-    },
-    beltbox_technology  = "deadlock-stacking-4",
-  })
-
-  deadlock.add_tier({
-    transport_belt      = "RU-Medium-Transport-Belt",
-    colour              = {r=215, g=59, b=65},
-    underground_belt    = "RU-Medium-Underground-Belt",
-    splitter            = "RU-Medium-Splitter",
-    technology          = "logistics-b",
-    order               = "d",
-
-    loader_ingredients  = {
-      {"fast-transport-belt-loader",1},
-      {"expedited-transport-belt",1},
-      {"concrete",10},
-    },
-    --[[
-    beltbox_category    = "crafting-with-fluid",
-    --]
-    beltbox_ingredients = {
-      {"fast-transport-belt-beltbox",1},
-      {"iron-plate",30},
-      {"iron-gear-wheel",30},
-      {"advanced-circuit",10}
-    },
-    beltbox_technology  = "deadlock-stacking-5",
-  })
-
-  deadlock.add_tier({
-    transport_belt      = "RU-Big-Transport-Belt",
-    colour              = {r=83, g=177, b=192},
-    underground_belt    = "RU-Big-Underground-Belt",
-    splitter            = "RU-Big-Splitter",
-    technology          = "logistics-c",
-    order               = "e",
-
-    loader_ingredients  = {
-      {"fast-transport-belt-loader",1},
-      {"expedited-transport-belt",1},
-      {"concrete",10},
-    },
-    --[[
-    beltbox_category    = "crafting-with-fluid",
-    --]
-    beltbox_ingredients = {
-      {"fast-transport-belt-beltbox",1},
-      {"iron-plate",30},
-      {"iron-gear-wheel",30},
-      {"advanced-circuit",10}
-    },
-    beltbox_technology  = "deadlock-stacking-6",
-  })
-
-  deadlock.add_tier({
-    transport_belt      = "RU-Behemoth-Transport-Belt",
-    colour              = {r=57, g=96, b=103},
-    underground_belt    = "RU-Behemoth-Underground-Belt",
-    splitter            = "RU-Behemoth-Splitter",
-    technology          = "logistics-d",
-    order               = "f",
-
-    loader_ingredients  = {
-      {"fast-transport-belt-loader",1},
-      {"expedited-transport-belt",1},
-      {"concrete",10},
-    },
-    --[[
-    beltbox_category    = "crafting-with-fluid",
-    --]
-    beltbox_ingredients = {
-      {"fast-transport-belt-beltbox",1},
-      {"iron-plate",30},
-      {"iron-gear-wheel",30},
-      {"processing-unit",10}
-    },
-    beltbox_technology  = "deadlock-stacking-7",
-  })
-
-end
---]]
 
 --Wire Shortcuts
-if settings.startup["RU-Enable-Wire-Shortcuts"].value then
+if settings.startup["ru-Enable-Wire-Shortcuts"].value then
   --Wire Shortcuts
   require "prototypes.wireshotrcuts.input"
   require "prototypes.wireshotrcuts.shortcut"
+  require "prototypes.wireshotrcuts.wire-cutter"
   --Wire Shortcuts Crafting
-  if settings.startup["wire-shortcuts-is-retain-wire-crafting"].value then
+  if settings.startup["ru-wire-shortcuts-is-retain-wire-crafting"].value then
     require "prototypes.wireshotrcuts.fake-item"
     require "prototypes.wireshotrcuts.fake-recipe"
   end

@@ -2,13 +2,13 @@
 data:extend({
   {
     type = "item",
-    name = "RU-Big-Beacon",
+    name = "ru-big-beacon",
     icons = {{icon = "__base__/graphics/icons/beacon.png", tint = {r=132, g=180, b=181}}},
     -- flags = {"goes-to-quickbar"},
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "RU-Beacon",
+    subgroup = "ru-beacon",
     order = "c",
-    place_result = "RU-Big-Beacon",
+    place_result = "ru-big-beacon",
     stack_size = 10
   },
 })

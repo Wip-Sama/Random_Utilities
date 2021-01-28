@@ -1,15 +1,15 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Medium-Boiler",
+        name = "ru-medium-boiler",
         hidden = "true",
         enabled = "false",
         ingredients = 
         {
-            {"RU-Basic-Boiler", 2}, 
+            {"ru-basic-boiler", 2}, 
             {"steel-plate", 5},
             {"pipe", 2},
         },
-        result = "RU-Medium-Boiler"
+        result = "ru-medium-boiler"
     },
 })

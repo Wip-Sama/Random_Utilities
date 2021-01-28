@@ -1,13 +1,13 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Basic-Stack-Inserter",
+    name = "ru-basic-stack-inserter",
     hidden = "true",
     icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=178, g=173, b=100}}},
     icon_size = 64,
     effects =
     {
-      {type = "unlock-recipe", recipe = "RU-Basic-Stack-Inserter"},
+      {type = "unlock-recipe", recipe = "ru-basic-stack-inserter"},
       {type = "stack-inserter-capacity-bonus", modifier = 2}
     },
     prerequisites = {"stack-inserter"},

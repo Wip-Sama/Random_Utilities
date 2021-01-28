@@ -1,15 +1,15 @@
-require("prototypes.entity.logistic.belt.graphic.RU-Basic-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require("prototypes.entity.logistic.belt.graphic.ru-basic-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {
     type = "underground-belt",
-    name = "RU-Basic-Underground-Belt",
+    name = "ru-basic-underground-belt",
     icons = {{icon = "__base__/graphics/icons/underground-belt.png", tint = {r=178, g=173, b=100}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Basic-Underground-Belt"},
+    minable = {mining_time = 0.1, result = "ru-basic-underground-belt"},
     max_health = 300,
     corpse = "underground-belt-remnants",
     dying_explosion = "underground-belt-explosion",
@@ -63,7 +63,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_basic_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "RU-Medium-Underground-Belt",
+    next_upgrade = "ru-medium-underground-belt",
     speed = 0.1875,
     structure =
     {

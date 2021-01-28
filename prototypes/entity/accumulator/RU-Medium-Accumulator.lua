@@ -1,7 +1,7 @@
---if settings.startup["RU-Accumulator"].value == true then
+--if settings.startup["ru-accumulator"].value == true then
 
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 --Entity
 
@@ -9,15 +9,15 @@ data:extend(
 {
   {
     type = "accumulator",
-    name = "RU-Medium-Accumulator",
+    name = "ru-medium-accumulator",
     icons = {{icon = "__base__/graphics/icons/accumulator.png", tint = {r=202, g=154, b=152}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Medium-Accumulator"},
+    minable = {mining_time = 0.1, result = "ru-medium-accumulator"},
     max_health = 450,
     corpse = "accumulator-remnants",
     fast_replaceable_group = "accumulator",
-    next_upgrade = "RU-Big-Accumulator",
+    next_upgrade = "ru-big-accumulator",
     dying_explosion = "accumulator-explosion",
     collision_box = {{-0.9, -0.9}, {0.9, 0.9}},
     selection_box = {{-1, -1}, {1, 1}},

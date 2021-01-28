@@ -8,8 +8,8 @@ require "prototypes.setting-mod-modifier.space-exploration"
 require "prototypes.setting-mod-modifier.base"
 require "prototypes.setting-mod-modifier.juicy-mods"
 
-if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
-  --if settings.startup["banane"] then
+if settings.startup[""] then
+  if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
     local grid_lists = {
       "spidertron-equipment-grid",
       "spidertron-mk-1-equipment-grid",
@@ -26,17 +26,87 @@ if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
       "voyage-spidertron-mk1-equipment-grid",
       "voyage-spidertron-mk2-equipment-grid",
     }
+  end
 
-    for _, grid in pairs(grid_lists) do
-      if not (data.raw["equipment-grid"][grid].equipment_categories == "armor") then
-        table.insert(data.raw["equipment-grid"][grid].equipment_categories, "armor")
+  for _, grid in pairs(grid_lists) do
+    if not (data.raw["equipment-grid"][grid].equipment_categories == "armor") then
+      table.insert(data.raw["equipment-grid"][grid].equipment_categories, "armor")
+    end
+  end
+end
+
+if settings.startup["ru-force-chemical-fuel"].value == true then
+
+  local entity_list = {
+    "locomotive",
+    "car",
+    "inserter",
+    "mining-drill",
+    "boiler",
+    "furnace",
+    "reactor",
+  }
+  --[
+  if mods["Krastorio2"] then
+    table.insert(entity_list, "generator-equipment")
+    table.insert(entity_list, "spider-vehicle")
+  end
+--]]
+
+  for _, entity in pairs(entity_list) do
+
+    local function ChangeTable(name)
+
+      if data.raw[entity][name] and data.raw[entity][name].burner then
+        if data.raw[entity][name].burner.fuel_category then
+          data.raw[entity][name].burner.fuel_categories = {data.raw[entity][name].burner.fuel_category, "chemical"}
+          data.raw[entity][name].burner.fuel_category = nil
+        end
+
+        local fuelissimi1 = {}
+
+        if mods["InfiniteFuel"] then
+          table.insert(fuelissimi1, "IF")
+        end
+
+        for _, fuels1 in pairs(fuelissimi1) do
+          if data.raw[entity][name].burner.fuel_categories then
+            table.insert(data.raw[entity][name].burner.fuel_categories, fuels1)
+          end
+        end
+      end
+
+      if data.raw[entity][name] and data.raw[entity][name].energy_source then
+        if data.raw[entity][name].energy_source.fuel_category then
+          data.raw[entity][name].energy_source.fuel_categories = {data.raw[entity][name].energy_source.fuel_category, "chemical"}
+          data.raw[entity][name].energy_source.fuel_category = nil
+        end
+
+        local fuelissimi2 = {}
+
+        if mods["InfiniteFuel"] then
+          table.insert(fuelissimi2, "IF")
+        end
+
+        for _, fuels2 in pairs(fuelissimi2) do
+          if data.raw[entity][name].energy_source.fuel_categories then
+            table.insert(data.raw[entity][name].energy_source.fuel_categories, fuels2)
+          end
+        end
       end
     end
-  --end
+
+    for _, list in pairs(data.raw[entity]) do
+      for _, name in pairs(list) do
+        ChangeTable(name)
+      end
+    end
+
+  end
 end
 
 --enable beacons productivity (global)
-if settings.startup["RU-Beacon-Productivity"].value == true then
+if settings.startup["ru-beacon-Productivity"].value == true then
   if data.raw.beacon.allowed_effects ~= "productivity" then
     for _, beacon in pairs(data.raw.beacon) do
       table.insert(beacon.allowed_effects, "productivity")
@@ -45,7 +115,7 @@ if settings.startup["RU-Beacon-Productivity"].value == true then
 end
 
 --disable beacons productivity (global)
-if settings.startup["RU-Beacon-Productivity"].value == false then
+if settings.startup["ru-beacon-Productivity"].value == false then
   if data.raw.beacon.allowed_effects == "productivity" then
     for _, beacon in pairs(data.raw.beacon) do
       table.remove(beacon.allowed_effects, "productivity")
@@ -59,7 +129,7 @@ local entity_list = {
 for _, entity in pairs(entity_list) do
   local function RemoveProductivity(name)
     if data.raw[entity][name] and data.raw[entity][name].limitation then
-      if settings.startup["RU-Disable-Productivity-Limitation"].value == true then
+      if settings.startup["ru-Disable-Productivity-Limitation"].value == true then
         if data.raw[entity][name].limitation ~= nil then
         data.raw[entity][name].limitation = nil
         end
@@ -74,12 +144,12 @@ for _, entity in pairs(entity_list) do
 end
 
 --botspeed
-if settings.startup["RU-botspeed"].value then
+if settings.startup["ru-botspeed"].value then
     for _, crobot in pairs(data.raw["construction-robot"]) do
-      crobot.speed = crobot.speed + settings.startup["RU-botspeed"].value
+      crobot.speed = crobot.speed + settings.startup["ru-botspeed"].value
     end
     for _, lrobot in pairs(data.raw["logistic-robot"]) do
-      lrobot.speed = lrobot.speed + settings.startup["RU-botspeed"].value
+      lrobot.speed = lrobot.speed + settings.startup["ru-botspeed"].value
     end
 end
 
@@ -97,7 +167,7 @@ local equip_list = {
 for _, entity in pairs(equip_list) do
   local function MiniEquipment(name)
     if data.raw[entity][name] and data.raw[entity][name].shape then
-      if settings.startup["RU-MiniEquipment"].value == true then
+      if settings.startup["ru-MiniEquipment"].value == true then
         if data.raw[entity][name].shape ~= nil then
           if data.raw[entity][name].shape ~= {width = 1, height = 1, type = "full"} then
             data.raw[entity][name].shape = {width = 1, height = 1, type = "full"}
@@ -115,7 +185,7 @@ end
 
 --noxy staksize itemStackSizeMultiplier
 --Stack size OK
-local itemStackSizeMultiplier = settings.startup["RU-Stack-Size"].value
+local itemStackSizeMultiplier = settings.startup["ru-stack-Size"].value
 local max, min = math.max, math.min
 local ignore = {
 	["blueprint"]           = true,
@@ -148,21 +218,21 @@ for _, dat in pairs(data.raw) do
 end
 
 --stack size Contruction Robot OK
-if settings.startup["RU-Stack-Size-CRobot"].value then
+if settings.startup["ru-stack-Size-CRobot"].value then
 	for _,v in pairs(data.raw["construction-robot"]) do
 		v.max_payload_size = max(1, min(2147483647, v.max_payload_size * itemStackSizeMultiplier))
 	end
 end
 
 --stack size Logistic Robot OK
-if settings.startup["RU-Stack-Size-LRobot"].value then
+if settings.startup["ru-stack-Size-LRobot"].value then
 	for _,v in pairs(data.raw["logistic-robot"]) do
 		v.max_payload_size = max(1, min(2147483647, v.max_payload_size * itemStackSizeMultiplier))
 	end
 end
 
 --No Crafting Time OK
-if settings.startup["RU-No-Crafting-Time"].value then
+if settings.startup["ru-No-Crafting-Time"].value then
 local function get_recipe(name)
   local items = data.raw["recipe"]
     if recipes then
@@ -199,7 +269,7 @@ end
 end
 
 --collision box tree DISABLED
---[[if settings.startup["RU-trees"].value then
+--[[if settings.startup["ru-trees"].value then
    for _, tree in pairs(data.raw["tree"]) do
       tree.collision_box = {{-0.03, -0.03}, {0.03, 0.03}}
    end
@@ -213,7 +283,7 @@ if settings.startup["ru-powerful-lamp"] then
 end
 
 --Assembler Impu-output
-if settings.startup["RU-Machine-liquid-Imput-Output"].value and not mods['omnimatter_fluid'] then
+if settings.startup["ru-Machine-liquid-Imput-Output"].value and not mods['omnimatter_fluid'] then
   --[[
       Do all the changes in data-final-fixes.lua, in case other mods have modified the assemblers
       1. Add "input throughput" pipes on N/S plane
@@ -273,7 +343,7 @@ if settings.startup["RU-Machine-liquid-Imput-Output"].value and not mods['omnima
 end
 
 --Wire Shortcuts
-local is_wire_surrogate = settings.startup["wire-shortcuts-is-retain-wire-crafting"].value
+local is_wire_surrogate = settings.startup["ru-wire-shortcuts-is-retain-wire-crafting"].value
 
 if data.raw["recipe"]["red-wire"] and data.raw["recipe"]["green-wire"] then
   data.raw["recipe"]["red-wire"].hidden = true
@@ -283,8 +353,8 @@ if data.raw["recipe"]["red-wire"] and data.raw["recipe"]["green-wire"] then
 end
 
 if data.raw["item"]["red-wire"] and data.raw["item"]["green-wire"] then
-  data.raw["item"]["red-wire"].flags = { "hidden" }
-  data.raw["item"]["green-wire"].flags = { "hidden" }
+  data.raw["item"]["red-wire"].flags = {"only-in-cursor"}
+  data.raw["item"]["green-wire"].flags = {"only-in-cursor"}
 end
 
 if data.raw["technology"]["circuit-network"] then

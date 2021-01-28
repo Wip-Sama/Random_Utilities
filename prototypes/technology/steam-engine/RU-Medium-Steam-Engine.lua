@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Medium-Steam-Engine",
+    name = "ru-medium-steam-engine",
     hidden = "true",
     icon_size = 64,
     icons = {{icon = "__base__/graphics/icons/steam-engine.png", tint = {r=202, g=154, b=152}}},
@@ -9,10 +9,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Medium-Steam-Engine"
+        recipe = "ru-medium-steam-engine"
       }
     },
-    prerequisites = {"RU-Basic-Steam-Engine"},
+    prerequisites = {"ru-basic-steam-engine"},
     unit =
     {
       count = 700,

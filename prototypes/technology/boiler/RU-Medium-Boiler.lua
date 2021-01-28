@@ -1,7 +1,7 @@
 data:extend({
     {
       type = "technology",
-      name = "RU-Medium-Boiler",
+      name = "ru-medium-boiler",
       hidden = "true",
       icon_size = 64,
       icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=202, g=154, b=152}}},
@@ -9,10 +9,10 @@ data:extend({
       {
         {
           type = "unlock-recipe",
-          recipe = "RU-Medium-Boiler"
+          recipe = "ru-medium-boiler"
         }
       },
-      prerequisites = {"RU-Basic-Boiler"},
+      prerequisites = {"ru-basic-boiler"},
       unit =
       {
         count = 700,
@@ -22,7 +22,7 @@ data:extend({
           {"logistic-science-pack", 1},
           {"chemical-science-pack", 1},
         },
-        time = 31
+        time = 32
       },
       order = "a-h-a"
     },

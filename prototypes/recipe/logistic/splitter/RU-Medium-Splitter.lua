@@ -1,16 +1,16 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Medium-Splitter",
+        name = "ru-medium-splitter",
         hidden = "true",
         enabled = "false",
         energy_required = 2,
         ingredients =
         {
-          {"RU-Basic-Splitter", 1},
+          {"ru-basic-splitter", 1},
           {"iron-gear-wheel", 20},
           {"advanced-circuit", 10}
         },
-        result = "RU-Medium-Splitter"
+        result = "ru-medium-splitter"
       },
 })

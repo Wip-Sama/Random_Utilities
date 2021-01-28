@@ -1,15 +1,15 @@
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 --entity
 data:extend({
   {
     type = "beacon",
-    name = "RU-Basic-Beacon",
+    name = "ru-basic-beacon",
     icons = {{icon = "__base__/graphics/icons/beacon.png", tint = {r=178, g=173, b=100}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.2, result = "RU-Basic-Beacon"},
+    minable = {mining_time = 0.2, result = "ru-basic-beacon"},
     max_health = 200,
     corpse = "beacon-remnants",
     dying_explosion = "beacon-explosion",

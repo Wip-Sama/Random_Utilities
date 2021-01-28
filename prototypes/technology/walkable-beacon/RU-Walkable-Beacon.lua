@@ -2,15 +2,15 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-walkable-beacon-upgrade",
+    name = "ru-walkable-beacon-upgrade",
     hidden = "true",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/effect-transmission.png",
     effects = {
-      {type = "unlock-recipe", recipe = "RU-Walkable-Beacon",},
-      --[[{type = "unlock-recipe", recipe = "RU-Walkable-Basic-Beacon"},
-      {type = "unlock-recipe", recipe = "RU-Walkable-Medium-Beacon"},
-      {type = "unlock-recipe", recipe = "RU-Walkable-Big-Beacon",},--]]
+      {type = "unlock-recipe", recipe = "ru-walkable-beacon",},
+      --[[{type = "unlock-recipe", recipe = "ru-walkable-basic-beacon"},
+      {type = "unlock-recipe", recipe = "ru-walkable-medium-beacon"},
+      {type = "unlock-recipe", recipe = "ru-walkable-big-beacon",},--]]
     },
     prerequisites = {"effect-transmission"},
     unit =
@@ -29,17 +29,17 @@ data:extend({
   },
   {
     type = "technology",
-    name = "RU-walkable-beacon-downgrade",
+    name = "ru-walkable-beacon-downgrade",
     hidden = "true",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/effect-transmission.png",
     effects = {
-      {type = "unlock-recipe", recipe = "RU-Walkable-Beacon-Recycle",},
-      --[[{type = "unlock-recipe", recipe = "RU-Walkable-Basic-Beacon-Recycle"},
-      {type = "unlock-recipe", recipe = "RU-Walkable-Medium-Beacon-Recycle"},
-      {type = "unlock-recipe", recipe = "RU-Walkable-Big-Beacon-Recycle",},--]]
+      {type = "unlock-recipe", recipe = "ru-walkable-beacon-Recycle",},
+      --[[{type = "unlock-recipe", recipe = "ru-walkable-basic-beacon-Recycle"},
+      {type = "unlock-recipe", recipe = "ru-walkable-medium-beacon-Recycle"},
+      {type = "unlock-recipe", recipe = "ru-walkable-big-beacon-Recycle",},--]]
       },
-    prerequisites = {"RU-walkable-beacon-upgrade"},
+    prerequisites = {"ru-walkable-beacon-upgrade"},
     unit =
       {
       count = 450,

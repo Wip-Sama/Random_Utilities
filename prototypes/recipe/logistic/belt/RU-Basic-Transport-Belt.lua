@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Basic-Transport-Belt",
+        name = "ru-basic-transport-belt",
         hidden = "true",
         enabled = "false",
         ingredients =
@@ -10,7 +10,7 @@ data:extend({
           {"express-transport-belt", 2},
           {"electronic-circuit", 2}
         },
-        result = "RU-Basic-Transport-Belt",
+        result = "ru-basic-transport-belt",
         result_count = 2,
       },
 })

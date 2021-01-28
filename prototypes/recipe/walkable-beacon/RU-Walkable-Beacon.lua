@@ -3,7 +3,7 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Walkable-Beacon",
+    name = "ru-walkable-beacon",
     hidden = "true",
     enabled = "false",
     ingredients =
@@ -11,7 +11,7 @@ data:extend(
       {"beacon", 1},
       {"concrete", 18},
     },
-    result = "RU-Walkable-Beacon"
+    result = "ru-walkable-beacon"
   },
 })
 --Recipe
@@ -19,12 +19,12 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Walkable-Beacon-Recycle",
+    name = "ru-walkable-beacon-Recycle",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
-      {"RU-Walkable-Beacon", 1},
+      {"ru-walkable-beacon", 1},
     },
     result = "beacon"
   },

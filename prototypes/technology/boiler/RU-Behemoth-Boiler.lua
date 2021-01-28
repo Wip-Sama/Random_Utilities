@@ -1,7 +1,7 @@
 data:extend({
     {
       type = "technology",
-      name = "RU-Behemoth-Boiler",
+      name = "ru-behemoth-boiler",
       hidden = "true",
       icon_size = 64,
       icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=80, g=80, b=80}}},
@@ -9,10 +9,10 @@ data:extend({
       {
         {
           type = "unlock-recipe",
-          recipe = "RU-Behemoth-Boiler"
+          recipe = "ru-behemoth-boiler"
         }
       },
-      prerequisites = {"RU-Big-Boiler"},
+      prerequisites = {"ru-big-boiler"},
       unit =
       {
         count = 2000,

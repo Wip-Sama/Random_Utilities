@@ -1,7 +1,7 @@
 --More Visible Wire
 local core_graphics = "__Random_Utilities__/graphics"
 
-if settings.startup["RU-Better-Cable-Visibility"] then
+if settings.startup["ru-Better-Cable-Visibility"] then
 data.raw["utility-sprites"]["default"]["copper_wire"].filename                      = core_graphics .. "/copper-wire.png"
 data.raw["utility-sprites"]["default"]["copper_wire"].hr_version.filename           = core_graphics .. "/hr-copper-wire.png"
 data.raw["utility-sprites"]["default"]["green_wire"].filename                       = core_graphics .. "/green-wire.png"
@@ -20,15 +20,15 @@ end
 
 if mods["deadlock-beltboxes-loaders"] then
 deadlock.add_tier({
-  transport_belt      = "RU-Basic-Transport-Belt",
+  transport_belt      = "ru-basic-transport-belt",
   colour              = {r=197, g=174, b=69},
-  underground_belt    = "RU-Basic-Underground-Belt",
-  splitter            = "RU-Basic-Splitter",
+  underground_belt    = "ru-basic-underground-belt",
+  splitter            = "ru-basic-splitter",
 order               = "d",
 loader_ingredients  = {
   {"iron-gear-wheel", 20},
-  {"RU-Basic-Transport-Belt", 2},
-  {"RU-Basic-Stack-Inserter", 1},
+  {"ru-basic-transport-belt", 2},
+  {"ru-basic-stack-inserter", 1},
   {"electronic-circuit", 4},
 },
 beltbox_ingredients = {
@@ -37,84 +37,84 @@ beltbox_ingredients = {
   {"iron-gear-wheel",30},
   {"electronic-circuit",10},
 },
-technology          = "RU-Logistics-a",
-beltbox_technology  = "RU-Logistics-a",
+technology          = "ru-logistics-a",
+beltbox_technology  = "ru-logistics-a",
 })
 deadlock.add_tier({
-  transport_belt      = "RU-Medium-Transport-Belt",
+  transport_belt      = "ru-medium-transport-belt",
   colour              = {r=215, g=59, b=65},
-  underground_belt    = "RU-Medium-Underground-Belt",
-  splitter            = "RU-Medium-Splitter",
+  underground_belt    = "ru-medium-underground-belt",
+  splitter            = "ru-medium-splitter",
 order               = "e",
 loader_ingredients  = {
   {"iron-gear-wheel", 20},
-  {"RU-Medium-Transport-Belt", 2},
-  {"RU-Medium-Stack-Inserter", 1},
+  {"ru-medium-transport-belt", 2},
+  {"ru-medium-stack-inserter", 1},
   {"electronic-circuit", 4},
 },
 beltbox_ingredients = {
-  {"RU-Basic-Transport-Belt-beltbox",1},
+  {"ru-basic-transport-belt-beltbox",1},
   {"iron-plate",30},
   {"iron-gear-wheel",30},
   {"electronic-circuit",10},
 },
-technology          = "RU-Logistics-b",
-beltbox_technology  = "RU-Logistics-b",
+technology          = "ru-logistics-b",
+beltbox_technology  = "ru-logistics-b",
 })
 deadlock.add_tier({
-  transport_belt      = "RU-Big-Transport-Belt",
+  transport_belt      = "ru-big-transport-belt",
   colour              = {r=83, g=177, b=192},
-  underground_belt    = "RU-Big-Underground-Belt",
-  splitter            = "RU-Big-Splitter",
+  underground_belt    = "ru-big-underground-belt",
+  splitter            = "ru-big-splitter",
 
 order               = "f",
 loader_ingredients  = {
   {"iron-gear-wheel", 20},
-  {"RU-Big-Transport-Belt", 2},
-  {"RU-Big-Stack-Inserter", 1},
+  {"ru-big-transport-belt", 2},
+  {"ru-big-stack-inserter", 1},
   {"electronic-circuit", 4},
 },
 beltbox_ingredients = {
-  {"RU-Medium-Transport-Belt-beltbox",1},
+  {"ru-medium-transport-belt-beltbox",1},
   {"iron-plate",30},
   {"iron-gear-wheel",30},
   {"electronic-circuit",10},
 },
-technology          = "RU-Logistics-c",
-beltbox_technology  = "RU-Logistics-c",
+technology          = "ru-logistics-c",
+beltbox_technology  = "ru-logistics-c",
 })
 deadlock.add_tier({
-  transport_belt      = "RU-Behemoth-Transport-Belt",
+  transport_belt      = "ru-behemoth-transport-belt",
   colour              = {r=57, g=96, b=103},
-  underground_belt    = "RU-Behemoth-Underground-Belt",
-  splitter            = "RU-Behemoth-Splitter",
+  underground_belt    = "ru-behemoth-underground-belt",
+  splitter            = "ru-behemoth-splitter",
 order               = "g",
 loader_ingredients  = {
   {"iron-gear-wheel", 20},
-  {"RU-Behemoth-Transport-Belt", 2},
-  {"RU-Behemoth-Stack-Inserter", 1},
+  {"ru-behemoth-transport-belt", 2},
+  {"ru-behemoth-stack-inserter", 1},
   {"electronic-circuit", 4},
 },
 beltbox_ingredients = {
-  {"RU-Big-Transport-Belt-beltbox",1},
+  {"ru-big-transport-belt-beltbox",1},
   {"iron-plate",30},
   {"iron-gear-wheel",30},
   {"electronic-circuit",10},
 },
-technology          = "RU-Logistics-d",
-beltbox_technology  = "RU-Logistics-d",
+technology          = "ru-logistics-d",
+beltbox_technology  = "ru-logistics-d",
 })
 end
 
 --Assembler Imput-Output
 appmod.blacklist['escape-pod-assembler'] = true
 
-appmod.blacklist['assembling-machine'] = not settings.startup['RU-Assembling-Machine-Imput-Output'].value
-appmod.blacklist['assembling-machine-2'] = not settings.startup['RU-Assembling-Machine-Imput-Output'].value
-appmod.blacklist['assembling-machine-3'] = not settings.startup['RU-Assembling-Machine-Imput-Output'].value
+appmod.blacklist['assembling-machine'] = not settings.startup['ru-Assembling-Machine-Imput-Output'].value
+appmod.blacklist['assembling-machine-2'] = not settings.startup['ru-Assembling-Machine-Imput-Output'].value
+appmod.blacklist['assembling-machine-3'] = not settings.startup['ru-Assembling-Machine-Imput-Output'].value
 
-appmod.blacklist['oil-refinery'] = not settings.startup['RU-Oil-Refineries-Imput-Output'].value
-appmod.blacklist['chemical-plant'] = not settings.startup['RU-Chemical-Plant-Imput-Output'].value
+appmod.blacklist['oil-refinery'] = not settings.startup['ru-Oil-Refineries-Imput-Output'].value
+appmod.blacklist['chemical-plant'] = not settings.startup['ru-Chemical-Plant-Imput-Output'].value
 
 if mods['aai-industry'] then
   require('integrations/aai-industry')
@@ -225,4 +225,8 @@ end
 
 if mods['omnimatter_wood'] then
   require('integrations/omniwood')
+end
+
+if mods['modmashsplinterairpurifier'] then
+  require('integrations/modmashsplinterairpurifier')
 end

@@ -2,15 +2,15 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Medium-Inserter",
+    name = "ru-medium-inserter",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
       {"iron-gear-wheel", 15},
       {"advanced-circuit", 2},
-      {"RU-Basic-Inserter", 2}
+      {"ru-basic-inserter", 2}
     },
-    result = "RU-Medium-Inserter"
+    result = "ru-medium-inserter"
   },
 })

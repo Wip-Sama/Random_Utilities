@@ -410,117 +410,104 @@ script.on_event(defines.events.on_player_created, on_player_created)
 
 --Wire Shortcuts
 function handle_shortcut(event)
-    if event.prototype_name == "WireShortcuts-give-red" then
-        give_wire(event.player_index, "red-wire")
-    elseif event.prototype_name == "WireShortcuts-give-green" then
-        give_wire(event.player_index, "green-wire")
-    elseif event.prototype_name == "WireShortcuts-give-copper" then
-        give_copper(event.player_index)
-    end
-end
+    local event_name = event.prototype_name or event.input_name
+    if string.sub(event_name, 1, 13) ~= "WireShortcuts" then return end
 
-function give_wire(player_index, wire_type)
-    local player = game.players[player_index]
-    if player.render_mode == defines.render_mode.game then
-        if clear_cursor_discard_wire(player) then
-            player.cursor_stack.set_stack({ name = wire_type, count = 200 })
+    local player = game.players[event.player_index]
+    if event_name == "WireShortcuts-give-cutter" then
+        give_tool(player, "wire-cutter-universal")
+    else
+        local advanced_mode =
+            settings.get_player_settings(player)["ru-wire-shortcuts-is-advanced-cutter"].value
+        local cutter_held = player.cursor_stack.valid_for_read and
+                                string.sub(player.cursor_stack.name, 1, 11) == "wire-cutter"
+        local mode_name = string.sub(event_name, 20, #event_name)
+        
+        if advanced_mode and cutter_held then
+            give_tool(player, "wire-cutter-" .. mode_name)
+        elseif mode_name == "copper" then
+            give_copper(player)
         else
-            player.print({ "message.cannot-clean-cursor" })
+            give_tool(player, mode_name .. "-wire", 200)
         end
-    else
-        player.print({ "message.no-map-mode" })
     end
 end
 
-function give_copper(player_index)
-    local player = game.players[player_index]
+function give_tool(player, tool_name, count)
     if player.render_mode == defines.render_mode.game then
-
-        local inv = game.players[player_index].get_main_inventory()
-        if inv and inv.valid then
-            local wire = inv.find_item_stack("copper-cable")
-            if wire then
-                player.cursor_stack.swap_stack(wire)
-            elseif clear_cursor_discard_wire(player) then
-                player.cursor_stack.set_stack({ name = "copper-cable", count = 1 })
-            else
-                player.print({ "message.cannot-clean-cursor" })
-            end
+        if player.clear_cursor() then
+            player.cursor_stack.set_stack({name = tool_name, count = count or 1})
         end
     else
-        player.print({ "message.no-map-mode" })
+        player.print({"message.no-map-mode"})
     end
 end
 
-function switch_wire(player_index)
-    local player = game.players[player_index]
-    if player.render_mode == defines.render_mode.game then
-        if player.cursor_stack.valid_for_read then
-            if player.cursor_stack.name == "red-wire" then
-                give_wire(player_index, "green-wire")
-            elseif player.cursor_stack.name == "green-wire" then
-                give_wire(player_index, "red-wire")
-            end
-        end
-    else
-        player.print({ "message.no-map-mode" })
-    end
-end
-
-function clear_cursor_discard_wire(player)
-    if player.cursor_stack.valid_for_read then
-        return (player.cursor_stack.name == "red-wire" or player.cursor_stack.name == "green-wire" or player.clean_cursor())
-    else
-        return player.clean_cursor()
-    end
-end
-
-local function remove_wire_inventory(event)
-    local inv = game.players[event.player_index].get_main_inventory()
+function give_copper(player)
+    local inv = player.get_main_inventory()
     if inv and inv.valid then
-        inv.remove("red-wire")
-        inv.remove("green-wire")
-    end
-end
-
-local function remove_wire_trash(event)
-    local inv_trash = game.players[event.player_index].get_inventory(defines.inventory.character_trash)
-    if inv_trash and inv_trash.valid then
-        inv_trash.remove("red-wire")
-        inv_trash.remove("green-wire")
-    end
-end
-
-local function remove_wire_ground(event)
-    local item_on_ground = event.entity
-    if item_on_ground and item_on_ground.valid and item_on_ground.stack then
-        local item_name = item_on_ground.stack.name
-        if item_name == "red-wire" or item_name == "green-wire" then
-            item_on_ground.destroy()
+        local wire = inv.find_item_stack("copper-cable")
+        if wire then
+            player.cursor_stack.swap_stack(wire)
+        else
+            give_tool(player, "copper-cable")
         end
     end
 end
 
-script.on_event(defines.events.on_lua_shortcut, handle_shortcut)
-script.on_event(defines.events.on_player_main_inventory_changed, remove_wire_inventory)
-script.on_event(defines.events.on_player_trash_inventory_changed, remove_wire_trash)
-script.on_event(defines.events.on_player_dropped_item, remove_wire_ground)
+function handle_switch_wire(player_index)
+    local player = game.players[player_index]
+    if player.cursor_stack.valid_for_read then
+        if player.cursor_stack.name == "red-wire" then
+            give_tool(player, "green-wire", 200)
+        elseif player.cursor_stack.name == "green-wire" then
+            give_tool(player, "red-wire", 200)
+        elseif player.cursor_stack.name == "wire-cutter-red" then
+            give_tool(player, "wire-cutter-green")
+        elseif player.cursor_stack.name == "wire-cutter-green" then
+            give_tool(player, "wire-cutter-red")
+        end
+    end
+end
+-- Cmt
+function handle_disconnect(event, alt)
+    if string.sub(event.item, 1, 11) == "wire-cutter" then
+        disconnect_mode = string.sub(event.item, 13, #event.item)
+        for _, entity in ipairs(event.entities) do
+            if entity.valid then
+                if not alt and disconnect_mode == "copper" or alt and disconnect_mode == "universal" then
+                    entity.disconnect_neighbour()
+                elseif not alt and disconnect_mode == "red" or alt and disconnect_mode == "green" then
+                    entity.disconnect_neighbour(defines.wire_type.red)
+                elseif not alt and disconnect_mode == "green" or alt and disconnect_mode == "red" then
+                    entity.disconnect_neighbour(defines.wire_type.green)
+                elseif disconnect_mode == "universal" or alt and disconnect_mode == "copper" then
+                    entity.disconnect_neighbour(defines.wire_type.red)
+                    entity.disconnect_neighbour(defines.wire_type.green)
+                end
+            end
+        end
+    end
+end
 
-script.on_event("WireShortcuts-give-red", function(event)
-    give_wire(event.player_index, "red-wire")
-end)
+script.on_event({
+    defines.events.on_lua_shortcut,
+    "WireShortcuts-give-red",
+    "WireShortcuts-give-green",
+    "WireShortcuts-give-copper",
+    "WireShortcuts-give-cutter"
+}, handle_shortcut)
 
-script.on_event("WireShortcuts-give-green", function(event)
-    give_wire(event.player_index, "green-wire")
-end)
+script.on_event("WireShortcuts-switch-wire",
+                function(event) handle_switch_wire(event.player_index) end)
 
-script.on_event("WireShortcuts-give-copper", function(event)
-    give_copper(event.player_index)
-end)
+script.on_event(defines.events.on_player_selected_area,
+                function(event) handle_disconnect(event, false) end)
 
-script.on_event("WireShortcuts-switch-wire", function(event)
-    switch_wire(event.player_index)
-end)
+script.on_event(defines.events.on_player_alt_selected_area,
+                function(event) handle_disconnect(event, true) end)
+
+
 
 --miniloader
 script.on_configuration_changed(function(data)

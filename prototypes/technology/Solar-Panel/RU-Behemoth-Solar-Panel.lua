@@ -1,4 +1,4 @@
---if settings.startup["RU-Solar-Panel"].value == true then
+--if settings.startup["ru-solar-panel"].value == true then
 
 --technologies
 
@@ -6,18 +6,18 @@ data:extend(
 {
   {
     type = "technology",
-    name = "RU-Advanced-Solar-Energy-d",
+    name = "ru-Advanced-Solar-Energy-d",
     hidden = "true",
-    icon_size = 128,
+    icon_size = 256, icon_mipmaps = 4,
     icon = "__base__/graphics/technology/solar-energy.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Behemoth-Solar-Panel"
+        recipe = "ru-behemoth-solar-panel"
       }
     },
-    prerequisites = {"RU-Advanced-Solar-Energy-c"},
+    prerequisites = {"ru-Advanced-Solar-Energy-c"},
     unit =
     {
       count = 1000,

@@ -7,10 +7,10 @@ if mods["Power Armor MK3"] then
 end
 
 data:extend({
-  --Boiler OK
+  --boiler OK
   {
     type = "string-setting",
-    name = "RU-Boiler",
+    name = "ru-boiler",
     order = "aa",
     setting_type = "startup",
     default_value = "big",
@@ -26,7 +26,7 @@ data:extend({
   --Steam Engine OK
   {
     type = "string-setting",
-    name = "RU-Steam-Engine",
+    name = "ru-steam-engine",
     order = "ab",
     setting_type = "startup",
     default_value = "big",
@@ -42,7 +42,7 @@ data:extend({
   --Solar panel OK
   {
     type = "string-setting",
-    name = "RU-Solar-Panel",
+    name = "ru-solar-panel",
     order = "ag",
     setting_type = "startup",
     default_value = "big",
@@ -55,10 +55,10 @@ data:extend({
       "behemoth"
     },
   },
-  --Accumulator OK
+  --accumulator OK
   {
     type = "string-setting",
-    name = "RU-Accumulator",
+    name = "ru-accumulator",
     order = "ah",
     setting_type = "startup",
     default_value = "big",
@@ -74,7 +74,7 @@ data:extend({
   --substation OK
   {
     type = "string-setting",
-    name = "RU-Substation",
+    name = "ru-substation",
     order = "ai",
     setting_type = "startup",
     default_value = "big",
@@ -90,7 +90,7 @@ data:extend({
   --lamp OK
   {
     type = "string-setting",
-    name = "RU-Lamp",
+    name = "ru-lamp",
     order = "aj",
     setting_type = "startup",
     default_value = "big",
@@ -106,7 +106,7 @@ data:extend({
   --beacon OK
   {
     type = "string-setting",
-    name = "RU-Beacon",
+    name = "ru-beacon",
     order = "al",
     setting_type = "startup",
     default_value = "big",
@@ -122,7 +122,7 @@ data:extend({
   --walkable beacon OK
   {
     type = "string-setting",
-    name = "RU-Walkable-Beacon",
+    name = "ru-walkable-beacon",
     order = "am",
     setting_type = "startup",
     default_value = "big",
@@ -138,8 +138,8 @@ data:extend({
   --logistic = belt/splitter/underground OK
   {
     type = "string-setting",
-    name = "RU-Logistic",
-    order = "an",
+    name = "ru-Logistic",
+    order = "ana",
     setting_type = "startup",
     default_value = "big",
     allowed_values =
@@ -151,10 +151,26 @@ data:extend({
       "behemoth"
     },
   },
-  --Inserter OK
+  --fluid handling = pump/pipe/pipe to ground/storage tank OK
+  {
+    type = "string-setting",
+    name = "ru-fluid-handling",
+    order = "anb",
+    setting_type = "startup",
+    default_value = "big",
+    allowed_values =
+    {
+      "nothing",
+      "basic",
+      "medium",
+      "big",
+      "behemoth"
+    },
+  },
+  --inserter OK
   {
   type = "string-setting",
-  name = "RU-Inserter",
+  name = "ru-inserter",
   order = "ao",
   setting_type = "startup",
   default_value = "big",
@@ -170,7 +186,7 @@ data:extend({
   --Infinite Repairer OK
   {
     type = "bool-setting",
-    name = "RU-Infinite-Repairer",
+    name = "ru-Infinite-Repairer",
     order = "as",
     setting_type = "startup",
     default_value = "true",
@@ -179,7 +195,7 @@ data:extend({
   --beacon Productivity
   {
     type = "bool-setting",
-    name = "RU-Beacon-Productivity",
+    name = "ru-beacon-Productivity",
     order = "ba",
     setting_type = "startup",
     default_value = "true",
@@ -187,7 +203,7 @@ data:extend({
   --beacon Productivity
   {
     type = "bool-setting",
-    name = "RU-Disable-Productivity-Limitation",
+    name = "ru-Disable-Productivity-Limitation",
     order = "bb",
     setting_type = "startup",
     default_value = "true",
@@ -221,7 +237,7 @@ data:extend({
   --stack size multiplier OK
   {
     type = "double-setting",
-    name = "RU-Stack-Size",
+    name = "ru-stack-Size",
     order = "cb",
     setting_type = "startup",
     default_value = 10,
@@ -231,7 +247,7 @@ data:extend({
   --enable stack size Contruction Robot OK
   {
     type = "bool-setting",
-    name = "RU-Stack-Size-CRobot",
+    name = "ru-stack-Size-CRobot",
     order = "cc",
     setting_type = "startup",
     default_value = "true",
@@ -239,7 +255,7 @@ data:extend({
   --enable stack size Logistic Robot OK
   {
     type = "bool-setting",
-    name = "RU-Stack-Size-LRobot",
+    name = "ru-stack-Size-LRobot",
     order = "cd",
     setting_type = "startup",
     default_value = "true",
@@ -277,7 +293,7 @@ data:extend({
   --hp OK
   {
     type = "int-setting",
-    name = "RU-hp",
+    name = "ru-hp",
     order = "ch",
     setting_type = "startup",
     default_value = 250,
@@ -287,7 +303,7 @@ data:extend({
   --hp recovery OK
   {
     type = "double-setting",
-    name = "RU-hp-recovery",
+    name = "ru-hp-recovery",
     order = "cia",
     setting_type = "startup",
     default_value = 0.15,
@@ -297,7 +313,7 @@ data:extend({
   --running speed
   {
     type = "double-setting",
-    name = "RU-running-speed",
+    name = "ru-running-speed",
     order = "cib",
     setting_type = "startup",
     default_value = 0,
@@ -307,7 +323,7 @@ data:extend({
   --bot speed OK
   {
     type = "double-setting",
-    name = "RU-botspeed",
+    name = "ru-botspeed",
     order = "cj",
     setting_type = "startup",
     default_value = 0,
@@ -317,7 +333,7 @@ data:extend({
   --No Crafting Time OK
   {
     type = "bool-setting",
-    name = "RU-No-Crafting-Time",
+    name = "ru-No-Crafting-Time",
     order = "ck",
     setting_type = "startup",
     default_value = "false",
@@ -325,7 +341,7 @@ data:extend({
   --RU Better Cable Visibility OK
   {
     type = "bool-setting",
-    name = "RU-Better-Cable-Visibility",
+    name = "ru-Better-Cable-Visibility",
     order = "cl",
     setting_type = "startup",
     default_value = "true",
@@ -333,7 +349,7 @@ data:extend({
   --Enable wire Shortcuts OK
   {
     type = "bool-setting",
-    name = "RU-Enable-Wire-Shortcuts",
+    name = "ru-Enable-Wire-Shortcuts",
     order = "cm",
     setting_type = "startup",
     default_value = "true",
@@ -341,69 +357,87 @@ data:extend({
   --mantain Wire crafting OK
   {
     type = "bool-setting",
-    name = "wire-shortcuts-is-retain-wire-crafting",
-    order = "cn",
+    name = "ru-wire-shortcuts-is-retain-wire-crafting",
+    order = "cna",
     setting_type = "startup",
     default_value = false,
   },
-  --AlternativeRecipe DISABLED NO
+  --mantain Wire cutter OK
   {
     type = "bool-setting",
-    name = "RU-AlternativeRecipe",
+    name = "ru-wire-shortcuts-is-advanced-cutter",
+    order = "cnb",
+    setting_type = "runtime-per-user",
+    default_value = false,
+  },
+  --alternativerecipe DISABLED NO
+  {
+    type = "bool-setting",
+    name = "ru-alternativerecipe",
     hidden = "true",
     order = "co",
     setting_type = "startup",
     default_value = "false",
   },
-  --CheatyRecipe DISABLED NO
+  --cheatyrecipe DISABLED NO
   {
     type = "bool-setting",
-    name = "RU-CheatyRecipe",
+    name = "ru-cheatyrecipe",
     hidden = "true",
     order = "cp",
     setting_type = "startup",
     default_value = "false",
   },
-  --RU-Machine-liquid-Imput-Output OK
+  --ru-Machine-liquid-Imput-Output OK
   {
     type = "bool-setting",
-    name = "RU-Machine-liquid-Imput-Output",
+    name = "ru-Machine-liquid-Imput-Output",
     order = "cq",
     setting_type = "startup",
     default_value = "false",
   },
-  --RU-Assembling-Machine-Imput-Output OK
+  --ru-Assembling-Machine-Imput-Output OK
   {
       type = "bool-setting",
-      name = "RU-Assembling-Machine-Imput-Output",
+      name = "ru-Assembling-Machine-Imput-Output",
       order = "cr",
       setting_type = "startup",
       default_value = "true",
   },
-  --RU-Chemical-Plant-Imput-Output OK
+  --ru-Chemical-Plant-Imput-Output OK
   {
       type = "bool-setting",
-      name = "RU-Chemical-Plant-Imput-Output",
+      name = "ru-Chemical-Plant-Imput-Output",
       order = "cs",
       setting_type = "startup",
       default_value = "true",
   },
-  --RU-Oil-Refineries-Imput-Output OK
+  --ru-Oil-Refineries-Imput-Output OK
   {
       type = "bool-setting",
-      name = "RU-Oil-Refineries-Imput-Output",
+      name = "ru-Oil-Refineries-Imput-Output",
       order = "ct",
       setting_type = "startup",
       default_value = "true",
   },
-  --RU-MiniEquipment OK
+  --ru-MiniEquipment OK
   {
     type = "bool-setting",
-    name = "RU-MiniEquipment",
+    name = "ru-MiniEquipment",
     order = "cu",
     setting_type = "startup",
     default_value = "true",
+  },
+  --force-chemical-fuel
+  {
+  type = "bool-setting",
+  name = "ru-force-chemical-fuel",
+  order = "cv",
+  setting_type = "startup",
+  default_value = "true",
 },
+
+
 
   --small electric pole wire reach OK
   {
@@ -540,7 +574,7 @@ data:extend({
   --space exploration integration OK
   {
     type = "bool-setting",
-    name = "Ru-space-exploration-integrations",
+    name = "ru-space-exploration-integrations",
     hidden = "true",
     order = "fa",
     setting_type = "startup",
@@ -549,9 +583,27 @@ data:extend({
   --angel integration OK
   {
     type = "bool-setting",
-    name = "RU-angel-integrations",
+    name = "ru-angel-integrations",
     hidden = "true",
     order = "fb",
+    setting_type = "startup",
+    default_value = "true",
+  },
+  --bob integration OK
+  {
+    type = "bool-setting",
+    name = "ru-bob-integrations",
+    hidden = "true",
+    order = "fc",
+    setting_type = "startup",
+    default_value = "true",
+  },
+    --krastorio2 integration OK
+  {
+    type = "bool-setting",
+    name = "ru-krastorio2-integrations",
+    hidden = "true",
+    order = "fd",
     setting_type = "startup",
     default_value = "true",
   },
@@ -559,7 +611,7 @@ data:extend({
   --angel warehouse OK
   {
     type = "int-setting",
-    name = "RU-angels-warehouse",
+    name = "ru-angels-warehouse",
     hidden = "true",
     order = "ga",
     setting_type = "startup",
@@ -570,7 +622,7 @@ data:extend({
   --angel logistic warehouse OK
   {
     type = "int-setting",
-    name = "RU-angels-logistic-warehouse",
+    name = "ru-angels-logistic-warehouse",
     hidden = "true",
     order = "gb",
     setting_type = "startup",
@@ -581,7 +633,7 @@ data:extend({
   --krastorio2 medium container OK
   {
     type = "int-setting",
-    name = "Ru-Krastorio2-medium-container",
+    name = "ru-Krastorio2-medium-container",
     hidden = "true",
     order = "gc",
     setting_type = "startup",
@@ -592,7 +644,7 @@ data:extend({
   --krastorio2 medium logistic container OK
   {
     type = "int-setting",
-    name = "Ru-Krastorio2-medium-logistic-container",
+    name = "ru-Krastorio2-medium-logistic-container",
     hidden = "true",
     order = "gd",
     setting_type = "startup",
@@ -603,7 +655,7 @@ data:extend({
   --krastorio2 big container OK
   {
     type = "int-setting",
-    name = "Ru-Krastorio2-big-container",
+    name = "ru-Krastorio2-big-container",
     hidden = "true",
     order = "ge",
     setting_type = "startup",
@@ -614,7 +666,7 @@ data:extend({
   --krastorio2 big logistic container OK
   {
     type = "int-setting",
-    name = "Ru-Krastorio2-big-logistic-container",
+    name = "ru-Krastorio2-big-logistic-container",
     hidden = "true",
     order = "gf",
     setting_type = "startup",
@@ -625,7 +677,7 @@ data:extend({
   --Juicy Mods big generic chest OK
   {
     type = "int-setting",
-    name = "RU-juicy-mods-big-generic-chest",
+    name = "ru-juicy-mods-big-generic-chest",
     hidden = "true",
     order = "gg",
     setting_type = "startup",
@@ -636,7 +688,7 @@ data:extend({
   --Juicy Mods big logistic chest OK
   {
     type = "int-setting",
-    name = "RU-juicy-mods-big-logistic-chest",
+    name = "ru-juicy-mods-big-logistic-chest",
     hidden = "true",
     order = "gh",
     setting_type = "startup",
@@ -647,7 +699,7 @@ data:extend({
   --Juicy Mods generic warehoude OK
   {
     type = "int-setting",
-    name = "RU-juicy-mods-generic-warehoude",
+    name = "ru-juicy-mods-generic-warehoude",
     hidden = "true",
     order = "gi",
     setting_type = "startup",
@@ -658,7 +710,7 @@ data:extend({
   --Juicy Mods logistic warehoude OK
   {
     type = "int-setting",
-    name = "RU-juicy-mods-logistic-warehoude",
+    name = "ru-juicy-mods-logistic-warehoude",
     hidden = "true",
     order = "gj",
     setting_type = "startup",
@@ -670,7 +722,7 @@ data:extend({
   --angel pressuretank OK
   {
     type = "int-setting",
-    name = "Ru-Angel-Pressuretank",
+    name = "ru-Angel-Pressuretank",
     hidden = "true",
     order = "ha",
     setting_type = "startup",
@@ -681,7 +733,7 @@ data:extend({
   --Krastorio2 big fluid storage OK
   {
     type = "int-setting",
-    name = "Ru-kr-fluid-storage-1",
+    name = "ru-kr-fluid-storage-1",
     hidden = "true",
     order = "hb",
     setting_type = "startup",
@@ -692,7 +744,7 @@ data:extend({
   --Krastorio2 huge fluid storage OK
   {
     type = "int-setting",
-    name = "Ru-kr-fluid-storage-2",
+    name = "ru-kr-fluid-storage-2",
     hidden = "true",
     order = "hc",
     setting_type = "startup",
@@ -703,7 +755,7 @@ data:extend({
   --Juicy Mods fs 50 OK
   {
     type = "int-setting",
-    name = "RU-juicy-mods-fs-50",
+    name = "ru-juicy-mods-fs-50",
     hidden = "true",
     order = "hd",
     setting_type = "startup",
@@ -714,7 +766,7 @@ data:extend({
   --Juicy Mods fs 200 OK
   {
     type = "int-setting",
-    name = "RU-juicy-mods-fs-200",
+    name = "ru-juicy-mods-fs-200",
     hidden = "true",
     order = "he",
     setting_type = "startup",

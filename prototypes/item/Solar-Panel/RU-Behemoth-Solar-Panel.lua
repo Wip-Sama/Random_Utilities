@@ -1,15 +1,15 @@
---if settings.startup["RU-Solar-Panel"].value == true then
+--if settings.startup["ru-solar-panel"].value == true then
 
 --item
 data:extend({
   {
     type = "item",
-    name = "RU-Behemoth-Solar-Panel",
+    name = "ru-behemoth-solar-panel",
     icons = {{icon = "__base__/graphics/icons/solar-panel.png", tint = {r=80, g=80, b=80}}},
     icon_size = 64, icon_mipmaps = 4,
-    subgroup = "RU-Solar-Panel",
+    subgroup = "ru-solar-panel",
     order = "d",
-    place_result = "RU-Behemoth-Solar-Panel",
+    place_result = "ru-behemoth-solar-panel",
     stack_size = 50
   },
 })

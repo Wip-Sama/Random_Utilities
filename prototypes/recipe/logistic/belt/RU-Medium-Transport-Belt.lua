@@ -1,16 +1,16 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Medium-Transport-Belt",
+        name = "ru-medium-transport-belt",
         hidden = "true",
         enabled = "false",
         ingredients =
         {
           {"iron-gear-wheel", 20},
-          {"RU-Basic-Transport-Belt", 2},
+          {"ru-basic-transport-belt", 2},
           {"advanced-circuit", 2}
         },
-        result = "RU-Medium-Transport-Belt",
+        result = "ru-medium-transport-belt",
         result_count = 2,
       },
 })

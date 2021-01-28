@@ -1,20 +1,20 @@
---if settings.startup["RU-Solar-Panel"].value == true then
+--if settings.startup["ru-solar-panel"].value == true then
 
 --recipes
 data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Medium-Solar-Panel",
+    name = "ru-medium-solar-panel",
     hidden = "true",
     enabled = false,
     ingredients =
     {
-      {"RU-Basic-Solar-Panel", 8},
+      {"ru-basic-solar-panel", 8},
       {"low-density-structure", 8},
       {"processing-unit", 3},
     },
-    result = "RU-Medium-Solar-Panel",
+    result = "ru-medium-solar-panel",
   },
 }
 )

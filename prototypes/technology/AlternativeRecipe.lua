@@ -1,4 +1,4 @@
---if settings.startup["RU-Lamp"].value == true then
+--if settings.startup["ru-lamp"].value == true then
 
 --technologies
 data:extend({

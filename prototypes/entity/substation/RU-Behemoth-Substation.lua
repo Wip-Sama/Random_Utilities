@@ -1,16 +1,16 @@
---if settings.startup["RU-Substation"].value == true then
+--if settings.startup["ru-substation"].value == true then
 
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
 
 --Entity
 data:extend({
 {
   type = "electric-pole",
-  name = "RU-Behemoth-Substation",
+  name = "ru-behemoth-substation",
   icons = {{icon = "__base__/graphics/icons/substation.png", tint = {r=80, g=80, b=80}}},
   icon_size = 64, icon_mipmaps = 4,
   flags = {"placeable-neutral", "player-creation"},
-  minable = {mining_time = 0.2, result = "RU-Behemoth-Substation"},
+  minable = {mining_time = 0.2, result = "ru-behemoth-substation"},
   max_health = 500,
   corpse = "substation-remnants",
   fast_replaceable_group = "electric-pole",

@@ -1,7 +1,7 @@
---if settings.startup["RU-Solar-Panel"].value == true then
+--if settings.startup["ru-solar-panel"].value == true then
 
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 --Entity
 
@@ -9,15 +9,15 @@ data:extend(
 {
   {
     type = "solar-panel",
-    name = "RU-Big-Solar-Panel",
+    name = "ru-big-solar-panel",
     icons = {{icon = "__base__/graphics/icons/solar-panel.png", tint = {r=132, g=180, b=181}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Big-Solar-Panel"},
+    minable = {mining_time = 0.1, result = "ru-big-solar-panel"},
     max_health = 500,
     corpse = "solar-panel-remnants",
     fast_replaceable_group = "solar-panel",
-    next_upgrade = "RU-Behemoth-Solar-Panel",
+    next_upgrade = "ru-behemoth-solar-panel",
     dying_explosion = "solar-panel-explosion",
     collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
     selection_box = {{-1.5, -1.5}, {1.5, 1.5}},

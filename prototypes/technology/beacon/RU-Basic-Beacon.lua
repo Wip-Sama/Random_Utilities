@@ -2,15 +2,15 @@
 data:extend({
 {
   type = "technology",
-  name = "RU-advanced-effect-transmission-a",
+  name = "ru-advanced-effect-transmission-a",
   hidden = "true",
-  icon_size = 128,
+  icon_size = 256, icon_mipmaps = 4,
   icon = "__base__/graphics/technology/effect-transmission.png",
   effects =
   {
     {
       type = "unlock-recipe",
-      recipe = "RU-Basic-Beacon"
+      recipe = "ru-basic-beacon"
     }
   },
   prerequisites = {"effect-transmission"},

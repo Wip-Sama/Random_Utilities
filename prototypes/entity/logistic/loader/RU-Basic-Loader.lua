@@ -1,58 +1,181 @@
-require("prototypes.entity.logistic.belt.graphic.RU-Basic-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require("prototypes.entity.logistic.belt.graphic.ru-basic-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
+--if not mods["miniloader"] then
 data:extend({  
   {
-    type = "loader",
-    name = "loader",
-    icon = "__base__/graphics/icons/loader.png",
+    type = "loader-1x1",
+    name = "ru-basic-loader",
+    icons = {{icon = "__Random_Utilities__/graphics/icons/loader/loader-1x/loader-icon-base.png", tint = {r=178, g=173, b=100}}},
     icon_size = 64, icon_mipmaps = 4,
-    flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving"},
-    minable = {mining_time = 0.1, result = "loader"},
+    subgroup = "ru-loader-1x",
     max_health = 170,
+    flags = {"placeable-neutral", "player-creation"},
+    minable = {mining_time = 0.1, result = "ru-basic-loader"},
     filter_count = 5,
-    open_sound = sounds.machine_open,
-    close_sound = sounds.machine_close,
-    working_sound = sounds.loader,
-    corpse = "small-remnants",
-    resistances =
-    {
-      {
-        type = "fire",
-        percent = 60
-      }
-    },
-    collision_box = {{-0.4, -0.9}, {0.4, 0.9}},
-    selection_box = {{-0.5, -1}, {0.5, 1}},
+    collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
+    selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
     animation_speed_coefficient = 32,
     belt_animation_set = ru_basic_transport_belt_animation_set,
-    fast_replaceable_group = "loader",
-    speed = 0.03125,
+    container_distance = 1,
+    speed = 0.1875,
     structure_render_layer = "lower-object",
+    fast_replaceable_group = "loader-1x",
+    next_upgrade = "ru-medium-loader",
     structure =
     {
       direction_in =
       {
-        sheet =
-        {
-          filename = "__base__/graphics/entity/loader/loader-structure.png",
-          priority = "extra-high",
-          width = 64,
-          height = 64
+        sheets = {
+          -- Base
+          {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-base.png",				
+            width = 96,
+            height = 96,
+            tint = {r=178, g=173, b=100},
+            y = 0,
+            hr_version = {
+              filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-base.png",
+              height = 192,
+              priority = "extra-high",
+              tint = {r=178, g=173, b=100},
+              scale = 0.5,
+              width = 192,
+              y = 0
+            }
+          },
+          -- Mask
+          {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-mask.png",
+            priority = "extra-high",
+            width = 96,
+            height = 96,
+            y = 0,
+            tint = {r=178, g=173, b=100},
+            hr_version = {
+              filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-mask.png",
+              priority = "extra-high",
+              width = 192,
+              height = 192,
+              y = 0,
+              tint = {r=178, g=173, b=100},
+              scale = 0.5,
+            }
+          },
+          -- Shadow
+          {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-shadow.png",	
+            priority = "extra-high",
+            width = 96,
+            height = 96,
+            y = 0,		
+            draw_as_shadow = true,
+            hr_version = {
+              filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-shadow.png",
+              priority = "extra-high",
+              width = 192,
+              height = 192,
+              y = 0,
+              draw_as_shadow = true,
+              scale = 0.5,
+            }
+          }
         }
       },
       direction_out =
       {
-        sheet =
-        {
-          filename = "__base__/graphics/entity/loader/loader-structure.png",
+        sheets = {
+          -- Base
+          {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-base.png",			
+            width = 96,
+            height = 96,
+            tint = {r=178, g=173, b=100},
+            y = 96,
+            hr_version = {
+              filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-base.png",
+              height = 192,
+              priority = "extra-high",
+              tint = {r=178, g=173, b=100},
+              scale = 0.5,
+              width = 192,
+              y = 192
+            }
+          },
+          -- Mask
+          {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-mask.png",
+            priority = "extra-high",
+            width = 96,
+            height = 96,
+            y = 96,
+            tint = {r=178, g=173, b=100},
+            hr_version = {
+              filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-mask.png",
+              priority = "extra-high",
+              width = 192,
+              height = 192,
+              y = 192,
+              tint = {r=178, g=173, b=100},
+              scale = 0.5,
+            }
+          },
+          -- Shadow
+          {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-shadow.png",			
+            priority = "extra-high",
+            width = 96,
+            height = 96,
+            y = 96,
+            draw_as_shadow = true,
+            hr_version = {
+              filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-shadow.png",
+              priority = "extra-high",
+              width = 192,
+              height = 192,
+              y = 192,
+              draw_as_shadow = true,
+              scale = 0.5,
+            }
+          }
+        }
+      },
+      back_patch = {
+        sheet = {
+          filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-back-patch.png",
           priority = "extra-high",
-          width = 64,
-          height = 64,
-          y = 64
+          tint = {r=178, g=173, b=100},
+          width = 96,
+          height = 96,
+          hr_version = {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-back-patch.png",
+            priority = "extra-high",
+            tint = {r=178, g=173, b=100},
+            width = 192,
+            height = 192,
+            scale = 0.5
+          }
+        }
+      },
+      front_patch = {
+        sheet = {
+          filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/loader-structure-front-patch.png",
+          priority = "extra-high",
+          tint = {r=178, g=173, b=100},
+          width = 96,
+          height = 96,
+          hr_version = {
+            filename = "__Random_Utilities__/graphics/entity/loader/loader-1x/hr-loader-structure-front-patch.png",
+            priority = "extra-high",
+            tint = {r=178, g=173, b=100},
+            width = 192,
+            height = 192,
+            scale = 0.5
+          }
         }
       }
     }
   },
 })
+--end

@@ -1,10 +1,10 @@
 data:extend({
 	{
 	type = "repair-tool",
-	name = "RU-Infinite-Repairer",
+	name = "ru-Infinite-Repairer",
     icons = {{icon = "__base__/graphics/icons/repair-pack.png", tint ={r=80, g=80, b=80}}},
     icon_size = 64, icon_mipmaps = 4,
-	subgroup = "RU-Repair-Pack",
+	subgroup = "ru-Repair-Pack",
 	order = "a",
 	speed = 10,
 	durability = 1,

@@ -3,15 +3,15 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Walkable-Medium-Beacon",
+    name = "ru-walkable-medium-beacon",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
-      {"RU-Medium-Beacon", 1},
+      {"ru-medium-beacon", 1},
       {"concrete", 50},
     },
-    result = "RU-Walkable-Medium-Beacon"
+    result = "ru-walkable-medium-beacon"
   },
 })
 --Recipe
@@ -19,13 +19,13 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Walkable-Medium-Beacon-Recycle",
+    name = "ru-walkable-medium-beacon-Recycle",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
-      {"RU-Walkable-Medium-Beacon", 1},
+      {"ru-walkable-medium-beacon", 1},
     },
-    result = "RU-Medium-Beacon"
+    result = "ru-medium-beacon"
   },
 })

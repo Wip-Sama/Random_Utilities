@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Medium-Inserter",
+    name = "ru-medium-inserter",
     hidden = "true",
     icon_size = 64,
     icons = {{icon = "__base__/graphics/icons/long-handed-inserter.png", {tint = {r=202, g=154, b=152}}}},
@@ -9,10 +9,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Medium-Inserter"
+        recipe = "ru-medium-inserter"
       }
     },
-    prerequisites = {"RU-Basic-Inserter"},
+    prerequisites = {"ru-basic-inserter"},
     unit =
     {
       count = 750,

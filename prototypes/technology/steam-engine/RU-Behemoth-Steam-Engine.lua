@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Behemoth-Steam-Engine",
+    name = "ru-behemoth-steam-engine",
     hidden = "true",
     icon_size = 64,
     icons = {{icon = "__base__/graphics/icons/steam-engine.png", tint = {r=80, g=80, b=80}}},
@@ -9,10 +9,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Behemoth-Steam-Engine"
+        recipe = "ru-behemoth-steam-engine"
       }
     },
-    prerequisites = {"RU-Big-Steam-Engine"},
+    prerequisites = {"ru-big-steam-engine"},
     unit =
     {
       count = 2000,

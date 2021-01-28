@@ -1,21 +1,21 @@
---if settings.startup["RU-Accumulator"].value == true then
+--if settings.startup["ru-accumulator"].value == true then
 
 --recipes
 data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Big-Accumulator",
+    name = "ru-big-accumulator",
     hidden = "true",
 --    hidden = is_Big_accumulator_hidden ,
     enabled = "false",
     ingredients =
     {
-      {"RU-Medium-Accumulator", 8},
+      {"ru-medium-accumulator", 8},
       {"low-density-structure", 8},
       {"processing-unit", 3},
     },
-    result = "RU-Big-Accumulator",
+    result = "ru-big-accumulator",
   },
 }
 )

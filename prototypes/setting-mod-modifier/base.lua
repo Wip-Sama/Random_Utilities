@@ -48,18 +48,18 @@ if settings.startup["ru-mining-speed"] then
 end
 
 --hp
-if settings.startup["RU-hp"] then
-   data.raw.character["character"].health = settings.startup["RU-hp"].value
+if settings.startup["ru-hp"] then
+   data.raw.character["character"].health = settings.startup["ru-hp"].value
 end
 
 --hp recovery
-if settings.startup["RU-hp-recovery"] then
-   data.raw.character["character"].healing_per_tick = settings.startup["RU-hp-recovery"].value
+if settings.startup["ru-hp-recovery"] then
+   data.raw.character["character"].healing_per_tick = settings.startup["ru-hp-recovery"].value
 end
 
 --running speed
-if settings.startup["RU-hp-recovery"] then
-   data.raw.character["character"].running_speed = data.raw.character["character"].running_speed + settings.startup["RU-running-speed"].value
+if settings.startup["ru-hp-recovery"] then
+   data.raw.character["character"].running_speed = data.raw.character["character"].running_speed + settings.startup["ru-running-speed"].value
 end
 
 

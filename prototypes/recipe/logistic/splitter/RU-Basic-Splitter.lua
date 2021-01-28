@@ -1,7 +1,7 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Basic-Splitter",
+        name = "ru-basic-splitter",
         hidden = "true",
         enabled = "false",
         energy_required = 2,
@@ -11,6 +11,6 @@ data:extend({
           {"iron-gear-wheel", 15},
           {"electronic-circuit", 15}
         },
-        result = "RU-Basic-Splitter"
+        result = "ru-basic-splitter"
       },
 })

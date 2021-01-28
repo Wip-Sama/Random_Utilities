@@ -1,7 +1,7 @@
---if settings.startup["RU-Accumulator"].value == true then
+--if settings.startup["ru-accumulator"].value == true then
 
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 --Entity
 
@@ -9,11 +9,11 @@ data:extend(
 {
   {
     type = "accumulator",
-    name = "RU-Behemoth-Accumulator",
+    name = "ru-behemoth-accumulator",
     icons = {{icon = "__base__/graphics/icons/accumulator.png", tint = {r=80, g=80, b=80}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Behemoth-Accumulator"},
+    minable = {mining_time = 0.1, result = "ru-behemoth-accumulator"},
     max_health = 750,
     corpse = "accumulator-remnants",
     fast_replaceable_group = "accumulator",

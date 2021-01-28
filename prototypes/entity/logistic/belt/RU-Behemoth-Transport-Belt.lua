@@ -1,16 +1,16 @@
 --require("__base__/prototypes/entity/transport-belt-pictures")
-require("prototypes.entity.logistic.belt.graphic.RU-Behemoth-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require("prototypes.entity.logistic.belt.graphic.ru-behemoth-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
     {
     type = "transport-belt",
-    name = "RU-Behemoth-Transport-Belt",
+    name = "ru-behemoth-transport-belt",
     icons = {{icon = "__base__/graphics/icons/express-transport-belt.png", tint = {r=80, g=80, b=80}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Behemoth-Transport-Belt"},
+    minable = {mining_time = 0.1, result = "ru-behemoth-transport-belt"},
     max_health = 600,
     corpse = "transport-belt-remnants",
     dying_explosion = "transport-belt-explosion",

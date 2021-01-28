@@ -1,15 +1,15 @@
-require("prototypes.entity.logistic.belt.graphic.RU-Big-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require("prototypes.entity.logistic.belt.graphic.ru-big-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {
     type = "splitter",
-    name = "RU-Big-Splitter",
+    name = "ru-big-splitter",
     icons = {{icon = "__base__/graphics/icons/express-splitter.png", tint = {r=132, g=180, b=181}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Big-Splitter"},
+    minable = {mining_time = 0.1, result = "ru-big-splitter"},
     max_health = 400,
     corpse = "express-splitter-remnants",
     dying_explosion = "express-splitter-explosion",
@@ -28,7 +28,7 @@ data:extend({
     structure_animation_movement_cooldown = 10,
     belt_animation_set = ru_big_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "RU-Behemoth-Splitter",
+    next_upgrade = "ru-behemoth-splitter",
     speed = 180 / 480,
     working_sound = sounds.express_splitter,
     open_sound = sounds.machine_open,

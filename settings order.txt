@@ -13,7 +13,7 @@ item:
 #    beacon                                        al
 #    walkable beacon                               am
 #    Logistics                                     ana (n: a-c)
-#    Fluid Logistics                               anb
+#    Fluid handling                               anb (n: d-e)
 #    inserter                                      ao (o: a-c)
     locomotive                                     ap
     wagon                                          aq
@@ -39,13 +39,14 @@ item:
 #    Better Cable Visibility                       cl
 #    wire shortcut                                 cm
 #    wire crafting                                 cn
-#DISABLED    AlternativeRecipe                     co
-#DISABLED    CheatyRecipe                          cp
+#DISABLED    alternativerecipe                     co
+#DISABLED    cheatyrecipe                          cp
 #    Assembler liquid Imput Output                 cq
 #    Assembling Machine Imput Output               cr
 #    Chemical Plant Imput Output                   cs
 #    Oil Refineries Imput Output                   ct
 #    mini equipment                                cu
+#    ru-force-chemical-fuel                           cv
 
 #    small electric pole wire reach                 da
 #    small electric pole supply area                db
@@ -63,7 +64,9 @@ item:
 #    Quick Start Robot technology                   ee
 
 #    space exploration integration                  fa
-#    RU-angel-integrations                          fb
+#    ru-angel-integrations                          fb
+#    ru-bob-integrations                             fc
+#    ru-krastorio2-integrations                      fd
 
 #    angel warehouse                                ga
 #    angel logistic warehouse                       gb

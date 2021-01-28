@@ -2,7 +2,7 @@ data:extend({
 
 	{
 		type = "technology",
-		name = "RU-Infinite-Repairer",
+		name = "ru-Infinite-Repairer",
 		hidden = "true",
 		icons = {{icon = "__base__/graphics/icons/repair-pack.png", tint ={r=80, g=80, b=80}}},
 		icon_size = 64,
@@ -10,7 +10,7 @@ data:extend({
 		{
 		  {
 			type = "unlock-recipe",
-			recipe = "RU-Infinite-Repairer"
+			recipe = "ru-Infinite-Repairer"
 		  },
 		},
 		prerequisites = {"automobilism"},

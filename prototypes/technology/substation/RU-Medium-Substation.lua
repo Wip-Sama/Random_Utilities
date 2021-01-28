@@ -1,21 +1,21 @@
---if settings.startup["RU-Substation"].value == true then
+--if settings.startup["ru-substation"].value == true then
 
 --technologies
 data:extend({
 {
   type = "technology",
-  name = "RU-Medium-Substation",
+  name = "ru-medium-substation",
   hidden = "true",
-  icon_size = 128,
-  icon = "__base__/graphics/technology/electric-energy-distribution.png",
+  icon_size = 256,
+  icon = "__base__/graphics/technology/electric-energy-distribution-2.png",
   effects =
   {
     {
       type = "unlock-recipe",
-      recipe = "RU-Medium-Substation"
+      recipe = "ru-medium-substation"
     }
   },
-  prerequisites = {"RU-Basic-Substation"},
+  prerequisites = {"ru-basic-substation"},
                   --{"electric-energy-distribution-2"},
   unit =
   {

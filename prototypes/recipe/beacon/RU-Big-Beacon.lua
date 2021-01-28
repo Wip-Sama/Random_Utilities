@@ -3,13 +3,13 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Big-Beacon",
+    name = "ru-big-beacon",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
-      {"RU-Medium-Beacon", 5},
+      {"ru-medium-beacon", 5},
     },
-    result = "RU-Big-Beacon"
+    result = "ru-big-beacon"
   },
 })

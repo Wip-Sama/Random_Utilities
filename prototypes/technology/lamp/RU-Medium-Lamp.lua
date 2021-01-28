@@ -1,21 +1,21 @@
---if settings.startup["RU-Lamp"].value == true then
+--if settings.startup["ru-lamp"].value == true then
 
 --technologies
 data:extend({
   {
     type = "technology",
-    name = "RU-Medium-Lamp",
+    name = "ru-medium-lamp",
     hidden = "true",
-    icon_size = 128,
+    icon_size = 256,
     icon = "__base__/graphics/technology/optics.png",
     effects =
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Medium-Lamp"
+        recipe = "ru-medium-lamp"
       }
     },
-    prerequisites = {"RU-Basic-Lamp"},
+    prerequisites = {"ru-basic-lamp"},
     unit =
     {
       count = 50,

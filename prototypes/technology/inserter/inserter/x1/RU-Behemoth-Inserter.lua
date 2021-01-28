@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Behemoth-Inserter",
+    name = "ru-behemoth-inserter",
     hidden = "true",
     icon_size = 64,
     icons = {{icon = "__base__/graphics/icons/fast-inserter.png", {tint = {r=80, g=80, b=80}}}},
@@ -9,10 +9,10 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Behemoth-Inserter"
+        recipe = "ru-behemoth-inserter"
       }
     },
-    prerequisites = {"RU-Big-Inserter"},
+    prerequisites = {"ru-big-inserter"},
     unit =
     {
       count = 1750,

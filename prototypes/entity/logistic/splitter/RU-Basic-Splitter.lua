@@ -1,15 +1,15 @@
-require("prototypes.entity.logistic.belt.graphic.RU-Basic-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require("prototypes.entity.logistic.belt.graphic.ru-basic-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {
     type = "splitter",
-    name = "RU-Basic-Splitter",
+    name = "ru-basic-splitter",
     icons = {{icon = "__base__/graphics/icons/splitter.png", tint = {r=178, g=173, b=100}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Basic-Splitter"},
+    minable = {mining_time = 0.1, result = "ru-basic-splitter"},
     max_health = 300,
     corpse = "splitter-remnants",
     dying_explosion = "splitter-explosion",
@@ -27,7 +27,7 @@ data:extend({
     structure_animation_speed_coefficient = 0.7,
     structure_animation_movement_cooldown = 10,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "RU-Medium-Splitter",
+    next_upgrade = "ru-medium-splitter",
     speed = 0.1875,
     belt_animation_set = ru_basic_transport_belt_animation_set,
     open_sound = sounds.machine_open,

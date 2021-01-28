@@ -1,7 +1,7 @@
 data:extend({
     {
       type = "technology",
-      name = "RU-Basic-Steam-Engine",
+      name = "ru-basic-steam-engine",
       hidden = "true",
       icon_size = 64,
       icons = {{icon = "__base__/graphics/icons/steam-engine.png", tint = {r=178, g=173, b=100}}},
@@ -9,7 +9,7 @@ data:extend({
       {
         {
           type = "unlock-recipe",
-          recipe = "RU-Basic-Steam-Engine"
+          recipe = "ru-basic-steam-engine"
         }
       },
       prerequisites = {"steel-processing"},

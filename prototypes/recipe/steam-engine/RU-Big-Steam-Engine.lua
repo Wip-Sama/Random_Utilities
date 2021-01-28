@@ -1,16 +1,16 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Big-Steam-Engine",
+        name = "ru-big-steam-engine",
         hidden = "true",
         enabled = "false",
         ingredients = 
         {
-            {"RU-Medium-Steam-Engine", 2}, 
+            {"ru-medium-steam-engine", 2}, 
             {"steel-plate", 5},
             {"low-density-structure", 4},
             {"pipe", 2},
         },
-        result = "RU-Big-Steam-Engine"
+        result = "ru-big-steam-engine"
     },
 })

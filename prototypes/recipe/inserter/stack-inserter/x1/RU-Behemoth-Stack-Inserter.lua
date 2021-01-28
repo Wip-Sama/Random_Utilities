@@ -2,15 +2,15 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Behemoth-Stack-Inserter",
+    name = "ru-behemoth-stack-inserter",
     hidden = "true",
     enabled = "false",
     ingredients =
     {
       {"iron-gear-wheel", 15},
       {"processing-unit", 2},
-      {"RU-Big-Stack-Inserter", 2}
+      {"ru-big-stack-inserter", 2}
     },
-    result = "RU-Behemoth-Stack-Inserter"
+    result = "ru-behemoth-stack-inserter"
   },
 })

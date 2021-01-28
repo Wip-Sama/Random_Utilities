@@ -1,15 +1,15 @@
-require("prototypes.entity.logistic.belt.graphic.RU-Behemoth-Transport-Belt")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require("prototypes.entity.logistic.belt.graphic.ru-behemoth-transport-belt")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {
     type = "underground-belt",
-    name = "RU-Behemoth-Underground-Belt",
+    name = "ru-behemoth-underground-belt",
     icons = {{icon = "__base__/graphics/icons/express-underground-belt.png", tint = {r=80, g=80, b=80}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Behemoth-Underground-Belt"},
+    minable = {mining_time = 0.1, result = "ru-behemoth-underground-belt"},
     max_health = 600,
     corpse = "express-underground-belt-remnants",
     dying_explosion = "express-underground-belt-explosion",
@@ -63,7 +63,7 @@ data:extend({
     animation_speed_coefficient = 32,
     belt_animation_set = ru_behemoth_transport_belt_animation_set,
     fast_replaceable_group = "transport-belt",
-    next_upgrade = "RU-Behemoth-Underground-Belt",
+    next_upgrade = "ru-behemoth-underground-belt",
     speed = (settings.startup["ru-behemoth-logistics-tweaks"].value) / 480,
     structure =
     {

@@ -1,15 +1,15 @@
---if settings.startup["RU-Substation"].value == true then
+--if settings.startup["ru-substation"].value == true then
 
 --item
 data:extend({
 {
   type = "item",
-  name = "RU-Basic-Substation",
+  name = "ru-basic-substation",
   icons = {{icon = "__base__/graphics/icons/substation.png", tint = {r=178, g=173, b=100}}},
   icon_size = 64, icon_mipmaps = 4,
-  subgroup = "RU-Substation",
+  subgroup = "ru-substation",
   order = "a",
-  place_result = "RU-Basic-Substation",
+  place_result = "ru-basic-substation",
   stack_size = 50
 },
 })

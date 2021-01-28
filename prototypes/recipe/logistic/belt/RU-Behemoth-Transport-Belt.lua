@@ -1,16 +1,16 @@
 data:extend({
     {
         type = "recipe",
-        name = "RU-Behemoth-Transport-Belt",
+        name = "ru-behemoth-transport-belt",
         hidden = "true",
         enabled = "false",
         ingredients =
         {
           {"iron-gear-wheel", 20},
-          {"RU-Big-Transport-Belt", 2},
+          {"ru-big-transport-belt", 2},
           {"speed-module-3", 1}
         },
-        result = "RU-Behemoth-Transport-Belt",
+        result = "ru-behemoth-transport-belt",
         result_count = 2,
       },
 })

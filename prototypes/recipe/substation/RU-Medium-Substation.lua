@@ -1,19 +1,19 @@
---if settings.startup["RU-Substation"].value == true then
+--if settings.startup["ru-substation"].value == true then
 
 --recipes
 data:extend({
 {
   type = "recipe",
-  name = "RU-Medium-Substation",
+  name = "ru-medium-substation",
   hidden = "true",
   enabled = "false",
   ingredients =
   {
     {"big-electric-pole", 4},
     {"medium-electric-pole", 10},
-    {"RU-Basic-Substation", 2}
+    {"ru-basic-substation", 2}
   },
-  result = "RU-Medium-Substation",
+  result = "ru-medium-substation",
 },
 })
 

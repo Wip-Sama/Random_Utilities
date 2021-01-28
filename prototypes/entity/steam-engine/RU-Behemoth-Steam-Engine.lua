@@ -1,15 +1,15 @@
-require ("__base__/prototypes/entity/demo-pipecovers")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require ("__base__/prototypes/entity/pipecovers")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
     {
         type = "generator",
-        name = "RU-Behemoth-Steam-Engine",
+        name = "ru-behemoth-steam-engine",
         icons = {{icon = "__base__/graphics/icons/steam-engine.png", tint = {r=80, g=80, b=80}}},
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral","player-creation"},
-        minable = {mining_time = 0.3, result = "RU-Behemoth-Steam-Engine"},
+        minable = {mining_time = 0.3, result = "ru-behemoth-steam-engine"},
         max_health = 400,
         effectivity = 5,
         corpse = "steam-engine-remnants",

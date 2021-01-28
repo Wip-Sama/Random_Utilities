@@ -2,7 +2,7 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Infinite-Repairer",
+    name = "ru-Infinite-Repairer",
     hidden = "true",
     enabled = "false",
     ingredients =
@@ -13,6 +13,6 @@ data:extend(
 		{"electronic-circuit", 10},
 		{"advanced-circuit", 5}
     },
-    result = "RU-Infinite-Repairer"
+    result = "ru-Infinite-Repairer"
   },
 })

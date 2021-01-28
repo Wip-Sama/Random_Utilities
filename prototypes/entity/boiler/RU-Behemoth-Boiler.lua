@@ -1,15 +1,15 @@
-require ("__base__/prototypes/entity/demo-pipecovers")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require ("__base__/prototypes/entity/pipecovers")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
     {
         type = "boiler",
-        name = "RU-Behemoth-Boiler",
+        name = "ru-behemoth-boiler",
         icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=80, g=80, b=80}}},
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.2, result = "RU-Behemoth-Boiler"},
+        minable = {mining_time = 0.2, result = "ru-behemoth-boiler"},
         max_health = 200,
         corpse = "boiler-remnants",
         dying_explosion = "boiler-explosion",

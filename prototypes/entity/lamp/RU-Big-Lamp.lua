@@ -1,22 +1,22 @@
---if settings.startup["RU-Lamp"].value == true then
+--if settings.startup["ru-lamp"].value == true then
 
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 --Entity
 data:extend(
 {
   {
     type = "lamp",
-    name = "RU-Big-Lamp",
+    name = "ru-big-lamp",
     icon = "__base__/graphics/icons/small-lamp.png",
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation"},
-    minable = {mining_time = 0.1, result = "RU-Big-Lamp"},
+    minable = {mining_time = 0.1, result = "ru-big-lamp"},
     max_health = 150,
     corpse = "lamp-remnants",
     fast_replaceable_group = "lamp",
-    --next_upgrade = "RU-Behemoth-Lamp",
+    --next_upgrade = "ru-behemoth-lamp",
     dying_explosion = "lamp-explosion",
     collision_box = {{-0.15, -0.15}, {0.15, 0.15}},
     selection_box = {{-0.5, -0.5}, {0.5, 0.5}},

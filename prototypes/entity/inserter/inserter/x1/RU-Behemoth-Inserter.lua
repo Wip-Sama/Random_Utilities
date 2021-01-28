@@ -1,15 +1,15 @@
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {
     type = "inserter",
-    name = "RU-Behemoth-Inserter",
+    name = "ru-behemoth-inserter",
     icons = {{icon = "__base__/graphics/icons/fast-inserter.png", tint = {r=80, g=80, b=80}}},
     filter_count = 5,
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = { mining_time = 0.1, result = "RU-Behemoth-Inserter" },
+    minable = { mining_time = 0.1, result = "ru-behemoth-inserter" },
     max_health = 150,
     corpses = {{corpse = "fast-inserter-remnants", tint = {r=80, g=80, b=80}}},
     dying_explosion = "fast-inserter-explosion",

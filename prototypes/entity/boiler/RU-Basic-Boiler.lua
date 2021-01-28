@@ -1,22 +1,22 @@
-require ("__base__/prototypes/entity/demo-pipecovers")
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+require ("__base__/prototypes/entity/pipecovers")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
     {
         type = "boiler",
-        name = "RU-Basic-Boiler",
+        name = "ru-basic-boiler",
         icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=178, g=173, b=100}}},
         icon_size = 64, icon_mipmaps = 4,
         flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.2, result = "RU-Basic-Boiler"},
+        minable = {mining_time = 0.2, result = "ru-basic-boiler"},
         max_health = 200,
         corpse = "boiler-remnants",
         dying_explosion = "boiler-explosion",
         vehicle_impact_sound = sounds.generic_impact,
         mode = "output-to-separate-pipe",
         fast_replaceable_group = "boiler",
-        next_upgrade = "RU-Medium-Boiler",
+        next_upgrade = "ru-medium-boiler",
         resistances =
         {
           {

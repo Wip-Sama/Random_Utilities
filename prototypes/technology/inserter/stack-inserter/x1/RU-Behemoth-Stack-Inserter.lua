@@ -1,16 +1,16 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Behemoth-Stack-Inserter",
+    name = "ru-behemoth-stack-inserter",
     hidden = "true",
     icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=80, g=80, b=80}}},
     icon_size = 64,
     effects =
     {
-      {type = "unlock-recipe", recipe = "RU-Behemoth-Stack-Inserter"},
+      {type = "unlock-recipe", recipe = "ru-behemoth-stack-inserter"},
       {type = "stack-inserter-capacity-bonus", modifier = 10}
     },
-    prerequisites = {"RU-Big-Stack-Inserter"},
+    prerequisites = {"ru-big-stack-inserter"},
     unit =
     {
       count = 2000,

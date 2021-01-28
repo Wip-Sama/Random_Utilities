@@ -1,15 +1,15 @@
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
   {
     type = "inserter",
-    name = "RU-Medium-Stack-Inserter",
+    name = "ru-medium-stack-inserter",
     icons = {{icon = "__base__/graphics/icons/stack-inserter.png",tint = {r=202, g=154, b=152}}},
     filter_count = 5,
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "placeable-player", "player-creation"},
-    minable = { mining_time = 0.1, result = "RU-Medium-Stack-Inserter" },
+    minable = { mining_time = 0.1, result = "ru-medium-stack-inserter" },
     max_health = 160,
     corpses = {{corpse = "stack-inserter-remnants", tint = {r=202, g=154, b=152}}},
     dying_explosion = "stack-inserter-explosion",
@@ -35,7 +35,7 @@ data:extend({
     extension_speed = 0.2,
     rotation_speed = 0.15,
     fast_replaceable_group = "inserter",
-    next_upgrade = "RU-Big-Stack-Inserter",
+    next_upgrade = "ru-big-stack-inserter",
     vehicle_impact_sound = sounds.generic_impact,
     open_sound = sounds.machine_open,
     close_sound = sounds.machine_close,

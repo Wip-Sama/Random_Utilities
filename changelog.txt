@@ -1,6 +1,25 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: xx/01/2021
+  Added:
+    - settings to add fuel to various entity in the game
+    - force chemical fuel
+    - bob integration toggle
+    - krastorio2 integration toggle
+  Changes:
+    - when disabling chemical input output even bob chemical plant will be disabled
+    - when disabling oil refinery input output even bob oil refinery will be disabled
+    - added compatibility with modmashsplinterairpurifier
+    - Updated Wire Shortcut Script (If you need only this USE THE ORIGINAL!)
+  Bugfixes:
+    - omnimatter won't work with generalm input output enabled if the machine lever is higher than 5
+    - technology image
+    - basic/medium/big/behemoth filtered miniloader won't appear in game
+  Notes:
+    - if you disable the integration but enable another setting that work with that mod (not exclusive) the mod will be modified to, for example enabling force chemical fuel krastorio2 will be influenced even with krastorio2 integrations turned off
+---------------------------------------------------------------------------------------------------
 Version: 2.0.9
-Date: xx/11/2020
+Date: 30/11/2020
   Added:
     - juicy mods storage size edit
     - juicy mods fluid storage size edit
@@ -178,7 +197,7 @@ Date: 11/07/2020
     - little conflict fix
 
   Changes:
-    - setting RU-Assembler-liquid-Imput-Output (default "true" > "false")
+    - setting ru-Assembler-liquid-Imput-Output (default "true" > "false")
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.9
@@ -271,7 +290,7 @@ Date: 18/06/2020
     - Big Lamp technology
 
   Changes:
-    - Changes technology RU-advanced-effect-transmission to RU-advanced-effect-transmission-a
+    - Changes technology ru-advanced-effect-transmission to ru-advanced-effect-transmission-a
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.2.1
@@ -340,7 +359,7 @@ Date: 03/04/2020
 Version: 1.1.5
 Date: 03/04/2020
   Added:
-    - added Assembler Pipe Passthrought (if you want only this use assembler-pipe-passthrough, it's the original!)
+    - added Assembler pipe Passthrought (if you want only this use assembler-pipe-passthrough, it's the original!)
     - added Wire Shortcuts (if you want only this use WireShortcuts, it's the original!)
     - added Wire Vanilla Pole Reach/Supply area range (if you want only this use PoleRange, it's the original!)
 
@@ -348,7 +367,7 @@ Date: 03/04/2020
 Version: 1.1.4
 Date: 30/03/2020
   Added:
-    - RU-Medium-Substation (range 64, supply area 42x42[21], HP 200)
+    - ru-medium-substation (range 64, supply area 42x42[21], HP 200)
 
 ---------------------------------------------------------------------------------------------------
 Version: 1.1.3
@@ -380,8 +399,8 @@ Date: 23/03/2020
 Version: 1.1.0
 Date: 23/03/2020
   Changes:
-    - RU-Basic-Substation supply area 10x10[5] > supply area 12*12[6]
-    - Basic_Substation setting to Ru-Substation
+    - ru-basic-substation supply area 10x10[5] > supply area 12*12[6]
+    - Basic_Substation setting to ru-substation
 
   Added:
     - Inventory size setting
@@ -403,4 +422,4 @@ Date: 23/03/2020
 Version: 1.0.0
 Date: 17/03/2020
   Added:
-    - RU-Basic-Substation (range 32, supply area 10x10[5], HP 125)
+    - ru-basic-substation (range 32, supply area 10x10[5], HP 125)

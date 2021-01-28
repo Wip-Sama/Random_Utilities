@@ -2,7 +2,7 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Basic-Inserter",
+    name = "ru-basic-inserter",
     hidden = "true",
     enabled = "false",
     ingredients =
@@ -11,6 +11,6 @@ data:extend(
       {"advanced-circuit", 2},
       {"fast-inserter", 2}
     },
-    result = "RU-Basic-Inserter"
+    result = "ru-basic-inserter"
   },
 })

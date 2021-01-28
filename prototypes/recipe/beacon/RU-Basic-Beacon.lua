@@ -3,7 +3,7 @@ data:extend(
 {
   {
     type = "recipe",
-    name = "RU-Basic-Beacon",
+    name = "ru-basic-beacon",
     hidden = "true",
     enabled = "false",
     ingredients =
@@ -12,6 +12,6 @@ data:extend(
       {"advanced-circuit", 10},
       {"processing-unit", 4},
     },
-    result = "RU-Basic-Beacon"
+    result = "ru-basic-beacon"
   },
 })

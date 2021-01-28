@@ -1,7 +1,7 @@
 data:extend({
     {
       type = "technology",
-      name = "RU-Big-Boiler",
+      name = "ru-big-boiler",
       hidden = "true",
       icon_size = 64,
       icons = {{icon = "__base__/graphics/icons/boiler.png", tint = {r=132, g=180, b=181}}},
@@ -9,10 +9,10 @@ data:extend({
       {
         {
           type = "unlock-recipe",
-          recipe = "RU-Big-Boiler"
+          recipe = "ru-big-boiler"
         }
       },
-      prerequisites = {"RU-Medium-Boiler"},
+      prerequisites = {"ru-medium-boiler"},
       unit =
       {
         count = 1000,

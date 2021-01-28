@@ -1,7 +1,7 @@
 data:extend({
   {
     type = "technology",
-    name = "RU-Basic-Inserter",
+    name = "ru-basic-inserter",
     hidden = "true",
     icon_size = 64,
     icons = {{icon = "__base__/graphics/icons/inserter.png", tint = {r=178, g=173, b=100}}},
@@ -9,7 +9,7 @@ data:extend({
     {
       {
         type = "unlock-recipe",
-        recipe = "RU-Basic-Inserter"
+        recipe = "ru-basic-inserter"
       }
     },
     prerequisites = {"fast-inserter"},

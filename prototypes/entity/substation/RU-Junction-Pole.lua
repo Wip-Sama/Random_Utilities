@@ -1,16 +1,16 @@
 
-local hit_effects = require("__base__/prototypes/entity/demo-hit-effects")
-local sounds = require("__base__/prototypes/entity/demo-sounds")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
+local sounds = require("__base__/prototypes/entity/sounds")
 
 --Entity
 data:extend({
     {
     type = "electric-pole",
-    name = "RU-Junction-Pole",
+    name = "ru-junction-pole",
     icons = {{icon = "__base__/graphics/icons/big-electric-pole.png", tint = {r=202, g=154, b=152}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-neutral", "player-creation", "fast-replaceable-no-build-while-moving"},
-    minable = {mining_time = 0.1, result = "RU-Junction-Pole"},
+    minable = {mining_time = 0.1, result = "ru-junction-pole"},
     max_health = 300,
     corpse = "big-electric-pole-remnants",
     dying_explosion = "big-electric-pole-explosion",
