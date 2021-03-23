@@ -14,6 +14,7 @@ data:extend({
     max_health = 400,
     corpse = "transport-belt-remnants",
     dying_explosion = "transport-belt-explosion",
+    related_underground_belt = "ru-medium-underground-belt",
     resistances =
     {
       {

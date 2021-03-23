@@ -1,6 +1,19 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: xx/xx/2021
+  Added:
+    - added LiquifyScienceandLab integrations
+  Changes:
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 10/02/2021
+  Added:
+    - added "ru-force-equipment-categories" for "spidertrontiers" with "bobvehicleequipment"
+  Changes:
+    - now "related_underground_belt" is indicated in the belt
+---------------------------------------------------------------------------------------------------
 Version: 2.1.0
-Date: xx/01/2021
+Date: 26/01/2021
   Added:
     - settings to add fuel to various entity in the game
     - force chemical fuel

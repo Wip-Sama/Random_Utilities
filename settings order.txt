@@ -1,24 +1,24 @@
 item:
 #    boiler                                        aa
 #    steam engine                                  ab
-    centrifuge                                     ac
-    nuclear reactor                                ad
-    heat boiler                                    ae
-    steam turbine                                  af
+    centrifuge                                    ac
+    nuclear reactor                               ad
+    heat boiler                                   ae
+    steam turbine                                 af
 #    solar panel                                   ag
 #    accumulator                                   ah
 #    substation                                    ai
 #    lamp                                          aj
-    assembler                                      ak
+    assembler                                     ak
 #    beacon                                        al
 #    walkable beacon                               am
 #    Logistics                                     ana (n: a-c)
-#    Fluid handling                               anb (n: d-e)
+#    Fluid handling                                anb (n: d-e)
 #    inserter                                      ao (o: a-c)
-    locomotive                                     ap
-    wagon                                          aq
-    fluid wagon                                    ar
-    repair pack                                    as
+    locomotive                                    ap
+    wagon                                         aq
+    fluid wagon                                   ar
+#    repair pack                                   as
 
 #    beacon productivity                           ba
 #    Disable Productivity Limitation               bb
@@ -46,7 +46,8 @@ item:
 #    Chemical Plant Imput Output                   cs
 #    Oil Refineries Imput Output                   ct
 #    mini equipment                                cu
-#    ru-force-chemical-fuel                           cv
+#    ru-force-chemical-fuel                        cv
+#    ru-force-equipment-categories                 cu
 
 #    small electric pole wire reach                 da
 #    small electric pole supply area                db
@@ -65,8 +66,9 @@ item:
 
 #    space exploration integration                  fa
 #    ru-angel-integrations                          fb
-#    ru-bob-integrations                             fc
-#    ru-krastorio2-integrations                      fd
+#    ru-bob-integrations                            fc
+#    ru-krastorio2-integrations                     fd
+#    ru-LiquifyScienceandLab-integrations           fe
 
 #    angel warehouse                                ga
 #    angel logistic warehouse                       gb

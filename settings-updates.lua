@@ -21,6 +21,10 @@ if mods["Krastorio2"] then
   data.raw["int-setting"]["ru-kr-fluid-storage-2"].hidden = false
 end
 
+if mods["LiquifyScienceandLab"] then
+  data.raw["bool-setting"]["ru-LiquifyScienceandLab-integrations"].hidden = false
+end
+
 if mods["space-exploration"] then
   data.raw["bool-setting"]["ru-space-exploration-integrations"].hidden = false
 end

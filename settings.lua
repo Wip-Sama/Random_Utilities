@@ -398,27 +398,27 @@ data:extend({
   },
   --ru-Assembling-Machine-Imput-Output OK
   {
-      type = "bool-setting",
-      name = "ru-Assembling-Machine-Imput-Output",
-      order = "cr",
-      setting_type = "startup",
-      default_value = "true",
+    type = "bool-setting",
+    name = "ru-Assembling-Machine-Imput-Output",
+    order = "cr",
+    setting_type = "startup",
+    default_value = "true",
   },
   --ru-Chemical-Plant-Imput-Output OK
   {
-      type = "bool-setting",
-      name = "ru-Chemical-Plant-Imput-Output",
-      order = "cs",
-      setting_type = "startup",
-      default_value = "true",
+    type = "bool-setting",
+    name = "ru-Chemical-Plant-Imput-Output",
+    order = "cs",
+    setting_type = "startup",
+    default_value = "true",
   },
   --ru-Oil-Refineries-Imput-Output OK
   {
-      type = "bool-setting",
-      name = "ru-Oil-Refineries-Imput-Output",
-      order = "ct",
-      setting_type = "startup",
-      default_value = "true",
+    type = "bool-setting",
+    name = "ru-Oil-Refineries-Imput-Output",
+    order = "ct",
+    setting_type = "startup",
+    default_value = "true",
   },
   --ru-MiniEquipment OK
   {
@@ -428,16 +428,22 @@ data:extend({
     setting_type = "startup",
     default_value = "true",
   },
-  --force-chemical-fuel
+  --ru-force-chemical-fuel
   {
   type = "bool-setting",
   name = "ru-force-chemical-fuel",
   order = "cv",
   setting_type = "startup",
   default_value = "true",
-},
-
-
+  },
+  --ru-force-equipment-categories
+  {
+    type = "bool-setting",
+    name = "ru-force-equipment-categories",
+    order = "cu",
+    setting_type = "startup",
+    default_value = "true",
+  },
 
   --small electric pole wire reach OK
   {
@@ -598,12 +604,21 @@ data:extend({
     setting_type = "startup",
     default_value = "true",
   },
-    --krastorio2 integration OK
+  --krastorio2 integration OK
   {
     type = "bool-setting",
     name = "ru-krastorio2-integrations",
     hidden = "true",
     order = "fd",
+    setting_type = "startup",
+    default_value = "true",
+  },
+  --LiquifyScienceandLab integration OK
+  {
+    type = "bool-setting",
+    name = "ru-LiquifyScienceandLab-integrations",
+    hidden = "true",
+    order = "fe",
     setting_type = "startup",
     default_value = "true",
   },

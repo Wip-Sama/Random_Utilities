@@ -7,25 +7,28 @@ require "prototypes.setting-mod-modifier.random-utilities"
 require "prototypes.setting-mod-modifier.space-exploration"
 require "prototypes.setting-mod-modifier.base"
 require "prototypes.setting-mod-modifier.juicy-mods"
+require "prototypes.setting-mod-modifier.LiquifyScienceandLab"
 
-if settings.startup[""] then
+if settings.startup["ru-force-equipment-categories"] then
+
+  local grid_lists = {}
+
   if mods["spidertrontiers"] and mods["bobvehicleequipment"] then
-    local grid_lists = {
-      "spidertron-equipment-grid",
-      "spidertron-mk-1-equipment-grid",
-      "spidertron-mk0-equipment-grid",
-      "spidertron-mk2-equipment-grid",
-      "spidertron-mk3-equipment-grid",
-      "prototype-spidertron-equipment-grid",
-      "assault-spidertron-mk1-equipment-grid",
-      "assault-spidertron-mk2-equipment-grid",
-      "bulwark-spidertron-mk1-equipment-grid",
-      "bulwark-spidertron-mk2-equipment-grid",
-      "scout-spidertron-mk1-equipment-grid",
-      "scout-spidertron-mk2-equipment-grid",
-      "voyage-spidertron-mk1-equipment-grid",
-      "voyage-spidertron-mk2-equipment-grid",
-    }
+    table.insert( grid_lists, "spidertron-equipment-grid" )
+    table.insert( grid_lists, "spidertron-equipment-grid" )
+    table.insert( grid_lists, "spidertron-mk-1-equipment-grid" )
+    table.insert( grid_lists, "spidertron-mk0-equipment-grid" )
+    table.insert( grid_lists, "spidertron-mk2-equipment-grid" )
+    table.insert( grid_lists, "spidertron-mk3-equipment-grid" )
+    table.insert( grid_lists, "prototype-spidertron-equipment-grid" )
+    table.insert( grid_lists, "assault-spidertron-mk1-equipment-grid" )
+    table.insert( grid_lists, "assault-spidertron-mk2-equipment-grid" )
+    table.insert( grid_lists, "bulwark-spidertron-mk1-equipment-grid" )
+    table.insert( grid_lists, "bulwark-spidertron-mk2-equipment-grid" )
+    table.insert( grid_lists, "scout-spidertron-mk1-equipment-grid" )
+    table.insert( grid_lists, "scout-spidertron-mk2-equipment-grid" )
+    table.insert( grid_lists, "voyage-spidertron-mk1-equipment-grid" )
+    table.insert( grid_lists, "voyage-spidertron-mk2-equipment-grid" )
   end
 
   for _, grid in pairs(grid_lists) do
@@ -65,9 +68,9 @@ if settings.startup["ru-force-chemical-fuel"].value == true then
 
         local fuelissimi1 = {}
 
-        if mods["InfiniteFuel"] then
-          table.insert(fuelissimi1, "IF")
-        end
+        --if mods["InfiniteFuel"] then
+        --  table.insert(fuelissimi1, "IF")
+        --end
 
         for _, fuels1 in pairs(fuelissimi1) do
           if data.raw[entity][name].burner.fuel_categories then
@@ -84,9 +87,9 @@ if settings.startup["ru-force-chemical-fuel"].value == true then
 
         local fuelissimi2 = {}
 
-        if mods["InfiniteFuel"] then
-          table.insert(fuelissimi2, "IF")
-        end
+        --if mods["InfiniteFuel"] then
+        --  table.insert(fuelissimi2, "IF")
+        --end
 
         for _, fuels2 in pairs(fuelissimi2) do
           if data.raw[entity][name].energy_source.fuel_categories then

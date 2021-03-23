@@ -202,7 +202,7 @@ end
 --fluid handling pipe/pipe to ground/pump
 for _, x in pairs(settings.startup["ru-fluid-handling"].value) do
 
-  local fluid_handling = {"pump", "pipe", "pipe-to-ground"}
+  local fluid_handling = {"-pump", "-pipe", "-pipe-to-ground"}
 
   local number = {}
 
@@ -217,13 +217,13 @@ for _, x in pairs(settings.startup["ru-fluid-handling"].value) do
   table.insert( unlock_recipe, "ru-"..x..fluid_handling)
 
   if number > 1 then
-    table.insert( unlock_recipe, "ru-basic-"..fluid_handling)
+    table.insert( unlock_recipe, "ru-basic"..fluid_handling)
   end
   if number > 2 then
-    table.insert( unlock_recipe, "ru-medium-"..fluid_handling)
+    table.insert( unlock_recipe, "ru-medium"..fluid_handling)
   end
   if number > 3 then
-    table.insert( unlock_recipe, "ru-big-"..fluid_handling)
+    table.insert( unlock_recipe, "ru-big"..fluid_handling)
   end
 
   for _, unlock in pairs(unlock_recipe) do
