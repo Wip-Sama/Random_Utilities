@@ -183,4 +183,10 @@ data:extend({
         group = "RU",
         order = "zb"
     },
+    {
+        type = "item-subgroup",
+        name = "ru-SmallFurnace",
+        group = "RU",
+        order = "zc"
+    },
 })

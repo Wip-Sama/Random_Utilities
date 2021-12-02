@@ -2,13 +2,13 @@ if mods["angelsindustries"] then
   data.raw["bool-setting"]["ru-angel-integrations"].hidden = false
 end
 
-if mods["angelsaddons-warehouses"] then
+if mods["angelsaddons-storage"] then
   data.raw["int-setting"]["ru-angels-warehouse"].hidden = false
+  data.raw["int-setting"]["ru-angels-silo"].hidden = false
   data.raw["int-setting"]["ru-angels-logistic-warehouse"].hidden = false
-end
-
-if mods["angelsaddons-pressuretanks"] then
-  data.raw["int-setting"]["ru-Angel-Pressuretank"].hidden = false
+  data.raw["int-setting"]["ru-angels-logistic-silo"].hidden = false
+  data.raw["int-setting"]["ru-angels-pressuretank"].hidden = false
+  data.raw["int-setting"]["ru-angels-storage-tank-3"].hidden = false
 end
 
 if mods["Krastorio2"] then
@@ -45,6 +45,6 @@ if mods["Juicy_mods"] then
   data.raw["int-setting"]["ru-juicy-mods-big-logistic-chest"].hidden = false
   data.raw["int-setting"]["ru-juicy-mods-generic-warehoude"].hidden = false
   data.raw["int-setting"]["ru-juicy-mods-logistic-warehoude"].hidden = false
-  data.raw["int-setting"]["ru-juicy-mods-fs-50"].hidden = false
-  data.raw["int-setting"]["ru-juicy-mods-fs-200"].hidden = false
+  --data.raw["int-setting"]["ru-juicy-mods-fs-50"].hidden = false
+  --data.raw["int-setting"]["ru-juicy-mods-fs-200"].hidden = false
 end

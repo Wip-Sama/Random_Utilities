@@ -13,7 +13,7 @@ data:extend({
   minable = {mining_time = 0.2, result = "ru-medium-substation"},
   max_health = 250,
   corpse = "substation-remnants",
-  fast_replaceable_group = "electric-pole",
+  fast_replaceable_group = "substation",
   next_upgrade = "ru-big-substation",
   dying_explosion = "substation-explosion",
   track_coverage_during_build_by_moving = true,

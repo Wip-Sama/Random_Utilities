@@ -1,4 +1,4 @@
-require "prototypes.setting-mod-modifier.armor"
+require "__Random_Utilities__.prototypes.setting-mod-modifier.armor"
 --armor
 if mods["space-exploration"] and settings.startup["ru-space-exploration-integrations"].value == true then
   data.raw.armor["se-thruster-suit"].equipment_grid   = "ru-01-equipment-grid"

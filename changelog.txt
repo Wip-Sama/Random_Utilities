@@ -1,9 +1,33 @@
 ---------------------------------------------------------------------------------------------------
+Version: 2.1.4
+Date: 17/10/2021
+  Changes:
+    - updated compatibility with juicy-mods
+    - updated compatibility with micro furnace
+    - reordered code part 1/?
+  Added:
+    - missing settings localization
+---------------------------------------------------------------------------------------------------
+Version: 2.1.3
+Date: 10/07/2021
+  Added:
+    - added compatibility with SmallFurnaceWipMod
+  Changes:
+    - Changed some settings description to give more info
+  Bugfixes:
+    - Fixed Space exploration compatibility
+---------------------------------------------------------------------------------------------------
 Version: 2.1.2
-Date: xx/xx/2021
+Date: 02/04/2021
   Added:
     - added LiquifyScienceandLab integrations
+    - juicy mod setting description
   Changes:
+    - removed IF fuel from forced fuel (now on Infinite fuel mod by default)
+    - new thumbnail
+    - moved angel integration to mach the new mods
+  Bugfixes:
+    - fixed juicy mods setting name
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.1
 Date: 10/02/2021

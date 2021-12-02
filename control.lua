@@ -22,6 +22,8 @@ kits["Basic"]["items"] = {
 	["burner-mining-drill"] = 10,--changed
 	["stone-furnace"] = 10,--changed
 	["coal"] = 100,
+	["small-electric-pole"] = 50,--changed2
+	["electric-mining-drill"] = 5,--changed2
 }
 
 kits["Basic"]["quickbar"] = {
@@ -35,14 +37,14 @@ kits["Basic"]["quickbar"] = {
 	{10, "car"}
 }
 
-	
 kits["Medium"] = {}
 kits["Medium"]["items"] = {
-	["transport-belt"] = 500,
+	["transport-belt"] = 1000,--changed2
 	["inserter"] = 150,--changed
 	["splitter"] = 50,
 	["underground-belt"] = 50,
-	["small-electric-pole"] = 50,
+	["small-electric-pole"] = 100,--changed2
+	["medium-electric-pole"] = 50,--changed2
 	["electric-mining-drill"] = 20,
 	["lab"] = 2,
 	["steam-engine"] = 20,
@@ -57,7 +59,7 @@ kits["Medium"]["items"] = {
 	["iron-gear-wheel"] = 100,--changed
 	["electronic-circuit"] = 100,--changed
 	["assembling-machine-1"] = 10,--changed
-	["long-handed-inserter"] = 50,--changed
+	--["long-handed-inserter"] = 50,--changed2
 	["car"] = 1,--changed
 }
 
@@ -76,7 +78,7 @@ kits["Medium"]["quickbar"] = {
 kits["Big"] = {}
 kits["Big"]["items"] = {
 	["car"] = 1,--changed
-	["transport-belt"] = 1000,
+	["transport-belt"] = 1500,--changed2
 	["inserter"] = 300,
 	["splitter"] = 100,
 	["underground-belt"] = 100,
@@ -100,7 +102,7 @@ kits["Big"]["items"] = {
 	["iron-gear-wheel"] = 200,--changed
 	["electronic-circuit"] = 200,--changed
 	["assembling-machine-1"] = 20,--changed
-	["long-handed-inserter"] = 100,--changed
+	--["long-handed-inserter"] = 100,--changed2
 }
 
 kits["Big"]["quickbar"] = {
@@ -148,7 +150,7 @@ kits["Huge"]["items"] = {
 	["electronic-circuit"] = 200,--changed
 	["assembling-machine-1"] = 20,--changed
 	["long-handed-inserter"] = 100,--changed
-	["transport-belt"] = 1500,--changed
+	["transport-belt"] = 3000,--changed2
 	["inserter"] = 500,--changed
 	["splitter"] = 200,--changed
 	["underground-belt"] = 200,
@@ -201,7 +203,7 @@ kits["Behemoth"]["items"] = {
 	["roboport"] = 20,
 	["logistic-robot"] = 200,
 	["car"] = 1,
-	["transport-belt"] = 2000,
+	["transport-belt"] = 5000,--changed2
 	["inserter"] = 800,
 	["splitter"] = 300,
 	["underground-belt"] = 400,
@@ -378,7 +380,8 @@ function on_player_created(event)
 	end
 
 	local player = game.players[event.player_index]
-	-- Unlock technologies
+
+	--Unlock technologies
 	--if kitTech["technologies"] ~= nil then
 	--	for k,v in pairs(kitTech["technologies"]) do
 	--		player.force.technologies[v[1]].researched = true
@@ -422,7 +425,7 @@ function handle_shortcut(event)
         local cutter_held = player.cursor_stack.valid_for_read and
                                 string.sub(player.cursor_stack.name, 1, 11) == "wire-cutter"
         local mode_name = string.sub(event_name, 20, #event_name)
-        
+
         if advanced_mode and cutter_held then
             give_tool(player, "wire-cutter-" .. mode_name)
         elseif mode_name == "copper" then

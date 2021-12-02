@@ -223,6 +223,10 @@ if mods['MicroFurnaceWipMod'] then
   require('integrations/MicroFurnaceWipMod')
 end
 
+if mods['SmallFurnaceWipMod'] then
+  require('integrations/SmallFurnaceWipMod')
+end
+
 if mods['omnimatter_wood'] then
   require('integrations/omniwood')
 end

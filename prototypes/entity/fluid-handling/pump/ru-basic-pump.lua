@@ -3,7 +3,7 @@ local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 
 data:extend({
-{
+  {
     type = "pump",
     name = "ru-basic-pump",
     icons = {{icon = "__base__/graphics/icons/pump.png", tint = {r=178, g=173, b=100}}},

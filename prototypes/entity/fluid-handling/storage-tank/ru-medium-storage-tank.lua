@@ -5,12 +5,12 @@ local sounds = require("__base__/prototypes/entity/sounds")
 data:extend{(
   {
     type = "storage-tank",
-    name = "ru-basic-storage-tank",
-    icons = {{ icon = "__base__/graphics/icons/storage-tank.png", tint = {r=178, g=173, b=100}}},
+    name = "ru-medium-storage-tank",
+    icons = {{ icon = "__base__/graphics/icons/storage-tank.png", tint = {r=202, g=154, b=152}}},
     icon_size = 64, icon_mipmaps = 4,
     flags = {"placeable-player", "player-creation"},
-    minable = {mining_time = 0.5, result = "ru-basic-storage-tank"},
-    max_health = 750,
+    minable = {mining_time = 0.5, result = "ru-medium-storage-tank"},
+    max_health = 1000,
     corpse = "storage-tank-remnants",
     dying_explosion = "storage-tank-explosion",
     collision_box = {{-1.3, -1.3}, {1.3, 1.3}},
@@ -18,7 +18,7 @@ data:extend{(
     damaged_trigger_effect = hit_effects.entity(),
     fluid_box =
     {
-      base_area = 500,
+      base_area = 1000,
       pipe_covers = pipecoverspictures(),
       pipe_connections =
       {
@@ -38,7 +38,7 @@ data:extend{(
         {
           {
             filename = "__base__/graphics/entity/storage-tank/storage-tank.png",
-            tint = {r=178, g=173, b=100},
+            tint = {r=202, g=154, b=152},
             priority = "extra-high",
             frames = 2,
             width = 110,
@@ -47,7 +47,7 @@ data:extend{(
             hr_version =
             {
               filename = "__base__/graphics/entity/storage-tank/hr-storage-tank.png",
-              tint = {r=178, g=173, b=100},
+              tint = {r=202, g=154, b=152},
               priority = "extra-high",
               frames = 2,
               width = 219,
@@ -81,7 +81,7 @@ data:extend{(
       fluid_background =
       {
         filename = "__base__/graphics/entity/storage-tank/fluid-background.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 32,
         height = 15
@@ -89,14 +89,14 @@ data:extend{(
       window_background =
       {
         filename = "__base__/graphics/entity/storage-tank/window-background.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 17,
         height = 24,
         hr_version =
         {
           filename = "__base__/graphics/entity/storage-tank/hr-window-background.png",
-          tint = {r=178, g=173, b=100},
+          tint = {r=202, g=154, b=152},
           priority = "extra-high",
           width = 34,
           height = 48,
@@ -160,7 +160,7 @@ data:extend{(
       pictures =
       {
         filename = "__base__/graphics/entity/storage-tank/storage-tank-reflection.png",
-        tint = {r=178, g=173, b=100},
+        tint = {r=202, g=154, b=152},
         priority = "extra-high",
         width = 24,
         height = 24,

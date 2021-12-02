@@ -1,16 +1,20 @@
 
---Angel Warehouse Size 
-if mods["angelsaddons-warehouses"] then
+--Angel Warehouse Size/ pressure tank 
+if mods["angelsaddons-storage"] then
+	data.raw.container["silo"].inventory_size = settings.startup["ru-angels-silo"].value
+	data.raw["logistic-container"]["silo-passive-provider"].inventory_size = settings.startup["ru-angels-logistic-silo"].value
+	data.raw["logistic-container"]["silo-active-provider"].inventory_size = settings.startup["ru-angels-logistic-silo"].value
+	data.raw["logistic-container"]["silo-storage"].inventory_size = settings.startup["ru-angels-logistic-silo"].value
+	data.raw["logistic-container"]["silo-requester"].inventory_size = settings.startup["ru-angels-logistic-silo"].value
+	data.raw["logistic-container"]["silo-buffer"].inventory_size = settings.startup["ru-angels-logistic-silo"].value
 	data.raw.container["angels-warehouse"].inventory_size = settings.startup["ru-angels-warehouse"].value
 	data.raw["logistic-container"]["angels-warehouse-passive-provider"].inventory_size = settings.startup["ru-angels-logistic-warehouse"].value
 	data.raw["logistic-container"]["angels-warehouse-active-provider"].inventory_size = settings.startup["ru-angels-logistic-warehouse"].value
 	data.raw["logistic-container"]["angels-warehouse-storage"].inventory_size = settings.startup["ru-angels-logistic-warehouse"].value
 	data.raw["logistic-container"]["angels-warehouse-requester"].inventory_size = settings.startup["ru-angels-logistic-warehouse"].value
 	data.raw["logistic-container"]["angels-warehouse-buffer"].inventory_size = settings.startup["ru-angels-logistic-warehouse"].value
-end
---Angel PressureTank Size 
-if mods["angelsaddons-pressuretanks"] then
-	data.raw["storage-tank"]["angels-pressure-tank-1"]["fluid_box"].base_area = settings.startup["ru-Angel-Pressuretank"].value
+	data.raw["storage-tank"]["angels-storage-tank-3"]["fluid_box"].base_area = settings.startup["ru-angels-storage-tank-3"].value
+	data.raw["storage-tank"]["angels-pressure-tank-1"]["fluid_box"].base_area = settings.startup["ru-angels-pressuretank"].value
 end
 
 if settings.startup["ru-angel-integrations"] then
