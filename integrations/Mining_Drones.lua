@@ -1,1 +1,0 @@
-appmod.blacklist['mining-depot'] = true
