@@ -37,6 +37,7 @@ kits["Basic"]["quickbar"] = {
 	{10, "car"}
 }
 
+	
 kits["Medium"] = {}
 kits["Medium"]["items"] = {
 	["transport-belt"] = 1000,--changed2
