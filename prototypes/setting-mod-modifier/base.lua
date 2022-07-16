@@ -3,7 +3,7 @@ data.raw["solar-panel"]["solar-panel"].fast_replaceable_group = "solar-panel"
 --accumulator upgradable
 data.raw["accumulator"]["accumulator"].fast_replaceable_group = "accumulator"
 --substation upgradable
-data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole"
+--data.raw["electric-pole"]["substation"].fast_replaceable_group = "electric-pole"
 --lamp upgradable
 data.raw["lamp"]["small-lamp"].fast_replaceable_group = "lamp"
 --boiler upgradable
