@@ -1,16 +1,12 @@
 ---------------------------------------------------------------------------------------------------
 Version: 3.0.0
-Date: xx/xx/xxxx
+Date: xx/xx/2022
   Changes:
-    - Basically Everythinsfd
-    fd
-    
-    s
-    s
-    s
-    gh
-    g
-    fhiuyug
+    - Basically Everythijg
+    - Changed all settings name/description
+    - Hp recovery is now a vanilla multiplier (setting)
+  Notes:
+    - Warning: this update break basically everything, keep the previous update if you don't want to restart the playthrough
 ---------------------------------------------------------------------------------------------------
 Version: 2.1.4
 Date: 17/10/2021
