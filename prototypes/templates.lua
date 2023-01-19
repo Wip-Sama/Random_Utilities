@@ -267,9 +267,9 @@ local infinite_techs_templates = {
 
 return {
     --FATTI 2/15
-    inserter_templates = inserter_templates,    --inserters
-    infinite_techs_templates = infinite_techs_templates, --
-    --logistic_templates = xxxx,                --belt, underground, splitter
+    inserter_templates = inserter_templates,                --inserters
+    infinite_techs_templates = infinite_techs_templates,    --
+    logistic_templates = logistic_templates,                --belt, underground, splitter
     --fluid_logistic_templates = xxxx,          --pipe, pump, offshure-pump, oil-pump   +/waterwell
     --steam_templates = xxxx,                   --boiler, steam-engine
     --nuclear_templates = xxxx,                 --nuclear-reactor, centrifuge

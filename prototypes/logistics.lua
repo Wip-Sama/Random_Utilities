@@ -1,6 +1,7 @@
 local hit_effects = require ("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 local recipes = require("util.recipe_merger")
+Belt_templates = {}
 
 data:extend({
     {
@@ -68,7 +69,6 @@ data:extend({
         belt_animation_set = basic_belt_animation_set,
         fast_replaceable_group = "transport-belt",
         related_underground_belt = "underground-belt",
-        next_upgrade = "fast-transport-belt",
         speed = 0.03125,
         connector_frame_sprites = transport_belt_connector_frame_sprites,
         circuit_wire_connection_points = circuit_connector_definitions["belt"].points,
@@ -99,7 +99,6 @@ data:extend({
         structure_animation_speed_coefficient = 0.7,
         structure_animation_movement_cooldown = 10,
         fast_replaceable_group = "transport-belt",
-        next_upgrade = "fast-splitter",
         speed = 0.03125,
         belt_animation_set = basic_belt_animation_set,
         open_sound = sounds.machine_open,
@@ -216,14 +215,14 @@ data:extend({
                 height = 48,
                 shift = util.by_pixel(6, -18),
                 hr_version = {
-                filename = "__base__/graphics/entity/splitter/hr-splitter-west-top_patch.png",
-                frame_count = 32,
-                line_length = 8,
-                priority = "extra-high",
-                width = 90,
-                height = 96,
-                shift = util.by_pixel(6, -18),
-                scale = 0.5
+                    filename = "__base__/graphics/entity/splitter/hr-splitter-west-top_patch.png",
+                    frame_count = 32,
+                    line_length = 8,
+                    priority = "extra-high",
+                    width = 90,
+                    height = 96,
+                    shift = util.by_pixel(6, -18),
+                    scale = 0.5
                 }
             }
         }
@@ -283,7 +282,6 @@ data:extend({
         animation_speed_coefficient = 32,
         belt_animation_set = basic_belt_animation_set,
         fast_replaceable_group = "transport-belt",
-        next_upgrade = "fast-underground-belt",
         speed = 0.03125,
         structure = {
             direction_in = {
@@ -370,24 +368,23 @@ data:extend({
             },
             front_patch = {
                 sheet = {
-                filename = "__base__/graphics/entity/underground-belt/underground-belt-structure-front-patch.png",
-                priority = "extra-high",
-                width = 96,
-                height = 96,
-                hr_version = {
-                    filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-front-patch.png",
+                    filename = "__base__/graphics/entity/underground-belt/underground-belt-structure-front-patch.png",
                     priority = "extra-high",
-                    width = 192,
-                    height = 192,
-                    scale = 0.5
-                }
+                    width = 96,
+                    height = 96,
+                    hr_version = {
+                        filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-front-patch.png",
+                        priority = "extra-high",
+                        width = 192,
+                        height = 192,
+                        scale = 0.5
+                    }
                 }
             }
         }
     }
 })
 
---mancano le grafiche
 local function create_logistics_item(suffix, type, tint, tier)
     local name = "ru-" .. suffix .. "-" .. type
     local item = util.table.deepcopy(data.raw.item["ru-dummy-logistic-item"])
@@ -395,11 +392,11 @@ local function create_logistics_item(suffix, type, tint, tier)
     item.icon = nil
     item.icons = {
         {
-            icon = "__Random_Utilities__/graphics/item/"..type..".png",
+            icon = "__Random_Utilities__/graphics/item/logistics/"..type..".png",
             icon_size = 64,
         },
         {
-            icon = "__Random_Utilities__/graphics/item/"..type.."-mask.png",
+            icon = "__Random_Utilities__/graphics/item/logistics/"..type.."-mask.png",
             icon_size = 64,
             tint = tint,
         },
@@ -412,10 +409,10 @@ local function create_logistics_item(suffix, type, tint, tier)
         ["underground-belt"] = 2,
         ["splitter"] = 3,
     }
-    count = count+ converter(type)
+    count = count+ converter[type]
 
     item.subgroup = "ru-logistics-"..string.sub(suffix.."-"..type, 1, 3)
-    item.order = string.sub(letters, tier).."["..type.."-mk"..tostring(tier).."]-"..tostring(count).."["..name.."]"
+    item.order = string.sub(letters, tier).."["..tostring(count)..type.."-mk"..tostring(tier).."]-".."["..name.."]"
     item.place_result = name
     data:extend{item}
 end
@@ -440,20 +437,21 @@ local function create_logistics_recipe(suffix, type, tier, ing)
     data:extend{recipe}
 end
 
---da finite/rifare
-local function create_logistics_entity(suffix, type, tint, tier)
+--phantom
+--corpse
+local function create_logistics_entity(suffix, type, tint, tier, objects)
     local name = "ru-" .. suffix .. "-" .. type
 
-    local entity = util.table.deepcopy(data.raw.inserter["ru-dummy-logistic-entity"])
+    local entity = util.table.deepcopy(data.raw[type]["ru-dummy-"..type])
     entity.name = name
     entity.icon = nil
     entity.icons = {
         {
-            icon = "__Random_Utilities__/graphics/item/"..type..".png",
+            icon = "__Random_Utilities__/graphics/item/logistics/"..type..".png",
             icon_size = 64,
         },
         {
-            icon = "__Random_Utilities__/graphics/item/"..type.."-mask.png",
+            icon = "__Random_Utilities__/graphics/item/logistics/"..type.."-mask.png",
             icon_size = 64,
             tint = tint,
         },
@@ -464,12 +462,96 @@ local function create_logistics_entity(suffix, type, tint, tier)
     entity.max_health = 320*tier
     entity.corpse = type.."-remnants"
     entity.dying_explosion = type.."-explosion"
+    if tier < objects then
+        entity.next_upgrade = "ru-mk" .. tier+1 .. "-" .. type
+    end
+    if type == "transport-belt" then
+        entity.related_underground_belt = "ru-" .. suffix .. "-underground-belt"
+    else
+        entity.related_underground_belt = nil
+    end
 
-    --speed
-    entity.extension_speed = 0.1*(tier*(tier+1))
-    entity.rotation_speed = 0.05*(tier*(tier+1))
+    --quality
+    if type == "underground-belt" then
+        entity.max_distance = 8*tier+9
+    end
+    entity.speed = 90*tier / 480
 
     --graphics
+    if type == "transport-belt" then
+        local new_belt_animation_set = util.table.deepcopy(entity.belt_animation_set)
+        local new_animation_set = util.table.deepcopy(new_belt_animation_set.animation_set)
+        local _, base_file = new_animation_set.filename:match'(.*/)(.*)'
+        new_animation_set.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
+        local _, base_file_hr = new_animation_set.hr_version.filename:match'(.*/)(.*)'
+        new_animation_set.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+        local new_animation_set_copy = util.table.deepcopy(new_animation_set)
+        new_animation_set_copy.filename = new_animation_set.filename:sub(1, -5).."-mask.png"
+        new_animation_set_copy.tint = tint
+        new_animation_set_copy.hr_version.filename = new_animation_set.hr_version.filename:sub(1, -5).."-mask.png"
+        new_animation_set_copy.hr_version.tint = tint
+        new_belt_animation_set.animation_set.layers = {
+            new_animation_set,
+            new_animation_set_copy
+        }
+        Belt_templates["ru_"..suffix.."_belt_animation_set"] = new_belt_animation_set
+    end
+    if type == "underground-belt" then
+        for direction, _ in pairs(entity.structure) do
+            local base_graphic = util.table.deepcopy(entity.structure[direction].sheet)
+            local _, base_file = base_graphic.filename:match'(.*/)(.*)'
+            base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
+            local _, base_file_hr = base_graphic.hr_version.filename:match'(.*/)(.*)'
+            base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+            local base_graphic_copy = util.table.deepcopy(base_graphic)
+            base_graphic_copy.filename = base_graphic.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.tint = tint
+            base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.hr_version.tint = tint
+            entity.structure[direction].sheet = nil
+            entity.structure[direction].sheets = {
+                base_graphic,
+                base_graphic_copy
+            }
+        end
+    end
+    if type == "splitter" then
+        for direction, _ in pairs(entity.structure) do
+            local base_graphic = util.table.deepcopy(entity.structure[direction])
+            local _, base_file = base_graphic.filename:match'(.*/)(.*)'
+            base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
+            local _, base_file_hr = base_graphic.hr_version.filename:match'(.*/)(.*)'
+            base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+            local base_graphic_copy = util.table.deepcopy(base_graphic)
+            base_graphic_copy.filename = base_graphic.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.tint = tint
+            base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.hr_version.tint = tint
+            entity.structure[direction].layers = {
+                base_graphic,
+                base_graphic_copy
+            }
+        end
+        for direction, _ in pairs(entity.structure_patch) do
+            if direction == "east" or direction == "west" then
+                local base_graphic = util.table.deepcopy(entity.structure_patch[direction])
+                local _, base_file = base_graphic.filename:match'(.*/)(.*)'
+                base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
+                local _, base_file_hr = base_graphic.hr_version.filename:match'(.*/)(.*)'
+                base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+                local base_graphic_copy = util.table.deepcopy(base_graphic)
+                base_graphic_copy.filename = base_graphic.filename:sub(1, -5).."-mask.png"
+                base_graphic_copy.tint = tint
+                base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5).."-mask.png"
+                base_graphic_copy.hr_version.tint = tint
+                entity.structure_patch[direction].layers = {
+                    base_graphic,
+                    base_graphic_copy
+                }
+            end
+        end
+    end
+    entity.belt_animation_set = Belt_templates["ru_"..suffix.."_belt_animation_set"]
 
     data:extend{entity}
 end
@@ -505,7 +587,7 @@ local function create_logistics_techonolgy(suffix, tier, tint, technology)
     tech.effects = {
         {
             type = "unlock-recipe",
-            recipe = "ru-" .. suffix .. "-belt"
+            recipe = "ru-" .. suffix .. "-transport-belt"
         },
         {
             type = "unlock-recipe",
@@ -513,7 +595,7 @@ local function create_logistics_techonolgy(suffix, tier, tint, technology)
         },
         {
             type = "unlock-recipe",
-            recipe = "ru-" .. suffix .. "-long" .. "-splitter"
+            recipe = "ru-" .. suffix .. "-splitter"
         },
     }
 
@@ -523,12 +605,12 @@ end
 local function create_logistics(suffix, temp)
     local suffixs = {
         "transport-belt",
-        "underground_belt",
+        "underground-belt",
         "splitter",
     }
 
     for _, x in pairs(suffixs) do
-        create_logistics_entity(suffix, x, temp.tint, temp.tier)
+        create_logistics_entity(suffix, x, temp.tint, temp.tier, temp.objects)
         create_logistics_item(suffix, x, temp.tint, temp.tier)
         create_logistics_recipe(suffix, x, temp.tier, temp.ingredients)
     end

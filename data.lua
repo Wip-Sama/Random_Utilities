@@ -3,6 +3,7 @@ local templates = require("prototypes.templates")
 local inserter = require("prototypes.inserters")
 local logistic = require("prototypes.logistics")
 local infinite_tech = require("prototypes.infinite_techs")
+local util = require("util.logic_operations")
 
 local function generate_subgroup(tb, name)
     for y, x in pairs(tb) do
@@ -25,6 +26,7 @@ end
 
 generate_subgroup(templates.logistic_templates, "logistics")
 for y, x in pairs(templates.logistic_templates) do
+    x.objects = util.tablelength(templates.logistic_templates)
     logistic.create_logistics(y, x)
 end
 

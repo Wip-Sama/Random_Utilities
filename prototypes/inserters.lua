@@ -197,24 +197,24 @@ local function create_inserter_item(suffix, tint, tier, stack, filter, long)
     item.icon = nil
     item.icons = {
         {
-            icon = "__Random_Utilities__/graphics/item/inserter.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/inserter.png",
             icon_size = 64,
         },
         {
-            icon = "__Random_Utilities__/graphics/item/inserter-mask.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/inserter-mask.png",
             icon_size = 64,
             tint = tint,
         },
         filter and {
-            icon = "__Random_Utilities__/graphics/item/filtered.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/filtered.png",
             icon_size = 64,
         } or nil,
         stack and {
-            icon = "__Random_Utilities__/graphics/item/stack.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/stack.png",
             icon_size = 64,
         } or nil,
         long and {
-            icon = "__Random_Utilities__/graphics/item/long.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/long.png",
             icon_size = 64,
         } or nil,
     }
@@ -259,24 +259,24 @@ local function create_inserter_entity(suffix, tint, tier, stack, filter, long)
     entity.icon = nil
     entity.icons = {
         {
-            icon = "__Random_Utilities__/graphics/item/inserter.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/inserter.png",
             icon_size = 64,
         },
         {
-            icon = "__Random_Utilities__/graphics/item/inserter-mask.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/inserter-mask.png",
             icon_size = 64,
             tint = tint,
         },
         filter and {
-            icon = "__Random_Utilities__/graphics/item/filtered.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/filtered.png",
             icon_size = 64,
         } or nil,
         stack and {
-            icon = "__Random_Utilities__/graphics/item/stack.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/stack.png",
             icon_size = 64,
         } or nil,
         long and {
-            icon = "__Random_Utilities__/graphics/item/long.png",
+            icon = "__Random_Utilities__/graphics/item/inserters/long.png",
             icon_size = 64,
         } or nil,
     }
