@@ -4,7 +4,8 @@ local function tablelength(list)
         return 0
     end
     for _ in pairs(list) do
-        count = count + 1 end
+        count = count + 1
+    end
     return count
 end
 
@@ -15,10 +16,10 @@ end
 local function value_exist(list, value)
     for x, y in pairs(list) do
         if y.type == value.type and y.name == value.name then
-            return {true, y, x}
+            return { true, y, x }
         end
     end
-    return {false}
+    return { false }
 end
 
 local function prerequisite_exist(list, value)
@@ -63,7 +64,7 @@ local function validate_recipe_entry(list)
             tmp.name = y1_number and list[2] or list[1]
         end
 
-        if list.amount then 
+        if list.amount then
             tmp.amount = list.amount
         else
             tmp.amount = y1_number and list[1] or list[2]

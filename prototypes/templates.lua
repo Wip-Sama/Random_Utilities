@@ -266,14 +266,14 @@ local infinite_techs_templates = {
 }
 
 return {
-    --FATTI 2/15
+    --FATTI 3/15
     inserter_templates = inserter_templates,                --inserters
     infinite_techs_templates = infinite_techs_templates,    --
     logistic_templates = logistic_templates,                --belt, underground, splitter
     --fluid_logistic_templates = xxxx,          --pipe, pump, offshure-pump, oil-pump   +/waterwell
     --steam_templates = xxxx,                   --boiler, steam-engine
     --nuclear_templates = xxxx,                 --nuclear-reactor, centrifuge
-    --processing_templaetes = xxxx,             --assembler, chemical-plant, refinery   +/idk... something
+    --processing_templates = xxxx,              --assembler, chemical-plant, refinery   +/idk... something
     --solar_templates = xxxx,                   --solar-panel, accumulator
     --beacon_templates = xxxx,                  --beacon                                +/walkable beacon
     --storage_templates = xxxx,                 --chests, robot chests                  +/warehouse and something

@@ -1,13 +1,18 @@
-local hit_effects = require ("__base__/prototypes/entity/hit-effects")
+local hit_effects = require("__base__/prototypes/entity/hit-effects")
 local sounds = require("__base__/prototypes/entity/sounds")
 local recipes = require("util.recipe_merger")
+local deadlock_stuffs = nil
+if mods["DeadlockBlackRubberBelts"] then
+    deadlock_stuffs = require("__DeadlockBlackRubberBelts__/code/functions")
+end
 Belt_templates = {}
 
 data:extend({
     {
         type = "technology",
         name = "ru-dummy-logistic-tech",
-        icon_size = 256, icon_mipmaps = 4,
+        icon_size = 256,
+        icon_mipmaps = 4,
         icon = "__base__/graphics/technology/fast-inserter.png",
         hidden = true,
         effects = {},
@@ -15,12 +20,12 @@ data:extend({
         unit = {
             count = 10,
             ingredients = {
-                {"automation-science-pack", 1},
-                {"logistic-science-pack", 1},
-                {"chemical-science-pack", 1},
-                {"production-science-pack", 1},
-                {"utility-science-pack", 1},
-                {"space-science-pack", 1}
+                { "automation-science-pack", 1 },
+                { "logistic-science-pack",   1 },
+                { "chemical-science-pack",   1 },
+                { "production-science-pack", 1 },
+                { "utility-science-pack",    1 },
+                { "space-science-pack",      1 }
             },
             time = 60
         },
@@ -30,7 +35,8 @@ data:extend({
         type = "item",
         name = "ru-dummy-logistic-item",
         icon = "__base__/graphics/icons/stack-inserter.png",
-        icon_size = 64, icon_mipmaps = 4,
+        icon_size = 64,
+        icon_mipmaps = 4,
         subgroup = "ru-dummy",
         order = "f[logistic]",
         place_result = "stack-inserter",
@@ -40,10 +46,10 @@ data:extend({
         type = "transport-belt",
         name = "ru-dummy-transport-belt",
         icon = "__base__/graphics/icons/transport-belt.png",
-        icon_size = 64, 
+        icon_size = 64,
         icon_mipmaps = 4,
-        flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.1, result = "transport-belt"},
+        flags = { "placeable-neutral", "player-creation" },
+        minable = { mining_time = 0.1, result = "transport-belt" },
         max_health = 150,
         corpse = "transport-belt-remnants",
         dying_explosion = "transport-belt-explosion",
@@ -53,8 +59,8 @@ data:extend({
                 percent = 90
             }
         },
-        collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        collision_box = { { -0.4, -0.4 }, { 0.4, 0.4 } },
+        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         damaged_trigger_effect = hit_effects.entity(),
         open_sound = sounds.machine_open,
         close_sound = sounds.machine_close,
@@ -79,9 +85,10 @@ data:extend({
         type = "splitter",
         name = "ru-dummy-splitter",
         icon = "__base__/graphics/icons/splitter.png",
-        icon_size = 64, icon_mipmaps = 4,
-        flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.1, result = "splitter"},
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = { "placeable-neutral", "player-creation" },
+        minable = { mining_time = 0.1, result = "splitter" },
         max_health = 170,
         corpse = "splitter-remnants",
         dying_explosion = "splitter-explosion",
@@ -92,8 +99,8 @@ data:extend({
             }
         },
 
-        collision_box = {{-0.9, -0.4}, {0.9, 0.4}},
-        selection_box = {{-0.9, -0.5}, {0.9, 0.5}},
+        collision_box = { { -0.9, -0.4 }, { 0.9, 0.4 } },
+        selection_box = { { -0.9, -0.5 }, { 0.9, 0.5 } },
         damaged_trigger_effect = hit_effects.entity(),
         animation_speed_coefficient = 32,
         structure_animation_speed_coefficient = 0.7,
@@ -231,9 +238,10 @@ data:extend({
         type = "underground-belt",
         name = "ru-dummy-underground-belt",
         icon = "__base__/graphics/icons/underground-belt.png",
-        icon_size = 64, icon_mipmaps = 4,
-        flags = {"placeable-neutral", "player-creation"},
-        minable = {mining_time = 0.1, result = "underground-belt"},
+        icon_size = 64,
+        icon_mipmaps = 4,
+        flags = { "placeable-neutral", "player-creation" },
+        minable = { mining_time = 0.1, result = "underground-belt" },
         max_health = 150,
         corpse = "underground-belt-remnants",
         dying_explosion = "underground-belt-explosion",
@@ -276,8 +284,8 @@ data:extend({
                 percent = 30
             }
         },
-        collision_box = {{-0.4, -0.4}, {0.4, 0.4}},
-        selection_box = {{-0.5, -0.5}, {0.5, 0.5}},
+        collision_box = { { -0.4, -0.4 }, { 0.4, 0.4 } },
+        selection_box = { { -0.5, -0.5 }, { 0.5, 0.5 } },
         damaged_trigger_effect = hit_effects.entity(),
         animation_speed_coefficient = 32,
         belt_animation_set = basic_belt_animation_set,
@@ -295,7 +303,7 @@ data:extend({
                         filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
                         priority = "extra-high",
                         width = 192,
-                        height =192,
+                        height = 192,
                         y = 192,
                         scale = 0.5
                     }
@@ -322,13 +330,13 @@ data:extend({
                     priority = "extra-high",
                     width = 96,
                     height = 96,
-                    y = 96*3,
+                    y = 96 * 3,
                     hr_version = {
                         filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
                         priority = "extra-high",
                         width = 192,
                         height = 192,
-                        y = 192*3,
+                        y = 192 * 3,
                         scale = 0.5
                     }
                 }
@@ -339,14 +347,14 @@ data:extend({
                     priority = "extra-high",
                     width = 96,
                     height = 96,
-                    y = 96*2,
+                    y = 96 * 2,
                     hr_version =
                     {
                         filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure.png",
                         priority = "extra-high",
                         width = 192,
                         height = 192,
-                        y= 192*2,
+                        y = 192 * 2,
                         scale = 0.5
                     },
                 }
@@ -358,7 +366,8 @@ data:extend({
                     width = 96,
                     height = 96,
                     hr_version = {
-                        filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-back-patch.png",
+                        filename =
+                        "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-back-patch.png",
                         priority = "extra-high",
                         width = 192,
                         height = 192,
@@ -373,7 +382,8 @@ data:extend({
                     width = 96,
                     height = 96,
                     hr_version = {
-                        filename = "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-front-patch.png",
+                        filename =
+                        "__base__/graphics/entity/underground-belt/hr-underground-belt-structure-front-patch.png",
                         priority = "extra-high",
                         width = 192,
                         height = 192,
@@ -392,11 +402,11 @@ local function create_logistics_item(suffix, type, tint, tier)
     item.icon = nil
     item.icons = {
         {
-            icon = "__Random_Utilities__/graphics/item/logistics/"..type..".png",
+            icon = "__Random_Utilities__/graphics/item/logistics/" .. type .. ".png",
             icon_size = 64,
         },
         {
-            icon = "__Random_Utilities__/graphics/item/logistics/"..type.."-mask.png",
+            icon = "__Random_Utilities__/graphics/item/logistics/" .. type .. "-mask.png",
             icon_size = 64,
             tint = tint,
         },
@@ -409,19 +419,20 @@ local function create_logistics_item(suffix, type, tint, tier)
         ["underground-belt"] = 2,
         ["splitter"] = 3,
     }
-    count = count+ converter[type]
+    count = count + converter[type]
 
-    item.subgroup = "ru-logistics-"..string.sub(suffix.."-"..type, 1, 3)
-    item.order = string.sub(letters, tier).."["..tostring(count)..type.."-mk"..tostring(tier).."]-".."["..name.."]"
+    item.subgroup = "ru-logistics-" .. string.sub(suffix .. "-" .. type, 1, 3)
+    item.order = string.sub(letters, tier) .. "[" .. tostring(count) .. type ..
+    "-mk" .. tostring(tier) .. "]-" .. "[" .. name .. "]"
     item.place_result = name
-    data:extend{item}
+    data:extend { item }
 end
 
 local function create_logistics_recipe(suffix, type, tier, ing)
     local name = "ru-" .. suffix .. "-" .. type
 
     local to_add = {
-        ((tier>1) and {"ru-mk" .. tier-1 .. "-" .. type, 1} or nil),
+        ((tier > 1) and { "ru-mk" .. tier - 1 .. "-" .. type, 1 } or nil),
     }
 
     local recipe = {
@@ -431,10 +442,10 @@ local function create_logistics_recipe(suffix, type, tier, ing)
         hidden = false,
         energy_required = 1,
         ingredients = (not to_add == {}) and ing or recipes.merge_ingredients(ing, to_add),
-        results = {{name, 1}},
+        results = { { name, 1 } },
     }
 
-    data:extend{recipe}
+    data:extend { recipe }
 end
 
 --phantom
@@ -442,16 +453,16 @@ end
 local function create_logistics_entity(suffix, type, tint, tier, objects)
     local name = "ru-" .. suffix .. "-" .. type
 
-    local entity = util.table.deepcopy(data.raw[type]["ru-dummy-"..type])
+    local entity = util.table.deepcopy(data.raw[type]["ru-dummy-" .. type])
     entity.name = name
     entity.icon = nil
     entity.icons = {
         {
-            icon = "__Random_Utilities__/graphics/item/logistics/"..type..".png",
+            icon = "__Random_Utilities__/graphics/item/logistics/" .. type .. ".png",
             icon_size = 64,
         },
         {
-            icon = "__Random_Utilities__/graphics/item/logistics/"..type.."-mask.png",
+            icon = "__Random_Utilities__/graphics/item/logistics/" .. type .. "-mask.png",
             icon_size = 64,
             tint = tint,
         },
@@ -459,11 +470,11 @@ local function create_logistics_entity(suffix, type, tint, tier, objects)
 
     --generics
     entity.minable = { mining_time = 0.1, result = name }
-    entity.max_health = 320*tier
-    entity.corpse = type.."-remnants"
-    entity.dying_explosion = type.."-explosion"
+    entity.max_health = 320 * tier
+    entity.corpse = type .. "-remnants"
+    entity.dying_explosion = type .. "-explosion"
     if tier < objects then
-        entity.next_upgrade = "ru-mk" .. tier+1 .. "-" .. type
+        entity.next_upgrade = "ru-mk" .. tier + 1 .. "-" .. type
     end
     if type == "transport-belt" then
         entity.related_underground_belt = "ru-" .. suffix .. "-underground-belt"
@@ -473,40 +484,47 @@ local function create_logistics_entity(suffix, type, tint, tier, objects)
 
     --quality
     if type == "underground-belt" then
-        entity.max_distance = 8*tier+9
+        entity.max_distance = 8 * tier + 9
     end
-    entity.speed = 90*tier / 480
+    entity.speed = 90 * tier / 480
 
     --graphics
     if type == "transport-belt" then
         local new_belt_animation_set = util.table.deepcopy(entity.belt_animation_set)
-        local new_animation_set = util.table.deepcopy(new_belt_animation_set.animation_set)
-        local _, base_file = new_animation_set.filename:match'(.*/)(.*)'
-        new_animation_set.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
-        local _, base_file_hr = new_animation_set.hr_version.filename:match'(.*/)(.*)'
-        new_animation_set.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
-        local new_animation_set_copy = util.table.deepcopy(new_animation_set)
-        new_animation_set_copy.filename = new_animation_set.filename:sub(1, -5).."-mask.png"
-        new_animation_set_copy.tint = tint
-        new_animation_set_copy.hr_version.filename = new_animation_set.hr_version.filename:sub(1, -5).."-mask.png"
-        new_animation_set_copy.hr_version.tint = tint
+        local animation_set = util.table.deepcopy(new_belt_animation_set.animation_set)
+
+        local _, base_file = animation_set.filename:match '(.*/)(.*)'
+        animation_set.filename = "__Random_Utilities__/graphics/entity/logistics/" .. type .. "/" .. base_file
+
+        local _, base_file_hr = animation_set.hr_version.filename:match '(.*/)(.*)'
+        animation_set.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/" .. type .. "/" .. base_file_hr
+
+        local animation_set_mask = util.table.deepcopy(animation_set)
+        animation_set_mask.filename = animation_set.filename:sub(1, -5) .. "-mask.png"
+        animation_set_mask.tint = tint
+
+        animation_set_mask.hr_version.filename = animation_set.hr_version.filename:sub(1, -5) .. "-mask.png"
+        animation_set_mask.hr_version.tint = tint
+
         new_belt_animation_set.animation_set.layers = {
-            new_animation_set,
-            new_animation_set_copy
+            animation_set,
+            animation_set_mask,
         }
-        Belt_templates["ru_"..suffix.."_belt_animation_set"] = new_belt_animation_set
+
+        Belt_templates["ru_" .. suffix .. "_belt_animation_set"] = new_belt_animation_set
     end
     if type == "underground-belt" then
         for direction, _ in pairs(entity.structure) do
             local base_graphic = util.table.deepcopy(entity.structure[direction].sheet)
-            local _, base_file = base_graphic.filename:match'(.*/)(.*)'
-            base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
-            local _, base_file_hr = base_graphic.hr_version.filename:match'(.*/)(.*)'
-            base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+            local _, base_file = base_graphic.filename:match '(.*/)(.*)'
+            base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/" .. type .. "/" .. base_file
+            local _, base_file_hr = base_graphic.hr_version.filename:match '(.*/)(.*)'
+            base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/" ..
+            type .. "/" .. base_file_hr
             local base_graphic_copy = util.table.deepcopy(base_graphic)
-            base_graphic_copy.filename = base_graphic.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.filename = base_graphic.filename:sub(1, -5) .. "-mask.png"
             base_graphic_copy.tint = tint
-            base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5) .. "-mask.png"
             base_graphic_copy.hr_version.tint = tint
             entity.structure[direction].sheet = nil
             entity.structure[direction].sheets = {
@@ -518,14 +536,15 @@ local function create_logistics_entity(suffix, type, tint, tier, objects)
     if type == "splitter" then
         for direction, _ in pairs(entity.structure) do
             local base_graphic = util.table.deepcopy(entity.structure[direction])
-            local _, base_file = base_graphic.filename:match'(.*/)(.*)'
-            base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
-            local _, base_file_hr = base_graphic.hr_version.filename:match'(.*/)(.*)'
-            base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+            local _, base_file = base_graphic.filename:match '(.*/)(.*)'
+            base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/" .. type .. "/" .. base_file
+            local _, base_file_hr = base_graphic.hr_version.filename:match '(.*/)(.*)'
+            base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/" ..
+            type .. "/" .. base_file_hr
             local base_graphic_copy = util.table.deepcopy(base_graphic)
-            base_graphic_copy.filename = base_graphic.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.filename = base_graphic.filename:sub(1, -5) .. "-mask.png"
             base_graphic_copy.tint = tint
-            base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5).."-mask.png"
+            base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5) .. "-mask.png"
             base_graphic_copy.hr_version.tint = tint
             entity.structure[direction].layers = {
                 base_graphic,
@@ -535,14 +554,15 @@ local function create_logistics_entity(suffix, type, tint, tier, objects)
         for direction, _ in pairs(entity.structure_patch) do
             if direction == "east" or direction == "west" then
                 local base_graphic = util.table.deepcopy(entity.structure_patch[direction])
-                local _, base_file = base_graphic.filename:match'(.*/)(.*)'
-                base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file
-                local _, base_file_hr = base_graphic.hr_version.filename:match'(.*/)(.*)'
-                base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/"..type.."/"..base_file_hr
+                local _, base_file = base_graphic.filename:match '(.*/)(.*)'
+                base_graphic.filename = "__Random_Utilities__/graphics/entity/logistics/" .. type .. "/" .. base_file
+                local _, base_file_hr = base_graphic.hr_version.filename:match '(.*/)(.*)'
+                base_graphic.hr_version.filename = "__Random_Utilities__/graphics/entity/logistics/" ..
+                type .. "/" .. base_file_hr
                 local base_graphic_copy = util.table.deepcopy(base_graphic)
-                base_graphic_copy.filename = base_graphic.filename:sub(1, -5).."-mask.png"
+                base_graphic_copy.filename = base_graphic.filename:sub(1, -5) .. "-mask.png"
                 base_graphic_copy.tint = tint
-                base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5).."-mask.png"
+                base_graphic_copy.hr_version.filename = base_graphic.hr_version.filename:sub(1, -5) .. "-mask.png"
                 base_graphic_copy.hr_version.tint = tint
                 entity.structure_patch[direction].layers = {
                     base_graphic,
@@ -551,11 +571,13 @@ local function create_logistics_entity(suffix, type, tint, tier, objects)
             end
         end
     end
-    entity.belt_animation_set = Belt_templates["ru_"..suffix.."_belt_animation_set"]
 
-    data:extend{entity}
+    entity.belt_animation_set = Belt_templates["ru_" .. suffix .. "_belt_animation_set"]
+
+    data:extend { entity }
 end
 
+--icone
 local function create_logistics_techonolgy(suffix, tier, tint, technology)
     local name = "ru-" .. suffix .. "-logistic-technology"
     local tech = util.table.deepcopy(data.raw.technology["ru-dummy-logistic-tech"])
@@ -573,14 +595,14 @@ local function create_logistics_techonolgy(suffix, tier, tint, technology)
     }
 
     local to_add = {
-        ((tier>1) and "ru-mk" .. tier-1 .. "-logistic-technology" or nil),
+        ((tier > 1) and "ru-mk" .. tier - 1 .. "-logistic-technology" or nil),
     }
 
     tech.hidden = false
     tech.prerequisites = recipes.merge_prerequisites(technology.prerequisites, to_add)
     tech.unit = {
         time = 60,
-        count = tier*1000-(200*tier-1)-1,
+        count = tier * 1000 - (200 * tier - 1) - 1,
         ingredients = technology.ingredients
     }
 
@@ -599,7 +621,19 @@ local function create_logistics_techonolgy(suffix, tier, tint, technology)
         },
     }
 
-    data:extend{tech}
+    data:extend { tech }
+end
+
+local function make_belt_rubber_black(suffix, type, tint)
+    if deadlock_stuffs ~= nil then
+        local name = "ru-" .. suffix .. "-" .. type
+        deadlock_stuffs.replace_item_icon(name, "rubber-belt-steel")
+        deadlock_stuffs.add_mask_to_item_icon(name, "rubber-belt-mask", tint)
+        deadlock_stuffs.copy_item_icons_to_entity("transport-belt", name)
+
+        local logistic_entity = data.raw[type][name]
+        logistic_entity.belt_animation_set.animation_set = deadlock_stuffs.get_belt_animation_set(tint, "steel")
+    end
 end
 
 local function create_logistics(suffix, temp)
@@ -608,11 +642,13 @@ local function create_logistics(suffix, temp)
         "underground-belt",
         "splitter",
     }
-
     for _, x in pairs(suffixs) do
         create_logistics_entity(suffix, x, temp.tint, temp.tier, temp.objects)
         create_logistics_item(suffix, x, temp.tint, temp.tier)
         create_logistics_recipe(suffix, x, temp.tier, temp.ingredients)
+    end
+    if mods["DeadlockBlackRubberBelts"] and settings.startup["ru-black-rubber-belts"].value then
+        make_belt_rubber_black(suffix, "transport-belt", temp.tint)
     end
     create_logistics_techonolgy(suffix, temp.tier, temp.tint, temp.technology)
 end
