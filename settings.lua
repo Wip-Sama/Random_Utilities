@@ -218,9 +218,16 @@ data:extend({
     allowed_values =
     {
       "360",
-      "640",
-      "1280",
+      "640"
     },
+  },
+  --belt 15 scaler
+  {
+    type = "bool-setting",
+    name = "ru-logistics-15-scaler",
+    order = "bc",
+    setting_type = "startup",
+    default_value = false,
   },
 
 

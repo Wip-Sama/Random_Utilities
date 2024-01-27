@@ -2,7 +2,7 @@
 --Stack size OK
 local itemStackSizeMultiplier = settings.startup["ru-stack-Size"].value
 local max, min = math.max, math.min
-local ignore = {
+local ignore_by_type = {
 	["blueprint"]           = true,
 	["blueprint-book"]      = true,
 	["deconstruction-item"] = true,
@@ -14,6 +14,7 @@ local ignore = {
 }
 
 local function is_stackable(item)
+	if item.stack_size and item.stack_size == 1 then return false end
 	if not item.flags then return true end
 	if type(item.flags) ~= "table" then return true end
 	for _,v in pairs(item.flags) do
@@ -25,7 +26,7 @@ end
 for _, dat in pairs(data.raw) do
 	for _,item in pairs(dat) do
 		if item.stack_size and type(item.stack_size) == "number" and is_stackable(item) then
-			if not ignore[item.type] and (item.stackable == nil or item.stackable) then
+			if not ignore_by_type[item.type] and (item.stackable == nil or item.stackable) then
 				item.stack_size = max(1, min(2147483647, item.stack_size * itemStackSizeMultiplier))
 			end
 		end
