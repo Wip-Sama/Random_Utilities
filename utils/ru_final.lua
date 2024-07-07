@@ -195,23 +195,23 @@ if settings.startup["ru-force-equipment-categories"] then
 
   --15x scaler 
   if settings.startup["ru-logistics-15-scaler"].value then
-    data.raw['underground-belt']['ru-behemoth-underground-belt'].speed = 105
-    data.raw['splitter']['ru-behemoth-splitter'].speed = 105
-    data.raw['transport-belt']['ru-behemoth-transport-belt'].speed = 105
-    data.raw['loader-1x1']['ru-behemoth-loader'].speed = 105
+    data.raw['underground-belt']['ru-behemoth-underground-belt'].speed = 105/480
+    data.raw['splitter']['ru-behemoth-splitter'].speed = 105/480
+    data.raw['transport-belt']['ru-behemoth-transport-belt'].speed = 105/480
+    data.raw['loader-1x1']['ru-behemoth-loader'].speed = 105/480
 
-    data.raw['underground-belt']['ru-big-underground-belt'].speed = 90
-    data.raw['splitter']['ru-big-splitter'].speed = 90
-    data.raw['transport-belt']['ru-big-transport-belt'].speed = 90
-    data.raw['loader-1x1']['ru-big-loader'].speed = 90
+    data.raw['underground-belt']['ru-big-underground-belt'].speed = 90/480
+    data.raw['splitter']['ru-big-splitter'].speed = 90/480
+    data.raw['transport-belt']['ru-big-transport-belt'].speed = 90/480
+    data.raw['loader-1x1']['ru-big-loader'].speed = 90/480
 
-    data.raw['underground-belt']['ru-medium-underground-belt'].speed = 75
-    data.raw['splitter']['ru-medium-splitter'].speed = 75
-    data.raw['transport-belt']['ru-medium-transport-belt'].speed = 75
-    data.raw['loader-1x1']['ru-medium-loader'].speed = 75
+    data.raw['underground-belt']['ru-medium-underground-belt'].speed = 75/480
+    data.raw['splitter']['ru-medium-splitter'].speed = 75/480
+    data.raw['transport-belt']['ru-medium-transport-belt'].speed = 75/480
+    data.raw['loader-1x1']['ru-medium-loader'].speed = 75/480
 
-    data.raw['underground-belt']['ru-basic-underground-belt'].speed = 60
-    data.raw['splitter']['ru-basic-splitter'].speed = 60
-    data.raw['transport-belt']['ru-basic-transport-belt'].speed = 60
-    data.raw['loader-1x1']['ru-basic-loader'].speed = 60
+    data.raw['underground-belt']['ru-basic-underground-belt'].speed = 60/480
+    data.raw['splitter']['ru-basic-splitter'].speed = 60/480
+    data.raw['transport-belt']['ru-basic-transport-belt'].speed = 60/480
+    data.raw['loader-1x1']['ru-basic-loader'].speed = 60/480
   end
